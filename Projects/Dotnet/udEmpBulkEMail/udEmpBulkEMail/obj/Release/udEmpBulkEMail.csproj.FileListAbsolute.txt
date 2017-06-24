@@ -1,0 +1,29 @@
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.exe
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.pdb
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Form1.resources
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Properties.Resources.resources
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.csproj.GenerateResource.Cache
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.exe
+C:\Users\rprajapa.UDYOG\Desktop\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.pdb
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.exe
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.pdb
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.exe
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.pdb
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Form1.resources
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Properties.Resources.resources
+D:\SQLProject\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.csproj.GenerateResource.Cache
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.exe
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.pdb
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.exe
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.pdb
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\Microsoft.Office.Interop.Excel.dll
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\Microsoft.Office.Interop.Outlook.dll
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\Microsoft.Vbe.Interop.dll
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\office.dll
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\bin\Release\Microsoft.Office.Interop.Outlook.xml
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\obj\Release\ResolveAssemblyReference.cache
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Form1.resources
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Properties.Resources.resources
+D:\sandeep\from rupesh\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.csproj.GenerateResource.Cache

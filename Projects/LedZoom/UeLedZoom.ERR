@@ -1,0 +1,13 @@
+Form d:\svngst\ledzoom\ledzoom.scx has the following errors:
+    Proc./Func. TOUEVOUCHER - Undefined
+    Visual Class Library VOUCLASS - Undefined
+    Application UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+    Unknown UEALLOC - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
+
+Program d:\svngst\ledzoom\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+    Visual Class Library SQLCONNECTION - Undefined
+

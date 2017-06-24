@@ -1,0 +1,211 @@
+Proc tmp_crea
+*************
+Para _dbf
+ctr = 1
+Do Whil .T.
+	r_temp = Sys(3) + '.' + _dbf
+	ctr = ctr + 1
+	If File(dix_temp)
+		Loop
+	Endif
+	Exit
+Enddo
+Retu r_temp
+
+Proc enc
+********
+Para mcheck
+d=1
+F=Len(mcheck)
+Repl=""
+rep=0
+Do Whil F > 0
+	r=Subs(mcheck,d,1)
+	Change = Asc(r)+rep
+	If Change>255
+		Wait Wind Str(Change)
+	Endi
+	two = Chr(Change)
+	Repl=Repl+two
+	d=d+01
+	rep=rep+1
+	F=F-1
+Endd
+Retu Repl
+
+Proc dec
+********
+Para mcheck
+d=1
+F=Len(mcheck)
+Repl=""
+rep=0
+Do Whil F > 0
+	r=Subs(mcheck,d,1)
+	Change = Asc(r)-rep
+	If Change>0
+		two = Chr(Change)
+	Endi
+	Repl=Repl+two
+	d=d+01
+	F=F-1
+	rep=rep+1
+Endd
+Retu Repl
+
+Proc chkprod
+************
+Buffer=[]
+If !Empty(Allt(company.passroute))
+	For x = 1 To Len(Allt(company.passroute))
+		Buffer = Buffer + Chr(Asc(Substr(company.passroute,x,1))/2)
+	Next x
+Endif
+vchkprod=Buffer
+Retur
+
+Procedure modalmenu
+*****************
+Local oldpanel
+oldpanel = statdesktop.panels(2).Text
+statdesktop.panels(2).Text = 'Generating Menus....'
+For i = 1 To _Screen.FormCount
+	If Left(Upper(Alltrim(_Screen.Forms[i].Name)),5) = 'UDYOG'
+		Do gware.mpr With _Screen.Forms[i],.T.
+		Exit
+	Endif
+Next i
+statdesktop.panels(2).Text = oldpanel
+Return
+
+Function  busymsg
+*****************
+Lparameters pmsg,pbusyicon,pbusyform,poldpanel
+If Type('pMsg') = 'L' And Type('pBusyIcon') = 'L' And Type('pBusyform') = 'L'
+	If pmsg = .F. And pbusyicon = .F. And pbusyform = .F.
+		If Type('pOldpanel') = 'U' Or Type('pOldpanel') = 'L'
+			poldpanel = ''
+		Endif
+		_Screen.ActiveForm.MousePointer = 0
+		If !Empty(poldpanel)
+			statdesktop.Message	= poldpanel
+		Else
+			statdesktop.Message	= ''
+		Endif
+		For i=1 To _Screen.FormCount
+			If Alltrim(Upper(_Screen.Forms(i).Name)) = 'THINKPROCESS'
+				_Screen.Forms(i).cexit()
+				Exit
+			Endif
+		Endfor
+	Endif
+Else
+	oldpanel = statdesktop.Message
+	oldmousepoint = _Screen.ActiveForm.MousePointer
+	_Screen.ActiveForm.MousePointer = 13
+	statdesktop.Message = pmsg
+	If pbusyform = .T.
+		Do Form thinkprocess With pmsg
+	Endif
+Endif
+Return
+
+Procedure onencrypt
+*****************
+Lpara lcvariable
+lcreturn = ""
+For i=1 To Len(lcvariable)
+	lcreturn=lcreturn+Chr(Asc(Substr(lcvariable,i,1))+Asc(Substr(lcvariable,i,1)))
+Endfor
+Return lcreturn
+
+Procedure ondecrypt
+*****************
+Lpara lcvariable
+lcreturn = ""
+For i=1 To Len(lcvariable)
+	lcreturn=lcreturn+Chr(Asc(Substr(lcvariable,i,1))/2)
+Endfor
+Return lcreturn
+
+Function CheckRegDll
+*****************
+Parameters lOle
+Local RegFind
+RegOle = .T.
+oldErrProc = On('error')
+On Error Do DLLErrorProc In vu_udfs
+Declare Long DllRegisterServer In (lOle) Alias chkDll
+Clear Dlls chkDll
+If Type('oldErrProc') = 'C'
+	If !Empty(oldErrProc)
+		On Error &oldErrProc
+	Else
+		On Error
+	Endif
+Else
+	On Error
+Endif
+Return RegOle
+
+
+Procedure DLLErrorProc
+*****************
+lerrorno =Error()
+RegOle = .T.
+Do Case
+Case lerrorno = 1753
+	RegOle = .F.
+Endcase
+Return RegOle
+
+Procedure onshutdown
+*****************
+On Shutdown
+Clear Events
+Quit
+Return
+
+Procedure pctrlf4
+*****************
+For i = 1 To _Screen.FormCount
+	If Allt(Upper(_Screen.Forms[i].BaseClass)) != "TOOLBAR" And Left(Upper(Alltrim(_Screen.Forms[i].Name)),5) != 'UDYOG';
+			and Upper(Alltrim(_Screen.Forms[i].Name)) != 'FRMLOGINUSERS' And Upper(Alltrim(_Screen.Forms[i].Name)) != 'FRMMSGWINDOW'
+		statdesktop.Message = [Busy Mode....]
+		=beep(600,200)
+		statdesktop.Message = [User :]+musername
+		Return .F.
+	Endif
+Next i
+_Screen.ActiveForm.procre(.T.)
+Return
+
+Procedure pctrll
+*****************
+On Key Label Alt+l
+For i = 1 To _Screen.FormCount
+	If Allt(Upper(_Screen.Forms[i].BaseClass)) != "TOOLBAR" And Left(Upper(Alltrim(_Screen.Forms[i].Name)),5) != 'UDYOG';
+			and Upper(Alltrim(_Screen.Forms[i].Name)) != 'FRMLOGINUSERS' And Upper(Alltrim(_Screen.Forms[i].Name)) != 'FRMMSGWINDOW'
+		statdesktop.Message = [Busy Mode....]
+		=beep(600,200)
+		statdesktop.Message = [User :]+musername
+		Return .F.
+	Endif
+Next i
+_Screen.ActiveForm.procre(.F.)
+Return
+
+Procedure decoder
+*****************
+Parameters thispass,passflag
+Store "" To finecode,mycoder
+For i = 1 To Len(thispass)
+	If !passflag
+		mycoder = Chr(Asc(Substr(thispass,i,1))-4) &&+7-11)
+	Else
+		mycoder = Chr(Asc(Substr(thispass,i,1))+4) &&-7+11)
+	Endif (!passflag)
+	finecode = finecode+mycoder
+Next (i)
+Return finecode
+

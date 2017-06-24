@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<QueryStrings>
+
+<GetDatabases>SHOW DATABASES</GetDatabases>
+
+<GetAllTables>SHOW TABLES FROM {0}</GetAllTables>
+
+<GetTables>SHOW Tables FROM {0} LIKE '{1}%'</GetTables>
+
+<GetColumnsFromTable>
+SHOW COLUMNS FROM {0} FROM {1}
+</GetColumnsFromTable>
+
+<GetTableConstructor>
+SHOW CREATE TABLE {0}
+</GetTableConstructor>
+
+</QueryStrings>

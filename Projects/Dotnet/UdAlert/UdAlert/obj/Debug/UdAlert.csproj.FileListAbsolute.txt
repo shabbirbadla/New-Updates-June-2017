@@ -1,0 +1,28 @@
+D:\My practice\aspspider\UdAlert\UdAlert\bin\Debug\UdAlert.exe
+D:\My practice\aspspider\UdAlert\UdAlert\bin\Debug\UdAlert.pdb
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.Properties.Resources.resources
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.csproj.GenerateResource.Cache
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.exe
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.pdb
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.frmAlert.resources
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\obj\Debug\UdAlert.exe
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\obj\Debug\UdAlert.pdb
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\bin\Debug\UdAlert.exe
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\bin\Debug\UdAlert.pdb
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\bin\Debug\uBaseForm.dll
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\obj\Debug\UdAlert.frmAlert.resources
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\obj\Debug\UdAlert.Properties.Resources.resources
+D:\SQLProject\AlertMaster\UdAlert\UdAlert\obj\Debug\UdAlert.csproj.GenerateResource.Cache
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\obj\Debug\UdAlert.exe
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\obj\Debug\UdAlert.pdb
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\bin\Debug\UdAlert.exe
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\bin\Debug\UdAlert.pdb
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\obj\Debug\UdAlert.frmAlert.resources
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\obj\Debug\UdAlert.Properties.Resources.resources
+D:\My practice\aspspider\UdAlert(rup)\UdAlert\obj\Debug\UdAlert.csproj.GenerateResource.Cache
+C:\Users\rkchalla\Desktop\UdAlert\UdAlert\obj\Debug\UdAlert.exe
+C:\Users\rkchalla\Desktop\UdAlert\UdAlert\obj\Debug\UdAlert.pdb

@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\wwwFileUpload.dll
+bin\Debug\wwwFileUpload.pdb
+obj\Debug\wwwFileUpload.dll
+obj\Debug\wwwFileUpload.pdb

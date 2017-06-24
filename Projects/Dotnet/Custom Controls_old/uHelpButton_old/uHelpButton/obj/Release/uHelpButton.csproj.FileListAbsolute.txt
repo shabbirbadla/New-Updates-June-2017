@@ -1,0 +1,10 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uHelpButton\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uHelpButton\bin\Release\uHelpButton.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uHelpButton\bin\Release\uHelpButton.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uHelpButton\obj\Release\uHelpButton.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uHelpButton\obj\Release\uHelpButton.pdb
+D:\SQLProject\UDF Controls\uHelpButton\uHelpButton\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\UDF Controls\uHelpButton\uHelpButton\obj\Release\uHelpButton.dll
+D:\SQLProject\UDF Controls\uHelpButton\uHelpButton\bin\Release\uHelpButton.dll
+D:\SQLProject\UDF Controls\uHelpButton\uHelpButton\bin\Release\uHelpButton.pdb
+D:\SQLProject\UDF Controls\uHelpButton\uHelpButton\obj\Release\uHelpButton.pdb

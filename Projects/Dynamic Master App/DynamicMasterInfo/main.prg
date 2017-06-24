@@ -1,0 +1,92 @@
+*:*****************************************************************************
+*:        Program: Main
+*:         System: Udyog Software
+*:         Author: Rupesh
+*:  Last modified: 
+*:			AIM  : Call Dyanamic Master exe
+*:*****************************************************************************
+PARAMETERS pRange
+IF VARTYPE(Company) <> "O"
+	RETURN .F.
+ENDIF
+oWSHELL = CREATEOBJECT("WScript.Shell")
+IF VARTYPE(oWSHELL) <> "O"
+	MESSAGEBOX("WScript.Shell Object Creation Error...",16,VuMess)
+	RETURN .F.
+ENDIF
+
+
+
+tcCompId = Company.CompId
+tcCompdb =Company.Dbname
+tcCompNm=Company.co_name
+SqlConObj = NEWOBJECT('SqlConnUdObj','SqlConnection',xapps)
+mvu_user1 = SqlConObj.dec(SqlConObj.ondecrypt(mvu_user))
+mvu_pass1 = SqlConObj.dec(SqlConObj.ondecrypt(mvu_pass))
+
+_ShellExec = "udDynamicMasterInfo.exe "+TRANSFORM(tcCompId)+" "+ALLTRIM(tcCompdb)+" "+ALLTRIM(mvu_server)+" "+ALLTRIM(mvu_user1)+" "+ALLTRIM(mvu_pass1)+" "+pRange+" "+musername
+oWSHELL.EXEC(_ShellExec)
+SqlConObj = NULL
+mvu_user1 = NULL
+mvu_pass1 = NULL
+RELEASE SqlConObj,mvu_user1,mvu_pass1
+
+
+*!*	_curvouobj = _Screen.ActiveForm
+*!*	lRange=SUBSTR(pRange,2)
+*!*	IF TYPE('pDatasession')='L'
+*!*		pDatasession=1
+*!*	ENDIF
+*!*	msqlstr = "select padname,barname,range from com_menu where range = ?lrange"
+*!*	nhandle=0
+*!*	nRetval=_curvouobj.SqlConObj.DataConn("exe",company.dbname,msqlstr,"_menu","nhandle",pDatasession)
+*!*	IF nRetval<=0
+*!*		RETURN .F.
+*!*	ENDIF
+*!*	lpadname = _MENU.padname
+*!*	lbarname = _MENU.barname
+*!*	lRange   = _MENU.RANGE
+*!*	luser    = musername
+
+*!*	msqlstr = "select padname,barname,dbo.func_decoder(rights,'F') as rights from userrights where padname = ?lpadname and barname = ?lbarname and range = ?lrange and dbo.func_decoder([user],'T') = ?luser"
+*!*	nRetval=_curvouobj.SqlConObj.DataConn("exe",company.dbname,msqlstr,"_menurights","nhandle",pDatasession)
+*!*	IF nRetval<=0
+*!*		RETURN .F.
+*!*	ENDIF
+*!*	*!*	nRetval=THIS.sqlconnclose("nHandle") && Connection Close
+*!*	IF nRetval<=0
+*!*		RETURN .F.
+*!*	ENDIF
+
+*!*	vaddbutton =.f.
+*!*	veditbutton =.f.
+*!*	vdeletebutton =.f.
+*!*	vprintbutton =.f.
+*!*	vapprovebutton =.f.
+
+*!*	i=1
+*!*	DO WHILE i<=LEN(ALLTRIM(_menurights.rights))
+*!*		rStr=SUBSTR(ALLTRIM(_menurights.rights),i,2)
+*!*		DO CASE
+*!*		CASE rStr = 'IY'
+*!*			vaddbutton = .T.
+*!*		CASE rStr = 'CY'
+*!*			veditbutton = .T.
+*!*		CASE rStr = 'DY'
+*!*			vdeletebutton = .T.
+*!*		CASE rStr = 'PY'
+*!*			vprintbutton = .T.
+*!*		CASE rStr = 'VY'
+*!*			vapprovebutton = .T.
+*!*		ENDCASE
+*!*		i=i+2
+*!*	ENDDO
+*!*	USE IN _menurights
+
+
+
+*!*	IF PARAMETERS() < 1
+*!*		=MESSAGEBOX('Passed Valid Parameters',0,"")
+*!*		RETURN .T.
+*!*	ENDIF
+

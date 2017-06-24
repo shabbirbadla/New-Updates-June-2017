@@ -1,0 +1,14 @@
+bin\Release\LogicalLibrary.dll
+bin\Release\LogicalLibrary.pdb
+bin\Release\CryptoLib.dll
+bin\Release\CryptoLib.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\LogicalLibrary.dll
+obj\Release\LogicalLibrary.pdb
+bin\Debug\LogicalLibrary.dll
+bin\Debug\LogicalLibrary.pdb
+bin\Debug\CryptoLib.dll
+bin\Debug\CryptoLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LogicalLibrary.dll
+obj\Debug\LogicalLibrary.pdb

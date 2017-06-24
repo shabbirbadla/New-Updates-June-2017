@@ -1,0 +1,8 @@
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.Properties.Resources.resources
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.csproj.GenerateResource.Cache
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\bin\Debug\ueItemRateUpdtae.exe
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\bin\Debug\ueItemRateUpdtae.pdb
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.exe
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.pdb

@@ -1,0 +1,53 @@
+alter table co_mast add shname varchar(50) default '' with values
+---------------------------------------
+create table view_defination (view_name varchar(50),table_list text ,fld_list text)
+----------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('mum_lmain_vw','stmain,ptmain,bpmain,cpmain,brmain,crmain','entry_ty space(2),tran_cd 0,date cast('''' as smalldatetime),net_amt 0') 
+----------------------------
+select * into com_menu from x010809..com_menu
+--select * into USERRIGHTS from x010809..USERRIGHTS
+--select * into view_defination from x010809..view_defination
+------------------------------
+select * into com_det from x010809..com_det where 1=2
+-----------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) values ('[CATEGORY]','[CATEGORY]','[Cate] '''',[Remarks] '''',[Add1] '''',[Add2] '''',[Add3] '''',[Phone] '''',[Validity] '''',[Apgen] '+'''YES'''+',[Apgenby] '''',[CompId] 0')
+-----------------------------------------------
+
+update view_defination set fld_list='[ac_name] '''',[contact] '''',[add1] '''',[add2] '''',[add3] '''',[Ac_group_id] 0,[group] '''',[City_id] 0,[city] '''',[Ac_type_id] 0,[typ] '''',[zip] '''',[phone] '''',[phoner] '''',[fax] '''',[email] '''',[cr_days] 0,[i_tax] '''',[s_tax] '''',[c_tax] '''',[notes] '''',[type] '''',[t_no] '''',[t_rate] 0,[t_amount] 0,[i_rate] 0,[i_days] 0,[rate_level] 0,[posting] '''',[updown] 0,[up_ledbal] 0,[isgroup] 0,[manadjust] 0,[defa_ac] 0,[cramount] 0,[crallow] 0,[salesman] '''',[coll] '''',[division] '''',[eccno] '''',[range] '''',[cexregno] '''',[bankbr] '''',[bankno] '''',[st_type] '''',[vend_type] '''',[user_name] '''',[sysdate] '''',[sregn] '''',[mailname] '''',[state] '''',[country] '''',[t_pay] '''',[designatio] '''',[tds_accoun] '''',[currency] '''',[mobile] '''',[Type1] '''',[Exregno] '''',[R_commis] 0,[State_id] 0,[Country_id] 0,[Disc_ac] '''',[Apgen] '''',[Apgenby] '''',[CompId] 0,[SERAPL] '''',[SEREXMPTD] 0,[SERNOTI] '''',[SERTY] '''',[Area] '''',[Zone] '''',[COGROUP] '''',[deactfrom] '''',[ldeactive] 0,[tds_code] '''',[ded_type] '''',[svc_cate] '''',[Tds_lIgnRule] 0,[Tds_lDedfrom] 0,[Tds_lDedscto] 0,[TDS_ExempLimit] 0,[TDS_ReasonEL] '''',[bsrcode] '''',[tds_ex_tdt] '''',[tds_ex_fdt] '''',[Tds_Ex_Limit] '''',[Tds_Tp] 0,[Tds_Sc_Tp] 0,[Tds_Ec_Tp] 0,[FBTSEC] '''',[FBEXPPER] 0'
+-----------------------------------------------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[it_mast]','[it_mast]','[it_name] '''',[it_desc] '''',[s_unit] '''',[p_unit] '''',[sac_nm] '''',[pac_nm] '''',[ratio] 1,[rate] 0,[reorder] 0,[curr_cost] 0,[type] '''',[remark] '''',[group] '''',[rateper] 1,[rateunit] '''',[isgroup] 0,[chapno] '''',[average] 0,[idmark] '''',[mrprate] 0,[imagefile] '''',[user_name] '''',[sysdate] '''',[abtper] 0,[it_alias] '''',[eit_name] '''',[Exrate] 0,[Cal_cost] 0,[Ittyid] 0,[Itgrid] 0,[Prate] 0,[Nonstk] '''',[Apgen] '+'''YES'''+',[Apgenby] '''',[Exrateunit] '''',[CompId] 0,[deactfrom] '''',[ldeactive] 0,[TLRECPERP] 0,[TLRECPERM] 0,[TLISSPERM] 0,[HSNCODE] '''',[TLISSPERP] 0,[In_stkval] 1') 
+-----------------------------------------------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[AC_GROUP_MAST]','[AC_GROUP_MAST]','[ac_group_name] '''',[Gac_id] 0,[group] '''',[posting] '''',[st_type] '''',[user_name] '''',[sysdate] '''',[Ac_group_remarks] '''',[Apgen] '''',[Apgenby] '''',[Type] '''',[CompId] 0,[LTds] '''',[Updown] ''''')
+---------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[ITEM_GROUP]','[ITEM_GROUP]','[it_group_name] '''',[it_name] '''',[Fk_Itgrid] 0,[group] '''',[it_desc] '''',[isgroup] 0,[type] '''',[user_name] '''',[sysdate] '''',[Ittyid] 0,[Apgen] '''',[Apgenby] '''',[CompId] 0,[In_stkval] 1')
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[MAIN]','[MAIN]','[entry_ty] '''',[tran_cd] 0,[date] '''',[doc_no] '''',[dept] '''',[cate] '''',[ac_id] 0,[party_nm] '''',[inv_no] '''',[inv_sr] '''',[l_yn] '''',[due_dt] '''',[gro_amt] 0,[tot_deduc] 0,[tot_add] 0,[examt] 0,[taxamt] 0,[tax_name] '''',[tot_tax] 0,[net_amt] 0,[re_all] 0 ,[Apgen] '''',[Apgenby] '''',[CompId] 0')
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[ITEM]','[ITEM]','[entry_ty] '''',[date] '''',[doc_no] '''',[itserial] '''',[item_no] '''',[dc_no] '''',[item] '''',[qty] 0,[rate] 0,[gro_amt] 0,[tax_name] '''',[taxamt] 0,[examt] 0,[dept] '''',[cate] '''',[party_nm] '''',[inv_sr] '''',[inv_no] '''',[l_yn] '''',[re_qty] 0,[ware_nm] '''',[narr] '''',[pmkey] '''',[u_lqty] 0,[Tran_cd] 0,[It_code] 0,[Ac_id] 0,[Rule] '''',[Apgen] '''',[Apgenby] '''',[CompId] 0,[BOMID] '''',[BOMLEVEL] 0,[batchno] '''',[EXPDT] '''',[MFGDT] ''''')
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) values ('[SERIES]','[SERIES]','[Inv_Sr] '''',[Remarks] '''',[S_Type] '''',[I_prefix] '''',[I_suffix] '''',[Validity] '''',[Apgen] '+'''YES'''+',[Apgenby] '''' ,[CompId] 0')
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) values ('[WAREHOUSE]','[WAREHOUSE]','[Ware_nm] '''',[Remark] '''',[Add1] '''',[Add2] '''',[Add3] '''',[Phone] '''',[Validity] '''',[Apgen] '+'''YES'''+',[Apgenby] '''',[CompId] 0')
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) values ('[DEPARTMENT]','[DEPARTMENT]','[Dept] '''',[Remarks] '''',[Add1] '''',[Add2] '''',[Add3] '''',[Phone] '''',[Validity] '''',[Apgen] '+'''YES'''+',[Apgenby] '''',[CompId] 0')
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[lac_vw]','[lac_vw]','[Tran_cd] 0,[entry_ty] '''',[date] '''',[doc_no] '''',[AC_ID] 0,[ACSERIAL] '''',[ac_name] '''',[amount] 0 ,[amt_ty] '''',[dept] '''',[cate] '''',[inv_sr] '''',[inv_no] '''',[oac_name] '''',[clause] '''',[narr] '''',[u_cldt] '''',[l_yn] '''',[Re_all] 0,[Disc] 0,[Tds] 0') 
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[mainall_vw]','[mainall_vw]','[Main_tran] 0,[Tran_cd] 0,[ENTRY_TY] '''',[ACSERIAL] '''',[date] '''',[doc_no] '''',[inv_no] '''',[party_nm] '''',[new_all] 0,[ENTRY_ALL] '''',[ACSERI_ALL] '''',[inv_sr] '''',[tds] 0,[disc] 0,[l_yn] '''',[net_amt] 0,[Ac_id] 0,[Date_all] ''''') 
+----------------------------------------------------------------------------------------
+insert into view_defination (view_name,table_list,fld_list) 
+values ('[LCODE]','[LCODE]','[cd] '''',[code_nm] '''',[bcode_nm] '''',[ext_vou] '''',[compid] 0') 
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+
+
+

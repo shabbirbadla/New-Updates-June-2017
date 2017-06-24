@@ -1,0 +1,16 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-31 10:59:10	Process Started....
+2014-01-31 10:59:12	Process Start ID : EM2 [Sales Transaction] 
+2014-01-31 10:59:13	Inv_no : 000001
+2014-01-31 10:59:22	Successfully Exported file in PDF format....
+2014-01-31 10:59:38	Mail has not sent...Failure Sending Mail..MustIssueStartTlsFirst..The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.1 Client was not authenticated
+---------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported PDF files : 1
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2014-01-31 10:59:55	Error Found...Failure Sending Mail..MustIssueStartTlsFirst..The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.1 Client was not authenticated
+2014-01-31 10:59:55	Process End ID : EM2
+-------------------------------------<<< END >>>-----------------------------
+

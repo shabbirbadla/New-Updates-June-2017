@@ -1,0 +1,95 @@
+_screen.ActiveForm.lvar = 2
+set deleted off
+IF _screen.ActiveForm.pageframe1.page1.oletreeNode.selectedItem.Children > 0
+	=MESSAGEBOX("Can't Proceed!!Delete The Child(s) and then Try Again",16,vumess)
+ELSE
+	dm=MESSAGEBOX("Want to Delete?",4+64,vumess)
+*!*		IF MESSAGEBOX("SET STEP ON",4,vumess) = 6
+		SET STEP ON
+*!*		ENDIF
+	IF dm = 6
+		rrk = 0	
+		IF ISNULL(_screen.ActiveForm.pageframe1.page1.oletreeNode.selectedItem.parent)
+		ELSE
+			pdkey = _screen.ActiveForm.pageframe1.page1.oletreeNode.selectedItem.parent.key			
+			SELECT range as range1 FROM TEMPTABLE WHERE levelc == pdkey INTO CURSOR cx1 
+			SELECT cx1
+			IF RECCOUNT() > 0
+				GO top
+				rrk = range1
+			ELSE
+				rrk = 0	
+			ENDIF
+		ENDIF
+		WITH _screen.ActiveForm
+			.delkey = _screen.ActiveForm.pageframe1.page1.oletreeNode.selectedItem.Key
+			.CFOrmaction = "RM"
+		ENDWITH
+		dKEY = _screen.ActiveForm.delkey
+		SELECT range as range2,PROGNAME as progname, barname as barname , padname as padname, barnum as barnum FROM TEMPTABLE WHERE LEVELC == dKEY INTO cursor TEMP5 
+		sELECT TEMP5
+		GO TOP
+		IF RECCOUNT() > 0
+			rnge = range2
+			brnm = barnum
+			SELECT temptable
+			DELETE FOR range = rnge in temptable
+			sELECT TEMP5
+			l1 = (rnge - MOD(rnge,1000))
+			lx1 = (l1 + 1000)
+			IF brnm > 0
+				SELECT TEMPTABLE
+				REPLACE barnum WITH (barnum - (barnum - brnm)) , STS_TABLE WITH 'Y' FOR barnum > brnm and Range <> rnge and range >= l1 and range < lx1
+				sELECT TEMP5
+			ENDIF
+*!*				IF used('deltemp.dbf')
+*!*					iNSERT INTO deltemp VALUES (rnge , brnm)
+*!*				ELSE
+				
+				INSERT INTO deltemp VALUES (rnge , brnm)
+*!*				ENDIF
+			SELECT temp5
+			WITH _screen.ActiveForm
+				.lockscreen = .t.
+				.SETAPPLY = 1
+				.pageframe1.page1.oletreeNode.visible = .f.
+				.pageframe1.page1.oletreeNode.Nodes.Clear()
+				.pg1()
+				.pageframe1.page1.oletreeNode.refresh()
+				.pageframe1.page1.oletreeNode.visible = .t.
+				.lvar = 1
+				.lockscreen = .f.		
+			ENDWITH
+			_screen.ActiveForm.grid1.visible = .f.
+			_screen.ActiveForm.label1.visible = .t.
+			IF rrk > 0
+				SELECT prompname as prompname,numitem as numitem, levelc FROM TEMPTABLE WHERE range = rrk INTO CURSOR cx2 
+				SELECT cx2
+				IF RECCOUNT() > 0
+					GO top
+					ni = numitem
+					lc1 = levelc
+					pxn = STRTRAN(ALLTRIM(prompname),'\<','')
+					ff = _screen.ActiveForm.pageframe1.page1.oletreeNode.Nodes.Count
+					IF !EMPTY(pxN)
+						FOR n = 1 TO ff
+							IF ALLTRIM(_screen.ActiveForm.pageframe1.page1.oletreeNode.Nodes.Item(n).Text) == PROPER(ALLTRIM(pxN)) and ALLTRIM(_screen.ActiveForm.pageframe1.page1.oletreeNode.Nodes.Item(n).key) == alltrim(lc1)
+								WITH _screen.ActiveForm	
+									.pageframe1.page1.oletreeNode.Nodes.Item(n).Selected = .T.
+									.pageframe1.page1.oletreeNode.selectedItem.Expanded = .T.
+									exit
+								ENDWITH
+							ENDIF
+						ENDFOR
+					ENDIF
+					IF ni > 0
+						SELECT TEMPTABLE
+						REPLACE numitem WITH (numitem - 1), STS_TABLE WITH 'Y' FOR range = rrk
+						SELECT cx2
+					ENDIF
+				ENDIF
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+_screen.ActiveForm.command4.Caption = "\<Cancel"

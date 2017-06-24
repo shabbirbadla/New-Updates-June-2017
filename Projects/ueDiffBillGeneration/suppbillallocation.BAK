@@ -1,0 +1,5 @@
+lparameters pRange,lctype 
+
+* lcType=1  (Call from External menu)
+* lcType=0  (Call from Transaction)
+do form uesuppsalebill With pRange,lcType

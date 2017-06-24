@@ -1,0 +1,8 @@
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Release\ResolveAssemblyReference.cache
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Release\Cost_cat_master.Cost_Cat_Mast.resources
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Release\Cost_cat_master.Properties.Resources.resources
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Release\Cost_cat_master.csproj.GenerateResource.Cache
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\bin\Release\UeCost_cat_master.exe
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\bin\Release\UeCost_cat_master.pdb
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Release\UeCost_cat_master.exe
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Release\UeCost_cat_master.pdb

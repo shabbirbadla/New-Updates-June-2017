@@ -1,0 +1,3 @@
+Select * From Ac_Mast Where Ac_Name = 'PROVISIONAL EXPENSES               '--Debit
+Select * From Ac_Mast Where Ac_Name = 'PROVISIONAL EXPENSES (P & L)       '--Credt
+Select * From Ac_Mast Where Ac_Name = 'CLOSING STOCK       '

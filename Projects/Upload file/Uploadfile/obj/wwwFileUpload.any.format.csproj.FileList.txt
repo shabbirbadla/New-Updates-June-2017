@@ -1,0 +1,10 @@
+bin\Debug\wwwFileUpload.any.format.dll
+bin\Debug\wwwFileUpload.any.format.pdb
+D:\New Folder\Uploadfile\bin\Debug\wwwFileUpload.any.format.tlb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\wwwFileUpload.any.format.csproj.ResolveComReference.cache
+obj\Debug\wwwFileUpload.any.format.frmS.resources
+obj\Debug\wwwFileUpload.any.format.frmShow.resources
+obj\Debug\wwwFileUpload.any.format.csproj.GenerateResource.Cache
+obj\Debug\wwwFileUpload.any.format.dll
+obj\Debug\wwwFileUpload.any.format.pdb

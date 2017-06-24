@@ -1,0 +1,14 @@
+bin\Debug\MenuImageLib.dll
+bin\Debug\MenuImageLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Chris.Beckett.MenuImageLib.SubItem16.ico
+obj\Debug\Chris.Beckett.MenuImageLib.MenuImage.resources
+obj\Debug\MenuImageLib.csproj.GenerateResource.Cache
+obj\Debug\MenuImageLib.dll
+obj\Debug\MenuImageLib.pdb
+bin\Release\MenuImageLib.dll
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Chris.Beckett.MenuImageLib.SubItem16.ico
+obj\Release\Chris.Beckett.MenuImageLib.MenuImage.resources
+obj\Release\MenuImageLib.csproj.GenerateResource.Cache
+obj\Release\MenuImageLib.dll

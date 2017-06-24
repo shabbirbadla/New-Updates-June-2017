@@ -1,0 +1,13 @@
+Local oErr As Exception, oErr1 As Exception
+
+Try
+	oXML = Createobject("msxml2.DOMDocument")
+	If Type('oXML') <> 'O'
+		oXML = Createobject("msxml.DOMDocument")
+	Endif
+	DO FORM form1
+	READ events	
+Catch To oErr
+	=Messagebox('Error No. : '+Str(oErr.ErrorNo)+Chr(13)+;
+		'Line No.  : '+Str(oErr.Lineno)+Chr(13)+'Message :'+oErr.Message,0,"")
+Endtry

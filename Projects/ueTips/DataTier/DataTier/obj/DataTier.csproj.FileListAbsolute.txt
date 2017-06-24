@@ -1,0 +1,10 @@
+D:\SQLProject\c-sharp\DataTier\DataTier\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\c-sharp\DataTier\DataTier\bin\Debug\DataTier.dll
+D:\SQLProject\c-sharp\DataTier\DataTier\bin\Debug\DataTier.pdb
+D:\SQLProject\c-sharp\DataTier\DataTier\obj\Debug\DataTier.dll
+D:\SQLProject\c-sharp\DataTier\DataTier\obj\Debug\DataTier.pdb
+D:\SQLProject\ueTips\DataTier\DataTier\bin\Debug\DataTier.dll
+D:\SQLProject\ueTips\DataTier\DataTier\bin\Debug\DataTier.pdb
+D:\SQLProject\ueTips\DataTier\DataTier\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\ueTips\DataTier\DataTier\obj\Debug\DataTier.dll
+D:\SQLProject\ueTips\DataTier\DataTier\obj\Debug\DataTier.pdb

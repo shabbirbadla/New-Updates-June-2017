@@ -1,0 +1,65 @@
+		scan while mkey <>alltr(purcData.Item)+alltr(purcData.Party_nm)+alltr(purcData.Ware_nm)
+			select litemall
+			set order to EDDIP	&&[new Tag edd+alltr(item)+alltr(party_nm)]
+			=seek( mkey+alltr(purcdata.item)+alltr(purcData.Party_nm),"litemAll","EDDIP")
+			if eof()
+				appen blank
+				replace Entry_ty with lmain_vw.Entry_ty, ;
+						doc_no	 with lmain_vw.doc_no, ;
+						date	 with lmain_vw.date, ;
+						inv_no	 with lmain_vw.inv_no, ;
+						inv_sr	 with lmain_vw.inv_sr, ;
+						Party_nm with header.PurPartynm, ;
+						RgPage	 with "", ;		&& to be Done
+						pinv_no	 with purcData.inv_no, ;
+						pinv_Sr	 with purcData.inv_sr, ;
+						tariff   with purcData.tariff, ;
+						pentry_ty with purcData.Entry_ty, ;
+						pDate	 with purcData.Date, ;
+						pDoc_no	 with purcData.doc_no, ;
+						pItem_no with purcData.Item_no, ;
+						pitSerial with purcData.itSerial, ;
+						Item	 with purcData.Item, ;
+						ware_nm   with header.ware_nm, ;
+						Item_no	  with header.Item_no
+			endif
+		endscan
+
+
+
+
+				replace Entry_ty with lmain_vw.Entry_ty, ;
+						doc_no	 with lmain_vw.doc_no, ;
+						date	 with lmain_vw.date, ;
+						inv_no	 with lmain_vw.inv_no, ;
+						inv_sr	 with lmain_vw.inv_sr, ;
+						Party_nm with header.PurPartynm, ;
+						RgPage	 with "", ;		&& to be Done
+						pinv_no	 with purcData.inv_no, ;
+						pinv_Sr	 with purcData.inv_sr, ;
+						tariff   with purcData.tariff, ;
+						pentry_ty with purcData.Entry_ty, ;
+						pDate	 with purcData.Date, ;
+						pDoc_no	 with purcData.doc_no, ;
+						pItem_no with purcData.Item_no, ;
+						pitSerial with purcData.itSerial, ;
+						Item	 with purcData.Item, ;
+						ware_nm   with header.ware_nm, ;
+						Item_no	  with header.Item_no
+						
+						
+
+
+	If Thisform.mTrading
+		select purcdata
+		if !seek(Entry_ty+dtos(date)+doc_no+item_no, "LitemAll","EDDI")
+			if seek(detail.unifield, "purcData","EDDI") 
+				if detail.Qty > purcData.Qty
+					thisform.UpdtLitemAll(.f.)
+				else
+					thisform.UpdtLitemAll(.t.)
+				endif
+			endif
+		endif
+		endscan
+	endif

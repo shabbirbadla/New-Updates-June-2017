@@ -1,0 +1,9 @@
+Form d:\tushar projects\account_master_sept6_oct24_fornewacmast\acmast.scx has the following errors:
+    Program VU_UDFS - Undefined
+    File VIEW.BMP - Undefined
+    Proc./Func. _ACSAVEBEFORE - Undefined
+    Proc./Func. _ACSAVEAFTER - Undefined
+
+Visual Class Library d:\tushar projects\account_master_sept6_oct24_fornewacmast\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

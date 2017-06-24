@@ -1,0 +1,10 @@
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\CryptoLib\bin\Release\CryptoLib.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\CryptoLib\bin\Release\CryptoLib.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\CryptoLib\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\CryptoLib\obj\Release\CryptoLib.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\CryptoLib\obj\Release\CryptoLib.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\CryptoLib\bin\Release\CryptoLib.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\CryptoLib\bin\Release\CryptoLib.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\CryptoLib\obj\Release\ResolveAssemblyReference.cache
+F:\Bug\25657\DADOS Project3\Dados Reports\CryptoLib\obj\Release\CryptoLib.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\CryptoLib\obj\Release\CryptoLib.pdb

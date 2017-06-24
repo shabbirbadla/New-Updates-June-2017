@@ -1,0 +1,2 @@
+Alter Table PTAcdet Add Sent24Shift SmallDateTime
+Alter Table STAcdet Add Sent24Shift SmallDateTime

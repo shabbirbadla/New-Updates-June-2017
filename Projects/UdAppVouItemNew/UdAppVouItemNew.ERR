@@ -1,0 +1,11 @@
+Program d:\svngst\udappvouitemnew\udappvouitemnew.prg has the following errors:
+    Form FRM_PRESHIPMENTINFO - Undefined
+    Form UEFRM_ITEMPICKUP - Undefined
+    Form UEFRM_ITPOPICKUP - Undefined
+    Form UEFRM_BOMDETAILSIP_AUTO - Undefined
+    Form UEFRM_BOMDETAILSOP_AUTO - Undefined
+    Form UEFRM_ITEMPICKUP_PHARMAIND - Undefined
+    Form UEFRM_OPSTITEMALLOCATION_PHARMAIND - Undefined
+    Form UEFRM_IP_ALLOCATION - Undefined
+    Form UEFRM_BATCHSELECT - Undefined
+

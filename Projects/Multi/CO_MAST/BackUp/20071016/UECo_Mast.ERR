@@ -1,0 +1,15 @@
+Form v:\sql projects\co_mast\co_mast.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. ZIPUNZIP - Undefined
+    Proc./Func. RE_INDEX - Undefined
+    Unknown FILELOCK - Undefined
+    Unknown DECODER - Undefined
+    Unknown MVAR - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form v:\sql projects\co_mast\sel_prod.scx has the following errors:
+    Unknown GETPRIVSTR - Undefined
+
+Visual Class Library v:\sql projects\co_mast\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

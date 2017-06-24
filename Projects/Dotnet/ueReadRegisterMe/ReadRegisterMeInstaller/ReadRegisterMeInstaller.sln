@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ReadRegisterMeInstaller", "ReadRegisterMeInstaller\ReadRegisterMeInstaller.vdproj", "{6E16E344-3CA2-4B11-BFB3-362ADAD230ED}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\ReadRegisterMeInstaller1\Setup1\Setup1.vdproj", "{49CEB093-CAC9-4D1B-BB41-F265CF3B8C68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E16E344-3CA2-4B11-BFB3-362ADAD230ED}.Debug|Default.ActiveCfg = Debug
+		{6E16E344-3CA2-4B11-BFB3-362ADAD230ED}.Debug|Default.Build.0 = Debug
+		{6E16E344-3CA2-4B11-BFB3-362ADAD230ED}.Release|Default.ActiveCfg = Release
+		{6E16E344-3CA2-4B11-BFB3-362ADAD230ED}.Release|Default.Build.0 = Release
+		{49CEB093-CAC9-4D1B-BB41-F265CF3B8C68}.Debug|Default.ActiveCfg = Debug
+		{49CEB093-CAC9-4D1B-BB41-F265CF3B8C68}.Release|Default.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

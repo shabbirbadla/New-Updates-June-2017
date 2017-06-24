@@ -1,0 +1,28 @@
+PARAMETERS IsFirstFlag, IsPrevFlag, IsNextFlag, IsLastFlag,;
+		   IsFindFlag, IsLocFlag,;
+		   IsNewFlag, IsEditFlag,;
+		   IsDelFlag,;
+		   IsCopyFlag,;
+		   IsViewFlag,;
+		   IsPrintFlag,;
+           IsCloseFlag,;
+           IsHelpFlag
+
+
+with  tbrDeskTop          
+	.btnTop.Enabled  = IsFirstFlag
+	.btnPrv.Enabled  = IsPrevFlag
+	.btnNxt.Enabled  = IsNextFlag
+	.btnBtm.Enabled  = IsLastFlag
+	.btnFind.Enabled = IsFindFlag
+	.btnLoc.Enabled  = IsLocFlag
+	.btnNew.Enabled  = IsNewFlag
+	.btnModi.Enabled = IsEditFlag
+	.btnDele.Enabled = IsDelFlag
+	.btnCopy.Enabled = IsCopyFlag
+	.btnView.Enabled = IsViewFlag
+	.btnPrin.Enabled = IsPrintFlag
+	.btnHelp.Enabled = IsHelpFlag
+	.btnExit.Enabled = IsCloseFlag
+endwith
+RETURN

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U2TPlus", "U2TPlus\U2TPlus.csproj", "{A439807B-3B82-4740-934A-58BFF14753EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U2TPlus.BAL", "U2TPlus.BAL\U2TPlus.BAL.csproj", "{B018AF9C-FD2D-4A2F-9FF4-64F8D5DFA43F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U2TPlus.DAL", "U2TPlus.DAL\U2TPlus.DAL.csproj", "{FDD27DBB-8027-42E1-8B7A-70F79987DB27}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "U2TPlusSetup", "U2TPlusSetup\U2TPlusSetup.vdproj", "{E6E02821-0D9D-4E77-A5AB-3EDD79258FCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A439807B-3B82-4740-934A-58BFF14753EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A439807B-3B82-4740-934A-58BFF14753EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A439807B-3B82-4740-934A-58BFF14753EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A439807B-3B82-4740-934A-58BFF14753EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B018AF9C-FD2D-4A2F-9FF4-64F8D5DFA43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B018AF9C-FD2D-4A2F-9FF4-64F8D5DFA43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B018AF9C-FD2D-4A2F-9FF4-64F8D5DFA43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B018AF9C-FD2D-4A2F-9FF4-64F8D5DFA43F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD27DBB-8027-42E1-8B7A-70F79987DB27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD27DBB-8027-42E1-8B7A-70F79987DB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD27DBB-8027-42E1-8B7A-70F79987DB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD27DBB-8027-42E1-8B7A-70F79987DB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E02821-0D9D-4E77-A5AB-3EDD79258FCE}.Debug|Any CPU.ActiveCfg = Debug
+		{E6E02821-0D9D-4E77-A5AB-3EDD79258FCE}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

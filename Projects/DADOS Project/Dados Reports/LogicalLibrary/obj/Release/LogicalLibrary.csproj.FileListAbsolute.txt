@@ -1,0 +1,14 @@
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\bin\Release\LogicalLibrary.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\bin\Release\LogicalLibrary.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\bin\Release\CryptoLib.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\bin\Release\CryptoLib.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\obj\Release\LogicalLibrary.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\LogicalLibrary\obj\Release\LogicalLibrary.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\bin\Release\LogicalLibrary.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\bin\Release\LogicalLibrary.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\bin\Release\CryptoLib.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\bin\Release\CryptoLib.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\obj\Release\LogicalLibrary.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\LogicalLibrary\obj\Release\LogicalLibrary.pdb

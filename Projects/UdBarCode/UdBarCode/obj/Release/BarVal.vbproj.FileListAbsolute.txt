@@ -1,0 +1,9 @@
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\bin\Release\BarVal.dll
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\bin\Release\BarVal.pdb
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\bin\Release\BarVal.xml
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\obj\Release\ResolveAssemblyReference.cache
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\obj\Release\BarVal.Resources.resources
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\obj\Release\BarVal.vbproj.GenerateResource.Cache
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\obj\Release\BarVal.dll
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\obj\Release\BarVal.xml
+D:\Udyog\Working\Demo_Project\BarcodeTest\BarVal\obj\Release\BarVal.pdb

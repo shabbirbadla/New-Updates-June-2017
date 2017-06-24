@@ -1,0 +1,1 @@
+REPLACE properties WITH STRTRAN(properties,'_acgrpmast','AC_GROUP_MAST_vw') FOR ATC(baseclass,'TextBox')<>0

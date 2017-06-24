@@ -1,0 +1,267 @@
+if exists(select name,XTYPE from sysobjects where xtype='P' and name='USP_REP_DM_VATFORM31')
+begin
+	drop procedure USP_REP_DM_VATFORM31
+end
+go
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+
+
+
+/*
+EXECUTE USP_REP_DM_VATFORM31 '','','','04/01/2011','03/31/2016','','','','',0,0,'','','','','','','','','2011-2012',''
+*/
+
+-- =============================================
+-- Author:		Sandeep Shah
+-- Create date: 30/08/2012
+-- Description:	This Stored procedure is useful to generate Daman DVAT Form 31
+-- Modified By: 
+-- Remark:      
+
+-- =============================================
+
+
+create PROCEDURE [dbo].[USP_REP_DM_VATFORM31]
+@TMPAC NVARCHAR(50),@TMPIT NVARCHAR(50),@SPLCOND VARCHAR(8000),@SDATE  SMALLDATETIME,@EDATE SMALLDATETIME
+,@SAC AS VARCHAR(60),@EAC AS VARCHAR(60)
+,@SIT AS VARCHAR(60),@EIT AS VARCHAR(60)
+,@SAMT FLOAT,@EAMT FLOAT
+,@SDEPT AS VARCHAR(60),@EDEPT AS VARCHAR(60)
+,@SCATE AS VARCHAR(60),@ECATE AS VARCHAR(60)
+,@SWARE AS VARCHAR(60),@EWARE AS VARCHAR(60)
+,@SINV_SR AS VARCHAR(60),@EINV_SR AS VARCHAR(60)
+,@LYN VARCHAR(20)
+,@EXPARA  AS VARCHAR(60)= null
+AS
+Begin
+Declare @FCON as NVARCHAR(2000),@VSAMT DECIMAL(14,2),@VEAMT DECIMAL(14,2)
+EXECUTE   USP_REP_FILTCON 
+@VTMPAC =@TMPAC,@VTMPIT =@TMPIT,@VSPLCOND =@SPLCOND
+,@VSDATE=NULL
+,@VEDATE=@EDATE
+,@VSAC =@SAC,@VEAC =@EAC
+,@VSIT=@SIT,@VEIT=@EIT
+,@VSAMT=@SAMT,@VEAMT=@EAMT
+,@VSDEPT=@SDEPT,@VEDEPT=@EDEPT
+,@VSCATE =@SCATE,@VECATE =@ECATE
+,@VSWARE =@SWARE,@VEWARE  =@EWARE
+,@VSINV_SR =@SINV_SR,@VEINV_SR =@SINV_SR
+,@VMAINFILE='M',@VITFILE=NULL,@VACFILE=NULL
+,@VDTFLD ='DATE'
+,@VLYN=NULL
+,@VEXPARA=@EXPARA
+,@VFCON =@FCON OUTPUT
+
+Declare @SQLCOMMAND NVARCHAR(4000)
+ DECLARE @RATE NUMERIC(12,2),@AMTA1 NUMERIC(12,2),@AMTB1 NUMERIC(12,2),@AMTC1 NUMERIC(12,2),@AMTD1 NUMERIC(12,2),@AMTE1 NUMERIC(12,2),@AMTF1 NUMERIC(12,2),@AMTG1 NUMERIC(12,2),@AMTH1 NUMERIC(12,2),@AMTI1 NUMERIC(12,2),@AMTJ1 NUMERIC(12,2),@AMTK1 NUMERIC(12,2),@AMTL1 NUMERIC(12,2),@AMTM1 NUMERIC(12,2),@AMTN1 NUMERIC(12,2),@AMTO1 NUMERIC(12,2)
+ DECLARE @AMTA2 NUMERIC(12,2),@AMTB2 NUMERIC(12,2),@AMTC2 NUMERIC(12,2),@AMTD2 NUMERIC(12,2),@AMTE2 NUMERIC(12,2),@AMTF2 NUMERIC(12,2),@AMTG2 NUMERIC(12,2),@AMTH2 NUMERIC(12,2),@AMTI2 NUMERIC(12,2),@AMTJ2 NUMERIC(12,2),@AMTK2 NUMERIC(12,2),@AMTL2 NUMERIC(12,2),@AMTM2 NUMERIC(12,2),@AMTN2 NUMERIC(12,2),@AMTO2 NUMERIC(12,2)
+ DECLARE @PER NUMERIC(12,2),@TAXAMT NUMERIC(12,2),@CHAR INT,@LEVEL NUMERIC(12,2)
+
+SELECT DISTINCT AC_NAME=SUBSTRING(AC_NAME1,2,CHARINDEX('"',SUBSTRING(AC_NAME1,2,100))-1) INTO #VATAC_MAST FROM STAX_MAS WHERE AC_NAME1 NOT IN ('"SALES"','"PURCHASES"') AND ISNULL(AC_NAME1,'')<>''
+INSERT INTO #VATAC_MAST SELECT DISTINCT AC_NAME=SUBSTRING(AC_NAME1,2,CHARINDEX('"',SUBSTRING(AC_NAME1,2,100))-1) FROM STAX_MAS WHERE AC_NAME1 NOT IN ('"SALES"','"PURCHASES"') AND ISNULL(AC_NAME1,'')<>''
+ 
+
+Declare @NetEff as numeric (12,2), @NetTax as numeric (12,2)
+
+----Temporary Cursor1
+SELECT BHENT='PT',M.INV_NO,M.Date,A.AC_NAME,A.AMT_TY,STM.TAX_NAME,SET_APP=ISNULL(SET_APP,0),STM.ST_TYPE,M.NET_AMT,M.GRO_AMT,TAXONAMT=M.GRO_AMT+M.TOT_DEDUC+M.TOT_TAX+M.TOT_EXAMT+M.TOT_ADD,PER=STM.LEVEL1,MTAXAMT=M.TAXAMT,TAXAMT=A.AMOUNT,STM.FORM_NM,PARTY_NM=AC1.AC_NAME,AC1.S_TAX,U_IMPORM
+,ADDRESS=LTRIM(AC1.ADD1)+ ' ' + LTRIM(AC1.ADD2) + ' ' + LTRIM(AC1.ADD3),M.TRAN_CD,VATONAMT=99999999999.99,Dbname=space(20),ItemType=space(1),It_code = 999999999999999999-999999999999999999,itserial=space(5)
+INTO #DMVAT_31
+FROM PTACDET A 
+INNER JOIN PTMAIN M ON (A.ENTRY_TY=M.ENTRY_TY AND A.TRAN_CD=M.TRAN_CD)
+INNER JOIN STAX_MAS STM ON (M.TAX_NAME=STM.TAX_NAME)
+INNER JOIN AC_MAST AC ON (A.AC_NAME=AC.AC_NAME)
+INNER JOIN AC_MAST AC1 ON (M.AC_ID=AC1.AC_ID)
+WHERE 1=2 --A.AC_NAME IN ( SELECT AC_NAME FROM #VATAC_MAST)
+
+alter table #DMVAT_31 add recno int identity
+
+---Temporary Cursor2
+SELECT PART=3,PARTSR='AAA',SRNO='AAAA',RATE=99.999,AMT1=NET_AMT,AMT2=M.TAXAMT,AMT3=M.TAXAMT,AMT4=TAXAMT,
+M.INV_NO,M.DATE,PARTY_NM=AC1.AC_NAME,ADDRESS=Ltrim(AC1.Add1)+' '+Ltrim(AC1.Add2)+' '+Ltrim(AC1.Add3),
+STM.FORM_NM,AC1.S_TAX,STTYPE=SPACE(20)
+INTO #DMVAT31
+FROM PTACDET A 
+INNER JOIN STMAIN M ON (A.ENTRY_TY=M.ENTRY_TY AND A.TRAN_CD=M.TRAN_CD)
+INNER JOIN STAX_MAS STM ON (M.TAX_NAME=STM.TAX_NAME)
+INNER JOIN AC_MAST AC ON (A.AC_NAME=AC.AC_NAME)
+INNER JOIN AC_MAST AC1 ON (M.AC_ID=AC1.AC_ID)
+WHERE 1=2
+
+Declare @MultiCo	VarChar(3)
+Declare @MCON as NVARCHAR(2000)
+----IF Exists(Select A.ID From SysObjects A Inner Join SysColumns B On(A.ID = B.ID) Where A.[Name] = 'STMAIN' And B.[Name] = 'DBNAME')
+----	Begin	------Fetch Records from Multi Co. Data
+----		 Set @MultiCo = 'YES'
+----		 EXECUTE USP_REP_MULTI_CO_DATA
+----		  @TMPAC, @TMPIT, @SPLCOND, @SDATE, @EDATE
+----		 ,@SAC, @EAC, @SIT, @EIT, @SAMT, @EAMT
+----		 ,@SDEPT, @EDEPT, @SCATE, @ECATE,@SWARE
+----		 ,@EWARE, @SINV_SR, @EINV_SR, @LYN, @EXPARA
+----		 ,@MFCON = @MCON OUTPUT
+
+----		--SET @SQLCOMMAND='Select * from '+@MCON
+----		---EXECUTE SP_EXECUTESQL @SQLCOMMAND
+----		SET @SQLCOMMAND='Insert InTo #DMVAT_31 Select * from '+@MCON
+----		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+----		---Drop Temp Table 
+----		SET @SQLCOMMAND='Drop Table '+@MCON
+----		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+----	End
+----else
+	Begin ------Fetch Single Co. Data
+		---Added by Suraj Kumawat date on 30-01-2016 start  for  Bug 27607
+		Set @MultiCo = 'NO'
+		 EXECUTE USP_REP_SINGLE_CO_DATA_VAT
+		  @TMPAC, @TMPIT, @SPLCOND, @SDATE, @EDATE
+		 ,@SAC, @EAC, @SIT, @EIT, @SAMT, @EAMT
+		 ,@SDEPT, @EDEPT, @SCATE, @ECATE,@SWARE
+		 ,@EWARE, @SINV_SR, @EINV_SR, @LYN, @EXPARA
+		 ,@MFCON = @MCON OUTPUT
+
+---Commented by Suraj Kumawat date on 30-01-2016 start  for  Bug 27607
+----		 Set @MultiCo = 'NO'
+----		 EXECUTE USP_REP_SINGLE_CO_DATA
+----		  @TMPAC, @TMPIT, @SPLCOND, @SDATE, @EDATE
+----		 ,@SAC, @EAC, @SIT, @EIT, @SAMT, @EAMT
+----		 ,@SDEPT, @EDEPT, @SCATE, @ECATE,@SWARE
+----		 ,@EWARE, @SINV_SR, @EINV_SR, @LYN, @EXPARA
+----		 ,@MFCON = @MCON OUTPUT
+------
+------		SET @SQLCOMMAND='Select * from '+@MCON
+------		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+----		SET @SQLCOMMAND='Insert InTo #DMVAT_31 Select * from '+@MCON
+----		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+----		---Drop Temp Table 
+----		--SET @SQLCOMMAND='SELECT * FROM '+@MCON
+----		SET @SQLCOMMAND='Drop Table '+@MCON
+----		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+	End
+	
+---Added by Suraj Kumawat date on 30-01-2016 start  for  Bug 27607  Start ;
+INSERT INTO #DMVAT31 
+	SELECT  1 AS PART,'1' AS PARTSR,'A' AS SRNO , a.Per,isnull(sum(a.VATONAMT),0) as VATONAMT ,isnull(SUM(A.TAXAMT),0) AS TAXAMT,
+	ITEMAMT=isnull(SUM(A.gro_amt),0),AMT4= 0,A.INV_NO,a.DATE,A.ac_name,A.ADDRESS,FORM_NM=d.form_no,A.S_TAX,
+	STTYPE = CASE WHEN a.ST_TYPE='OUT OF COUNTRY'  THEN 'EXPORT' ELSE CASE WHEN a.ST_TYPE='OUT OF STATE' AND A.U_IMPORM <>'Branch Transfer'
+	or  A.TAX_NAME='E - 2'  and  a.ST_TYPE='OUT OF STATE'  AND A.U_IMPORM <>'Branch Transfer'
+	THEN 'STATE'
+	ELSE CASE WHEN a.ST_TYPE='LOCAL' and  A.U_IMPORM ='Branch Transfer' or a.ST_TYPE='LOCAL' 
+	THEN 'LOCAL' else CASE WHEN a.ST_TYPE IN ('OUT OF STATE') AND A.U_IMPORM  ='Branch Transfer'
+	OR   a.ST_TYPE IN ('OUT OF STATE') and  A.TAX_NAME='E - 2' AND A.U_IMPORM  ='Branch Transfer'
+	THEN 'BRANCH' end  END  END END 
+FROM Vattbl A
+inner join stmain d on (A.Bhent = d.Entry_ty And A.Tran_cd = d.Tran_cd)
+WHERE A.BHENT IN('ST','EI') AND (A.DATE BETWEEN @SDATE AND @EDATE) 
+group by  A.Per,A.INV_NO,a.DATE,A.ac_name,A.ADDRESS,d.form_no,A.S_TAX,a.st_type,a.tax_name,a.u_imporm
+ORDER BY a.inv_no
+
+IF NOT EXISTS(SELECT TOP 1 SRNO FROM #DMVAT31)   -- 
+BEGIN
+	INSERT INTO #DMVAT31 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,INV_NO,DATE,PARTY_NM,ADDRESS,FORM_NM,S_TAX,STTYPE)
+			 VALUES (1,'1','A',0,0,0,0,'','','','','','','')
+END
+
+SELECT * FROM #DMVAT31 order by cast(substring(partsr,1,case when (isnumeric(substring(partsr,1,2))=1) then 2 else 1 end) as int), partsr,SRNO,inv_no
+---Added by Suraj Kumawat date on 30-01-2016 start  for  Bug 27607  end ;
+
+---Commented by Suraj Kumawat date on 30-01-2016 start  for  Bug 27607 Start 
+---- SELECT @AMTA1=0,@AMTB1=0,@AMTC1=0,@AMTD1=0,@AMTE1=0,@AMTF1=0,@AMTG1=0,@AMTH1=0,@AMTI1=0,@AMTJ1=0,@AMTK1=0,@AMTL1=0,@AMTM1=0,@AMTN1=0,@AMTO1=0 
+-------SELECT * from #form221_1 where (Date Between @Sdate and @Edate) and Bhent in('EP','PT','CN') and TAX_NAME In('','NO-TAX') and U_imporm = ''
+------SELECT * FROM  #DMVAT_31 ORDER BY INV_NO
+----------->- PART 1-4 
+
+----Declare @TAXONAMT as numeric(12,2),@TAXAMT1 as numeric(12,2),@ITEMAMT as numeric(12,2),@INV_NO as varchar(15),@DATE as smalldatetime,@PARTY_NM as varchar(50),@ADDRESS as varchar(100),@ITEM as varchar(50),@FORM_NM as varchar(30),@S_TAX as varchar(30),@QTY as numeric(18,4),@STTYPE AS VARCHAR(20)
+
+----SELECT @TAXONAMT=0,@TAXAMT1 =0,@ITEMAMT =0,@INV_NO ='',@DATE ='',@PARTY_NM ='',@ADDRESS ='',@ITEM ='',@FORM_NM='',@S_TAX ='',@QTY=0
+
+------select DISTINCT * from #DMVAT_31  where  inv_no in ('RI-006/11-12') ORDER BY INV_NO
+
+
+
+----Declare cur_DMVAT31 Cursor for
+
+------Changes done for TKT-8987 by sandeep s.-->Start
+------SELECT distinct a.Per,VATONAMT=SUM(A.net_amt-A.TAXAMT),TAXAMT=SUM(A.TAXAMT),ITEMAMT=SUM(A.Net_amt),A.INV_NO,A.DATE,A.PARTY_NM,A.ADDRESS,FORM_NM=d.form_no,A.S_TAX,
+----SELECT distinct a.Per,CASE WHEN L.STAX_ROUND=0 then sum(a.VATONAMT) ELSE round(sum(a.VATONAMT),0) END  ,CASE WHEN L.STAX_ROUND=0 then  SUM(A.TAXAMT) else round(SUM(A.TAXAMT),0) end ,
+----ITEMAMT=CASE WHEN L.STAX_ROUND=0 then SUM(A.Net_amt) else round(SUM(A.Net_amt),0) end ,A.INV_NO,D.DATE,A.PARTY_NM,A.ADDRESS,FORM_NM=d.form_no,A.S_TAX,
+----STTYPE = CASE WHEN C.ST_TYPE='OUT OF COUNTRY'  THEN 'EXPORT' ELSE CASE WHEN c.ST_TYPE='OUT OF STATE' AND A.U_IMPORM <>'Branch Transfer'
+----or  A.TAX_NAME='E - 2'  and  c.ST_TYPE='OUT OF STATE'  AND A.U_IMPORM <>'Branch Transfer'
+----THEN 'STATE'
+----ELSE CASE WHEN C.ST_TYPE='LOCAL' and  A.U_IMPORM ='Branch Transfer' or C.ST_TYPE='LOCAL' 
+----THEN 'LOCAL' else CASE WHEN C.ST_TYPE IN ('OUT OF STATE') AND A.U_IMPORM  ='Branch Transfer'
+---- OR   C.ST_TYPE IN ('OUT OF STATE') and  A.TAX_NAME='E - 2' AND A.U_IMPORM  ='Branch Transfer'
+----   THEN 'BRANCH' end  END  END END 
+
+
+----FROM #DMVAT_31 A
+----Inner Join Litem_vw B On(A.Bhent = B.Entry_ty And A.Tran_cd = b.Tran_cd  And A.it_code = b.it_code and  a.itserial=b.itserial )
+----INNER JOIN AC_MAST C ON (b.AC_ID = C.AC_ID)
+----inner join stmain d on (A.Bhent = d.Entry_ty And A.Tran_cd = d.Tran_cd)
+----inner join lcode l on (a.Bhent = l.Entry_ty)
+----WHERE A.BHENT='ST' AND (A.DATE BETWEEN @SDATE AND @EDATE) 
+----group by  A.Per,A.INV_NO,D.DATE,A.PARTY_NM,A.ADDRESS,d.form_no,A.S_TAX,c.st_type,a.tax_name,a.u_imporm,l.stax_round
+----ORDER BY a.inv_no
+------Changes done for TKT-8987 by sandeep s.-->End
+
+----OPEN CUR_DMVAT31
+----FETCH NEXT FROM CUR_DMVAT31 INTO @PER,@TAXONAMT,@TAXAMT,@ITEMAMT,@INV_NO,@DATE,@PARTY_NM,@ADDRESS,@FORM_NM,@S_TAX,@STTYPE
+----WHILE (@@FETCH_STATUS=0)
+----BEGIN
+
+----	SET @PER =CASE WHEN @PER IS NULL THEN 0 ELSE @PER END
+----	SET @TAXONAMT=CASE WHEN @TAXONAMT IS NULL THEN 0 ELSE @TAXONAMT END
+----	SET @TAXAMT1=CASE WHEN @TAXAMT1 IS NULL THEN 0 ELSE @TAXAMT1 END
+----	SET @ITEMAMT=CASE WHEN @ITEMAMT IS NULL THEN 0 ELSE @ITEMAMT END
+----	SET @PARTY_NM=CASE WHEN @PARTY_NM IS NULL THEN '' ELSE @PARTY_NM END
+----	SET @INV_NO=CASE WHEN @INV_NO IS NULL THEN '' ELSE @INV_NO END
+----	SET @DATE=CASE WHEN @DATE IS NULL THEN '' ELSE @DATE END
+----	SET @ADDRESS=CASE WHEN @ADDRESS IS NULL THEN '' ELSE @ADDRESS END
+----	SET @S_TAX=CASE WHEN @S_TAX IS NULL THEN '' ELSE @S_TAX END
+----	SET @FORM_NM=CASE WHEN @FORM_NM IS NULL THEN '' ELSE @FORM_NM END     
+----    SET @STTYPE=CASE WHEN @STTYPE IS NULL THEN '' ELSE @STTYPE END
+
+
+----	INSERT INTO #DMVAT31 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,INV_NO,DATE,PARTY_NM,ADDRESS,FORM_NM,S_TAX,STTYPE)
+----                 VALUES (1,'1','A',@PER,@TAXONAMT,@TAXAMT,@ITEMAMT,@INV_NO,@DATE,@PARTY_NM,@ADDRESS,@FORM_NM,@S_TAX,@STTYPE)
+	
+----	SET @CHAR=@CHAR+1
+----	FETCH NEXT FROM CUR_DMVAT31 INTO @PER,@TAXONAMT,@TAXAMT,@ITEMAMT,@INV_NO,@DATE,@PARTY_NM,@ADDRESS,@FORM_NM,@S_TAX,@STTYPE
+----END
+----CLOSE CUR_DMVAT31
+----DEALLOCATE CUR_DMVAT31
+------<- PART 1-4
+
+----Update #DMVAT31 set  PART = isnull(Part,0) , Partsr = isnull(PARTSR,''), SRNO = isnull(SRNO,''),
+----		             RATE = isnull(RATE,0), AMT1 = isnull(AMT1,0), AMT2 = isnull(AMT2,0), 
+----					 AMT3 = isnull(AMT3,0), INV_NO = isnull(INV_NO,''), DATE = isnull(Date,''), 
+----					 PARTY_NM = isnull(Party_nm,''), ADDRESS = isnull(Address,''),
+----					 FORM_NM = isnull(form_nm,''), S_TAX = isnull(S_tax,'')--, Qty = isnull(Qty,0),  ITEM =isnull(item,''),
+
+---- SELECT * FROM #DMVAT31 order by cast(substring(partsr,1,case when (isnumeric(substring(partsr,1,2))=1) then 2 else 1 end) as int), partsr,SRNO,inv_no
+---Commented by Suraj Kumawat date on 30-01-2016 start  for  Bug 27607 end
+
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GO
+
+

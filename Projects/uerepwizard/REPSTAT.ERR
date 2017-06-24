@@ -1,0 +1,9 @@
+Form d:\raghu\vfp9\report_wizard\repstat.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. UEFIND - Undefined
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UEQUERYEDITOR - Undefined
+
+Visual Class Library d:\raghu\vfp9\report_wizard\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

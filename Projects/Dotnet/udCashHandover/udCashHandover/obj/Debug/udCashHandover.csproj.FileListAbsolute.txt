@@ -1,0 +1,62 @@
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashHandover.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashHandover.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashHandover.udCashHandov.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udEmpGradeMaster.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashHandover.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udEmpGradeMaster.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udEmpGradeMaster.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\udEmpGradeMaster.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\udEmpGradeMaster.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\bin\Debug\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\bin\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.udCashHandov.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\bin\Debug\udCashHandover.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\bin\Debug\udCashHandover.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\obj\Debug\udCashHandover.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udCashHandover\bin\Debug\udCashHandover.exe.config
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udCashHandover.exe.config
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udCashHandover.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udCashHandover.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udReportList.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udSelectPop.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\Udyog.Library.Common.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udCrViewer.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udDataTableQuery.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.Shared.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\Microsoft.Office.Interop.Outlook.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\stdole.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\office.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udReportList.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\udSelectPop.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.Windows.Forms.xml
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.Shared.xml
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\bin\Debug\CrystalDecisions.ReportSource.xml
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\obj\Debug\udCashHandover.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\obj\Debug\udCashHandover.udCashHandov.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\obj\Debug\udCashHandover.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\obj\Debug\udCashHandover.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\obj\Debug\udCashHandover.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udCashHandover\udCashHandover\obj\Debug\udCashHandover.pdb
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\bin\Debug\udCashHandover.exe.config
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\bin\Debug\udCashHandover.exe
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\bin\Debug\udCashHandover.pdb
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\obj\Debug\udCashHandover.csprojResolveAssemblyReference.cache
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\obj\Debug\udCashHandover.udCashHandov.resources
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\obj\Debug\udCashHandover.Properties.Resources.resources
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\obj\Debug\udCashHandover.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\obj\Debug\udCashHandover.exe
+D:\1 Development\Dotnet\udCashHandover\Working folder for Bug-27503\udCashHandover\obj\Debug\udCashHandover.pdb

@@ -1,0 +1,14 @@
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Release\uParameterSelection.Properties.Resources.resources
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Release\uParameterSelection.csproj.GenerateResource.Cache
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\uParameterSelection.exe
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\uBaseForm.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\uCheckBox.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\udSelectPop.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\uHelpButton.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\uTextBox.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Release\uParameterSelection.exe
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Release\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Release\DataAccess-Net.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Release\uParameterSelection.FrmMainParameterSelection.resources

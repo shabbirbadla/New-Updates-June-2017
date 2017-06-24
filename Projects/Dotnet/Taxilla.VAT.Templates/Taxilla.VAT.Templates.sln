@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Maharashtra", "Maharashtra", "{E4BD6881-4C87-4080-9F09-052A6F1C6C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form 231", "Form 231\Form 231.csproj", "{75742FD5-2AD8-46F1-9F40-BFC5FC9F8CB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Daman_and_Diu", "Daman_and_Diu", "{7791FD69-65B5-4982-81EB-B02588BE4FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daman_and_Diu_30_30A_31_31A", "Daman_and_Diu_30_30A_31_31A\Daman_and_Diu_30_30A_31_31A.csproj", "{0EE809D0-BEA9-49B0-871C-F7B54ACB73E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Karnataka", "Karnataka", "{E1DF48F9-3837-45F0-BEED-E309B7B17DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karnataka", "Karnataka\Karnataka.csproj", "{06BE0ABB-28BC-4F2F-982B-7C64E7C49B47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Delhi", "Delhi", "{CCB47334-ADD3-4ECC-8137-987D34ED2D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delhi", "Delhi\Delhi.csproj", "{38F3F893-AE41-4CDF-967F-EC35B1F0A2D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75742FD5-2AD8-46F1-9F40-BFC5FC9F8CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75742FD5-2AD8-46F1-9F40-BFC5FC9F8CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75742FD5-2AD8-46F1-9F40-BFC5FC9F8CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75742FD5-2AD8-46F1-9F40-BFC5FC9F8CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE809D0-BEA9-49B0-871C-F7B54ACB73E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE809D0-BEA9-49B0-871C-F7B54ACB73E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE809D0-BEA9-49B0-871C-F7B54ACB73E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE809D0-BEA9-49B0-871C-F7B54ACB73E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06BE0ABB-28BC-4F2F-982B-7C64E7C49B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06BE0ABB-28BC-4F2F-982B-7C64E7C49B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06BE0ABB-28BC-4F2F-982B-7C64E7C49B47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06BE0ABB-28BC-4F2F-982B-7C64E7C49B47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F3F893-AE41-4CDF-967F-EC35B1F0A2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F3F893-AE41-4CDF-967F-EC35B1F0A2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F3F893-AE41-4CDF-967F-EC35B1F0A2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F3F893-AE41-4CDF-967F-EC35B1F0A2D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75742FD5-2AD8-46F1-9F40-BFC5FC9F8CB4} = {E4BD6881-4C87-4080-9F09-052A6F1C6C90}
+		{0EE809D0-BEA9-49B0-871C-F7B54ACB73E1} = {7791FD69-65B5-4982-81EB-B02588BE4FEE}
+		{06BE0ABB-28BC-4F2F-982B-7C64E7C49B47} = {E1DF48F9-3837-45F0-BEED-E309B7B17DFC}
+		{38F3F893-AE41-4CDF-967F-EC35B1F0A2D7} = {CCB47334-ADD3-4ECC-8137-987D34ED2D84}
+	EndGlobalSection
+EndGlobal

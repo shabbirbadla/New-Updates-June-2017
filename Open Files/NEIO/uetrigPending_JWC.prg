@@ -1,0 +1,2 @@
+PARAMETERS vDataSessionId 
+DO FORM uefrm_pending_jwc WITH vdataSessionId

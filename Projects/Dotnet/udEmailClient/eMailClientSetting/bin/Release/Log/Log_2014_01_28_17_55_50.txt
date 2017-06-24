@@ -1,0 +1,4 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-28 17:55:50	Process Started....
+2014-01-28 17:55:54	Process Start ID : EM2 [Sales Transaction] 
+2014-01-28 18:02:28	Error Found...Procedure expects parameter '@statement' of type 'ntext/nchar/nvarchar'.

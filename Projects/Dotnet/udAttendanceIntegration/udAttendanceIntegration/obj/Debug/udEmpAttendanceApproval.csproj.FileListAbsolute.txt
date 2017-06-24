@@ -1,0 +1,11 @@
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\bin\Debug\udCrViewer.dll
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\bin\Debug\udReportList.dll
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceApproval.frmAttendanceIntegration.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceApproval.Properties.Resources.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udEmpAttendanceApproval.csproj.GenerateResource.Cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\bin\Debug\udAttendanceApproval.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\bin\Debug\udAttendanceApproval.pdb
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceApproval.exe.licenses
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceApproval.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceApproval.pdb

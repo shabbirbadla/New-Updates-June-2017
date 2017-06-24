@@ -1,0 +1,15 @@
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\bin\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\bin\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\obj\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\obj\Debug\eMailClient.MailSender.pdb
+D:\eMailClient\eMailClient.MailSender\bin\Debug\eMailClient.MailSender.dll
+D:\eMailClient\eMailClient.MailSender\bin\Debug\eMailClient.MailSender.pdb
+D:\eMailClient\eMailClient.MailSender\obj\Debug\ResolveAssemblyReference.cache
+D:\eMailClient\eMailClient.MailSender\obj\Debug\eMailClient.MailSender.dll
+D:\eMailClient\eMailClient.MailSender\obj\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\bin\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\bin\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\obj\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\obj\Debug\eMailClient.MailSender.pdb

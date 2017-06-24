@@ -1,0 +1,10 @@
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\bin\Debug\Bug_24972.exe
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\bin\Debug\Bug_24972.pdb
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\obj\Debug\Bug_24972.Properties.Resources.resources
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\obj\Debug\Bug_24972.csproj.GenerateResource.Cache
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\obj\Debug\Bug_24972.exe
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\obj\Debug\Bug_24972.pdb
+E:\Projects\Bug_24972\Bug_24972\Bug_24972\obj\Debug\Bug_24972.Frm402403.resources
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\Bug_24972.exe
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\Bug_24972.pdb

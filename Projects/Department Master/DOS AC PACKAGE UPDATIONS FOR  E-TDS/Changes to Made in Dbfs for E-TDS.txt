@@ -1,0 +1,45 @@
+==========================================================================================
+Changes to Done in LMAIN
+In LMAIN following Field should be opened
+==========================================================================================
+Field Name    DataType	Len
+-------------------------------------
+TDSSec 		C	5
+TDSForm		C	2
+TDSPeriod	D	8
+TDS_Rate	N	6,2
+ChalNo		C	9
+CertFernon	D	8
+Grosup		C	1
+Reason		C	4
+==========================================================================================
+Changes to Done in AC_MAST
+In AC_MAST following Field should be opened
+==========================================================================================
+Field Name    DataType	Len
+-----------------------------------------
+TDSForm		C	2
+TDSStatus	C	2
+Statecode	N	4	
+
+These are changes that is to done in Dbf 
+==========================================================================================
+
+OPEN FOLLOWING EXTRA DATA 
+
+VOUCHER TYPE	HEAD	FIELD NAME	DATATYPE	LEN		WHEN COND.
+BV		.	U_TDS		C		1		ETDSDATA()	
+JV		.	U_TDS		C		1		ETDSDATA()
+
+==========================================================================================
+CODE TO BE WRITTEN IN _VOUSAVE
+IF MAINDBF='AC_MAST'
+   DO ACETDS
+ENDI
+
+==========================================================================================
+THESE ARE SOME CHANGES THAT IS TO BE MADE FORM E-TDS IN UDYOG-7
+
+
+
+

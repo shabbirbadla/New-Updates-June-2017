@@ -1,0 +1,10 @@
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udDataTableQuery\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udDataTableQuery\bin\Release\udDataTableQuery.dll
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udDataTableQuery\bin\Release\udDataTableQuery.pdb
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udDataTableQuery\obj\Release\udDataTableQuery.dll
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udDataTableQuery\obj\Release\udDataTableQuery.pdb
+D:\SQLProject\payroll\udDataTableQuery\udDataTableQuery\bin\Release\udDataTableQuery.dll
+D:\SQLProject\payroll\udDataTableQuery\udDataTableQuery\bin\Release\udDataTableQuery.pdb
+D:\SQLProject\payroll\udDataTableQuery\udDataTableQuery\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udDataTableQuery\udDataTableQuery\obj\Release\udDataTableQuery.dll
+D:\SQLProject\payroll\udDataTableQuery\udDataTableQuery\obj\Release\udDataTableQuery.pdb

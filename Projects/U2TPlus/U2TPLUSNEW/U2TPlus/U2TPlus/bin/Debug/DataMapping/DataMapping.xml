@@ -1,0 +1,15 @@
+<DATAMAPPINGSETTINGS>
+  <MASTERTYPE Name="ACCOUNTS" />
+  <MASTERTYPE Name="ACCOUNTS GROUP">
+    <DATAMAPPING>
+      <UdyogValue>TRADING EXPENSE</UdyogValue>
+      <TallyValue>Purchase Accounts</TallyValue>
+      <ISACTIVE>True</ISACTIVE>
+    </DATAMAPPING>
+    <DATAMAPPING>
+      <UdyogValue>TRADING INCOME</UdyogValue>
+      <TallyValue>Sales Accounts</TallyValue>
+      <ISACTIVE>True</ISACTIVE>
+    </DATAMAPPING>
+  </MASTERTYPE>
+</DATAMAPPINGSETTINGS>

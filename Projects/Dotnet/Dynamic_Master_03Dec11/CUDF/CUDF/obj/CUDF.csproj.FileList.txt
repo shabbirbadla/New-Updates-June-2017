@@ -1,0 +1,5 @@
+bin\Debug\CUDF.dll
+bin\Debug\CUDF.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CUDF.dll
+obj\Debug\CUDF.pdb

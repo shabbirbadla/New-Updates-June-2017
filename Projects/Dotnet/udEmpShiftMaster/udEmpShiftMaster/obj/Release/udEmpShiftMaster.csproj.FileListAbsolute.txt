@@ -1,0 +1,52 @@
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.exe
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.pdb
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.frmShiftMaster.resources
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.exe
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.pdb
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\uCheckBox.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udSelectPop.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\uNumericTextBox.dll
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.exe
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.exe
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\ResolveAssemblyReference.cache
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.frmShiftMaster.resources
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.Properties.Resources.resources
+D:\My practice\aspspider\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.csproj.GenerateResource.Cache
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.exe
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.pdb
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udSelectPop.dll
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.frmShiftMaster.resources
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.Properties.Resources.resources
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.csproj.GenerateResource.Cache
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.exe
+D:\Ramya Working\Payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.pdb
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Release\udEmpShiftMaster.exe
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Release\udEmpShiftMaster.pdb
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\bin\Release\udEmpShiftMaster.exe
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\bin\Release\udEmpShiftMaster.pdb
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\bin\Release\udSelectPop.dll
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Release\ResolveAssemblyReference.cache
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Release\udEmpShiftMaster.frmShiftMaster.resources
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Release\udEmpShiftMaster.Properties.Resources.resources
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Release\udEmpShiftMaster.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.exe
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udEmpShiftMaster.pdb
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\bin\Release\udSelectPop.dll
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\bin\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.frmShiftMaster.resources
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.exe
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Release\udEmpShiftMaster.pdb

@@ -1,0 +1,3 @@
+lparameters pRange
+MESSAGEBOX("shri")
+do form uefrmbroker With pRange

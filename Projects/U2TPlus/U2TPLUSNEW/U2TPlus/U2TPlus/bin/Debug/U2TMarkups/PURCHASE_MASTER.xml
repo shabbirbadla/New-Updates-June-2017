@@ -1,0 +1,1354 @@
+<SETTINGSU2TMARKUPXML>
+  <MASTERTYPE Name="PURCHASE" Version="9.0">
+    <CONFIGURATION NAME="Adaequare" VALUE="1">
+      <TALLYTAG Name="VOUCHER REMOTEID=NewGUID VCHTYPE='Purchase' ACTION='Create'">
+        <Order>1</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="DATE">
+        <Order>2</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GUID">
+        <Order>3</Order>
+        <DEFAULTVALUES>NewGUID</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="NARRATION">
+        <Order>4</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.NARR</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="VOUCHERTYPENAME">
+        <Order>5</Order>
+        <DEFAULTVALUES>Purchase</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="VOUCHERNUMBER">
+        <Order>6</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.INV_NO</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="PARTYLEDGERNAME">
+        <Order>7</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.PARTY_NM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="PARTYNAME">
+        <Order>8</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.PARTY_NM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASEPARTYNAME">
+        <Order>9</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.PARTY_NM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="CSTFORMISSUETYPE">
+        <Order>10</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="CSTFORMRECVTYPE">
+        <Order>11</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="FBTPAYMENTTYPE">
+        <Order>12</Order>
+        <DEFAULTVALUES>Default</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASICBUYERNAME">
+        <Order>13</Order>
+        <DEFAULTVALUES>SelectedCompanyName</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASICDATETIMEOFINVOICE">
+        <Order>14</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASICDATETIMEOFREMOVAL">
+        <Order>15</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="VCHGSTCLASS">
+        <Order>16</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="DIFFACTUALQTY">
+        <Order>17</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AUDITED">
+        <Order>18</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="FORJOBCOSTING">
+        <Order>19</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISOPTIONAL">
+        <Order>20</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="EFFECTIVEDATE">
+        <Order>21</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORINTEREST">
+        <Order>22</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORGAINLOSS">
+        <Order>23</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORGODOWNTRANSFER">
+        <Order>24</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORCOMPOUND">
+        <Order>25</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ALTERID">
+        <Order>26</Order>
+        <DEFAULTVALUES>1</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISCANCELLED">
+        <Order>27</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="HASCASHFLOW">
+        <Order>28</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISPOSTDATED">
+        <Order>29</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USETRACKINGNUMBER">
+        <Order>30</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISINVOICE">
+        <Order>31</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="MFGJOURNAL">
+        <Order>32</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="HASDISCOUNTS">
+        <Order>33</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ASPAYSLIP">
+        <Order>34</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDELETED">
+        <Order>35</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ASORIGINAL">
+        <Order>36</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="INVOICEINDENTLIST.LIST">
+        <Order>37</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="UDF:HARYANAVAT.LIST DESC='HARYANAVAT'">
+        <Order>38</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="UDF:HARVCHSUBCLASS.LIST DESC='HARVCHSUBCLASS' ISLIST='YES'">
+        <Order>39</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="UDF:HARVCHSUBCLASS DESC='HARVCHSUBCLASS'">
+        <Order>40</Order>
+        <DEFAULTVALUES>Others</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/UDF:HARVCHSUBCLASS.LIST">
+        <Order>41</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/UDF:HARYANAVAT.LIST">
+        <Order>42</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERENTRIES.LIST">
+        <Order>43</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERNAME">
+        <Order>44</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AC_NAME</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GSTCLASS">
+        <Order>45</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDEEMEDPOSITIVE">
+        <Order>46</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERFROMITEM">
+        <Order>47</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="REMOVEZEROENTRIES">
+        <Order>48</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISPARTYLEDGER">
+        <Order>49</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>50</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AMOUNT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BILLALLOCATIONS.LIST">
+        <Order>51</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="NAME">
+        <Order>52</Order>
+        <DEFAULTVALUES>1</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BILLTYPE">
+        <Order>53</Order>
+        <DEFAULTVALUES>New Ref</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>54</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AMOUNT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/BILLALLOCATIONS.LIST">
+        <Order>55</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/LEDGERENTRIES.LIST">
+        <Order>56</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ALLINVENTORYENTRIES.LIST">
+        <Order>57</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="STOCKITEMNAME">
+        <Order>58</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.ITEM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDEEMEDPOSITIVE">
+        <Order>59</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISAUTONEGATE">
+        <Order>60</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>61</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.U_ASSEAMT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ACCOUNTINGALLOCATIONS.LIST">
+        <Order>62</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERNAME">
+        <Order>63</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AC_NAME</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GSTCLASS">
+        <Order>64</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDEEMEDPOSITIVE">
+        <Order>65</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERFROMITEM">
+        <Order>66</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="REMOVEZEROENTRIES">
+        <Order>67</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISPARTYLEDGER">
+        <Order>68</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>69</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.U_ASSEAMT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/ACCOUNTINGALLOCATIONS.LIST">
+        <Order>70</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BATCHALLOCATIONS.LIST">
+        <Order>71</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GODOWNNAME">
+        <Order>72</Order>
+        <DEFAULTVALUES>Main Location</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BATCHNAME">
+        <Order>73</Order>
+        <DEFAULTVALUES>Primary Batch</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="DESTINATIONGODOWNNAME">
+        <Order>74</Order>
+        <DEFAULTVALUES>Main Location</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="INDENTNO">
+        <Order>75</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ORDERNO">
+        <Order>76</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="TRACKINGNUMBER">
+        <Order>77</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>78</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.U_ASSEAMT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/BATCHALLOCATIONS.LIST">
+        <Order>79</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/ALLINVENTORYENTRIES.LIST">
+        <Order>80</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/VOUCHER">
+        <Order>81</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+    </CONFIGURATION>
+    <CONFIGURATION NAME="BHEL, Hyderabad" VALUE="2">
+      <TALLYTAG Name="VOUCHER REMOTEID=NewGUID VCHTYPE='Purchase' ACTION='Create'">
+        <Order>1</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="DATE">
+        <Order>2</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GUID">
+        <Order>3</Order>
+        <DEFAULTVALUES>NewGUID</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="NARRATION">
+        <Order>4</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.NARR</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="VOUCHERTYPENAME">
+        <Order>5</Order>
+        <DEFAULTVALUES>Purchase</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="VOUCHERNUMBER">
+        <Order>6</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.INV_NO</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="PARTYLEDGERNAME">
+        <Order>7</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.PARTY_NM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="PARTYNAME">
+        <Order>8</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.PARTY_NM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASEPARTYNAME">
+        <Order>9</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.PARTY_NM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="CSTFORMISSUETYPE">
+        <Order>10</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="CSTFORMRECVTYPE">
+        <Order>11</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="FBTPAYMENTTYPE">
+        <Order>12</Order>
+        <DEFAULTVALUES>Default</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASICBUYERNAME">
+        <Order>13</Order>
+        <DEFAULTVALUES>SelectedCompanyName</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASICDATETIMEOFINVOICE">
+        <Order>14</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BASICDATETIMEOFREMOVAL">
+        <Order>15</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="VCHGSTCLASS">
+        <Order>16</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="DIFFACTUALQTY">
+        <Order>17</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AUDITED">
+        <Order>18</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="FORJOBCOSTING">
+        <Order>19</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISOPTIONAL">
+        <Order>20</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="EFFECTIVEDATE">
+        <Order>21</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_MAIN.DATE</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORINTEREST">
+        <Order>22</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORGAINLOSS">
+        <Order>23</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORGODOWNTRANSFER">
+        <Order>24</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USEFORCOMPOUND">
+        <Order>25</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ALTERID">
+        <Order>26</Order>
+        <DEFAULTVALUES>1</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISCANCELLED">
+        <Order>27</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="HASCASHFLOW">
+        <Order>28</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISPOSTDATED">
+        <Order>29</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="USETRACKINGNUMBER">
+        <Order>30</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISINVOICE">
+        <Order>31</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="MFGJOURNAL">
+        <Order>32</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="HASDISCOUNTS">
+        <Order>33</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ASPAYSLIP">
+        <Order>34</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDELETED">
+        <Order>35</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ASORIGINAL">
+        <Order>36</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="INVOICEINDENTLIST.LIST">
+        <Order>37</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="UDF:HARYANAVAT.LIST DESC='HARYANAVAT'">
+        <Order>38</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="UDF:HARVCHSUBCLASS.LIST DESC='HARVCHSUBCLASS' ISLIST='YES'">
+        <Order>39</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="UDF:HARVCHSUBCLASS DESC='HARVCHSUBCLASS'">
+        <Order>40</Order>
+        <DEFAULTVALUES>Others</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/UDF:HARVCHSUBCLASS.LIST">
+        <Order>41</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/UDF:HARYANAVAT.LIST">
+        <Order>42</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERENTRIES.LIST">
+        <Order>43</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERNAME">
+        <Order>44</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AC_NAME</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GSTCLASS">
+        <Order>45</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDEEMEDPOSITIVE">
+        <Order>46</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERFROMITEM">
+        <Order>47</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="REMOVEZEROENTRIES">
+        <Order>48</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISPARTYLEDGER">
+        <Order>49</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>50</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AMOUNT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BILLALLOCATIONS.LIST">
+        <Order>51</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="NAME">
+        <Order>52</Order>
+        <DEFAULTVALUES>1</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BILLTYPE">
+        <Order>53</Order>
+        <DEFAULTVALUES>New Ref</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>54</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AMOUNT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/BILLALLOCATIONS.LIST">
+        <Order>55</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/LEDGERENTRIES.LIST">
+        <Order>56</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ALLINVENTORYENTRIES.LIST">
+        <Order>57</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="STOCKITEMNAME">
+        <Order>58</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.ITEM</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDEEMEDPOSITIVE">
+        <Order>59</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISAUTONEGATE">
+        <Order>60</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>61</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.U_ASSEAMT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ACCOUNTINGALLOCATIONS.LIST">
+        <Order>62</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERNAME">
+        <Order>63</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ACDET.AC_NAME</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GSTCLASS">
+        <Order>64</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISDEEMEDPOSITIVE">
+        <Order>65</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="LEDGERFROMITEM">
+        <Order>66</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="REMOVEZEROENTRIES">
+        <Order>67</Order>
+        <DEFAULTVALUES>NO</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ISPARTYLEDGER">
+        <Order>68</Order>
+        <DEFAULTVALUES>YES</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>69</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.U_ASSEAMT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/ACCOUNTINGALLOCATIONS.LIST">
+        <Order>70</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BATCHALLOCATIONS.LIST">
+        <Order>71</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="GODOWNNAME">
+        <Order>72</Order>
+        <DEFAULTVALUES>Main Location</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="BATCHNAME">
+        <Order>73</Order>
+        <DEFAULTVALUES>Primary Batch</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="DESTINATIONGODOWNNAME">
+        <Order>74</Order>
+        <DEFAULTVALUES>Main Location</DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="INDENTNO">
+        <Order>75</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="ORDERNO">
+        <Order>76</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="TRACKINGNUMBER">
+        <Order>77</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="AMOUNT">
+        <Order>78</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>U2T_ITEM.U_ASSEAMT</FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/BATCHALLOCATIONS.LIST">
+        <Order>79</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/ALLINVENTORYENTRIES.LIST">
+        <Order>80</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+      <TALLYTAG Name="/VOUCHER">
+        <Order>81</Order>
+        <DEFAULTVALUES>
+        </DEFAULTVALUES>
+        <FIELDVALUE>
+        </FIELDVALUE>
+        <ISACTIVE>True</ISACTIVE>
+        <ISDEFAULT>True</ISDEFAULT>
+      </TALLYTAG>
+    </CONFIGURATION>
+  </MASTERTYPE>
+</SETTINGSU2TMARKUPXML>

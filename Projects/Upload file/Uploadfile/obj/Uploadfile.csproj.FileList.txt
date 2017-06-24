@@ -1,0 +1,6 @@
+bin\Debug\Uploadfile.dll
+bin\Debug\Uploadfile.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Uploadfile.dll
+obj\Debug\Uploadfile.pdb
+D:\New Folder\Uploadfile\bin\Debug\Uploadfile.tlb

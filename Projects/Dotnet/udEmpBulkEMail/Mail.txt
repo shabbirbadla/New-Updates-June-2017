@@ -1,0 +1,6 @@
+Reimbursement Details-Testing Mail
+Dear @@Name,
+This is to inform you that your travel request of Rs. @@Amount from the period 01.08.2013 to 31.08.2013 towards Client Name is processed and credited to your HDFC Bank Account. Kindly verify the same and confirm if any discrepancies. 
+This to inform you that @@Amount is deposited in your Account on @@Date.
+--
+Testing Mail

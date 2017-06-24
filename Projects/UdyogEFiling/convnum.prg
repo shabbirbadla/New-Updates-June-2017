@@ -1,0 +1,20 @@
+LPARAMETERS _FldToConv,_FldWid,_DefaDec
+_FldToConv = STRTRAN(_FldToConv,',','')
+_FldToLen  = LEN(_FldToConv) + 10
+
+*!*	_FirstVal  = IIF(AT('.',_FldToConv) > 0,SUBSTR(_FldToConv,1,AT('.',_FldToConv)-1),_FldToConv)
+*!*	_SecondVal = IIF(AT('.',_FldToConv) > 0,SUBSTR(_FldToConv,AT('.',_FldToConv)+1),'')
+*!*	_SecondVal = VAL(SUBSTR(_SecondVal,1,_FldWid))+IIF(VAL(SUBSTR(_SecondVal,_FldWid+1,1)) > 4,1,0)
+
+*!*	_FldToConv = _FirstVal+IIF(_FldWid > 0,'.'+PADR(ALLTRIM(STR(_SecondVal)),_FldWid,'0'),'')
+
+_FirstVal  = VAL(IIF(AT('.',_FldToConv) > 0,SUBSTR(_FldToConv,1,AT('.',_FldToConv)-1),_FldToConv))
+_SecondVal = IIF(AT('.',_FldToConv) > 0,SUBSTR(_FldToConv,AT('.',_FldToConv)+1),'')
+_SecondVal = ROUND(VAL(_SecondVal)/VAL(PADR('1',LEN(_SecondVal)+1,'0')),_FldWid)
+
+_FldToConv = _FirstVal+Iif(_FirstVal>=0,_SecondVal,-_SecondVal)
+IF _DefaDec > _FldWid
+	_FldWid = _DefaDec
+Endif
+_FldToConv = STR(_FldToConv,_FldToLen,_FldWid)
+RETURN _FldToConv

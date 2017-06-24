@@ -1,0 +1,43 @@
+Form d:\ruchit\svn\data extraction tool\det\udyogefiling\efilelogin.scx has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+    Program VU_UDFS - Undefined
+    Visual Class Library UDGENERAL - Undefined
+
+Form d:\ruchit\svn\data extraction tool\det\udyogefiling\efilewizard.scx has the following errors:
+    Unknown UETRIGVOUACCOUNTGETPOP - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown UETRIGVOUITEMGETPOP - Undefined
+
+Program d:\ruchit\svn\data extraction tool\det\udyogefiling\reportgenerater.prg has the following errors:
+    Proc./Func. UECRVIEWER - Undefined
+
+Program d:\ruchit\svn\data extraction tool\det\udyogefiling\rawxmlgenerater.prg has the following errors:
+    Proc./Func. UECRVIEWER - Undefined
+
+Visual Class Library d:\ruchit\svn\data extraction tool\det\udyogefiling\vouclass.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UENRENTRY - Undefined
+    Unknown UETRIGVOUITFIRE - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    Form UEFRM_OPWKITEMALLOCATION - Undefined
+    Form UEFRM_BOMDETAILS - Undefined
+    Form UEFRM_OPSTITEMALLOCATION - Undefined
+    Form UEFRM_DCSTITEMALLOCATION - Undefined
+    Form UEFRM_BOMDETAILSIP - Undefined
+    Form UEFRM_BOMDETAILSOP - Undefined
+    File FINISH_ITEM.GIF - Undefined
+    Application UETDSPAYMENT - Undefined
+    Form UEETITDETINAR - Undefined
+    Form UEETDETAILINAR - Undefined
+    Form UEETITDETINDC - Undefined
+    Form UEETDETAILINDC - Undefined
+    Form UEETDETAILINIR - Undefined
+    Form UEETDETAILINGT - Undefined
+    Form UEFRM_PT_EXDATA1 - Undefined
+    Form UEFRM_JV_EXDATA1 - Undefined
+    Form UEFRM_ST_EXDATA1 - Undefined
+    Form UEFRM_SERVICETAX - Undefined
+    Form UEFRM_SR_EXDATA1 - Undefined
+    Form UEFRM_SERTAX_DET - Undefined
+    Application UEDUTYDEBIT - Undefined
+

@@ -1,0 +1,52 @@
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.exe
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.pdb
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\GetInfo.DLL
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.frmST3Interface.resources
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.Properties.Resources.resources
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.csproj.GenerateResource.Cache
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.exe
+E:\Project\Dotnet\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.pdb
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.exe
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.pdb
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.exe
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.pdb
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\ResolveAssemblyReference.cache
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.frmST3Interface.resources
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.Properties.Resources.resources
+D:\ClientBackkup\Service Tax Company. (2013 to 2015) 16042014 114803 AM.Dat\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.csproj.GenerateResource.Cache
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.exe
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.pdb
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\GetInfo.DLL
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\ResolveAssemblyReference.cache
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.frmST3Interface.resources
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.Properties.Resources.resources
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.csproj.GenerateResource.Cache
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.exe
+D:\from_shrikant\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.pdb
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.exe
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.pdb
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.exe
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.pdb
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\ResolveAssemblyReference.cache
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.frmST3Interface.resources
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.Properties.Resources.resources
+E:\Sachin\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.exe
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.pdb
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.frmST3Interface.resources
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.Properties.Resources.resources
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.exe
+D:\1 Development\Dotnet\Taxilla.ServiceTax3.Template\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.pdb
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.exe
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.pdb
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.exe
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\TaxillaServiceTax3Template.pdb
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\ResolveAssemblyReference.cache
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.frmST3Interface.resources
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.Properties.Resources.resources
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\obj\Release\TaxillaServiceTax3Template.csproj.GenerateResource.Cache
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\dataaccess-net.dll
+D:\SVN\Taxilla.ServiceTax3.Template\TaxillaServiceTax3Template\bin\Release\ubaseform.dll

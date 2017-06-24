@@ -1,0 +1,42 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		<Sachin N. S.>
+-- Create date: <06/06/2009>
+-- Description:	<Updating BarNum Field in Com_menu>
+-- =============================================
+CREATE PROCEDURE [DBO].[UPDATE_COM_MENU]
+	-- Add the parameters for the stored procedure here
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	DECLARE @PADNAMEOLD VARCHAR(50), @PADNAME VARCHAR(50), @BARNAMEOLD VARCHAR(50), @BARNAME VARCHAR(50), @BARNUM NUMERIC(2)
+
+	SET @PADNAMEOLD=''
+	SET @BARNAMEOLD=''
+	DECLARE CUR_TEMP CURSOR FOR SELECT PADNAME,BARNAME FROM COM_MENU ORDER BY PADNAME,PADNUM,BARNUM 
+	OPEN CUR_TEMP
+	FETCH NEXT FROM CUR_TEMP INTO @PADNAME,@BARNAME
+	WHILE (@@FETCH_STATUS=0)
+	BEGIN
+		IF @PADNAMEOLD = @PADNAME
+			BEGIN
+				SET @BARNUM = @BARNUM + 1
+			END
+		ELSE
+			BEGIN
+				SET @BARNUM = 1
+				SET @PADNAMEOLD = @PADNAME
+			END
+		
+		UPDATE COM_MENU SET BARNUM = @BARNUM WHERE PADNAME = @PADNAME AND BARNAME = @BARNAME
+		
+		FETCH NEXT FROM CUR_TEMP INTO @PADNAME,@BARNAME
+	END
+
+END
+GO

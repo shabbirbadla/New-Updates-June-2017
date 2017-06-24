@@ -1,0 +1,34 @@
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udEmpTdsProjection.exe
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udEmpTdsProjection.pdb
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udCrViewer.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udReportList.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udSelectPop.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\uNumericTextBox.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Debug\udDataTableQuery.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.frmTdsProjection.resources
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.exe
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.pdb
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.exe
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.pdb
+D:\TdsProjection From Vss\udEmpTdsProjection\bin\Debug\udEmpTdsProjection.exe
+D:\TdsProjection From Vss\udEmpTdsProjection\bin\Debug\udEmpTdsProjection.pdb
+D:\TdsProjection From Vss\udEmpTdsProjection\bin\Debug\udDataTableQuery.dll
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Debug\ResolveAssemblyReference.cache
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.frmTdsProjection.resources
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.Properties.Resources.resources
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.exe
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.pdb
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\bin\Debug\udEmpTdsProjection.exe
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\bin\Debug\udEmpTdsProjection.pdb
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Debug\ResolveAssemblyReference.cache
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.frmTdsProjection.resources
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.Properties.Resources.resources
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Debug\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\bin\Debug\udDataTableQuery.dll

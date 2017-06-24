@@ -1,0 +1,17 @@
+Form \\udwin2k3\vu_project_work\sql projects\bankreco\on_clause.scx has the following errors:
+    File H_NODROP.CUR - Undefined
+
+Program \\udwin2k3\vu_project_work\sql projects\bankreco\brzoom.prg has the following errors:
+    Proc./Func. TOVOUCHER - Undefined
+
+Form \\udwin2k3\vu_project_work\sql projects\bankreco\bankreco.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. TOUEVOUCHER - Undefined
+    Unknown UEGETPOP - Undefined
+    File LOC.BMP - Undefined
+    File NEW.GIF - Undefined
+
+Visual Class Library \\udwin2k3\vu_project_work\sql projects\bankreco\grdclass.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    File LOC.BMP - Undefined
+

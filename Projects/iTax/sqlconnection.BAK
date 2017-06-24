@@ -1,0 +1,5 @@
+function SQLOBJCLASS(formvar)
+ 
+set classlib to sqlconnection.vcx 
+&FormVar = createobject('sqlconnection.sqlconnudobj')
+return

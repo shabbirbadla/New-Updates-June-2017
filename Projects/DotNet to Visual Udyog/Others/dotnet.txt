@@ -1,0 +1,6 @@
+vunettofx.exe
+Register Class : VuNetToFx /RegServer
+Class Name  : ClNetToFx
+Method Name : PrNetToFx
+Parameter   : 'DO ToUeVoucher WITH _CoEntry_ty,_CoTran_cd,Thisform.DataSessionId,.T.'
+

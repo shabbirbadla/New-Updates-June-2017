@@ -1,0 +1,10 @@
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\bin\Debug\ueErrorLoger.dll
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\bin\Debug\ueErrorLoger.pdb
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\obj\Debug\ueErrorLoger.dll
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\obj\Debug\ueErrorLoger.pdb
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\bin\Release\ueErrorLoger.dll
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\bin\Release\ueErrorLoger.pdb
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\obj\Release\ueErrorLoger.dll
+D:\SQLProject\ST3efilling\ueErrorLoger\ueErrorLoger\obj\Release\ueErrorLoger.pdb

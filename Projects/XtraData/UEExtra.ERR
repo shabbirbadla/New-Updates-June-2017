@@ -1,0 +1,20 @@
+Form d:\svngst\xtradata\frmxtra.scx has the following errors:
+    Unknown LLAFIELDS - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPXTRACLOSE - Undefined
+    Unknown UDTRIGXTRACLOSE - Undefined
+    Unknown UETRIGXTRACLOSE - Undefined
+
+Program d:\svngst\xtradata\xtra.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+    Visual Class Library SQLCONNECTION - Undefined
+    Application UDAPPETVALID - Undefined
+    Program UDTRIGETVALID - Undefined
+    Program UETRIGETVALID - Undefined
+    Unknown UDAPPXTRAOPEN - Undefined
+    Unknown UDTRIGXTRAOPEN - Undefined
+    Unknown UETRIGXTRAOPEN - Undefined
+    Form FRMEXCISEMANU1 - Undefined
+    Form FRMEXCISEMANU2 - Undefined
+    Form FRMEXCISEMANU3 - Undefined
+

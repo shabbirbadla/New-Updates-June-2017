@@ -1,0 +1,19 @@
+Lparameters nPendDays,lUpgrade,lAmcFile,cRights
+
+_Screen.Visible = .F.
+Set Exclusive Off
+Set Safety Off
+Set Century On
+Set Date To british
+Set Deleted On
+
+If !lAmcFile
+	If !lUpgrade
+		Do Form frmGetClientInfo With nPendDays,lUpgrade,cRights
+	Else
+		Do Form frmGetClientInfo1 With nPendDays,lUpgrade,cRights
+	Endif
+Else
+	Do Form frmGenAmcFile With 0,.F.
+Endif
+Read Events

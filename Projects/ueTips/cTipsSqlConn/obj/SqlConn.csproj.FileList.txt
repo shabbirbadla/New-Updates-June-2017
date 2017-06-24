@@ -1,0 +1,5 @@
+bin\Debug\SqlConn.dll
+bin\Debug\SqlConn.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SqlConn.dll
+obj\Debug\SqlConn.pdb

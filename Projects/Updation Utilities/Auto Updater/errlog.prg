@@ -1,0 +1,18 @@
+LPARAMETERS _mErrLogDesc,_errType
+IF !FILE(_mErrLogName+'.dbf')
+	CREATE TABLE (_mErrLogName) (ErrMsg Memo,WarnMsg Memo)
+ENDIF
+IF !USED('ErrLog')
+	SELECT 0
+	USE (_mErrLogName) AGAIN SHARED ALIAS ErrLog
+ENDIF
+SELECT ErrLog
+IF RECCOUNT() <= 0
+	APPEND BLANK IN ErrLog	
+Endif	
+IF _errType = 'E' AND !EMPTY(_mErrLogDesc)
+	REPLACE ErrMsg WITH ErrMsg + CHR(13) + _mErrLogDesc IN ErrLog	
+Endif	
+IF _errType = 'W' AND !EMPTY(_mErrLogDesc)
+	REPLACE WarnMsg WITH WarnMsg + CHR(13) + _mErrLogDesc IN ErrLog	
+Endif	

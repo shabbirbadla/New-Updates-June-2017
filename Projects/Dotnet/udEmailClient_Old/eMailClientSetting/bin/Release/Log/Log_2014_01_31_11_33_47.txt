@@ -1,0 +1,17 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-31 11:33:47	Process Started....
+2014-01-31 11:33:50	Process Start ID : EM2 [Sales Transaction] 
+2014-01-31 11:34:03	Inv_no : 000001
+2014-01-31 11:35:06	Successfully Exported file in Excel format....
+2014-01-31 11:37:04	 - Successfully Mail Sent.... 
+---------------------------------------------------------------------------------
+2014-01-31 11:37:47	 - Successfully deleted Sales_Sales Party 1_000001_2014_01_31.XLS Exported file...
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported Excel files : 1
+Total Mails sent : 1
+---------------------------------------<<< End >>> ------------------------------
+2014-01-31 11:37:49	Successfully Email Log Status Mail Sent.... 
+2014-01-31 11:37:49	Process End ID : EM2
+-------------------------------------<<< END >>>-----------------------------
+

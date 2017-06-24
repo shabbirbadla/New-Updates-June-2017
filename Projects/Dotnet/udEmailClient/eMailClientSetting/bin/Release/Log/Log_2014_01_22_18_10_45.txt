@@ -1,0 +1,16 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-22 18:10:45	Process Started....
+2014-01-22 18:10:46	Process Start ID : EM1 [Purchase Transaction] 
+2014-01-22 18:10:46	Inv_no : 000001
+2014-01-22 18:10:48	Successfully Exported file in PDF format....
+2014-01-22 18:10:48	Error Found...Object reference not set to an instance of an object.
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported PDF files : 1
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2014-01-22 18:11:10	Error Found...Failure Sending Mail..GeneralFailure..Failure sending mail.
+2014-01-22 18:11:10	Process End ID : EM1
+-------------------------------------<<< END >>>-----------------------------
+

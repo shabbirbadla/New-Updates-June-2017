@@ -1,0 +1,38 @@
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udReportList\bin\Release\udReportList.dll
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udReportList\bin\Release\udReportList.pdb
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udReportList\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udReportList\obj\Release\udReportList.dll
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udReportList\obj\Release\udReportList.pdb
+D:\SQLProject\payroll\udReportList\udReportList\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udReportList\udReportList\obj\Release\udReportList.frmReportList.resources
+D:\SQLProject\payroll\udReportList\udReportList\obj\Release\udReportList.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udReportList\udReportList\obj\Release\udReportList.dll
+D:\SQLProject\payroll\udReportList\udReportList\obj\Release\udReportList.pdb
+D:\SQLProject\payroll\udReportList\udReportList\bin\Release\udReportList.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Release\udReportList.pdb
+D:\SQLProject\payroll\udReportList\udReportList\bin\Release\DataAccess-Net.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Release\udDataTableQuery.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Release\udCrViewer.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\bin\Release\udReportList.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\bin\Release\udReportList.pdb
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\bin\Release\DataAccess-Net.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\bin\Release\ubaseform.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\bin\Release\udCrViewer.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\bin\Release\udDataTableQuery.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\obj\Release\udReportList.frmReportList.resources
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\obj\Release\udReportList.csproj.GenerateResource.Cache
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\obj\Release\udReportList.dll
+D:\Development\Dotnet\Update to VSS\udReportList\udReportList\obj\Release\udReportList.pdb
+D:\SVN Development\Dotnet\udReportList\udReportList\bin\Release\udReportList.dll
+D:\SVN Development\Dotnet\udReportList\udReportList\bin\Release\udReportList.pdb
+D:\SVN Development\Dotnet\udReportList\udReportList\bin\Release\DataAccess-Net.dll
+D:\SVN Development\Dotnet\udReportList\udReportList\bin\Release\ubaseform.dll
+D:\SVN Development\Dotnet\udReportList\udReportList\bin\Release\udCrViewer.dll
+D:\SVN Development\Dotnet\udReportList\udReportList\bin\Release\udDataTableQuery.dll
+D:\SVN Development\Dotnet\udReportList\udReportList\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udReportList\udReportList\obj\Release\udReportList.frmReportList.resources
+D:\SVN Development\Dotnet\udReportList\udReportList\obj\Release\udReportList.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udReportList\udReportList\obj\Release\udReportList.dll
+D:\SVN Development\Dotnet\udReportList\udReportList\obj\Release\udReportList.pdb

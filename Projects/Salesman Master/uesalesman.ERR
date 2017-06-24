@@ -1,0 +1,19 @@
+Program d:\vss for verson\1 completed\salesman master\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\vss for verson\1 completed\salesman master\frmsalesman.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UEEXTRA - Undefined
+
+Visual Class Library d:\vss for verson\1 completed\salesman master\vuamain.vcx has the following errors:
+    Form FIND - Undefined
+    Visual Class Library DISCH - Undefined
+    Proc./Func. CLEANUP - Undefined
+    Proc./Func. TOOLBAR - Undefined
+    Form DEPT_ONLINE - Undefined
+    Form NRENTRY - Undefined
+    Form SER_ONLINE - Undefined
+    Form CAT_ONLINE - Undefined
+    Form AC_ONLINE - Undefined
+

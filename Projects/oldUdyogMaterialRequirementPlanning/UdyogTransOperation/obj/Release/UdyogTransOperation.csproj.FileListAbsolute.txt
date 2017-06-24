@@ -1,0 +1,7 @@
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Release\UdyogTransOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Release\UdyogTransOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Release\UdyogDataOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Release\UdyogDataOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\obj\Release\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\obj\Release\UdyogTransOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\obj\Release\UdyogTransOperation.pdb

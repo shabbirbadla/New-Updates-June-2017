@@ -1,0 +1,11 @@
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\ResolveAssemblyReference.cache
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.DbConnectionForm.resources
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.Properties.Resources.resources
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.csproj.GenerateResource.Cache
+D:\Jayakumar\Projects\Office\Colonne\Colonne\bin\Debug\Colonne.exe
+D:\Jayakumar\Projects\Office\Colonne\Colonne\bin\Debug\Colonne.pdb
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.exe
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.pdb
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.DadosColumns.resources
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.Columns.resources
+D:\Jayakumar\Projects\Office\Colonne\Colonne\obj\Debug\Colonne.TestQuarryForm.resources

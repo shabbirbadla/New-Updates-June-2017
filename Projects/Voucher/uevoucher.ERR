@@ -1,0 +1,189 @@
+Form d:\udyog\workinggst\voucher\voucher.scx has the following errors:
+    Unknown CHKRIGHT - Undefined
+    Visual Class Library VOUCLASS - Undefined
+    Application UDAPPVOUITEMNEW - Undefined
+    Program UDTRIGVOUITEMNEW - Undefined
+    Proc./Func. UETRIGVOUITEMNEW - Undefined
+    Proc./Func. TOOLBAR - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPVOUNEW - Undefined
+    Unknown UDTRIGVOUNEW - Undefined
+    Unknown UETRIGVOUNEW - Undefined
+    Application UDAPPVOUCANCEL - Undefined
+    Program UDTRIGVOUCANCEL - Undefined
+    Proc./Func. UETRIGVOUCANCEL - Undefined
+    Unknown UDAPPVOUBEFEDIT - Undefined
+    Unknown UDTRIGVOUBEFEDIT - Undefined
+    Unknown UETRIGVOUBEFEDIT - Undefined
+    Unknown UDAPPVOUAFTEDIT - Undefined
+    Unknown UDTRIGVOUAFTEDIT - Undefined
+    Unknown UETRIGVOUAFTEDIT - Undefined
+    Unknown UDAPPVOU_DELETE - Undefined
+    Unknown UDTRIGVOU_DELETE - Undefined
+    Unknown UETRIGVOU_DELETE - Undefined
+    Unknown UDAPPVOUFINALUPDATE - Undefined
+    Unknown UDTRIGVOUFINALUPDATE - Undefined
+    Unknown UETRIGVOUFINALUPDATE - Undefined
+    Application UDAPPVOUTABLEUPDATE - Undefined
+    Program UDTRIGVOUTABLEUPDATE - Undefined
+    Proc./Func. UETRIGVOUTABLEUPDATE - Undefined
+    Application UDAPPVOUROLLBACK - Undefined
+    Program UDTRIGVOUROLLBACK - Undefined
+    Proc./Func. UETRIGVOUROLLBACK - Undefined
+    Unknown UDAPPVOUITEMWISEASSESS - Undefined
+    Unknown UDTRIGVOUITEMWISEASSESS - Undefined
+    Unknown UETRIGVOUITEMWISEASSESS - Undefined
+    Unknown UDAPPVOUAFTCHGCALC - Undefined
+    Unknown UDTRIGVOUAFTCHGCALC - Undefined
+    Unknown UETRIGVOUAFTCHGCALC - Undefined
+    Application UDAPPVOUITCHARGES - Undefined
+    Program UDTRIGVOUITCHARGES - Undefined
+    Proc./Func. UETRIGVOUITCHARGES - Undefined
+    Application UDAPPVOUCHARGES - Undefined
+    Program UDTRIGVOUCHARGES - Undefined
+    Proc./Func. UETRIGVOUCHARGES - Undefined
+    Menu IT_MENU - Undefined
+    Menu AC_MENU - Undefined
+    Application UDAPPVOUITNEW - Undefined
+    Program UDTRIGVOUITNEW - Undefined
+    Proc./Func. UETRIGVOUITNEW - Undefined
+    Unknown UDAPPVOUITEMDELETE - Undefined
+    Unknown UDTRIGVOUITEMDELETE - Undefined
+    Unknown UETRIGVOUITEMDELETE - Undefined
+    Unknown UDAPPVOUACCOUNTDELETE - Undefined
+    Unknown UDTRIGVOUACCOUNTDELETE - Undefined
+    Unknown UETRIGVOUACCOUNTDELETE - Undefined
+    Unknown UDAPPVOUITEXIT - Undefined
+    Unknown UDTRIGVOUITEXIT - Undefined
+    Unknown UETRIGVOUITEXIT - Undefined
+    Unknown UDAPPVOUBEFCOPY - Undefined
+    Unknown UDTRIGVOUBEFCOPY - Undefined
+    Unknown UETRIGVOUBEFCOPY - Undefined
+    Unknown UDAPPVOUCOPY - Undefined
+    Unknown UDTRIGVOUCOPY - Undefined
+    Unknown UETRIGVOUCOPY - Undefined
+    Form OPMODULE - Undefined
+    Form SELEMODNONMODQTY - Undefined
+    Program ETVALID - Undefined
+    Unknown GETPREFIX - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown UDAPPVOUITEMWISECALCULATION - Undefined
+    Unknown UDTRIGVOUITEMWISECALCULATION - Undefined
+    Unknown UETRIGVOUITEMWISECALCULATION - Undefined
+    Application UDAPPVOUETSITEMFIRE - Undefined
+    Program UDTRIGVOUETSITEMFIRE - Undefined
+    Proc./Func. UETRIGVOUETSITEMFIRE - Undefined
+    Form UEETITEMDETDC - Undefined
+    Form UEETITEMDETIR - Undefined
+    Form UEETITEMDETGT - Undefined
+    Unknown CRARRAY - Undefined
+    Unknown ISUNDERIMPORT - Undefined
+    Application UESERVICETAXITEM - Undefined
+    Unknown UDAPPVOUITEMGETPOP - Undefined
+    Unknown UDTRIGVOUITEMGETPOP - Undefined
+    Unknown UETRIGVOUITEMGETPOP - Undefined
+    Application UDAPPVOUACTIVATE - Undefined
+    Program UDTRIGVOUACTIVATE - Undefined
+    Proc./Func. UETRIGVOUACTIVATE - Undefined
+    Application UDAPPVOUAFTACTIVATE - Undefined
+    Program UDTRIGVOUAFTACTIVATE - Undefined
+    Proc./Func. UETRIGVOUAFTACTIVATE - Undefined
+    Application UDAPPVOUEXIT - Undefined
+    Program UDTRIGVOUEXIT - Undefined
+    Proc./Func. UETRIGVOUEXIT - Undefined
+    Application UDAPPETVALID - Undefined
+    Program UDTRIGETVALID - Undefined
+    Program UETRIGETVALID - Undefined
+    Unknown UDAPPVOUINIT - Undefined
+    Unknown UDTRIGVOUINIT - Undefined
+    Unknown UETRIGVOUINIT - Undefined
+    Application UDAPPVOUREFRESH - Undefined
+    Program UDTRIGVOUREFRESH - Undefined
+    Proc./Func. UETRIGVOUREFRESH - Undefined
+    Application UDAPPVOUGENREFRESH - Undefined
+    Program UDTRIGVOUGENREFRESH - Undefined
+    Proc./Func. UETRIGVOUGENREFRESH - Undefined
+    Application UDAPPVOUPARTYNAMEFIRE - Undefined
+    Program UDTRIGVOUPARTYNAMEFIRE - Undefined
+    Proc./Func. UETRIGVOUPARTYNAMEFIRE - Undefined
+    Proc./Func. UENRENTRY - Undefined
+    Application UDAPPVOUCHEQUE - Undefined
+    Program UDTRIGVOUCHEQUE - Undefined
+    Proc./Func. UETRIGVOUCHEQUE - Undefined
+    Unknown UDAPPVOUPARTY - Undefined
+    Unknown UDTRIGVOUPARTY - Undefined
+    Unknown UETRIGVOUPARTY - Undefined
+    Unknown UDAPPVOUACCOUNT - Undefined
+    Unknown UDTRIGVOUACCOUNT - Undefined
+    Unknown UETRIGVOUACCOUNT - Undefined
+    Application UDAPPVOUITEMCOMMON - Undefined
+    Program UDTRIGVOUITEMCOMMON - Undefined
+    Proc./Func. UETRIGVOUITEMCOMMON - Undefined
+    Unknown UDAPPVOUITEMVALID - Undefined
+    Unknown UDTRIGVOUITEMVALID - Undefined
+    Unknown UETRIGVOUITEMVALID - Undefined
+    Application UDAPPVOUITDISCOUNT - Undefined
+    Program UDTRIGVOUITDISCOUNT - Undefined
+    Proc./Func. UETRIGVOUITDISCOUNT - Undefined
+    Unknown UDAPPVOUQTYVALID - Undefined
+    Unknown UDTRIGVOUQTYVALID - Undefined
+    Unknown UETRIGVOUQTYVALID - Undefined
+    Application UDAPPVOUITNEXTITEM - Undefined
+    Program UDTRIGVOUITNEXTITEM - Undefined
+    Proc./Func. UETRIGVOUITNEXTITEM - Undefined
+    Unknown UEALLOC - Undefined
+    Unknown UECOSTCENTRE - Undefined
+    Unknown UDAPPVOUDATEFIRE - Undefined
+    Unknown UDTRIGVOUDATEFIRE - Undefined
+    Unknown UETRIGVOUDATEFIRE - Undefined
+    Unknown UDAPPVOUACCOUNTGETPOP - Undefined
+    Unknown UDTRIGVOUACCOUNTGETPOP - Undefined
+    Unknown UETRIGVOUACCOUNTGETPOP - Undefined
+    Unknown UDAPPVOUPICKUPBEFORE - Undefined
+    Unknown UDTRIGVOUPICKUPBEFORE - Undefined
+    Unknown UETRIGVOUPICKUPBEFORE - Undefined
+    Proc./Func. UEPICKUP - Undefined
+    Application UDAPPVOUPICKUPAFTER - Undefined
+    Program UDTRIGVOUPICKUPAFTER - Undefined
+    Proc./Func. UETRIGVOUPICKUPAFTER - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    Application UDAPPVOUXTRACLOSE - Undefined
+    Program UDTRIGVOUXTRACLOSE - Undefined
+    Proc./Func. UETRIGVOUXTRACLOSE - Undefined
+    Application UEISDALLOCATION - Undefined
+    Application UESERTAXPAYMENT - Undefined
+    Application UEGSTREVERSALPAYMENT - Undefined
+
+Program d:\udyog\workinggst\voucher\voucher.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\udyog\workinggst\voucher\frmprint.scx has the following errors:
+    Unknown CHKRIGHT - Undefined
+    Application UDAPPVOUPRINTING - Undefined
+    Program UDTRIGVOUPRINTING - Undefined
+    Proc./Func. UETRIGVOUPRINTING - Undefined
+    Proc./Func. UECRVIEWER - Undefined
+
+Visual Class Library d:\udyog\workinggst\voucher\toolclass.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\udyog\workinggst\voucher\uefrmservicetaxdet.scx has the following errors:
+    Visual Class Library VOUCLASS - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\udyog\workinggst\voucher\uefrmcogsalloc.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown UDAPPCOGSALLOC - Undefined
+    Unknown UDTRIGCOGSALLOC - Undefined
+    Unknown UETRIGCOGSALLOC - Undefined
+
+Form d:\udyog\workinggst\voucher\uefrmservicetaxadj.scx has the following errors:
+    Visual Class Library VOUCLASS - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\udyog\workinggst\voucher\uefrmservicetaxpay.scx has the following errors:
+    Visual Class Library VOUCLASS - Undefined
+    Unknown UEGETPOP - Undefined
+

@@ -1,0 +1,78 @@
+usquare==>&&Rup Multi Company Creation
+---------------------
+alter table co_mast add com_type varchar(1) default '' with values
+---------------------
+usquare==>
+	IF !INLIST(mvu_MenuType,[C]) &&Rup
+		nretval=sqlconobj.dataconn('EXE',_Defaultdb,'select * from co_mast',"_co_mast","nHandle")
+	ELSE
+		nretval=sqlconobj.dataconn('EXE',_Defaultdb,"select * from co_mast where com_type='M'","_co_mast","nHandle")
+	ENDIF 
+---------------------------------------------------------------------
+select * from com_menu where padname in('_MSYSMENU','SETTINGS','SECURITY','FILE')
+delete from com_menu where padname not in('_MSYSMENU','SETTINGS','SECURITY','FILE')
+delete from com_menu where barname  in('MASTERS','TRANSACTIONS','BACKUP','CONTROLCENTRE','TRANSACTIONSETTING')
+
+-------------------------------------------------------------------------------------
+INSERT INTO [COM_MENU]
+           ([range]
+           ,[padname]
+           ,[padnum]
+           ,[barname]
+           ,[barnum]
+           ,[prompname]
+           ,[numitem]
+           ,[hotkey]
+           ,[progname]
+           ,[E_]
+           ,[n_]
+           ,[r_]
+           ,[t_]
+           ,[i_]
+           ,[o_]
+           ,[b_]
+           ,[x_]
+           ,[Menutype]
+           ,[Isactive]
+           ,[puser]
+           ,[mdefault]
+           ,[labkey]
+           ,[skipfor]
+           ,[cprog]
+           ,[mark]
+           ,[xtvs_]
+           ,[dsni_])
+	   select
+		[range]
+           ,[padname]
+           ,[padnum]
+           ,[barname]
+           ,[barnum]
+           ,[prompname]
+           ,[numitem]
+           ,[hotkey]
+           ,[progname]
+           ,[E_]
+           ,[n_]
+           ,[r_]
+           ,[t_]
+           ,[i_]
+           ,[o_]
+           ,[b_]
+           ,[x_]
+           ,[Menutype]
+           ,[Isactive]
+           ,[puser]
+           ,[mdefault]
+           ,[labkey]
+           ,[skipfor]
+           ,[cprog]
+           ,[mark]
+           ,[xtvs_]
+           ,[dsni_]
+	from s030809..com_menu where barname in('exit','MASTER','COMPANYMASTER')
+---------------------------------------------------------------------
+update com_menu set progname='DO UEMULTYCO_MAST WITH "","^13002"' where [range]='13002'
+---------------------------------------------------------------------
+create table com_det (co_name varchar(50),sta_det datetime,end_dt datetime)
+---------------------------------------------------------------------

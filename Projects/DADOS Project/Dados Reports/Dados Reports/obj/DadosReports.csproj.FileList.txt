@@ -1,0 +1,17 @@
+bin\Debug\DadosReports.exe.config
+bin\Debug\DadosReports.exe
+bin\Debug\DadosReports.pdb
+bin\Debug\CryptoLib.dll
+bin\Debug\LogicalLibrary.dll
+bin\Debug\LogicalLibrary.pdb
+bin\Debug\CryptoLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DadosReports.ConditionsEditor.resources
+obj\Debug\DadosReports.Loading.resources
+obj\Debug\DadosReports.Properties.Resources.resources
+obj\Debug\DadosReports.ReportsMain.resources
+obj\Debug\DadosReports.SendMail.resources
+obj\Debug\DadosReports.csproj.GenerateResource.Cache
+obj\Debug\DadosReports.exe.licenses
+obj\Debug\DadosReports.exe
+obj\Debug\DadosReports.pdb

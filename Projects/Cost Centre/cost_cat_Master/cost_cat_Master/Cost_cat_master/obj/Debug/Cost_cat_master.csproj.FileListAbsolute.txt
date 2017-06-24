@@ -1,0 +1,58 @@
+D:\Biru\Cost_cat_master\Cost_cat_master\bin\Debug\Cost_cat_master.exe
+D:\Biru\Cost_cat_master\Cost_cat_master\bin\Debug\Cost_cat_master.pdb
+D:\Biru\Cost_cat_master\Cost_cat_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Biru\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Biru\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.csproj.GenerateResource.Cache
+D:\Biru\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.exe
+D:\Biru\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.pdb
+d:\Biru\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Cost_Cat_Mast.resources
+D:\Biru\Cost_cat_master\Cost_cat_master\bin\Debug\uBaseForm.pdb
+D:\Biru\Cost_cat_master\Cost_cat_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.exe
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\bin\Debug\Cost_cat_master.exe
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\bin\Debug\Cost_cat_master.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Cost_Cat_Mast.resources
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.csproj.GenerateResource.Cache
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.exe
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\bin\Debug\Cost_cat_master.exe
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\bin\Debug\Cost_cat_master.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Cost_Cat_Mast.resources
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_cat_master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.csproj.GenerateResource.Cache
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Cost_Cat_Mast.resources
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\obj\Debug\Cost_cat_master.csproj.GenerateResource.Cache
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\bin\Debug\UeCost_cat_master.exe
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\bin\Debug\UeCost_cat_master.pdb
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\obj\Debug\UeCost_cat_master.exe
+D:\Projects\Working\cost_cat_Master\Cost_cat_master\Cost_cat_master\obj\Debug\UeCost_cat_master.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\obj\Debug\UeCost_cat_master.exe
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\obj\Debug\UeCost_cat_master.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\bin\Debug\UeCost_cat_master.exe
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\bin\Debug\UeCost_cat_master.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\bin\Debug\DataAccess-Net.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\obj\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\obj\Debug\Cost_cat_master.Cost_Cat_Mast.resources
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+E:\MY PROJECT\COSTCENTER\COSTCENTER\cost_cat_Master\Cost_cat_master\obj\Debug\Cost_cat_master.csproj.GenerateResource.Cache
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Debug\UeCost_cat_master.exe
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Debug\UeCost_cat_master.pdb
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\bin\Debug\UeCost_cat_master.exe
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\bin\Debug\UeCost_cat_master.pdb
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\bin\Debug\DataAccess-Net.pdb
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Debug\ResolveAssemblyReference.cache
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Debug\Cost_cat_master.Cost_Cat_Mast.resources
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+F:\Bug\25197\Cost Center\cost_cat_Master\cost_cat_Master\Cost_cat_master\obj\Debug\Cost_cat_master.csproj.GenerateResource.Cache

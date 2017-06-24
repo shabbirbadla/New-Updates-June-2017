@@ -1,0 +1,4 @@
+&& Code for sql Table Updation
+Local Result
+Result=SqlexeC(chqcon,"alter table ac_mast add test varchar(20)") && If we want to add coulumn in SQL DAtabase(Table)
+Result=SqlexeC(chqcon,"alter table ac_mast drop column test")&& If we want to delete coulumn from SQL DAtabase(Table)

@@ -1,0 +1,11 @@
+D:\New Folder\Uploadfile\bin\Debug\Udyog.iTAX.FileUpload.Any.Format.tlb
+bin\Debug\Udyog.iTAX.FileUpload.Any.Format.dll
+bin\Debug\Udyog.iTAX.FileUpload.Any.Format.pdb
+D:\Sachind Folder D\SQL Projects\Upload file\Uploadfile\bin\Debug\Udyog.iTAX.FileUpload.Any.Format.tlb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Udyog.iTAX.FileUpload.Any.Format.csproj.ResolveComReference.cache
+obj\Debug\Udyog.iTAX.FileUpload.Any.Format.Properties.Resources.resources
+obj\Debug\Udyog.iTAX.FileUpload.Any.Format.ShowWindow.resources
+obj\Debug\Udyog.iTAX.FileUpload.Any.Format.csproj.GenerateResource.Cache
+obj\Debug\Udyog.iTAX.FileUpload.Any.Format.dll
+obj\Debug\Udyog.iTAX.FileUpload.Any.Format.pdb

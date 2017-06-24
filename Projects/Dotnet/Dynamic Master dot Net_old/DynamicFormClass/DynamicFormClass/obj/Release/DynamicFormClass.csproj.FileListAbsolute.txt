@@ -1,0 +1,7 @@
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\bin\Release\DynamicFormClass.dll
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\bin\Release\DynamicFormClass.pdb
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\bin\Release\DataAccess-Net.dll
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\bin\Release\DataAccess-Net.pdb
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\obj\Release\DynamicFormClass.dll
+D:\SQLProject\DynamicMaster\DynamicFormClass\DynamicFormClass\obj\Release\DynamicFormClass.pdb

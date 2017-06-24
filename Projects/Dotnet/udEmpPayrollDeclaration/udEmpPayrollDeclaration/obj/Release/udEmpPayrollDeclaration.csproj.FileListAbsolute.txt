@@ -1,0 +1,78 @@
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udReportList.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udSelectPop.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\uNumericTextBox.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udDataTableQuery.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udCrViewer.dll
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\SQLProject\payroll\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\Ramya\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\Ramya Working\From Rupesh\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udDataTableQuery.dll
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udReportList.dll
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udReportList.pdb
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udCrViewer.dll
+D:\Ramya Working\From Rupesh\payroll Declaration\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udCrViewer.pdb
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\bin\Release\udDataTableQuery.dll
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\Payroll Declaration From Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\bin\Release\udDataTableQuery.dll
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\udEmpPayrollDeclaration from Vss\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.exe
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udEmpPayrollDeclaration.pdb
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udDataTableQuery.dll
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udReportList.pdb
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\udCrViewer.pdb
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\bin\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpInvestmentDeclaration.frmDeclaration.resources
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.exe
+D:\SVN Development\Dotnet\udEmpPayrollDeclaration\udEmpPayrollDeclaration\obj\Release\udEmpPayrollDeclaration.pdb

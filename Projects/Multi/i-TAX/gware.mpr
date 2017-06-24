@@ -1,0 +1,459 @@
+PARAMETERS oformref,getmenuname,oDatasessionid
+
+*!*	STARTTIME = TIME()
+SET EXCLUSIVE OFF
+IF TYPE('cMenuName') = 'C'
+	RELEASE MENUS (m.cmenuname)
+ENDIF
+RELEASE POPUPS ALL
+
+SET DATASESSION TO oDatasessionid
+
+PUBLIC m.cmenuname
+IF TYPE("m.oFormRef") # "O" OR ;
+		LOWER(m.oformref.BASECLASS) # 'form' OR ;
+		m.oformref.SHOWWINDOW # 2
+	MESSAGEBOX([This menu can only be called from a Top-Level form. Ensure that your form's ShowWindow property is set to 2. Read the header section of the menu's MPR file for more details.])
+	RETURN
+ENDIF
+
+m.ctypeparm2 = TYPE("m.getMenuName")
+m.cmenuname = "Udyog"+SYS(2015)
+m.csaveformname = m.oformref.NAME
+IF m.ctypeparm2 = "C" OR (m.ctypeparm2 = "L" AND m.getmenuname)
+	m.oformref.NAME = m.cmenuname
+ENDIF
+
+IF m.ctypeparm2 = "C" AND !EMPTY(m.getmenuname)
+	m.cmenuname = m.getmenuname
+ENDIF
+
+#DEFINE color_scheme1 3	&& color constant
+#DEFINE color_scheme2 4	&& color constant
+
+LOCAL sqlconobj
+sqlconobj=NEWOBJECT('sqlconnudobj',"sqlconnection",xapps)
+
+IF USED('dbfmenu')
+	SELECT dbfmenu
+	USE
+ENDIF
+
+tuser = musername
+*!*	*!*	msqlstr = "select a.* from com_menu a "
+msqlstr = "select a.* from com_menu a inner join userrights b on a.padname = b.padname and a.barname = b.barname and a.range = b.range where dbo.func_decoder(LTRIM(RTRIM(b.[user])),'T') = ?tuser "
+msqlstr = msqlstr + "union all select * from com_menu where ((padname = '_MSYSMENU' and barname = 'file') or padname = 'file') or ((padname = '_MSYSMENU' and barname = 'help') or padname = 'help') order by a.range"
+nretval =0
+nHandle=0
+nretval=sqlconobj.dataconn('EXE',company.dbname,msqlstr,"dbfmenu","nHandle")
+IF nretval<=0
+	RETURN .F.
+ENDIF
+
+nretval=sqlconobj.sqlconnclose("nHandle") && Connection Close
+IF nretval<=0
+	RETURN .F.
+ENDIF
+RELEASE nHandle
+
+*!*	*!*	*!*	SELE padname, barname FROM dbfmenu WHERE UPPER(ALLT(padname)) = "_MSYSMENU" AND NOT EMPT(barname) ORDER BY padnum INTO CURSOR tmp2rel
+*!*	*!*	*!*	IF _TALLY > 0
+*!*	*!*	*!*		SELE tmp2rel
+*!*	*!*	*!*		GO TOP
+*!*	*!*	*!*		DO WHILE ! EOF()
+*!*	*!*	*!*			pad2rel = ALLT(barname)
+*!*	*!*	*!*			menu2rel = ALLT(padname)
+*!*	*!*	*!*			IF UPPER(ALLTRIM(pad2rel)) = 'FILE'
+*!*	*!*	*!*				SKIP
+*!*	*!*	*!*				LOOP
+*!*	*!*	*!*			ENDIF
+*!*	*!*	*!*			RELEASE PAD &pad2rel OF &menu2rel
+*!*	*!*	*!*			SELE tmp2rel
+*!*	*!*	*!*			SKIP
+*!*	*!*	*!*		ENDDO
+*!*	*!*	*!*		SELE tmp2rel
+*!*	*!*	*!*		USE
+*!*	*!*	*!*	ENDIF
+
+SELECT dbfmenu
+SET FILTER TO ALLTRIM(UPPER(padname))="_MSYSMENU" AND !EMPTY(barname)
+INDEX ON padnum TAG padnum
+GO TOP
+IF EOF()
+	RETURN
+ENDI
+counter=1
+DEFINE MENU (m.cmenuname) IN (m.oformref.NAME) BAR
+DO WHILE ! EOF()
+	lbar=ALLT(barname)
+	lpad=ALLT(padname)
+	lpromp=ALLT(PROP(prompname))
+	lnumitem=numitem
+	lhot=ALLT(HOTKEY)
+	llhot = ['']
+	lprogname=ALLT(progname)
+	lcprog = []
+	lskip = []
+
+	IF LEFT(lpromp,1)="\"
+		lpromp="'\<"+UPPER(SUBSTR(lpromp,3,1))+SUBSTR(lpromp,4)+"'"
+	ELSE
+		npos=RAT("<",lpromp)
+		IF npos<>0
+			IF SUBS(lpromp, npos-2, 1)=' '		&& take it upper if the hot key first char after space
+				lpromp=LEFT(lpromp,npos-2)+"\<"+UPPER(SUBSTR(lpromp,npos+1,1))+SUBSTR(lpromp,npos+2)
+			ELSE
+				lpromp=LEFT(lpromp,npos-2)+"\<"+SUBSTR(lpromp,npos+1,1)+SUBSTR(lpromp,npos+2)
+			ENDIF
+		ENDIF
+		lpromp="'"+lpromp+"'"
+	ENDIF
+	lcond=.T.
+
+*!*		IF E_ = .T. OR N_ = .T. OR R_ = .T. OR T_ = .T. OR I_ = .T. OR O_ = .T. OR B_ = .T. OR X_ = .T.
+*!*			lcond=.T.
+*!*		ELSE
+*!*			lcond=.F.
+*!*		ENDI
+
+	IF rel_bar(lpad,lbar)=.T.	&&09/05/2002
+		IF !EMPTY(lnumitem) AND lcond=.T.
+			IF ! EMPTY(lhot)
+				IF EMPTY(lskip)
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1 ;
+						KEY &lhot , &llhot
+				ELSE
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1 ;
+						KEY &lhot , &llhot ;
+						SKIP FOR &lskip
+				ENDIF
+			ELSE
+				IF EMPTY(lskip)
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1
+				ELSE
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1 ;
+						SKIP FOR &lskip
+				ENDIF
+			ENDI
+			ON PAD &lbar OF (m.cmenuname) ACTIVATE POPUP &lbar
+		ELSE
+			IF !EMPTY(lhot)
+				IF EMPTY(lskip)
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1 ;
+						KEY &lhot , &llhot
+				ELSE
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1 ;
+						KEY &lhot , &llhot ;
+						SKIP FOR &lskip
+				ENDIF
+			ELSE
+				IF EMPTY(lskip)
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1
+				ELSE
+					DEFINE PAD &lbar OF (m.cmenuname) PROMPT &lpromp COLOR SCHEME color_scheme1 ;
+						SKIP FOR &lskip
+				ENDIF
+			ENDIF
+			IF !EMPTY(lprogname)
+				IF !EMPTY(lcprog)
+					st = [do vou_common with "A" in gware.mpr]
+					ON SELECTION PAD &lbar OF (m.cmenuname) &st
+				ELSE
+					lappName = ALLTRIM(lprogname)
+					lappName = STRTRAN(ALLTRIM(lprogname),']',"}}")
+					lappName = STRTRAN(ALLTRIM(lappName),'[',"{{")
+					st = 'do vou_common with "B",['+ALLTRIM(lappName)+'] in gware.mpr'
+					ON SELECTION PAD &lbar OF (m.cmenuname) &st
+				ENDIF
+			ENDIF
+		ENDIF
+		counter=counter+1
+	ENDIF
+	SELECT dbfmenu
+	SKIP
+ENDDO
+SET FILTER TO
+a_menupops="_mwindow"
+
+DEFINE PAD _MSM_WINDO OF (m.cmenuname) PROMPT "\<Window" COLOR SCHEME 3 ;
+	MESSAGE "Manipulates windows, displays Command and Data Session windows"
+ON PAD _MSM_WINDO OF (m.cmenuname) ACTIVATE POPUP (a_menupops)
+DEFINE POPUP (a_menupops) MARGIN RELATIVE SHADOW COLOR SCHEME 4
+DEFINE BAR _mwi_cascade OF (a_menupops) PROMPT "Ca\<scade" ;
+	PICTRES _mwi_cascade ;
+	MESSAGE "Arranges windows as cascading tiles"
+DEFINE BAR _MWI_ARRAN OF (a_menupops) PROMPT "\<Arrange All" ;
+	PICTRES _MWI_ARRAN ;
+	MESSAGE "Arranges windows as non-overlapping tiles"
+DEFINE BAR _MWI_SP200 OF (a_menupops) PROMPT "\-" ;
+	MESSAGE "Runs the Application Wizard"
+
+lbar=""
+lpad=""
+lpromp=""
+lhot=""
+llhot=""
+lprogname=""
+lcprog = []
+lskip = []
+lnumitem=0
+lcond=.F.
+
+SELECT dbfmenu
+SELECT DISTINCT padname,padnum FROM dbfmenu WHERE ALLTRIM(UPPER(padname))<>"_MSYSMENU" ORDER BY padnum ;
+	INTO CURSOR padcursor
+IF _TALLY>0
+	SELECT padcursor
+	GO TOP
+	DO WHILE !EOF()
+		lpad=ALLTRIM(padname)
+		DEFINE POPUP &lpad MARGIN RELATIVE SHADOW COLOR SCHEME color_scheme2
+		counter=1
+		SELECT dbfmenu
+		LOCATE FOR ALLT(padname)==lpad				&& Manohar 18/05/2004
+		DO WHILE FOUND()
+			lbar=ALLTRIM(barname)
+			lpromp=ALLTRIM(PROP(prompname))
+			lnumitem=numitem
+			IF LEFT(lpromp,1)="\"
+				lpromp="'\<"+UPPER(SUBSTR(lpromp,3,1))+SUBSTR(lpromp,4)+"'"
+			ELSE
+				npos=RAT("<",lpromp)
+				IF npos<>0
+					IF SUBS(lpromp, npos-2, 1)=' '	&& take it upper if the hot key first char after space
+						lpromp=LEFT(lpromp,npos-2)+"\<"+UPPER(SUBSTR(lpromp,npos+1,1))+SUBSTR(lpromp,npos+2)
+					ELSE
+						lpromp=LEFT(lpromp,npos-2)+"\<"+SUBSTR(lpromp,npos+1,1)+SUBSTR(lpromp,npos+2)
+					ENDIF
+				ENDIF
+				lpromp="'"+lpromp+"'"
+			ENDIF
+			lhot= ALLT(HOTKEY)
+			llhot= ['']
+			lprogname = ALLT(progname)
+			lskip = []
+			lcprog = []
+			lcond=.T.
+
+*!*				IF E_ = .T. OR N_ = .T. OR R_ = .T. OR T_ = .T. OR I_ = .T. OR O_ = .T. OR B_ = .T. OR X_ = .T.
+*!*					lcond=.T.
+*!*				ELSE
+*!*					lcond=.F.
+*!*				ENDI
+
+			IF rel_bar(lpad,lbar)=.T.	&&09/05/2002
+				IF UPPER(ALLT(lpad)) = "HELP" AND UPPER(ALLT(barname)) = "CONTENTS"
+					DEFINE BAR _MST_HELP OF &lpad PROMPT &lpromp KEY &lhot ,lhot
+					counter = counter + 1
+					CONTINUE
+					LOOP
+				ENDIF
+				IF UPPER(ALLT(lpad)) = "HELP" AND UPPER(ALLT(barname)) = "SEARCHFORHELPON"
+					DEFINE BAR _MST_HPSCH OF &lpad PROMPT &lpromp
+					counter = counter + 1
+					CONTINUE
+					LOOP
+				ENDIF
+				IF EMPTY(lbar)
+					DEFINE BAR counter OF &lpad PROMPT "\-"
+				ELSE
+					IF !EMPTY(lnumitem)	AND lcond=.T.
+						IF !EMPTY(lhot)
+							IF EMPTY(lskip)
+								DEFINE BAR counter OF &lpad PROMPT &lpromp KEY &lhot ,lhot
+							ELSE
+								DEFINE BAR counter OF &lpad PROMPT &lpromp KEY &lhot ,lhot ;
+									SKIP FOR &lskip
+							ENDIF
+						ELSE
+							IF EMPTY(lskip)
+								DEFINE BAR counter OF &lpad PROMPT &lpromp
+							ELSE
+								DEFINE BAR counter OF &lpad PROMPT &lpromp ;
+									SKIP FOR &lskip
+							ENDIF
+						ENDIF
+						ON BAR counter OF &lpad ACTIVATE POPUP &lbar
+					ELSE
+						IF !EMPTY(lhot)
+							IF EMPTY(lskip)
+								DEFINE BAR counter OF &lpad PROMPT &lpromp KEY &lhot ,lhot
+							ELSE
+								DEFINE BAR counter OF &lpad PROMPT &lpromp KEY &lhot ,lhot ;
+									SKIP FOR &lskip
+							ENDIF
+						ELSE
+							IF EMPTY(lskip)
+								DEFINE BAR counter OF &lpad PROMPT &lpromp
+							ELSE
+								DEFINE BAR counter OF &lpad PROMPT &lpromp ;
+									SKIP FOR &lskip
+							ENDIF
+						ENDIF
+						IF !EMPTY(lprogname)
+							IF !EMPTY(lcprog)
+								st = [do vou_common with "A" in gware.mpr]
+								ON SELECTION BAR counter OF &lpad &st
+							ELSE
+								lappName = ALLTRIM(lprogname)
+								lappName = STRTRAN(ALLTRIM(lprogname),']',"}}")
+								lappName = STRTRAN(ALLTRIM(lappName),'[',"{{")
+								st = 'do vou_common with "B",['+ALLTRIM(lappName)+'] in gware.mpr'
+								ON SELECTION BAR counter OF &lpad &st
+							ENDIF
+						ENDIF
+					ENDIF
+				ENDIF
+				counter=counter+1
+			ENDIF	&&09/05/2002
+			SELECT dbfmenu
+			CONTINUE
+		ENDDO
+		SELECT padcursor
+		SKIP
+	ENDDO
+ENDIF
+ACTIVATE MENU (m.cmenuname) NOWAIT
+IF m.ctypeparm2 = "C"
+	m.getmenuname = m.cmenuname
+	m.oformref.NAME = m.csaveformname
+ENDIF
+RETURN
+
+
+*!*	COMMOM PROCEDURE FOR VOUCHERS
+PROCEDURE vou_common
+PARAMETERS tpara,tprogname
+DO CASE
+CASE tpara = "A"  && for !empty lcprog
+	gprompt=PROMP()
+	gpad=PAD()
+	SELECT dbfmenu
+	LOCATE FOR ALLTRIM(UPPER(prompname))==ALLTRIM(UPPER(gprompt))
+	IF !FOUND()
+		RETURN
+	ENDIF
+	llprog=ALLT(progname)
+	lpcvtype=cprog
+	view_on = .T. &&do not remove this line
+	IF EMPTY(lpcvtype) OR EMPTY(llprog)
+		RETURN
+	ENDIF
+	pcvtype=lpcvtype
+	tbrdesktopmenu.VISIBLE = .F.
+	tbrdesktopmenu.timer1.ENABLED = .F.
+	tbrcallmenu.cmdMenu.PICTURE = "pinout.bmp"
+	&llprog
+CASE tpara = "B"
+	tbrdesktopmenu.VISIBLE = .F.
+	tbrdesktopmenu.timer1.ENABLED = .F.
+	tbrcallmenu.cmdMenu.PICTURE = "pinout.bmp"
+	llprog = tprogname
+	llprog = STRTRAN(ALLTRIM(llprog),"}}",']')
+	llprog = STRTRAN(ALLTRIM(llprog),"{{",'[')
+	&llprog
+*!*		Execscript(llprog)
+ENDCASE
+
+FUNCTION rel_bar
+LPARAMETER padname, barname
+padname = UPPER(ALLT(padname))
+barname = UPPER(ALLT(barname))
+LOCAL this_bar4user
+this_bar4user = .F.
+
+IF UPPER(ALLT(nameuser)) = "ADMIN"
+
+	IF padname = "_MSYSMENU" AND barname = "FILE"
+		RETURN .T.
+	ENDIF
+	IF padname = "FILE" AND barname = "EXIT"
+		RETURN .T.
+	ENDIF
+	IF padname = "_MSYSMENU" AND barname = "TOOLS"
+		RETURN .T.
+	ENDIF
+	IF padname = "TOOLS" AND barname = "LOGIN"
+		RETURN .T.
+	ENDIF
+	IF padname = "TOOLS" AND barname = "CHANGEPASSWORD"
+		RETURN .T.
+	ENDIF
+	IF padname = "TOOLS" AND barname = "SECURITY"
+		RETURN .T.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "USERSLEVEL"
+		RETURN .T.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "MENURIGHTS"
+		RETURN .T.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "USERCONTROL"
+		RETURN .T.
+	ENDIF
+	IF padname = "USERCONTROL" AND barname = "ENTRYDETAILS"
+		RETURN .T.
+	ENDIF
+	IF padname = "USERCONTROL" AND barname = "ENTRYSUMMARY"
+		RETURN .T.
+	ENDIF
+ENDIF
+
+IF UPPER(ALLT(nameuser)) <> "ADMIN"
+	IF padname = "SECURITY" AND barname = "VOUCHERPERIODLOCK"
+		RETURN .T.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "KEYBOARDLOCK"
+		RETURN .T.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "LOCKSTATUS"
+		RETURN .T.
+	ENDIF
+
+	IF padname = "SECURITY" AND barname = "USERSLEVEL"
+		RETURN .F.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "MENURIGHTS"
+		RETURN .F.
+	ENDIF
+	IF padname = "SECURITY" AND barname = "USERCONTROL"
+		RETURN .F.
+	ENDIF
+ENDIF && not an admin
+
+this_bar4user = .T.
+RETURN this_bar4user
+
+IF padname = "_MSYSMENU" AND barname = "FILE"
+	RETURN .T.
+ENDIF
+
+IF padname = "_MSYSMENU" AND barname = "TOOLS"
+	RETURN .T.
+ENDIF
+
+IF padname = "FILE" AND barname = "EXIT"
+	RETURN .T.
+ENDIF
+
+IF padname = "TOOLS" AND barname = "LOGIN"
+	RETURN .T.
+ENDIF
+
+RETURN .F.
+
+
+******************
+PROCEDURE fileexit
+******************
+FOR i = 1 TO _SCREEN.FORMCOUNT
+	IF ALLT(UPPER(_SCREEN.FORMS[i].BASECLASS)) != "TOOLBAR" AND LEFT(UPPER(ALLTRIM(_SCREEN.FORMS[i].NAME)),5) != 'UDYOG';
+			AND UPPER(ALLTRIM(_SCREEN.FORMS[i].NAME)) != 'FRMLOGINUSERS' AND UPPER(ALLTRIM(_SCREEN.FORMS[i].NAME)) != 'FRMMSGWINDOW'
+		statdesktop.MESSAGE = [Busy Mode....]
+		=beep(600,200)
+		statdesktop.MESSAGE = [User :]+musername
+		RETURN .F.
+	ENDIF
+NEXT i
+KEYBOARD "{ALT+F4}"
+RETURN

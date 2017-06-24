@@ -1,0 +1,212 @@
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\uCheckBox.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udSelectPop.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udclsDGVDateTimePicker.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\uNumericTextBox.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udDataTableQuery.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\SQLProject\payroll\udEmpMonthlyPayroll__Accounts\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udReportList.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+D:\SQLProject\payroll\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udTextEdit.dll
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+D:\MonthlyPayroll from vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+D:\Development_udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\udEmpMonthlyPayroll from Vss\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpMonthlyPayroll\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\bin\Debug\getinfo.dll
+E:\MY PROJECT\DOTNET\Monthally payroll\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\bin\Debug\getinfo.dll
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+E:\Working\Bug-18246\Monthly Payroll\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\bin\Debug\getinfo.dll
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Bug-18246\Monthly Payroll_110913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\bin\Debug\getinfo.dll
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Bug-18246\Monthly Payroll_120913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\bin\Debug\getinfo.dll
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Bug-18246\Monthly Payroll_130913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\getinfo.dll
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+C:\Users\archana.USQURE\Desktop\Bug-18246\Monthly Payroll_130913_finalUpdates\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_270913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_270913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_270913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_270913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+C:\Users\archana.USQURE\Desktop\Bug-18246_updates\Bug-18246\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+C:\Users\archana.USQURE\Desktop\Bug-18246_270913\Monthly Payroll_130913_finalUpdates_300913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.exe
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\bin\Debug\udEmpMonthlyPayroll.pdb
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\bin\Debug\udCrViewer.dll
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\bin\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.frmMonthlyPayroll.resources
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.Properties.Resources.resources
+E:\Working\Project\Bug-18246_updated_proj\Monthly Payroll_230913\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+D:\1 Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+D:\1 Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\1 Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+D:\SVN Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+D:\SVN Development\Dotnet\udEmpMonthlyPayroll\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb
+F:\Kishor\SVN\26255\udEmpMonthlyPayroll\obj\Debug\Interop.ueconnect.dll
+F:\Kishor\SVN\26255\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.csproj.ResolveComReference.cache
+F:\Kishor\SVN\26255\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.exe
+F:\Kishor\SVN\26255\udEmpMonthlyPayroll\obj\Debug\udEmpMonthlyPayroll.pdb

@@ -1,0 +1,4 @@
+Zoom in Ledger : 
+
+Option to select groupwise
+Option to select Selective Item.

@@ -1,0 +1,11 @@
+LPARAMETERS tnrange AS INTEGER
+*!*	,pdeptran AS STRING
+
+IF VARTYPE(VuMess) <> 'C'
+	MESSAGEBOX('Internal Application Not Run Directly...',0+48,[])
+	QUIT
+	RETURN .F.
+ENDIF
+
+*!*	DO FORM frmexplcmast WITH pdeptran,tnrange
+DO FORM frmexplcmast WITH tnrange

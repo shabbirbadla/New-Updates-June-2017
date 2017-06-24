@@ -1,0 +1,21 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-21 15:41:07	Process Started....
+2014-01-21 15:41:07	Process Start ID : EM1
+2014-01-21 15:41:07	Inv_no : 000001
+2014-01-21 15:41:07	Error Found...found error while getting emails details 
+Message : To Mail address found empty...
+Source : eMailClient.BLL
+TargetSite : System.String GetEmailDetailsFromTable(Int32, System.String, Int32 ByRef, System.String, System.String)
+
+Source : eMailClient.BLL
+TargetSite : System.String GetEmailDetailsFromTable(Int32, System.String, Int32 ByRef, System.String, System.String)
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported PDF files : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2014-01-21 15:41:08	Successfully Email Log Status Mail Sent.... 
+2014-01-21 15:41:08	Process End ID : EM1
+-------------------------------------<<< END >>>-----------------------------
+

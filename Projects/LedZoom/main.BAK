@@ -1,0 +1,82 @@
+*:*****************************************************************************
+*:        Program: Main.PRG
+*:         System: Udyog Software
+*:         Author: RAGHU
+*:  Last modified: 17/06/2008
+*:			AIM  : Account wise Zoom-In Ledger
+*:*****************************************************************************
+Parameters _datasessionid,category,accountname,zoomtype,zoomintype,type3,fromdate,todate,_winstat
+****Versioning**** && Added By Amrendra for TKT 8121 on 13-06-2011
+	LOCAL _VerValidErr,_VerRetVal,_CurrVerVal
+	_VerValidErr = ""
+	_VerRetVal  = 'NO'
+_CurrVerVal='10.0.0.0' &&[VERSIONNUMBER]
+	TRY
+		_VerRetVal = AppVerChk('LEDZOOM',_CurrVerVal,JUSTFNAME(SYS(16)))
+	CATCH TO _VerValidErr
+		_VerRetVal  = 'NO'
+	Endtry	
+	IF TYPE("_VerRetVal")="L"
+		cMsgStr="Version Error occured!"
+		cMsgStr=cMsgStr+CHR(13)+"Kindly update latest version of "+GlobalObj.getPropertyval("ProductTitle")
+		Messagebox(cMsgStr,64,VuMess)
+		Return .F.
+	ENDIF
+	IF _VerRetVal  = 'NO'
+		Return .F.
+	Endif
+****Versioning****
+**!**	_Datasessionid		This is the datasession Id of vureport.
+**!**	Category			Not Used.
+**!**	Accountname			The account name of which zoom in is to generate.
+**!**	Zoomtype            type of ledger "R"
+**!**	Zoomintype			What type of zoom in
+**!**						"M"	- Monthwise report,"D" - Datewise report,"V" - Entryvise report
+**!**	Type3				Not Used
+**!**	Fromdate            Starting date of the ledger
+**!**	Todate				Ending date of the ledger
+**!**	_Winstat			Whether maximised or not    &&not used till now
+If Vartype(VuMess) <> [C]
+	_Screen.Visible = .F.
+	Messagebox("Internal Application Are Not Execute Out-Side ...",16,[])
+	Quit
+	Return .F.
+Endif
+
+nHandle = 0
+If Vartype(_datasessionid) = 'N'
+	Set DataSession To _datasessionid
+Endif
+SqlConObj = Newobject("SqlConNudObj","SqlConnection",xapps)
+accountname = Iif(Type("accountname")!='U',Alltrim(accountname),Iif(Used("_tmpvar"),_tmpvar.sname,''))
+lcSqlstr = "SELECT a.entry_ty,a.date,a.ac_name,a.ac_id,a.amount,a.amt_ty FROM lac_vw a,lcode b "
+lcSqlstr = lcSqlstr+" WHERE a.Entry_ty=b.Entry_Ty AND b.v_account=1 AND a.ac_name=?Accountname"
+nRetval= SqlConObj.DataConn([EXE],company.dbname,lcSqlstr,[_Lac_Det_Zoom],"nHandle",_datasessionid,.F.)
+If nRetval<0
+	Return .F.
+Endif
+nRetval=SqlConObj.sqlconnclose("nHandle")
+
+fillvalue=0
+Select _Lac_Det_Zoom
+lnTotrec = Reccount("_Lac_Det_Zoom")
+If Used("_Lac_Det_Zoom")
+	Use In _Lac_Det_Zoom
+Endif
+
+If lnTotrec = 0
+*!*		Error "No Records Found For This Account...."		&& Changed By Sachin N. S. on 13/02/2010
+	=Messagebox("No Records Found For This Account....",0+64,VuMess)
+	Return .F.
+Endif
+
+SqlConObj = Null
+Release SqlConObj,nHandle
+
+If !('CONFA1.VCX' $ Upper(Set("Classlib")))
+	Set Classlib To confa1.vcx Additive
+Endif
+
+Do Form ledzoom With _datasessionid,category,accountname,zoomtype,zoomintype,type3,fromdate,todate,_winstat
+
+Return .T.

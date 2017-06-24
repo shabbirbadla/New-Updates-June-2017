@@ -1,0 +1,10 @@
+D:\SQLProject\DynamicMaster\DataAccess-Net\DataAccess-Net\bin\Release\DataAccess-Net.dll
+D:\SQLProject\DynamicMaster\DataAccess-Net\DataAccess-Net\bin\Release\DataAccess-Net.pdb
+D:\SQLProject\DynamicMaster\DataAccess-Net\DataAccess-Net\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\DynamicMaster\DataAccess-Net\DataAccess-Net\obj\Release\DataAccess-Net.dll
+D:\SQLProject\DynamicMaster\DataAccess-Net\DataAccess-Net\obj\Release\DataAccess-Net.pdb
+D:\Development\Dotnet\Update to VSS\DataAccess_Net\DataAccess-Net\bin\Release\DataAccess-Net.dll
+D:\Development\Dotnet\Update to VSS\DataAccess_Net\DataAccess-Net\bin\Release\DataAccess-Net.pdb
+D:\Development\Dotnet\Update to VSS\DataAccess_Net\DataAccess-Net\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Dotnet\Update to VSS\DataAccess_Net\DataAccess-Net\obj\Release\DataAccess-Net.dll
+D:\Development\Dotnet\Update to VSS\DataAccess_Net\DataAccess-Net\obj\Release\DataAccess-Net.pdb

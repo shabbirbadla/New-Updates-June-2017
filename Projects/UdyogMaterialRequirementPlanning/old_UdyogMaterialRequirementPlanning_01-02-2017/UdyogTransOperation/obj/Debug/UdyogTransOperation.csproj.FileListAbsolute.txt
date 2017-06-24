@@ -1,0 +1,14 @@
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\bin\Debug\UdyogTransOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\bin\Debug\UdyogTransOperation.pdb
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\bin\Debug\UdyogDataOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\bin\Debug\UdyogDataOperation.pdb
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\obj\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\obj\Debug\UdyogTransOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogTransOperation\obj\Debug\UdyogTransOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Debug\UdyogTransOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Debug\UdyogTransOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Debug\UdyogDataOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\bin\Debug\UdyogDataOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\obj\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\obj\Debug\UdyogTransOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogTransOperation\obj\Debug\UdyogTransOperation.pdb

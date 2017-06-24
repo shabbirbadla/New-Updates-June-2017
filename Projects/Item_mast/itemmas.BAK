@@ -1,0 +1,16 @@
+Form v:\...\itemmas_to_andy_120505_final\itemmas_final_andy_june10_ii\itemmas.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. _ITEMNEW - Undefined
+    Program _ITEMCANCEL - Undefined
+    Program _ITSAVEBEFORE - Undefined
+    Program _ITSAVEAFTER - Undefined
+    Proc./Func. FINDI - Undefined
+    Proc./Func. LOCATE - Undefined
+    Program VU_UDFS - Undefined
+    Proc./Func. MENUPADSENABLEDISABLE - Undefined
+    Proc./Func. _ITEMACTIVATE - Undefined
+    Proc./Func. CHECKINGMODULERIGHTS - Undefined
+    Proc./Func. E_GENE - Undefined
+    Proc./Func. XTRA - Undefined
+    Unknown GETPOP - Undefined
+

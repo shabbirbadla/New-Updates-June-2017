@@ -1,0 +1,19 @@
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ResolveAssemblyReference.cache
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdtae.Properties.Resources.resources
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdate.csproj.GenerateResource.Cache
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdtae.Properties.Resources.resources
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdate.csproj.GenerateResource.Cache
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\ueItemRateUpdate.exe
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\ueItemRateUpdate.pdb
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\DataAccess-Net.dll
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\DynamicFormClass.dll
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\uBaseForm.dll
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\udSelectPop.dll
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdate.exe
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Release\ueItemRateUpdate.pdb
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Release\uNumericTextBox.dll
+D:\Ramya\Development\Development ItemRate Update\ueItemRateUpdtae\obj\Release\ueItemRateUpdate.exe
+D:\Ramya\Development\Development ItemRate Update\ueItemRateUpdtae\obj\Release\ueItemRateUpdate.pdb

@@ -1,0 +1,319 @@
+&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
+*If Inlist(dec(GlobalObj.getpropertyval("udProdCode")),'VudyogMFG','VudyogTRD','VudyogServiceTax')
+*If Inlist(Upper(dec(NewDecry(GlobalObj.getPropertyval("UdProdCode"),'Ud*yog+1993'))),'VUDYOGMFG','VUDYOGTRD','VUDYOGSERVICETAX','VUDYOGSTD','VUDYOGPRO','VUDYOGENT')&&Commented For Bug-2286 USquare 10.0 Installer : By Amrendra on 15-02-2012
+*!*	If Inlist(Upper(dec(NewDecry(GlobalObj.getPropertyval("UdProdCode"),'Ud*yog+1993'))),'VUDYOGMFG','VUDYOGTRD','VUDYOGSERVICETAX','VUDYOGSTD','VUDYOGPRO','VUDYOGENT','10USQUARE','10ITAX') &&Changed For Bug-2286 USquare 10.0 Installer : By Amrendra on 15-02-2012
+*!*	If Inlist(Upper(dec(NewDecry(GlobalObj.getPropertyval("UdProdCode"),'Ud*yog+1993'))),'VUDYOGMFG','VUDYOGTRD','VUDYOGSERVICETAX','VUDYOGSTD','VUDYOGPRO','VUDYOGENT','10USQUARE','10ITAX','VUTRADER') &&Changed By Sachin N. S. on 31/10/2013 for New Product VUTrader -- Bug-20574
+If Inlist(Upper(dec(NewDecry(GlobalObj.getPropertyval("UdProdCode"),'Ud*yog+1993'))),'VUDYOGMFG','VUDYOGTRD','VUDYOGSERVICETAX','VUDYOGSTD','VUDYOGPRO','VUDYOGENT','10USQUARE','10ITAX','VUTRADER','VUDYOGGST') &&Changed By Sachin N. S. on 09/03/2017 for GST
+&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
+	=Messagebox("Sorry !! No New Menu can be added in this Version.",0+16,vuMess)
+	Return .F.
+Endif
+
+o = _Screen.ActiveForm.pageframe1.page1.oletreenode
+Public inps , catg
+lpadname=STRTRAN(_Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Text," ","")
+If !Isnull(o.SelectedItem) Then
+*	TRY
+	If Isnull(_Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Parent)
+		d = Messagebox("To Create Root Menu Item Click YES and to Create Child Click NO",3+32+256,vuMess)
+		If d = 6
+			Select Count(*) As menucnt From temptable Where padname = '_MSYSMENU' Into Cursor mcnt1
+			Select mcnt1
+			If Reccount() > 0
+				Go Top
+				mcnt = menucnt
+				ght = (((mcnt * (mcnt - 1)) + 65) + mcnt)
+			Endif
+			If menucnt < 12
+				Select levelc As levelc From temptable Order By padnum Into Cursor pc
+				Select pc
+				Go Bottom
+				Do Form inpttext WITH lpadname  To retOkCancel			&& Changed by Shrikant S. on 18/08/2010 for TKT-3513
+				If !Empty(inps) And retOkCancel="OK"	&& Added by Shrikant S. on 18/08/2010 for TKT-3513
+*				IF !EMPTY(inps) 						&& Commented by Shrikant S. on 18/08/2010 for TKT-3513
+					pckey = (Chr(ght) + Chr(65 + mcnt))
+					_Screen.ActiveForm.cnextkey = "a"+Alltrim(Str(1000 * Rand()))
+					o.nodes.Add(, 1, _Screen.ActiveForm.newkey(), Alltrim(inps),0)
+					_Screen.ActiveForm.pageframe1.page1.oletreenode.labeledit = 0  && tvwAutomatic
+********************************************************************
+					skey = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Key
+					Select progname, barname , padname From temptable Where levelc == skey Into Cursor _xtemp nofilter
+					Select _xtemp
+					Go Top
+					gbrname = Alltrim(inps)
+					category = catg
+					trnbrnm = Strtran(gbrname,' ','')
+					gpdname = Alltrim(padname)
+					Select Max(Range) As Range From temptable Where padname = '_MSYSMENU' Into Cursor man1
+					Select man1
+					If Reccount() > 0
+						Go Top
+						rng = Range + 1000  
+						_uj = rng
+					Endif
+					Select Max(padnum) As padnum From temptable Into Cursor man5
+					Select man5
+					If Reccount() > 0
+						Go Top
+						padn = padnum + 1
+					Endif
+					If Used('deltemp')
+						Do While .T.
+							Select * From deltemp Where deltemp.rng = _uj And !Deleted() Into Cursor _cdelrng			&& Added by Shrikant S. on 18/10/2010 for TKT-3153
+*!*								SELECT * FROM deltemp WHERE deltemp.rng = rng INTO CURSOR _cdelrng 		&& Commented by Shrikant S. on 18/10/2010 for TKT-3153
+							Select _cdelrng
+							If Reccount() > 0
+								_uj = _uj + 1
+							Else
+								rng = _uj
+								Exit
+							Endif
+						Enddo
+					Endif
+					Insert Into temptable(sts_table,levelc,Range,padname,padnum,barname,;
+						prompname,puser,barnum,menutype) Values ('Y',pckey, rng ,gpdname,padn,trnbrnm,gbrname,;
+						ALLTRIM(gbrname),0,category)
+					With _Screen.ActiveForm
+						.LockScreen = .T.
+						.setapply = 1
+						.pageframe1.page1.oletreenode.Refresh()
+						.pageframe1.page1.oletreenode.Visible = .F.
+						.pageframe1.page1.oletreenode.nodes.Clear()
+						.pageframe1.page1.oletreenode.Visible = .T.
+						.pg1()
+						.gridformat()
+						.pageframe1.page1.oletreenode.Refresh()
+						.lvar = 1
+						.LockScreen = .F.
+					Endwith
+					Select prompname As prompname , levelc From temptable Where Range = rng Into Cursor cx
+					Select cx
+					If Reccount() > 0
+						brn = Strtran(Alltrim(prompname),'\<','')
+						lc1 = levelc
+						ff = _Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Count
+						If !Empty(brn)
+							For N = 1 To ff
+								If Alltrim(_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Text) == Proper(Alltrim(brn)) And Alltrim(_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Key) == Alltrim(lc1)
+									_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Selected = .T.
+									Exit
+								Endif
+							Endfor
+						Endif
+						_Screen.ActiveForm.grid1.Visible = .F.
+						_Screen.ActiveForm.label1.Visible = .T.
+					Endif
+				Else
+					If Empty(inps) 				&& Added condition by Shrikant S. on 18/10/2010 for TKT-3513
+						=Messagebox("Can't Create!!! Name is Empty",16,vuMess)
+					Endif
+				Endif
+			Else
+				=Messagebox("Can't Create Main Menu!!Specified Limit is Over!!!",16,vuMess)
+			Endif
+*********************************************************************
+		Else
+			If d = 7
+				mscon = Messagebox("This Option Might have Some Action!" + Chr(13) + "Want to Continue?",4+32,vuMess)
+				If mscon = 6
+					Do Form inpttext WITH lpadname To retOkCancel		&& Changed by Shrikant S. on 18/08/2010 for TKT-3513
+*					inps=INPUTBOX("Type Node Caption:","Name","Text")
+					If !Empty(inps) And retOkCancel="OK"	&& Added by Shrikant S. on 18/08/2010 for TKT-3513
+*				IF !EMPTY(inps) 						&& Commented by Shrikant S. on 18/08/2010 for TKT-3513
+						_Screen.ActiveForm.cnextkey = "a"+Alltrim(Str(1000 * Rand()))
+						o.nodes.Add(_Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Key, 4, _Screen.ActiveForm.newkey(), Alltrim(inps) ,0)
+						_Screen.ActiveForm.pageframe1.page1.oletreenode.labeledit = 0  && tvwAutomatic
+						_Screen.ActiveForm.cformaction = "NC"
+*****************************************************************
+						_Screen.ActiveForm.lvar = 1
+						skey = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Key
+						chldcnt = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.children
+						barn = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.children
+						If chldcnt > 0
+							chldcnt = chldcnt + 1
+						Else
+							chldcnt = 1
+						Endif
+*!*							hhh = MESSAGEBOX("set step on",4,vumess)
+*!*							IF hhh = 6
+*!*								SET STEP ON
+*!*							ENDIF
+
+						Select progname As progname, barname As barname , padname As padname, Range As Range From temptable Where levelc == skey Into Cursor _xtemp
+						Select _xtemp
+						Go Top
+						gbrname = Alltrim(inps)
+						category = catg
+						trnbrnm = Strtran(gbrname,' ','')
+						gpdname = Alltrim(barname)
+						r1g = Range
+						lrng = (r1g - Mod(r1g,1000))
+						lsrng = (lrng + 1000)
+						Select Max(Range) As Range From temptable Where (Range >= lrng) And (Range < lsrng) Into Cursor x12
+						Select x12
+						If Reccount() > 0
+							Go Top
+							rng = Range + 1
+							drng = rng
+							_uj = rng
+						Endif
+						curkey = skey + Chr(65)
+						If Used('deltemp')
+							Do While .T.
+								SELECT * FROM deltemp WHERE rng = drng INTO CURSOR _cdelrng		
+								Select _cdelrng
+								If Reccount() > 0
+									_uj = _uj + 1
+									Exit
+								Else
+									rng = _uj
+									Exit
+								Endif
+							Enddo
+							rng = _uj
+						Endif
+						Insert Into temptable (sts_table,levelp,levelc,Range,padname,barname,;
+							barnum,prompname,puser,menutype)Values ('Y',skey,curkey, rng ,gpdname,;
+							trnbrnm,barn,gbrname,Alltrim(gbrname),category)
+						Select temptable
+						Replace All numitem With chldcnt For Range = r1g
+						With _Screen.ActiveForm
+							.LockScreen = .T.
+							.setapply = 1
+							.pageframe1.page1.oletreenode.Visible = .F.
+							.pageframe1.page1.oletreenode.nodes.Clear()
+							.pageframe1.page1.oletreenode.Visible = .T.
+							.pg1()
+							.gridformat()
+							.pageframe1.page1.oletreenode.Refresh()
+							.LockScreen = .F.
+						Endwith
+						Select prompname As prompname , levelc From temptable Where Range = rng Into Cursor cx
+						Select cx
+						If Reccount() > 0
+							brn = Strtran(Alltrim(prompname),'\<','')
+							lc1 = levelc
+							ff = _Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Count
+							If !Empty(brn)
+								For N = 1 To ff
+									If Alltrim(_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Text) == Proper(Alltrim(brn)) And Alltrim(_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Key) == Alltrim(lc1)
+										_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Selected = .T.
+									Endif
+								Endfor
+							Endif
+							_Screen.ActiveForm.grid1.Visible = .F.
+							_Screen.ActiveForm.label1.Visible = .T.
+						Endif
+					Else
+						If Empty(inps) 				&& Added condition by Shrikant S. on 18/10/2010 for TKT-3513
+							=Messagebox("Can't Create!!Name is Empty!!!",16,vuMess)
+						Endif
+					Endif
+				Endif
+******************************************************************
+			Endif
+		Endif
+	Else
+		d1 = Messagebox("Create Child Under : " + _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Text,4+32 , vuMess)
+		If d1 = 6
+			mscon = Messagebox("This Option Might have Some Action!" + Chr(13) + "Want to Continue?",4+32,vuMess)
+			If mscon = 6
+				Do Form inpttext WITH lpadname TO retOkCancel
+*	inps=INPUTBOX("Type Node Caption:","Name","Text")
+				If !Empty(inps) And retOkCancel="OK"	&& Added by Shrikant S. on 18/08/2010 for TKT-3513
+*				IF !EMPTY(inps) 						&& Commented by Shrikant S. on 18/08/2010 for TKT-3513
+					_Screen.ActiveForm.pageframe1.page1.oletreenode.nodeclick()
+					If Isnull(_Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Parent)
+					Else
+						pkey = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Parent.Key
+					Endif
+					skey = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.Key
+					chldcnt = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.children
+					chn = _Screen.ActiveForm.pageframe1.page1.oletreenode.SelectedItem.children
+					_Screen.ActiveForm.cnextkey = "c"+Sys(3)
+					o.nodes.Add(skey, 4, _Screen.ActiveForm.newkey(), Alltrim(inps),0)
+					With _Screen.ActiveForm
+						.pageframe1.page1.oletreenode.labeledit = 0  && tvwAutomatic
+						.cformaction = "NC"
+						.pageframe1.page1.oletreenode.Refresh()
+					Endwith
+					If chldcnt >= 1
+						chldcnt = chldcnt + 1
+					Else
+						chldcnt = 1
+					Endif
+					Select progname As progname, barname As barname , padname As padname, Range As range1 From temptable Where levelc == skey Into Cursor _xtemp
+					Select _xtemp
+					Go Top
+					gbrname = Alltrim(inps)
+					category = catg
+					trnbrnm = Strtran(gbrname,' ','')
+					gpdname = Alltrim(barname)
+					rg = range1
+					l2 = (rg - Mod(rg,1000))
+					Select Max(Range) As range2 From temptable Where (Range >= l2) And (Range < (l2 + 1000)) Into Cursor man13
+					Select man13
+					If Reccount() > 0
+						Go Top
+						rng = range2 + 1
+						_uj = rng
+					Endif
+					curkey = skey + Chr(65)
+					If Used('deltemp')
+						Do While .T.
+							SELECT * FROM deltemp WHERE rng = _uj  INTO CURSOR _cdelrng		&& Commented by Shrikant S. on 18/10/2010 for TKT-3153
+*							Select * From deltemp Where rng = _uj And !Deleted() Into Cursor _cdelrng   && Added by Shrikant S. on 18/10/2010 for TKT-3153
+							Select _cdelrng
+							If Reccount() > 0
+								_uj = _uj + 1
+							Else
+								rng = _uj
+								Exit
+							Endif
+						Enddo
+					Endif
+					Insert Into temptable (sts_table,levelp,levelc,Range,padname,barname,;
+						barnum,prompname,puser,menutype)Values ('Y',skey,curkey, rng ,gpdname,trnbrnm,;
+						chldcnt,gbrname, Alltrim(gbrname),category)
+					Select temptable
+					Replace All numitem With chldcnt For Range = rg
+					With _Screen.ActiveForm
+						.LockScreen = .T.
+						.setapply = 1
+						.pageframe1.page1.oletreenode.Visible = .F.
+						.pageframe1.page1.oletreenode.nodes.Clear()
+						.pageframe1.page1.oletreenode.Visible = .T.
+						.pg1()
+						.gridformat()
+						.pageframe1.page1.oletreenode.Refresh()
+						.LockScreen = .F.
+						.lvar = 1
+					ENDWITH
+					Select prompname As prompname , levelc From temptable Where Range = rng Into Cursor cx
+					Select cx
+					If Reccount() > 0
+						brn = Strtran(Alltrim(prompname),'\<','')
+						lc1 = levelc
+						ff = _Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Count
+						If !Empty(brn)
+							For N = 1 To ff
+								If Alltrim(_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Text) == Proper(Alltrim(brn)) And Alltrim(_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Key) == Alltrim(lc1)
+									_Screen.ActiveForm.pageframe1.page1.oletreenode.nodes.Item(N).Selected = .T.
+									Exit
+								Endif
+							Endfor
+							_Screen.ActiveForm.grid1.Visible = .F.
+							_Screen.ActiveForm.label1.Visible = .T.
+						Endif
+					Endif
+				Else
+					If Empty(inps) 				&& Added condition by Shrikant S. on 18/10/2010 for TKT-3513
+						=Messagebox("Can't Create!! Name is Empty!!!",16,vuMess)
+					Endi
+				Endif
+			Endif
+********************************************************************
+		Endif
+	Endif
+Endif
+_Screen.ActiveForm.command4.Caption = "\<Cancel"

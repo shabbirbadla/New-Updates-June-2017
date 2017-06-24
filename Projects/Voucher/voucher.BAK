@@ -1,0 +1,76 @@
+Para VuType,VuParty,VuSeries,VuDept,VuCate,VuCaption,Fromzoom,VuZoomUpdt,VuCond,VuRange		&&vasant160409a2
+&&vasant160409a2
+_VuParaCount = PARAMETERS( )	&&This line should be after Parameter line
+IF _VuParaCount = 9
+	VuRange = VuCond
+ENDIF
+
+
+
+
+&&vasant160409a2
+
+&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
+*!*	&& Version Checking [Start] Raghu - 210509
+*!*	Local lcMessage
+*!*	lcMessage = "Invalid version…"
+*!*	If Vartype(GlobalObj) <> "O"
+*!*		Messagebox(lcMessage,64,VuMess)
+*!*		Return .F.
+*!*	Endif
+
+*!*	If Upper(DEC(GlobalObj.GetPropertyVal('VersionId'))) <> Upper("Monday,27th Sept. 2010")		&&vasant280910
+*!*		Messagebox(lcMessage,64,VuMess)
+*!*	*!*		Return .F.
+*!*	Endif
+*!*	&& Version Checking [End] Raghu - 210509
+* Added by Amrendra on 11-06-2011 for tkt 8121 versioning Start
+****Versioning****
+*!*	*!*		LOCAL _VerValidErr,_VerRetVal,_CurrVerVal
+*!*	*!*		_VerValidErr = ""
+*!*	*!*		_VerRetVal  = 'NO'
+*!*	*!*		TRY
+*!*	*!*			_VerRetVal = AppVerChk('VOUCHER',GetFileVersion(),JUSTFNAME(SYS(16)))
+*!*	*!*		CATCH TO _VerValidErr
+*!*	*!*			_VerRetVal  = 'NO'
+*!*	*!*		Endtry	
+*!*	*!*		IF TYPE("_VerRetVal")="L"
+*!*	*!*			cMsgStr="Version Error occured!"
+*!*	*!*			cMsgStr=cMsgStr+CHR(13)+"Kindly update latest version of "+GlobalObj.getPropertyval("ProductTitle")
+*!*	*!*			Messagebox(cMsgStr,64,VuMess)
+*!*	*!*			Return .F.
+*!*	*!*		ENDIF
+*!*	*!*		IF _VerRetVal  = 'NO'
+*!*	*!*			Return .F.
+*!*	*!*		Endif
+****Versioning****
+* Added by Amrendra on 11-06-2011 for tkt 8121 versioning End
+*!*	* Commented by Amrendra on 11-06-2011 for tkt 8121 versioning Start
+*!*	LOCAL _VerValidErr,_VerRetVal
+*!*	_VerValidErr = ""
+*!*	_VerRetVal  = .f.
+*!*	TRY
+*!*		_VerRetVal = AppVerChk('VOUCHER','1st Jan.,2011')
+*!*	CATCH TO _VerValidErr
+*!*		_VerRetVal  = .f.
+*!*	Endtry	
+*!*	IF _VerRetVal  = .f.
+*!*		Messagebox("Invalid version…",64,VuMess)
+*!*		Return .F.
+*!*	ENDIF
+*!*	* Commented by Amrendra on 11-06-2011 for tkt 8121 versioning  End
+&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
+Do Form Voucher With VuType,VuParty,VuSeries,VuDept,VuCate,VuCaption,Fromzoom,VuZoomUpdt,VuCond,VuRange		&&vasant160409a2
+RETURN
+
+*>>>***Versioning**** Added By Amrendra On 05/07/2011
+FUNCTION GetFileVersion
+PARAMETERS lcTable
+	_CurrVerVal='10.2.0.0' &&[VERSIONNUMBER] &&TKT-9038 Rup Change version to 10.2 from 10.1
+	IF !EMPTY(lcTable)
+		SELECT(lcTable)
+		APPEND BLANK 
+		replace fVersion WITH JUSTFNAME(SYS(16))+'   '+_CurrVerVal
+	ENDIF 
+RETURN _CurrVerVal
+*<<<***Versioning**** Added By Amrendra On 05/07/2011

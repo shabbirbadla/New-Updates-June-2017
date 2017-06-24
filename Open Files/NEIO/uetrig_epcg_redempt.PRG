@@ -1,0 +1,2 @@
+PARAMETERS vDataSessionId 
+DO FORM frmepcg_redempt WITH vdataSessionId

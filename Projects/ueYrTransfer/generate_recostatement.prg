@@ -1,0 +1,98 @@
+Lparameters SqlConObj,_ndatasessionid,oHandle,ccDbName,nDbname,cdSta_Dt,cdEnd_Dt
+
+************************************************************************************************
+*!*	** 		Generating Reco Statement
+*!*	**		Method By : Shrikant S.
+*!*	**		Use 	  : Used for Generating Reco Statement
+************************************************************************************************
+
+Local nHandle, lcSqlStr, nRetVal,ncompid,sumGross,sumNetAmt
+
+sumGross=0
+sumNetAmt=0
+ncompid=0
+If Used('_newyeardet')
+	Select _newyeardet
+	ncompid=_newyeardet.compid
+Endi
+
+
+lcSqlStr =	" SET DATEFORMAT DMY SELECT GETDATE() as SysDate "
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[_TmpSysDate],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+cSysDate = Ttoc(_TmpSysDate.SysDate)
+
+lcSqlStr =	" SELECT * FROM RECOSTAT WHERE 1=2 "			&& Temporary RecoState Table
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Reco],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+
+
+oPBar.ProgStatus("Processing Reco Statements: "+ Alltrim(Transform(20))+ "%"  ,20)
+
+Select _breco
+reccnt=Reccount()
+If reccnt <> 0
+	oPBar.Show()
+	lnIncVal = 80 / reccnt
+	lninc=0
+Endif
+
+Upd_itbal=0
+
+Select _breco
+Locate
+Do While !Eof()
+	Upd_itbal=1
+	lninc=lninc+1
+	oPBar.ProgStatus("Processing Reco Statements: "+ Alltrim(Transform(Round((lninc /reccnt) *100,0)))+ "%"  ,(lninc * lnIncVal)+20)
+	
+	mEntry_ty=_breco.Entry_ty
+	mTran_cd=_breco.Tran_Cd
+	cClause=""
+	If _breco.Entry_ty = "BP"
+		cClause = "Cheque Issued But Not Cleared"
+	Else
+		If _breco.Entry_ty = "BR"
+			cClause = "Cheque Deposited But Not Cleared"
+		Endif
+	Endif
+	Select Tmp_Reco
+	Append Blank
+	Replace Entry_ty With mEntry_ty, Tran_Cd With mTran_cd, Date With _breco.Date, doc_no With _breco.doc_no,; 
+		cl_Date With _breco.cl_Date ,ac_name With _breco.ac_name, amt_ty With _breco.amt_ty, Amount With (_breco.Credit+_breco.debit) ,;
+				cheq_no With _breco.cheq_no,clause With cClause, compid With ncompid In Tmp_Reco 
+
+	Replace oac_name With ALLTRIM(_breco.party_nm)+Allt(Str(Amount,17,2))+amt_ty In Tmp_Reco
+
+	lcSqlStr = SqlConObj.GenInsert("RECOSTAT","'party_nm'","","Tmp_Reco",1)
+	lcSqlStr = STRTRAN(lcSqlStr,"RECOSTAT",ALLTRIM(nDbname)+".."+"RECOSTAT")
+	nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[],oHandle,_ndatasessionid,.T.)
+	If nRetVal<0
+		Return .F.
+	Endif
+	If nRetVal > 0
+		Select Tmp_Reco
+		Zap
+	Endif
+	Select _breco
+	If !Eof()
+		Skip
+	Endif
+Enddo
+
+oPBar.Release()
+oPBar = .Null.
+Release oPBar
+
+If Used('Tmp_Reco')
+	Select Tmp_Reco
+	Use In Tmp_Reco
+Endif
+If Used('_breco')
+	Select _breco
+	Use In _breco
+Endif

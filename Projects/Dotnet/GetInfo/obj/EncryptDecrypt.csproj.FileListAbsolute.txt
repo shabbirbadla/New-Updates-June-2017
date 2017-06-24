@@ -1,0 +1,5 @@
+C:\Proj\ImportExport\EncryptDecrypt\obj\Debug\ResolveAssemblyReference.cache
+C:\Proj\ImportExport\EncryptDecrypt\bin\Debug\EncryptDecrypt.dll
+C:\Proj\ImportExport\EncryptDecrypt\bin\Debug\EncryptDecrypt.pdb
+C:\Proj\ImportExport\EncryptDecrypt\obj\Debug\EncryptDecrypt.dll
+C:\Proj\ImportExport\EncryptDecrypt\obj\Debug\EncryptDecrypt.pdb

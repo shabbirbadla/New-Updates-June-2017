@@ -1,0 +1,56 @@
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClientWizard.exe
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\getinfo.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\udSelectPop.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\udSelectPop.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\udSelectPop.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\udSelectPop.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.pdb

@@ -1,0 +1,82 @@
+LPARAMETERS _SourceFile,_TargetFile,vu_mess,_UpdtError,_mErrLog_Name
+Set Deleted On
+Set Date British
+Set Century On
+Set Talk Off
+Set Safety Off
+Set Status Off
+Set Null On
+Set NullDisplay To ''
+Set StrictDate To 0
+
+PUBLIC vumess,Apath,_UpdateError,_mErrLogName
+_SourceFile  = STRTRAN(_SourceFile,'*~*',' ')
+_TargetFile  = STRTRAN(_TargetFile,'*~*',' ')
+vumess       = STRTRAN(vu_mess,'*~*',' ')
+_UpdateError = VAL(_UpdtError)
+_mErrLogName = STRTRAN(_mErrLog_Name,'*~*',' ')
+Apath = _TargetFile
+=ErrLog('','')	
+IF _UpdateError = 1
+	_continue = .t.
+	IF DIRECTORY(_SourceFile,1) = .f.
+		*=Messagebox("Unable to Find Folder "+_SourceFile+".",0+16,vumess)
+		*RETURN .f.
+		=ErrLog("Unable to Find Folder "+_SourceFile+".",'W')
+		_continue = .f.
+	ENDIF
+	IF DIRECTORY(_TargetFile,1) = .f.
+		*=Messagebox("Unable to Find Folder "+_TargetFile+".",0+16,vumess)
+		*RETURN .f.
+		=ErrLog("Unable to Find Folder "+_TargetFile+".",'W')
+		_continue = .f.		
+	ENDIF
+	
+	IF _continue = .t.
+		RELEASE _FileSrcInfo,_FileTgtInfo
+		_FileSrcCnt = 0
+		_FileTgtCnt = 0
+		_FileSrcCnt = ADIR(_FileSrcInfo,_SourceFile+'*.*')
+		FOR i1 = 1 TO _FileSrcCnt
+			_ErrMsg = ''
+			_mFileNm = _FileSrcInfo(i1,1)			
+			Try
+				COPY FILE (_SourceFile+_mFileNm) TO (_TargetFile +_mFileNm)
+			CATCH TO m_errMsg
+				_ErrMsg = ALLTRIM(m_errMsg.Message)
+			endtry	
+			IF !EMPTY(_ErrMsg)
+				*=Messagebox('File Name '+_mFileNm+CHR(13)+CHR(13)+_ErrMsg+CHR(13)+CHR(13)+;
+					'Please Copy File from '+_SourceFile+' to '+_TargetFile,0+16,vumess)
+				=ErrLog('File Name '+_mFileNm+CHR(13)+CHR(13)+_ErrMsg+CHR(13)+CHR(13)+;
+					'Please Copy File from '+_SourceFile+' to '+_TargetFile,'W')
+				Loop
+			ENDIF
+			_FileTgtCnt = ADIR(_FileTgtInfo,_TargetFile +_mFileNm)
+			IF _FileTgtCnt = 0
+				=ErrLog(_mFileNm+' not copied to '+_mtrgtpath+' Folder.'+CHR(13)+CHR(13)+;
+					'Please Copy File from '+_SourceFile+' to '+_TargetFile,'W')
+				Loop
+			ENDIF
+			IF _FileTgtInfo(1,2) <> _FileSrcInfo(i1,2) OR _FileTgtInfo(1,3) <> _FileSrcInfo(i1,3) OR _FileTgtInfo(1,4) <> _FileSrcInfo(i1,4)
+				=ErrLog(_mFileNm+' not copied properly to '+_TargetFile+' Folder.'+CHR(13)+CHR(13)+;
+					'Please Copy File from '+_SourceFile+' to '+_TargetFile,'W')
+				Loop
+			ENDIF
+			Try
+				ERASE (_SourceFile+_mFileNm) RECYCLE
+			CATCH TO m_errMsg
+				_ErrMsg = ALLTRIM(m_errMsg.Message)
+			endtry	
+		Endfor	
+		Try
+			RmDir (_SourceFile)	
+		CATCH TO m_errMsg
+			_ErrMsg = ALLTRIM(m_errMsg.Message)
+		endtry	
+	Endif	
+Endif
+
+DO FORM efileerrwindow
+READ Events
+Quit

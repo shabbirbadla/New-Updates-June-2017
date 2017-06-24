@@ -1,0 +1,42 @@
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\udDynamicMaster.exe.config
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\udDynamicMaster.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\udDynamicMaster.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\DataAccess-Net.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\DynamicFormClass.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\ScriptDotNet.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\udSelectPop.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\udValidation.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\DynamicFormClass.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\DataAccess-Net.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\bin\Release\udValidation.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\ResolveAssemblyReference.cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.Form1.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.MasterForm.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.Properties.Resources.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.TestForm.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.csproj.GenerateResource.Cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\udDynamicMaster.exe.licenses
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\udDynamicMaster.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMaster\DynamicMaster\obj\Release\udDynamicMaster.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.MasterForm.resources
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.Properties.Resources.resources
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\DynamicMaster.csproj.GenerateResource.Cache
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\udDynamicMaster.exe.licenses
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\udDynamicMaster.exe
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\udDynamicMaster.exe.config
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\udDynamicMaster.exe
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\udDynamicMaster.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\DataAccess-Net.dll
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\DynamicFormClass.dll
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\DynamicFormClass.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\DataAccess-Net.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\obj\Release\udDynamicMaster.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uBaseForm.dll
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uBaseForm.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uTextBox.dll
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uTextBox.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uCheckBox.dll
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uCheckBox.pdb
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uHelpButton.dll
+D:\SQLProject\DynamicMaster\DynamicMaster\DynamicMaster\bin\Release\uHelpButton.pdb

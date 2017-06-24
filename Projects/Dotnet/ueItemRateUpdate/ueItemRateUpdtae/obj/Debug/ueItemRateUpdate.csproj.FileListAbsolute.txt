@@ -1,0 +1,40 @@
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.Properties.Resources.resources
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.csproj.GenerateResource.Cache
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.exe
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.pdb
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.exe
+D:\My practice\aspspider\ueItemRateUpdtae\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.pdb
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.exe
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.pdb
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.exe
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.pdb
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.Properties.Resources.resources
+D:\My practice\aspspider\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.csproj.GenerateResource.Cache
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.exe
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.pdb
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.exe
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.pdb
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.frmItemDetailsMain.resources
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.Properties.Resources.resources
+C:\Users\rkchalla\Desktop\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.csproj.GenerateResource.Cache
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.exe
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.pdb
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.exe
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.pdb
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ResolveAssemblyReference.cache
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.Properties.Resources.resources
+D:\Ramya\ueItemRateUpdate\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.csproj.GenerateResource.Cache
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.exe
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.pdb
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.exe
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\bin\Debug\ueItemRateUpdate.pdb
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.csprojResolveAssemblyReference.cache
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.frmItemDetailsMain.resources
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\obj\Debug\ueItemRateUpdtae.Properties.Resources.resources
+D:\Ruchit\GST\310317\Solutions\SVN\ueItemRateUpdtae\obj\Debug\ueItemRateUpdate.csproj.GenerateResource.Cache

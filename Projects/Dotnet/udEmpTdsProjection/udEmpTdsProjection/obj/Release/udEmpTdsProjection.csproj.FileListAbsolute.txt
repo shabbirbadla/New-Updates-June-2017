@@ -1,0 +1,50 @@
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.frmTdsProjection.resources
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udEmpTdsProjection.exe
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udEmpTdsProjection.pdb
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udCrViewer.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udReportList.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udSelectPop.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\uNumericTextBox.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udDataTableQuery.dll
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.exe
+D:\SQLProject\payroll\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.pdb
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.exe
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.pdb
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udEmpTdsProjection.exe
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udEmpTdsProjection.pdb
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udDataTableQuery.dll
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.frmTdsProjection.resources
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.Properties.Resources.resources
+D:\Ramya Working\From Rupesh\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.exe
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.pdb
+D:\TdsProjection From Vss\udEmpTdsProjection\bin\Release\udEmpTdsProjection.exe
+D:\TdsProjection From Vss\udEmpTdsProjection\bin\Release\udEmpTdsProjection.pdb
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Release\ResolveAssemblyReference.cache
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.frmTdsProjection.resources
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.Properties.Resources.resources
+D:\TdsProjection From Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.exe
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.pdb
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\bin\Release\udEmpTdsProjection.exe
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\bin\Release\udEmpTdsProjection.pdb
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Release\ResolveAssemblyReference.cache
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.frmTdsProjection.resources
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.Properties.Resources.resources
+D:\udEmpTdsProjection from Vss\udEmpTdsProjection\obj\Release\udEmpTdsProjection.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.exe
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.pdb
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udEmpTdsProjection.exe
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udEmpTdsProjection.pdb
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\bin\Release\udDataTableQuery.dll
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.frmTdsProjection.resources
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpTdsProjection\udEmpTdsProjection\obj\Release\udEmpTdsProjection.csproj.GenerateResource.Cache

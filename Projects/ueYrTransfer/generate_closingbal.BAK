@@ -1,0 +1,242 @@
+Lparameters cEntry_ty,SqlConObj,_ndatasessionid,oHandle,ccDbName,ndbname,cdSta_Dt,cdEnd_Dt
+
+************************************************************************************************
+*!*	** 		Generating Opening Balance Entries
+*!*	**		Method By : Shrikant S.
+*!*	**		Use 	  : Used for Generating Opening Balance Entries
+************************************************************************************************
+SET STEP ON 
+Local nHandle, lcSqlStr, nRetVal,ncompid,sumGross,sumNetAmt
+sumGross=0
+sumNetAmt=0
+ncompid=0
+If Used('_newyeardet')
+	Select _newyeardet
+	ncompid=_newyeardet.compid
+Endi
+
+mAc_Name2="OPENING BALANCES"
+mAc_Id2=0
+
+lcSqlStr =	" SELECT * FROM LCODE WHERE ENTRY_TY = '"+cEntry_ty+"' "
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Lcode],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+
+Select Tmp_Lcode
+LOCATE
+IF RECCOUNT('Tmp_Lcode')<=0
+	MESSAGEBOX("Opening balance transaction not found in Transaction Setting",0,vumess)
+	RETURN .f.
+endif
+Locate
+
+Entry_Tbl=Alltrim(Iif(!Empty(Tmp_Lcode.Bcode_nm),ALLTRIM(Tmp_Lcode.Bcode_nm),IIF(Tmp_Lcode.ext_vou=.t.,"",Tmp_Lcode.Entry_ty)))
+
+lcSqlStr = " Select Top 1 ac_id from ac_mast where ac_name = ?mAc_Name2"
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[_Tmp_acid],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+If Used('_Tmp_acid')
+	Select _Tmp_acid
+	mAc_Id2=_Tmp_acid.ac_Id
+	Use In _Tmp_acid
+Endif
+
+lcSqlStr =	" SET DATEFORMAT DMY SELECT GETDATE() as SysDate "
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[_TmpSysDate],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+cSysDate = Ttoc(_TmpSysDate.SysDate)
+
+lcSqlStr =	" SELECT * FROM "+Entry_Tbl+"MAIN WHERE 1=2 "			&& Temporary Main Table
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Main],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+
+*!*	lcSqlStr =	" SELECT * FROM "+Entry_Tbl+"ITEM WHERE 1=2 "			&& Temporary Item Table
+*!*	nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Item],oHandle,_ndatasessionid,.T.)
+*!*	If nRetVal<0
+*!*		Return .F.
+*!*	Endif
+
+lcSqlStr =	" SELECT * FROM "+Entry_Tbl+"ACDET WHERE 1=2 "			&& Temporary Acdet Table
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_AcDet],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+Upd_acbal=0
+
+
+oPBar=Createobject("frmProgress")
+
+SET STEP ON 
+
+Select _balacdet
+reccnt=Reccount()
+If reccnt <> 0
+	oPBar.Show()
+	lnIncVal = 100 / reccnt
+	lninc=0
+Endif
+Scan
+	Upd_acbal=1
+	lninc=lninc+1
+	camt_ty=Iif(_balacdet.Amount<0,"CR","DR")
+	oPBar.ProgStatus("Processing Opening Balance Entries: "+ Alltrim(Transform(Round((lninc /reccnt) *100,0)))+ "%"  ,lninc * lnIncVal)
+	Select Tmp_Main
+	Append Blank
+*!*		MESSAGEBOX("record-added")
+	cInvNo=GenerateInvNo(cEntry_ty, '', '', cdSta_Dt, '', '',Tmp_Lcode.invno_size,SqlConObj,_ndatasessionid,cEntry_ty,oHandle,ccDbName,cdSta_Dt,cdEnd_Dt,ndbname)
+*!*		MESSAGEBOX("cInvNo="+cInvNo)
+	cdocno=GenerateDocNo(cEntry_ty,cdSta_Dt,cEntry_ty,SqlConObj,_ndatasessionid,oHandle,ccDbName,cdSta_Dt,cdEnd_Dt,ndbname)
+*!*		MESSAGEBOX("cdocno="+cdocno)
+	
+
+	Replace Entry_ty With cEntry_ty, Tran_Cd With 0, Date With cdSta_Dt, doc_no With cdocno, inv_no With cInvNo,u_choice With Iif(_balacdet.Amount > 0,.T.,.F.), ;
+		Lock With .F., l_yn With Alltr(Str(Year(cdSta_Dt)))+"-"+Alltr(Str(Year(cdEnd_Dt))),due_dt With  cdSta_Dt,;
+		party_nm With _balacdet.Ac_Name, ac_Id With _balacdet.ac_Id,SysDate With cSysDate, user_name With musername, apgentime With cSysDate, apledtime With cSysDate, ;
+		tot_add With 0, net_amt With Abs(_balacdet.Amount),Gro_amt With Abs(_balacdet.Amount), examt With 0,compid With ncompid ;
+		,apgen With "YES",apled With "YES",apgenby With musername,apledby With musername;
+		IN Tmp_Main
+
+
+	If Type('Tmp_Main.u_cldt')<>'U'
+		If Type('_balacdet.u_cldt')<>'U'
+			Replace u_cldt With _balacdet.u_cldt In Tmp_Main
+		Else
+			Replace u_cldt With Tmp_Main.Date In Tmp_Main
+		Endif
+	Endif
+
+*WAIT WINDOW "Generating Transaction for Party "	+Tmp_Main.party_nm nowait
+
+	Sele Max(Val(acserial)) As cacserial From Tmp_AcDet Into Cursor curAcSerial		&& Generating itserial
+	If curAcSerial.cacserial>0
+		genacserial=curAcSerial.cacserial+1
+	Else
+		genacserial=1
+	Endif
+	If Used('curAcSerial')
+		Use In curAcSerial
+	Endif
+
+	Select Tmp_AcDet
+	Append Blank
+
+	Replace Entry_ty With cEntry_ty,Date With Tmp_Main.Date, doc_no With Tmp_Main.doc_no, inv_no With Tmp_Main.inv_no, ;
+		l_yn With Tmp_Main.l_yn, Ac_Name With Tmp_Main.party_nm,doc_no With Tmp_Main.doc_no;
+		,ac_Id With Tmp_Main.ac_Id,Amount With Tmp_Main.net_amt,amt_ty With camt_ty;
+		,PostOrd With 'A',re_all With 0,acserial With '00001',compid With ncompid In Tmp_AcDet
+
+
+	Append Blan
+	Replace Entry_ty With cEntry_ty,Date With Tmp_Main.Date, doc_no With Tmp_Main.doc_no, inv_no With Tmp_Main.inv_no, ;
+		l_yn With Tmp_Main.l_yn, Ac_Name With mAc_Name2,doc_no With Tmp_Main.doc_no;
+		,ac_Id With mAc_Id2,Amount With Tmp_Main.net_amt,amt_ty With Iif(camt_ty="CR","DR","CR");
+		,PostOrd With 'B',re_all With 0,acserial With '00002',compid With ncompid In Tmp_AcDet
+
+
+	If Type('Tmp_AcDet.u_cldt')<>'U'
+		If Type('_balacdet.u_cldt')<>'U'
+			Replace All u_cldt With _balacdet.u_cldt In Tmp_AcDet
+		Else
+			Replace All u_cldt With Tmp_Main.Date In Tmp_AcDet
+		Endif
+	Endif
+	Locate
+	Replace All oac_name With Ac_Name+Allt(Str(Amount,17,2))+amt_ty In Tmp_AcDet
+
+	If Empty(acserial)
+		Replace acserial With Padl(Allt(Str(genacserial)),5,"0") In Tmp_AcDet		&& Updating acserial
+		genacserial= genacserial+ 1
+	Endif
+
+	Select Tmp_Main
+	lcSqlStr = SqlConObj.GenInsert(Entry_Tbl+"MAIN","'Tran_cd'","","Tmp_Main",1)
+	lcSqlStr = Strtran(lcSqlStr,Entry_Tbl+"MAIN",Alltrim(ndbname)+".."+Entry_Tbl+"MAIN")
+
+	nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr ,[],oHandle,_ndatasessionid,.T.)
+	If nRetVal<0
+		Return .F.
+	ENDIF
+	mTran_cd=0
+	If nRetVal > 0 And mTran_cd <= 0
+		nRetVal = SqlConObj.DataConn([EXE],ccDbName," Select IDENT_CURRENT('"+Alltrim(ndbname)+".."+Entry_Tbl+"main"+"') as Tran_cd ",[tmptbl_vw],oHandle,_ndatasessionid,.T.)
+*		nRetVal = SqlConObj.DataConn([EXE],ccDbName," Select IDENT_CURRENT('"+ALLTRIM(nDbname)+"..OSMAIN') as Tran_cd ",[tmptbl_vw],oHandle,_ndatasessionid,.T.)
+		If nRetVal > 0 And Used('tmptbl_vw')
+			Select tmptbl_vw
+			If Reccount() > 0
+				mTran_cd = tmptbl_vw.Tran_Cd
+			Endif
+			Use In tmptbl_vw
+			Select Tmp_Main
+			Replace Tran_Cd With mTran_cd In Tmp_Main
+			Select Tmp_AcDet
+			Replace All Tran_Cd With mTran_cd In Tmp_AcDet
+			Scan
+				lcSqlStr = SqlConObj.GenInsert(Entry_Tbl+"ACDET","","","Tmp_AcDet",1)
+				lcSqlStr = Strtran(lcSqlStr,Entry_Tbl+"ACDET",Alltrim(ndbname)+".."+Entry_Tbl+"ACDET")
+				nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[],oHandle,_ndatasessionid,.T.)
+				If nRetVal<0
+					Return .F.
+				ENDIF
+				Select Tmp_AcDet
+				
+			Endscan
+		Endif
+		Select Tmp_AcDet
+		Zap
+		Select Tmp_Main
+		Zap
+	Endif
+	If mTran_cd<=0
+		Return .F.
+	Endif
+	Select _balacdet
+Endscan
+
+
+If Upd_acbal=1
+	lcSqlStr =	" Execute "+Alltrim(ndbname)+".."+"USP_ENT_UPDATE_ACBAL "			&& Updating Ac_Bal Table
+	nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,"",oHandle,_ndatasessionid,.T.)
+	If nRetVal<0
+		Return .F.
+	Endif
+
+
+*!*		lcstadt=cdSta_Dt
+*!*		lcenddt=cdEnd_Dt
+*!*		If nRetVal>0
+*!*			lcSqlStr =	" Execute "+Alltrim(ndbname)+".."+"Usp_Ent_Renumber_Trans 'OB', ?lcstadt, ?lcenddt, ?musername"
+*!*			nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,"",oHandle,_ndatasessionid,.T.)
+*!*			If nRetVal<0
+*!*				Return .F.
+*!*			Endif
+
+*!*		Endif
+Endif
+
+
+oPBar.Release()
+oPBar = .Null.
+Release oPBar
+
+
+If Used('Tmp_AcDet')
+	Select Tmp_AcDet
+	Use In Tmp_AcDet
+Endif
+If Used('Tmp_Main')
+	Select Tmp_Main
+	Use In Tmp_Main
+Endif
+
+If Used('_balacdet')
+	Select _balacdet
+	Use In _balacdet
+Endif

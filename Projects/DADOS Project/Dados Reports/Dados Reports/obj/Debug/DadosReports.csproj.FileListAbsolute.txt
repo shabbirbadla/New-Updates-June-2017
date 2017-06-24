@@ -1,0 +1,119 @@
+D:\SVN\Project\DADOS Project\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+D:\SVN\Project\DADOS Project\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+D:\SVN\Project\DADOS Project\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+D:\SVN\Project\DADOS Project\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+D:\SVN\Project\DADOS Project\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\DadosReports.pdb
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.dll
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\DataAccess-Net.dll
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.dll
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.pdb
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.pdb
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\Interop.vunettofx.dll
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ConditionsEditor.resources
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.frmLayOut.resources
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Loading.resources
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Properties.Resources.resources
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ReportsMain.resources
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.SendMail.resources
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.GenerateResource.Cache
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe.licenses
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb
+E:\Working\DADOS Project_110314\Dados Reports\Dados Reports\bin\Debug\udselectpop.dll
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ConditionsEditor.resources
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.frmLayOut.resources
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Loading.resources
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Properties.Resources.resources
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ReportsMain.resources
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.SendMail.resources
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.GenerateResource.Cache
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe.licenses
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\DadosReports.pdb
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.dll
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.dll
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.pdb
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.pdb
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\bin\Debug\Interop.vunettofx.dll
+E:\Working\Bug-22080\DADOS Project_180314\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DadosReports.pdb
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.dll
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.dll
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.pdb
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.pdb
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\Interop.vunettofx.dll
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ConditionsEditor.resources
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.frmLayOut.resources
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Loading.resources
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Properties.Resources.resources
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ReportsMain.resources
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.SendMail.resources
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.GenerateResource.Cache
+E:\Working\Bug-22080\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe.licenses
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DadosReports.pdb
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.dll
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\DataAccess-Net.dll
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.dll
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\udselectpop.dll
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.pdb
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.pdb
+E:\DADOS Project_190314\Dados Reports\Dados Reports\bin\Debug\Interop.vunettofx.dll
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\ResolveAssemblyReference.cache
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ConditionsEditor.resources
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.frmLayOut.resources
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Loading.resources
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Properties.Resources.resources
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ReportsMain.resources
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.SendMail.resources
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.GenerateResource.Cache
+E:\DADOS Project_190314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe.licenses
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\DadosReports.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\LogicalLibrary.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\CryptoLib.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Debug\Interop.vunettofx.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ConditionsEditor.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.frmLayOut.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Loading.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.Properties.Resources.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.ReportsMain.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.SendMail.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe.licenses
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Debug\DadosReports.exe.config
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Debug\Interop.vunettofx.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Debug\DadosReports.csproj.ResolveComReference.cache
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Debug\DadosReports.exe
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Debug\DadosReports.pdb

@@ -1,0 +1,8 @@
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\obj\Debug\WindowsFormsApplication5.frmRegister_dll.resources
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\obj\Debug\UdDllRegisterProj.Properties.Resources.resources
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\obj\Debug\UdDllRegisterProj.csproj.GenerateResource.Cache
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\bin\Debug\UdDllRegisterProj.exe
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\bin\Debug\UdDllRegisterProj.pdb
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\obj\Debug\UdDllRegisterProj.exe
+E:\Working\Project\UdDllRegisterProj\UdDllRegisterProj\obj\Debug\UdDllRegisterProj.pdb

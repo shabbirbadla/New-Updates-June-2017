@@ -1,0 +1,371 @@
+IF EXISTS(Select [Name] from Sysobjects where xtype = 'P' and [name] = 'USP_REP_KA_CSTFORM01')
+BEGIN
+	DROP PROCEDURE USP_REP_KA_CSTFORM01
+END
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+ -- Author:  Hetal L. Patel
+ -- Create date: 16/07/2009 
+ -- Description: This Stored procedure is useful to generate KA CST Form1
+ -- Modify date: 21/04/2015
+ -- Modified By: Gaurav R. Tanna for Karnataka VAT/CST Reports latest format and SP changes
+ -- Modify date: 23/04/2015 - Bug 26167
+ -- =============================================
+CREATE PROCEDURE [dbo].[USP_REP_KA_CSTFORM01]
+ @TMPAC NVARCHAR(50),@TMPIT NVARCHAR(50),@SPLCOND VARCHAR(8000),@SDATE  SMALLDATETIME,@EDATE SMALLDATETIME
+ ,@SAC AS VARCHAR(60),@EAC AS VARCHAR(60)
+ ,@SIT AS VARCHAR(60),@EIT AS VARCHAR(60)
+ ,@SAMT FLOAT,@EAMT FLOAT
+ ,@SDEPT AS VARCHAR(60),@EDEPT AS VARCHAR(60)
+ ,@SCATE AS VARCHAR(60),@ECATE AS VARCHAR(60)
+ ,@SWARE AS VARCHAR(60),@EWARE AS VARCHAR(60)
+ ,@SINV_SR AS VARCHAR(60),@EINV_SR AS VARCHAR(60)
+ ,@LYN VARCHAR(20)
+ ,@EXPARA  AS VARCHAR(60)= null
+ AS
+ BEGIN
+ Declare @FCON as NVARCHAR(2000),@VSAMT DECIMAL(14,2),@VEAMT DECIMAL(14,2)
+ EXECUTE   USP_REP_FILTCON 
+ @VTMPAC =@TMPAC,@VTMPIT =@TMPIT,@VSPLCOND =@SPLCOND
+ ,@VSDATE=NULL
+ ,@VEDATE=@EDATE
+ ,@VSAC =@SAC,@VEAC =@EAC
+ ,@VSIT=@SIT,@VEIT=@EIT
+ ,@VSAMT=@SAMT,@VEAMT=@EAMT
+ ,@VSDEPT=@SDEPT,@VEDEPT=@EDEPT
+ ,@VSCATE =@SCATE,@VECATE =@ECATE
+ ,@VSWARE =@SWARE,@VEWARE  =@EWARE
+ ,@VSINV_SR =@SINV_SR,@VEINV_SR =@SINV_SR
+ ,@VMAINFILE='M',@VITFILE=NULL,@VACFILE=NULL
+ ,@VDTFLD ='DATE'
+ ,@VLYN=NULL
+ ,@VEXPARA=@EXPARA
+ ,@VFCON =@FCON OUTPUT
+ 
+ DECLARE @SQLCOMMAND NVARCHAR(4000)
+ DECLARE @RATE NUMERIC(12,2),@AMTA1 NUMERIC(12,2),@AMTB1 NUMERIC(12,2),@AMTC1 NUMERIC(12,2),@AMTD1 NUMERIC(12,2),@AMTE1 NUMERIC(12,2),@AMTF1 NUMERIC(12,2),@AMTG1 NUMERIC(12,2),@AMTH1 NUMERIC(12,2),@AMTI1 NUMERIC(12,2),@AMTJ1 NUMERIC(12,2),@AMTK1 NUMERIC(12,2),@AMTL1 NUMERIC(12,2),@AMTM1 NUMERIC(12,2),@AMTN1 NUMERIC(12,2),@AMTO1 NUMERIC(12,2)
+ DECLARE @AMTA2 NUMERIC(12,2),@AMTB2 NUMERIC(12,2),@AMTC2 NUMERIC(12,2),@AMTD2 NUMERIC(12,2),@AMTE2 NUMERIC(12,2),@AMTF2 NUMERIC(12,2),@AMTG2 NUMERIC(12,2),@AMTH2 NUMERIC(12,2),@AMTI2 NUMERIC(12,2),@AMTJ2 NUMERIC(12,2),@AMTK2 NUMERIC(12,2),@AMTL2 NUMERIC(12,2),@AMTM2 NUMERIC(12,2),@AMTN2 NUMERIC(12,2),@AMTO2 NUMERIC(12,2)
+ DECLARE @PER NUMERIC(12,2),@TAXAMT NUMERIC(12,2),@CHAR INT,@LEVEL NUMERIC(12,2),@BALAMT  NUMERIC(18,2)
+ DECLARE @FRGHTAMT1 NUMERIC(12,2), @FRGHTAMT2 NUMERIC(12,2),@FRGHTAMT3 NUMERIC(12,2), @FRGHTAMT4 NUMERIC(12,2)
+ DECLARE @Bank_nm varchar(100),@CHALSR NUMERIC(3),@INVNO VARCHAR(250),@CHLN_NO VARCHAR(250),@CHLN_DATE DATETIME
+
+ 
+SELECT DISTINCT AC_NAME=SUBSTRING(AC_NAME1,2,CHARINDEX('"',SUBSTRING(AC_NAME1,2,100))-1) INTO #VATAC_MAST FROM STAX_MAS WHERE AC_NAME1 NOT IN ('"SALES"','"PURCHASES"') AND ISNULL(AC_NAME1,'')<>''
+INSERT INTO #VATAC_MAST SELECT DISTINCT AC_NAME=SUBSTRING(AC_NAME1,2,CHARINDEX('"',SUBSTRING(AC_NAME1,2,100))-1) FROM STAX_MAS WHERE AC_NAME1 NOT IN ('"SALES"','"PURCHASES"') AND ISNULL(AC_NAME1,'')<>''
+ 
+
+Declare @NetEff as numeric (12,2), @NetTax as numeric (12,2)
+
+---Temporary Cursor2
+SELECT PART=3,PARTSR='AAA',SRNO='AAA',RATE=99.999,AMT1=NET_AMT,AMT2=M.TAXAMT,AMT3=M.TAXAMT,
+M.INV_NO,M.DATE,PARTY_NM=AC1.AC_NAME,ADDRESS=Ltrim(AC1.Add1)+' '+Ltrim(AC1.Add2)+' '+Ltrim(AC1.Add3),STM.FORM_NM,AC1.S_TAX
+INTO #FORM221
+FROM PTACDET A 
+INNER JOIN STMAIN M ON (A.ENTRY_TY=M.ENTRY_TY AND A.TRAN_CD=M.TRAN_CD)
+INNER JOIN STAX_MAS STM ON (M.TAX_NAME=STM.TAX_NAME)
+INNER JOIN AC_MAST AC ON (A.AC_NAME=AC.AC_NAME)
+INNER JOIN AC_MAST AC1 ON (M.AC_ID=AC1.AC_ID)
+WHERE 1=2
+
+Declare @MultiCo	VarChar(3)
+Declare @MCON as NVARCHAR(2000)
+IF Exists(Select A.ID From SysObjects A Inner Join SysColumns B On(A.ID = B.ID) Where A.[Name] = 'STMAIN' And B.[Name] = 'DBNAME')
+	Begin	------Fetch Records from Multi Co. Data
+		 Set @MultiCo = 'YES'
+		 EXECUTE USP_REP_MULTI_CO_DATA
+		  @TMPAC, @TMPIT, @SPLCOND, @SDATE, @EDATE
+		 ,@SAC, @EAC, @SIT, @EIT, @SAMT, @EAMT
+		 ,@SDEPT, @EDEPT, @SCATE, @ECATE,@SWARE
+		 ,@EWARE, @SINV_SR, @EINV_SR, @LYN, @EXPARA
+		 ,@MFCON = @MCON OUTPUT
+
+		--SET @SQLCOMMAND='Select * from '+@MCON
+		---EXECUTE SP_EXECUTESQL @SQLCOMMAND
+		SET @SQLCOMMAND='Insert InTo  #FORM221_1 Select * from '+@MCON
+		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+		---Drop Temp Table 
+		SET @SQLCOMMAND='Drop Table '+@MCON
+		EXECUTE SP_EXECUTESQL @SQLCOMMAND
+	End
+else
+	Begin ------Fetch Single Co. Data
+		 Set @MultiCo = 'NO'
+		 EXECUTE USP_REP_SINGLE_CO_DATA_VAT
+		  @TMPAC, @TMPIT, @SPLCOND, @SDATE, @EDATE
+		 ,@SAC, @EAC, @SIT, @EIT, @SAMT, @EAMT
+		 ,@SDEPT, @EDEPT, @SCATE, @ECATE,@SWARE
+		 ,@EWARE, @SINV_SR, @EINV_SR, @LYN, @EXPARA
+		 ,@MFCON = @MCON OUTPUT
+
+	End
+-----
+-----SELECT * from #form221_1 where (Date Between @Sdate and @Edate) and Bhent in('EP','PT','CN') and TAX_NAME In('','NO-TAX') and U_imporm = ''
+-----
+
+--Gross Sales
+SET @AMTA1 = 0
+SET  @BALAMT = 0 
+Select @AMTA1=isnulL(Sum(CASE WHEN BHENT='ST' THEN gro_Amt ELSE -GRO_AMT END),0) From VATTBL where (Date Between @Sdate and @Edate) And Bhent in('ST','CN')
+Set @AMTA1 = IsNull(@AMTA1,0)  
+Set @BALAMT = @BALAMT + ISNULL(@AMTA1,0)
+INSERT INTO #FORM221 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES (1,'1','A',0,@AMTA1,0,0,'')
+
+--Blank Records
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','B',0,0,0,0,'')
+
+--Out of State Sales
+SET @AMTA1 = 0
+Select @AMTA1=ISNULL(Sum(CASE WHEN BHENT='ST' THEN gro_Amt ELSE -GRO_AMT END),0) From VATTBL where (Date Between @Sdate
+and @Edate) And Bhent in('ST','CN')  And St_Type = 'OUT OF STATE' 
+AND (U_IMPORM IN('BRANCH TRANSFER','CONSIGNMENT TRANSFER')) --  And TAX_NAME in ('EXEMPTED','')
+Set @AMTA1 = IsNull(@AMTA1,0)  
+Set @BALAMT = @BALAMT - ISNULL(@AMTA1,0)
+INSERT INTO #FORM221 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES (1,'1','BA',0,@AMTA1,0,0,'')
+
+
+--Out of Country Sales
+SET @AMTA1 = 0
+Select @AMTA1=ISNULL(Sum(CASE WHEN BHENT='ST' THEN gro_Amt ELSE -GRO_AMT END),0) From VATTBL where (Date Between @Sdate
+and @Edate) And Bhent in('ST','CN')  And St_Type = 'OUT OF COUNTRY'
+Set @AMTA1 = IsNull(@AMTA1,0)  
+Set @BALAMT = @BALAMT - ISNULL(@AMTA1,0)
+INSERT INTO #FORM221 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES (1,'1','BB',0,@AMTA1,0,0,'')
+
+--Balance-turnover of Inter State Sales and Sales within the State*/
+INSERT INTO #FORM221(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES(1,'1','C',0,@BALAMT,0,0,'')
+
+/*Deduct- Turnover Of Sales within the State…*/
+SET @AMTA1 = 0
+Select @AMTA1=ISNULL(Sum(CASE WHEN BHENT='ST' THEN gro_Amt ELSE -GRO_AMT END),0) From vattbl where (Date Between @Sdate and @Edate) 
+And Bhent in('ST','CN') And St_Type in('LOCAL','')
+Set @AMTA1 = IsNull(@AMTA1,0)  
+Set @BALAMT = @BALAMT - ISNULL(@AMTA1,0) --this used for 3.(i)Balance-Turnover on inter-State Sales
+INSERT INTO #FORM221 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES	(1,'1','CA',0,@AMTA1,0,0,'')
+
+ /*Balance-/turnover of Inter-State Sales*/
+INSERT INTO #FORM221 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES (1,'1','D',0,@BALAMT,0,0,'') 
+
+
+/*(i) Cost of freight or delivery or the cost of installation where such cost is separately charged on Inter-State sales*/
+SET @AMTA1 = 0
+SET @AMTA2 = 0
+SET @AMTB1 = 0
+SET @AMTB2 = 0
+
+SET @FRGHTAMT1 = 0
+SET @FRGHTAMT2 = 0
+
+SET @FRGHTAMT3 = 0
+SET @FRGHTAMT4 = 0
+
+SELECT @FRGHTAMT1=Sum(A.tot_nontax) FROM STITEM A  
+INNER JOIN AC_MAST B ON (A.AC_ID = B.AC_ID)
+WHERE (A.Date Between @SDATE And @EDATE) AND (B.S_TAX <> '')
+    
+SELECT @FRGHTAMT2=Sum(A.tot_nontax) FROM STMAIN A  
+INNER JOIN AC_MAST B ON (A.AC_ID = B.AC_ID)
+WHERE (A.Date Between @SDATE And @EDATE)  AND (B.S_TAX <> '')
+
+
+SELECT @FRGHTAMT3=Sum(A.tot_nontax) FROM STITEM A  
+INNER JOIN AC_MAST B ON (A.AC_ID = B.AC_ID)
+WHERE (A.Date Between @SDATE And @EDATE) AND (B.S_TAX = '')
+    
+SELECT @FRGHTAMT4=Sum(A.tot_nontax) FROM STMAIN A  
+INNER JOIN AC_MAST B ON (A.AC_ID = B.AC_ID)
+WHERE (A.Date Between @SDATE And @EDATE)  AND (B.S_TAX = '')
+
+Set @FRGHTAMT1 = IsNull(@FRGHTAMT1,0)   
+Set @FRGHTAMT2 = IsNull(@FRGHTAMT2,0)
+
+Set @FRGHTAMT3 = IsNull(@FRGHTAMT3,0)   
+Set @FRGHTAMT4 = IsNull(@FRGHTAMT4,0)
+
+Set @AMTA1 = @FRGHTAMT1 + @FRGHTAMT2 + @FRGHTAMT3 + @FRGHTAMT4
+           
+Set @AMTA1 = IsNull(@AMTA1,0)   
+--Set @AMTA2 = IsNull(@AMTA2,0)   
+SET @BALAMT =@BALAMT - (ISNULL(@AMTA2,0) + ISNULL(@AMTA1,0)) 
+INSERT INTO #FORM221 (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES (1,'1','DA',0,@AMTA1,0,0,'')
+
+/*Balance - Total turnover of Inter-State Sales*/
+INSERT INTO #FORM221(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES (1,'1','E',0,@BALAMT,0,0,'')
+
+/*Goods-wise break-up of above*/
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','F',0,0,0,0,'')
+
+/*(A) Declare Goods.*/
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FA',0,0,0,0,'')
+
+/*(i)  Sold to registered dealers on prescribed declaration (vide declaration attached)*/
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FB',0,0,0,0,'')
+
+/*(ii) Sold Otherwise*/
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FC',0,0,0,0,'')
+
+/*(B) Other Goods.*/
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FD',0,0,0,0,'')
+
+--Sales to Register Dealer's
+SET @AMTA1 = 0
+SET @AMTA2 = 0
+SELECT @AMTA1=ISNULL(Sum(CASE WHEN A.BHENT='ST' THEN A.gro_Amt ELSE -A.gro_Amt END),0) FROM VATTBL A
+where A.bhent in ('ST', 'CN') AND (A.DATE BETWEEN @SDATE AND @EDATE) And A.S_tax <> '' AND A.ST_TYPE='OUT OF STATE' 
+and U_imporm Not In('Branch Transfer','Consignment Transfer') 
+Set @AMTA1 = ISNULL(@AMTA1,0)
+--SET @AMTA1 = @AMTA1 - (@FRGHTAMT1 + @FRGHTAMT2)
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FE',0,@AMTA1,0,0,'')
+
+--Sales to Un-Register Dealer's
+SET @AMTA1 = 0
+SET @AMTA2 = 0
+SELECT @AMTA1=ISNULL(Sum(CASE WHEN A.BHENT='ST' THEN A.gro_Amt ELSE -A.gro_Amt END),0) FROM VATTBL A
+where A.bhent in ('ST', 'CN') AND (A.DATE BETWEEN @SDATE AND @EDATE) And A.S_tax = '' AND A.ST_TYPE='OUT OF STATE' 
+and U_imporm Not In('Branch Transfer','Consignment Transfer')
+Set @AMTA1 = ISNULL(@AMTA1,0)
+--SET @AMTA1 = @AMTA1 - (@FRGHTAMT3 + @FRGHTAMT4)
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FF',0,@AMTA1,0,0,'')
+
+Select @AMTA1=Sum(Amt1) from #Form221 Where Partsr = '1' and srno in('FB','FC','FD','FE','FF')
+INSERT INTO #FORM221
+(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM) VALUES
+(1,'1','FG',0,@AMTA1,0,0,'')
+
+ -->---PART 2
+
+---Tax & Taxable Amount of Sales for the period
+
+  SET @AMTJ1=0
+  SET @AMTK1=0
+
+ SELECT @AMTA1=0,@AMTB1=0,@AMTC1=0,@AMTD1=0,@AMTE1=0,@AMTF1=0,@AMTG1=0,@AMTH1=0,@AMTI1=0,@AMTJ1=0,@AMTK1=0,@AMTL1=0,@AMTM1=0,@AMTN1=0,@AMTO1=0 
+ SET @CHAR=65
+ DECLARE  CUR_FORM221 CURSOR FOR 
+ select distinct level1 from stax_mas where ST_TYPE='OUT OF STATE'--CHARINDEX('VAT',TAX_NAME)>0
+ OPEN CUR_FORM221
+ FETCH NEXT FROM CUR_FORM221 INTO @PER
+ WHILE (@@FETCH_STATUS=0)
+ BEGIN
+	begin
+		SELECT @AMTA1=SUM(VATONAMT) FROM (SELECT  VATONAMT FROM VATTBL where bhent = 'ST' AND (DATE BETWEEN @SDATE AND @EDATE) And S_tax <> '' AND PER=@PER AND ST_TYPE='OUT OF STATE' And U_imporm Not In('Branch Transfer','Consignment Transfer'))C
+		SELECT @AMTB1=sum(TAXAMT)  FROM (SELECT  TAXAMT FROM VATTBL where bhent = 'ST' AND (DATE BETWEEN @SDATE AND @EDATE) And S_tax <> '' AND PER=@PER AND ST_TYPE='OUT OF STATE' And U_imporm Not In('Branch Transfer','Consignment Transfer'))c
+			
+		SELECT @AMTC1=SUM(VATONAMT) FROM (SELECT  VATONAMT FROM VATTBL where bhent in ('SR', 'CN') AND (DATE BETWEEN @SDATE AND @EDATE) And S_tax <> '' AND PER=@PER AND ST_TYPE='OUT OF STATE' And U_imporm Not In('Branch Transfer','Consignment Transfer'))C
+		SELECT @AMTD1=sum(TAXAMT)  FROM (SELECT  TAXAMT FROM VATTBL where bhent in ('SR', 'CN') AND (DATE BETWEEN @SDATE AND @EDATE) And S_tax <> '' AND PER=@PER AND ST_TYPE='OUT OF STATE' And U_imporm Not In('Branch Transfer','Consignment Transfer'))c
+		
+	end
+	
+  --Sales Invoices
+  SET @AMTA1=ISNULL(@AMTA1,0)
+  SET @AMTB1=ISNULL(@AMTB1,0)
+ 
+  --Return Invoices
+  SET @AMTC1=ISNULL(@AMTC1,0)
+  SET @AMTD1=ISNULL(@AMTD1,0)
+  
+  --Net Effect
+  ----Set @NetEFF = @AMTA1-(@AMTB1+(@AMTC1-@AMTD1))
+  --Set @NetEFF = (@AMTA1-@AMTB1)-(@AMTC1-@AMTD1)
+  ----Set @NetTAX = (@AMTB1)-(@AMTD1)
+  
+    select  @NetEFF = (@AMTA1-@AMTC1)
+        , @NetTAX = (@AMTB1)-(@AMTD1)
+
+  --if @nettax <> 0
+    if @NetEFF <> 0
+	  begin
+		  INSERT INTO #FORM221
+		  (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,Party_nm) VALUES
+		  (1,'2',CHAR(@CHAR),@PER,@NETEFF,@NETTAX,0,'')
+		--  (1,'6',CHAR(@CHAR),@PER,@AMTA1-@AMTB1,@AMTB1,0)
+		  
+		--  SET @AMTJ1=@AMTJ1+@AMTA1 --TOTAL TAXABLE AMOUNT
+		--  SET @AMTK1=@AMTK1+@AMTB1 --TOTAL TAX
+		  SET @AMTJ1=@AMTJ1+@NETEFF --TOTAL TAXABLE AMOUNT
+		  SET @AMTK1=@AMTK1+@NETTAX --TOTAL TAX
+		  SET @CHAR=@CHAR+1
+	  end
+
+  FETCH NEXT FROM CUR_FORM221 INTO @PER
+ END
+ CLOSE CUR_FORM221
+ DEALLOCATE CUR_FORM221
+
+  SET @AMTJ1=ISNULL(@AMTJ1,0)
+  SET @AMTK1=ISNULL(@AMTK1,0)
+
+---Total of Tax & Taxable Amount of Sales for the period
+ INSERT INTO #FORM221
+ (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,Party_nm) VALUES
+ (1,'2','Z',0,@AMTJ1,@AMTK1,0,'')
+-- (1,'6','Z',0,@AMTJ1-@AMTK1,@AMTK1,0)
+
+  --<---PART 6
+  
+  declare cr_castPayable cursor FOR
+select B.u_chALNO,b.u_chALdt,A.Gro_amt,b.bank_nm
+from VATTBL A
+Inner join Bpmain B on (A.Bhent = B.Entry_ty and A.Tran_cd = B.Tran_cd)
+where BHENT = 'BP' And B.Date Between @sdate and @edate And B.Party_nm like '%CST Payable%' ORDER BY B.u_chALdt
+SET @INVNO =''
+SET @CHLN_DATE =NULL
+SET @AMTA1 = 0.00
+SET @CHALSR = 0
+set @Bank_nm = ''
+SET @AMTA1 = 0
+SET @AMTJ1 = 0
+OPEN cr_castPayable
+FETCH NEXT FROM cr_castPayable INTO @INVNO,@CHLN_DATE,@AMTA1,@Bank_nm
+ WHILE (@@FETCH_STATUS=0)
+ BEGIN
+	begin
+		SET @CHALSR = @CHALSR +1
+		INSERT INTO #FORM221(PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,PARTY_NM,date,form_nm) VALUES(1,'3','A',@CHALSR,@AMTA1,0,0,@Bank_nm,@CHLN_DATE,@invno)
+		SET @AMTJ1 = @AMTJ1 + @AMTA1
+	end
+ FETCH NEXT FROM cr_castPayable INTO @INVNO,@CHLN_DATE,@AMTA1,@Bank_nm
+END
+CLOSE cr_castPayable
+DEALLOCATE cr_castPayable
+
+ SET @AMTJ1=ISNULL(@AMTJ1,0)	
+
+---Balance Tax
+ INSERT INTO #FORM221
+ (PART,PARTSR,SRNO,RATE,AMT1,AMT2,AMT3,Party_nm) VALUES
+ (1,'4','A',0,0,(@AMTK1 - @AMTJ1),0,'')
+
+--Updating Null Records  
+Update #form221 set  PART = isnull(Part,0) , Partsr = isnull(PARTSR,''), SRNO = isnull(SRNO,''),
+		             RATE = isnull(RATE,0), AMT1 = isnull(AMT1,0), AMT2 = isnull(AMT2,0), 
+					 AMT3 = isnull(AMT3,0), INV_NO = isnull(INV_NO,''), DATE = isnull(Date,''), 
+					 PARTY_NM = isnull(Party_nm,''), ADDRESS = isnull(Address,''),
+					 FORM_NM = isnull(form_nm,''), S_TAX = isnull(S_tax,'')--, Qty = isnull(Qty,0),  ITEM =isnull(item,''),
+
+ SELECT * FROM #FORM221 order by cast(substring(partsr,1,case when (isnumeric(substring(partsr,1,2))=1) then 2 else 1 end) as int)
+ --SELECT * FROM #FORM221_1 --order by cast(substring(partsr,1,case when (isnumeric(substring(partsr,1,2))=1) then 2 else 1 end) as int)
+ 
+ END
+
+--Print 'KA CST FORM 1'
+

@@ -1,0 +1,16 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-22 18:18:10	Process Started....
+2014-01-22 18:18:14	Process Start ID : EM1 [Purchase Transaction] 
+2014-01-22 18:18:53	Inv_no : 000001
+2014-01-22 18:19:15	Successfully Exported file in PDF format....
+2014-01-22 18:22:43	Mail has not sent...Failure Sending Mail..GeneralFailure..Failure sending mail.
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported PDF files : 1
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2014-01-22 18:23:04	Error Found...Failure Sending Mail..GeneralFailure..Failure sending mail.
+2014-01-22 18:23:04	Process End ID : EM1
+-------------------------------------<<< END >>>-----------------------------
+

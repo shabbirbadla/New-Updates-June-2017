@@ -1,0 +1,36 @@
+Private oBj
+ObjFrm=Createobject("bForm")
+ObjFrm.Show()
+Read Events
+*!*	oBj= Createobject("test")
+*!*	kk = oBj.Add(2,5)
+*!*	?kk
+
+
+Define Class Bform As Form
+	Procedure Init
+	This.AddObject("Chkbox1","Chkbox")
+	This.Chkbox1.Visible = .T.
+	Endproc
+
+	Procedure QueryUnload
+	Clear Events
+	Endproc
+Enddefine
+
+Define Class ChkBox As Checkbox
+	Procedure Init
+	This.Caption = "Test"
+	This.Visible=.T.
+	Endproc
+Enddefine
+
+*!*	Define Class Test As Custom
+*!*		Function Add(abc As Integer, jjj As Integer)
+*!*		If Vartype(abc)<>"N" Or Vartype(jjj) <> "N"
+*!*			Messagebox("Specified Parameters should be Numeric in DataType",64,"")
+*!*			Return 0
+*!*		Endif
+*!*		Return abc * jjj
+*!*		Endfunc
+*!*	Enddefine

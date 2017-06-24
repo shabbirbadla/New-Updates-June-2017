@@ -1,0 +1,4 @@
+lparameters nRange
+=MESSAGEBOX('v')
+do form frmusers with nRange
+return

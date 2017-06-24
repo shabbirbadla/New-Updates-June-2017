@@ -1,0 +1,20 @@
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.Properties.Resources.resources
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.csproj.GenerateResource.Cache
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\bin\Debug\udEmpLeaveMaster.exe
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\bin\Debug\udEmpLeaveMaster.pdb
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.exe
+D:\My practice\aspspider\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.exe
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\bin\Debug\udEmpLeaveMaster.exe
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\bin\Debug\udEmpLeaveMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.Properties.Resources.resources
+D:\My practice\aspspider\Payroll\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.csproj.GenerateResource.Cache
+D:\Ramya\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.exe
+D:\Ramya\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.pdb
+D:\SVN Development\Dotnet\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.exe
+D:\SVN Development\Dotnet\udEmpLeaveMaster\udEmpLeaveMaster\obj\Debug\udEmpLeaveMaster.pdb

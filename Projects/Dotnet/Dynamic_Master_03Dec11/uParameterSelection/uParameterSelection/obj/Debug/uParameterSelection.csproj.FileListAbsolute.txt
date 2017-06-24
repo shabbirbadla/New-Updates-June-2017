@@ -1,0 +1,21 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\bin\Debug\uParameterSelection.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\bin\Debug\uParameterSelection.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\obj\Debug\uParameterSelection.Properties.Resources.resources
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\obj\Debug\uParameterSelection.csproj.GenerateResource.Cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\obj\Debug\uParameterSelection.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uParameterSelection\obj\Debug\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Debug\uParameterSelection.exe
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Debug\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\uParameterSelection.exe
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\uBaseForm.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\uCheckBox.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\udSelectPop.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\uHelpButton.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\uTextBox.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Debug\uParameterSelection.Properties.Resources.resources
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Debug\uParameterSelection.csproj.GenerateResource.Cache
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\AlertMaster\uParameterSelection\uParameterSelection\obj\Debug\uParameterSelection.FrmMainParameterSelection.resources

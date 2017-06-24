@@ -1,0 +1,114 @@
+2013-03-19 11:31:14	Process Start.....
+2013-03-19 11:31:14	
+2013-03-19 11:31:15	Party_nm : R00127
+2013-03-19 15:38:51	Process Start.....
+2013-03-19 15:38:51	
+2013-03-19 15:38:52	Party_nm : R00127
+2013-03-19 15:39:03	Error Found...Invalid object name 'co_mast'.
+------------------------------------------------------------------------------------------
+2013-03-19 15:39:03	Party_nm : S00026
+2013-03-19 15:39:05	Error Found...Invalid object name 'co_mast'.
+------------------------------------------------------------------------------------------
+2013-03-19 15:39:05	Party_nm : P00173
+2013-03-19 15:39:06	Error Found...Invalid object name 'co_mast'.
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported PDF : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2013-03-19 15:40:29	Process Start.....
+2013-03-19 15:40:29	
+2013-03-19 15:40:29	Party_nm : R00127
+2013-03-19 15:44:06	Process Start.....
+2013-03-19 15:44:06	
+2013-03-19 15:44:06	Party_nm : R00127
+2013-03-19 15:47:29	Process Start.....
+2013-03-19 15:47:29	
+2013-03-19 15:47:30	Party_nm : R00127
+2013-03-19 15:49:32	Process Start.....
+2013-03-19 15:49:32	
+2013-03-19 15:49:33	Party_nm : R00127
+2013-03-19 15:59:42	Process Start.....
+2013-03-19 15:59:42	
+2013-03-19 15:59:43	Party_nm : R00127
+2013-03-19 15:59:48	Successfully export PDF....
+2013-03-19 15:59:57	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-19 15:59:57	Party_nm : S00026
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 2
+Total Exported PDF : 1
+Total Mails sent : 1
+---------------------------------------<<< End >>> ------------------------------
+2013-03-19 16:02:02	Process Start.....
+2013-03-19 16:02:02	
+2013-03-19 16:02:02	Party_nm : R00127
+2013-03-19 16:02:06	Successfully export PDF....
+2013-03-19 16:02:13	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-19 16:02:13	Party_nm : S00026
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 2
+Total Exported PDF : 1
+Total Mails sent : 1
+---------------------------------------<<< End >>> ------------------------------
+2013-03-19 16:06:22	Process Start.....
+2013-03-19 16:06:22	
+2013-03-19 16:06:22	Party_nm : R00127
+2013-03-19 16:07:23	Successfully export PDF....
+2013-03-19 16:07:32	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-19 16:07:32	Party_nm : S00026
+2013-03-19 16:07:38	Successfully export PDF....
+2013-03-19 16:07:49	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-19 16:07:49	Party_nm : P00173
+2013-03-19 16:07:52	Successfully export PDF....
+2013-03-19 16:08:01	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported PDF : 3
+Total Mails sent : 3
+---------------------------------------<<< End >>> ------------------------------
+2013-03-19 16:24:23	Process Start.....
+2013-03-19 16:24:23	
+2013-03-19 16:24:25	Party_nm : R00127
+2013-03-19 16:25:14	Error Found...found error while getting emails details 
+Message : There is no row at position 0.
+Source : System.Data
+TargetSite : NodePath GetNodeByIndex(Int32)
+------------------------------------------------------------------------------------------
+2013-03-19 16:25:14	Party_nm : S00026
+2013-03-19 16:31:43	Process Start.....
+2013-03-19 16:31:43	
+2013-03-19 16:31:43	Party_nm : R00127
+2013-03-19 16:57:28	Process Start.....
+2013-03-19 16:57:28	
+2013-03-19 16:57:29	Party_nm : R00127
+2013-03-19 16:58:24	Process Start.....
+2013-03-19 16:58:24	
+2013-03-19 16:58:24	Party_nm : R00127
+2013-03-19 16:59:02	Error Found...found error while getting emails details 
+Message : To Mail address found empty...
+Source : eMailClient.BL
+TargetSite : System.String GetEmailDetailsFromTable(Int32, Int32 ByRef, System.String, System.String)
+------------------------------------------------------------------------------------------
+2013-03-19 16:59:08	Party_nm : S00026
+2013-03-19 16:59:14	Error Found...found error while getting emails details 
+Message : To Mail address found empty...
+Source : eMailClient.BL
+TargetSite : System.String GetEmailDetailsFromTable(Int32, Int32 ByRef, System.String, System.String)
+------------------------------------------------------------------------------------------
+2013-03-19 16:59:14	Party_nm : P00173
+2013-03-19 16:59:14	Error Found...found error while getting emails details 
+Message : To Mail address found empty...
+Source : eMailClient.BL
+TargetSite : System.String GetEmailDetailsFromTable(Int32, Int32 ByRef, System.String, System.String)
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported PDF : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------

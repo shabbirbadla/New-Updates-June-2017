@@ -1,0 +1,18 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-21 15:31:04	Process Started....
+2014-01-21 15:31:05	Process Start ID : EM1
+2014-01-21 15:31:05	Inv_no : 000001
+2014-01-21 15:31:05	Error Found...Column 'ac_name' does not belong to table Table.
+
+Source : System.Data
+TargetSite : System.Data.DataColumn GetDataColumn(System.String)
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported PDF files : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2014-01-21 15:31:06	Successfully Email Log Status Mail Sent.... 
+2014-01-21 15:31:06	Process End ID : EM1
+-------------------------------------<<< END >>>-----------------------------
+

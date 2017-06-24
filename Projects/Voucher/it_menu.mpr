@@ -1,0 +1,15 @@
+Retu
+DEFINE PAD Item OF (cmenuname) PROMPT "I\<tem" COLOR SCHEME 3 ;
+	AFTER _MEDIT KEY ALT+T, "ALT+T" ;
+	MESSAGE "Add and delete line items for vouher"
+ON PAD Item OF (cmenuname) ACTIVATE POPUP item
+
+DEFINE POPUP item MARGIN RELATIVE SHADOW COLOR SCHEME 4
+DEFINE BAR 1 OF item PROMPT "Add  Item" ;
+	KEY CTRL+I, "CTRL+I" ;
+	SKIP FOR tbrdesktop.flag
+DEFINE BAR 2 OF item PROMPT "Remove Item" ;
+	KEY CTRL+T, "CTRL+T" ;
+	SKIP FOR tbrdesktop.flag
+ON SELECTION BAR 1 OF item _Screen.ActiveForm.GridAdditem('ITEM_VW')
+ON SELECTION BAR 2 OF item _Screen.ActiveForm.GridRemoveitem('ITEM_VW')

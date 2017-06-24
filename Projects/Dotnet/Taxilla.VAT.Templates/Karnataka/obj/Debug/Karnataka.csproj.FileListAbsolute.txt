@@ -1,0 +1,9 @@
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\bin\Debug\Karnataka.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\bin\Debug\Karnataka.pdb
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\bin\Debug\GetInfo.DLL
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\obj\Debug\Karnataka.frmKarnataka.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\obj\Debug\Karnataka.Properties.Resources.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\obj\Debug\Karnataka.csproj.GenerateResource.Cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\obj\Debug\Karnataka.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Karnataka\obj\Debug\Karnataka.pdb

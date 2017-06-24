@@ -1,0 +1,9 @@
+
+F:\RAGHU\VFP9PROJECT\UDYOG ERP EXE\FRMLOGINUSERS.VCX: Begin Conversion 07/19/07 06:07:04 PM
+
+Fatal Error in Converter: 
+Error: Variable 'ENVIRON' is not found.
+Error Number: 12
+Method: converter
+Offending Code: ...
+File being processed: f:\raghu\vfp9project\udyog erp exe\frmloginusers.vcx

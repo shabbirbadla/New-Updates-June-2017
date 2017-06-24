@@ -1,0 +1,34 @@
+bin\Release\Dados Reports.exe
+bin\Release\Dados Reports.pdb
+bin\Release\CryptoLib.dll
+bin\Release\LogicalLibrary.dll
+bin\Release\LogicalLibrary.pdb
+bin\Release\CryptoLib.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Dados_Reports.Properties.Resources.resources
+obj\Release\Dados Reports.csproj.GenerateResource.Cache
+obj\Release\Dados Reports.exe
+obj\Release\Dados Reports.pdb
+bin\Debug\Dados Reports.exe
+bin\Debug\Dados Reports.pdb
+bin\Debug\CryptoLib.dll
+bin\Debug\LogicalLibrary.dll
+bin\Debug\LogicalLibrary.pdb
+bin\Debug\CryptoLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DadosReports.ConditionsEditor.resources
+obj\Debug\DadosReports.Loading.resources
+obj\Debug\Dados_Reports.Properties.Resources.resources
+obj\Debug\DadosReports.ReportsMain.resources
+obj\Debug\DadosReports.SendMail.resources
+obj\Debug\Dados Reports.csproj.GenerateResource.Cache
+obj\Debug\Dados Reports.exe.licenses
+obj\Debug\Dados Reports.exe
+obj\Debug\Dados Reports.pdb
+bin\Debug\Dados Reports.exe.config
+bin\Release\Dados Reports.exe.config
+obj\Release\DadosReports.ConditionsEditor.resources
+obj\Release\DadosReports.Loading.resources
+obj\Release\DadosReports.ReportsMain.resources
+obj\Release\DadosReports.SendMail.resources
+obj\Release\Dados Reports.exe.licenses

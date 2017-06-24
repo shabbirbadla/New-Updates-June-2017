@@ -1,0 +1,12 @@
+D:\Alert\UdAlertExecution_old\UdAlertExecution\obj\Debug\UdAlertExecution.exe
+D:\Alert\UdAlertExecution_old\UdAlertExecution\obj\Debug\UdAlertExecution.pdb
+D:\Alert\UdAlertExecution\UdAlertExecution\obj\Debug\ResolveAssemblyReference.cache
+D:\Alert\UdAlertExecution\UdAlertExecution\obj\Debug\UdAlertExecution.exe
+D:\Alert\UdAlertExecution\UdAlertExecution\obj\Debug\UdAlertExecution.pdb
+D:\Alert\UdAlertExecution\UdAlertExecution\bin\Debug\UdAlertExecution.exe
+D:\Alert\UdAlertExecution\UdAlertExecution\bin\Debug\UdAlertExecution.pdb
+D:\udAlertExecution from VSS\UdAlertExecution\obj\Debug\UdAlertExecution.exe
+D:\udAlertExecution from VSS\UdAlertExecution\obj\Debug\UdAlertExecution.pdb
+D:\udAlertExecution from VSS\UdAlertExecution\bin\Debug\UdAlertExecution.exe
+D:\udAlertExecution from VSS\UdAlertExecution\bin\Debug\UdAlertExecution.pdb
+D:\udAlertExecution from VSS\UdAlertExecution\obj\Debug\ResolveAssemblyReference.cache

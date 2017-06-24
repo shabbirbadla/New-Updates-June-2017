@@ -1,0 +1,15 @@
+Program d:\udyog\working\trailbalance\uetrialbalance_130715\trialmain.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Program d:\udyog\working\trailbalance\uetrialbalance_130715\makeacmast.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+
+Form d:\udyog\working\trailbalance\uetrialbalance_130715\finalacc.scx has the following errors:
+    Application UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UELEDZOOM - Undefined
+
+Visual Class Library d:\udyog\working\trailbalance\uetrialbalance_130715\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+

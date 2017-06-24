@@ -1,0 +1,13 @@
+bin\Debug\SMS.exe
+bin\Debug\SMS.pdb
+bin\Debug\GSMCommShared.dll
+bin\Debug\RS232.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SMS.Delete.resources
+obj\Debug\SMS.frmConnection.resources
+obj\Debug\SMS.Receive.resources
+obj\Debug\SMS.Send.resources
+obj\Debug\SMS.Form1.resources
+obj\Debug\SMS.csproj.GenerateResource.Cache
+obj\Debug\SMS.exe
+obj\Debug\SMS.pdb

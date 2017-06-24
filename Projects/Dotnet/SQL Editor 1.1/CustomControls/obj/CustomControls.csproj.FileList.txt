@@ -1,0 +1,8 @@
+..\bin\Release\Plugins\CustomControls.dll
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\CustomControls.dll
+bin\Debug\CustomControls.dll
+bin\Debug\CustomControls.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CustomControls.dll
+obj\Debug\CustomControls.pdb

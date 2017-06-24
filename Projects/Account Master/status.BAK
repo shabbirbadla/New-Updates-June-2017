@@ -1,0 +1,91 @@
+
+public tbrstatus
+set cons off
+tbrdesktop = createobj('vuastatus')
+tbrdesktop.hide
+
+define class vuastatus as status
+	add object btntop    as commandbutton
+	add object btnprv    as commandbutton
+	add object btnnxt    as commandbutton
+	add object btnbtm    as commandbutton
+	add object sep1	     as separator
+	add object btnfind   as commandbutton
+	add object btnloc    as commandbutton
+	add object sep2	     as separator
+	add object btnnew    as commandbutton
+	add object btnmodi   as commandbutton
+	add object sep3	     as separator
+	add object btndele   as commandbutton
+	add object sep4	     as separator
+	add object btncopy   as commandbutton
+	add object sep5	     as separator
+	add object btnview   as commandbutton
+	add object sep6      as separator
+	add object btnprin   as commandbutton
+	add object sep7      as separator
+	add object btnexit   as commandbutton
+	add object sep8      as separator
+	add object btnhelp   as commandbutton
+
+	btntop.height = 38
+	btntop.width = 48
+	btntop.caption="First"
+	btntop.picture = "bmp\Frsrec_s.bmp"
+	btntop.tooltiptext="First (Ctrl+Home)"
+	btntop.fontsize = 8
+
+	btnprv.height = 38
+	btnprv.width = 48
+	btnprv.caption="Prev"
+	btnprv.picture= "bmp\Prvrec_s.bmp"
+	btnprv.tooltiptext="Prev (Ctrl+Page UP)"
+	btnprv.fontsize = 8
+
+	btnnxt.height = 38
+	btnnxt.width = 48
+	btnnxt.caption = "Next"
+	btnnxt.picture="bmp\Nxtrec_s.bmp"
+	btnnxt.tooltiptext="Next (Ctrl+Page Down)"
+	btnnxt.fontsize = 8
+
+	btnbtm.height = 38
+	btnbtm.width = 48
+	btnbtm.picture="bmp\Lstrec_s.bmp"
+	btnbtm.caption = "Last"
+	btnbtm.tooltiptext="Last (Ctrl+End)"
+	btnbtm.fontsize = 8
+
+	btnfind.height = 38
+	btnfind.width = 48
+	btnfind.picture="bmp\Search.bmp"
+	btnfind.caption ="Find"
+	btnfind.tooltiptext="Find (Ctrl+F)"
+	btnfind.fontsize = 8
+
+	btnloc.height = 38
+	btnloc.width = 48
+	btnloc.picture="bmp\Loc.bmp"
+	btnloc.caption = "Locate"
+	btnloc.tooltiptext="Locate (Ctrl+L)"
+	btnloc.fontsize = 8
+
+	btnnew.height = 38
+	btnnew.width = 48
+	btnnew.picture="bmp\new.bmp"
+	btnnew.caption = "New"
+	btnnew.tooltiptext="New (Ctrl+N)"
+	btnnew.fontsize = 8
+
+	btnmodi.height = 38
+	btnmodi.width = 48
+	btnmodi.picture="bmp\Edit.bmp"
+	btnmodi.caption = "Edit"
+	btnmodi.tooltiptext="Edit (Ctrl+E)"
+	btnmodi.fontsize = 8
+
+	btndele.height = 38
+	btndele.width = 48
+	btndele.picture="bmp\delete.bmp"
+	btndele.caption = "Delete"
+enddefine

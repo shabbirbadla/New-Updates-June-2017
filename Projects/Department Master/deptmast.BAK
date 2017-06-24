@@ -1,0 +1,16 @@
+Form v:\vu_project_work\deptmast_to_manohar_110105\deptmast.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Program VU_UDFS - Undefined
+    Proc./Func. MENUPADSENABLEDISABLE - Undefined
+    Proc./Func. CHECKINGMODULERIGHTS - Undefined
+
+Visual Class Library v:\vudyog\class\vuamain.vcx has the following errors:
+    Form FIND - Undefined
+    Proc./Func. CLEANUP - Undefined
+    Program MAIN - Undefined
+    Form DEPT_ONLINE - Undefined
+    Form NRENTRY - Undefined
+    Form SER_ONLINE - Undefined
+    Form CAT_ONLINE - Undefined
+    Form AC_ONLINE - Undefined
+

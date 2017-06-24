@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{195DDF7A-F953-4B1D-9498-433EFCBB9E20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eMailClient</RootNamespace>
+    <AssemblyName>eMailClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAccess-Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="eMailClient.BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\eMailClient.BL\bin\Release\eMailClient.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="getinfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\VudyogSDK\getinfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="uBaseForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEmailClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailClient.Designer.cs">
+      <DependentUpon>frmEmailClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailList.Designer.cs">
+      <DependentUpon>frmEmailList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailSettings.Designer.cs">
+      <DependentUpon>frmEmailSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExportCSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExportCSV.Designer.cs">
+      <DependentUpon>frmExportCSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogViewer.Designer.cs">
+      <DependentUpon>frmLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPendingMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPendingMail.Designer.cs">
+      <DependentUpon>frmPendingMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcessWatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcessWatcher.designer.cs">
+      <DependentUpon>frmProcessWatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueryWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueryWindow.Designer.cs">
+      <DependentUpon>frmQueryWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.designer.cs">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTranType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTranType.Designer.cs">
+      <DependentUpon>frmTranType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEmailClient.resx">
+      <DependentUpon>frmEmailClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailList.resx">
+      <DependentUpon>frmEmailList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailSettings.resx">
+      <DependentUpon>frmEmailSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExportCSV.resx">
+      <DependentUpon>frmExportCSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogViewer.resx">
+      <DependentUpon>frmLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPendingMail.resx">
+      <DependentUpon>frmPendingMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcessWatcher.resx">
+      <DependentUpon>frmProcessWatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueryWindow.resx">
+      <DependentUpon>frmQueryWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch.resx">
+      <DependentUpon>frmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTranType.resx">
+      <DependentUpon>frmTranType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgpdf.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csv_text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc_file.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

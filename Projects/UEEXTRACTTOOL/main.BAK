@@ -1,0 +1,43 @@
+*:*****************************************************************************
+*:        Program: Main
+*:         System: Udyog Software
+*:         Author: Shrikant
+*:  Last modified: 18/01/2011
+*:			AIM  : Call ExportScript
+*:*****************************************************************************
+PARAMETERS menuType,tnRitghs
+*!*	tcCompid	 : Company Id 	{?Company.CompId}
+*!*	tcCompdb	 : Database 	{?Company.dbname}
+*!*	tnRights	 : User Rights
+
+IF VARTYPE(Company) <> "O"
+	RETURN .F.
+ENDIF
+
+IF PARAMETERS() < 2
+	=MESSAGEBOX('Passed Valid Parameters',0,"")
+	RETURN .T.
+ENDIF
+
+oWSHELL = CREATEOBJECT("WScript.Shell")
+IF VARTYPE(oWSHELL) <> "O"
+	MESSAGEBOX("WScript.Shell Object Creation Error...",16,VuMess)
+	RETURN .F.
+ENDIF
+
+tcCompId = Company.CompId
+tcCompdb = Company.Dbname
+
+
+SqlConObj = NEWOBJECT('SqlConnUdObj','SqlConnection',xapps)
+mvu_user1 = SqlConObj.dec(SqlConObj.ondecrypt(mvu_user))
+mvu_pass1 = SqlConObj.dec(SqlConObj.ondecrypt(mvu_pass))
+
+
+*_ShellExec = "ExportScript.exe "+TRANSFORM(tcCompId)+" "+ALLTRIM(tcCompdb)+" "+ALLTRIM(lcFileStr)+" "+ALLTRIM(mvu_server)+" "+ALLTRIM(mvu_user1)+" "+ALLTRIM(mvu_pass1)
+_ShellExec = "ExportScript.exe "+menuType
+oWSHELL.EXEC(_ShellExec)
+SqlConObj = NULL
+mvu_user1 = NULL
+mvu_pass1 = NULL
+RELEASE SqlConObj,mvu_user1,mvu_pass1

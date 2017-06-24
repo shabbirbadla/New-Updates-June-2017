@@ -1,0 +1,18 @@
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\Bug_24972.Frm402403.resources
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\Bug_24972.Properties.Resources.resources
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\GVATOnline402403.csproj.GenerateResource.Cache
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\bin\Debug\GVATOnline402403.exe
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\bin\Debug\GVATOnline402403.pdb
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\GVATOnline402403.exe
+E:\Projects\Bug_24972\GVATONLINE402403\Bug_24972\obj\Debug\GVATOnline402403.pdb
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\bin\Debug\GVATOnline402403.exe
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\bin\Debug\GVATOnline402403.pdb
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\bin\Debug\Office.dll
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\obj\Debug\Bug_24972.Frm402403.resources
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\obj\Debug\Bug_24972.Properties.Resources.resources
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\obj\Debug\GVATOnline402403.csproj.GenerateResource.Cache
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\obj\Debug\GVATOnline402403.exe
+D:\Ruchit\SVN\Gujarat VAT Online Process f402f403\GVATONLINE402403\Bug_24972\obj\Debug\GVATOnline402403.pdb

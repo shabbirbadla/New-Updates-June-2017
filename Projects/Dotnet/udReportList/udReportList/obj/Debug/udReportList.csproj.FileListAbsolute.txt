@@ -1,0 +1,11 @@
+D:\SQLProject\payroll\udReportList\udReportList\bin\Debug\udReportList.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Debug\udReportList.pdb
+D:\SQLProject\payroll\udReportList\udReportList\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udReportList\udReportList\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udReportList\udReportList\obj\Debug\udReportList.frmReportList.resources
+D:\SQLProject\payroll\udReportList\udReportList\obj\Debug\udReportList.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udReportList\udReportList\obj\Debug\udReportList.dll
+D:\SQLProject\payroll\udReportList\udReportList\obj\Debug\udReportList.pdb
+D:\SQLProject\payroll\udReportList\udReportList\bin\Debug\udCrViewer.dll
+D:\SQLProject\payroll\udReportList\udReportList\bin\Debug\udDataTableQuery.dll

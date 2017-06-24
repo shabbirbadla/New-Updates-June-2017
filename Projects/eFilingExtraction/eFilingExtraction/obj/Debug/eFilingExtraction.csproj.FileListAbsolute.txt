@@ -1,0 +1,11 @@
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\ResolveAssemblyReference.cache
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\eFilingExtraction.csproj.GenerateResource.Cache
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\eFillingExtraction.frmEfiling.resources
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\eFillingExtraction.frmTdsacknowledgeNo.resources
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\eFillingExtraction.Properties.Resources.resources
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\bin\Debug\eFillingExtraction.exe
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\bin\Debug\eFillingExtraction.pdb
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\eFillingExtraction.exe
+D:\Udyog\New\eFilingExtraction\eFilingExtraction\obj\Debug\eFillingExtraction.pdb
+F:\Kishor\Original-Bug-Projects\26391\26391\eFilingExtraction\obj\Debug\eFillingExtraction.exe
+F:\Kishor\Original-Bug-Projects\26391\26391\eFilingExtraction\obj\Debug\eFillingExtraction.pdb

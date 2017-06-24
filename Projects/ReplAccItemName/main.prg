@@ -1,0 +1,33 @@
+icopath=""
+apath=""
+NoGenof=""
+
+
+Public Company,dbname,sta_dt,end_dt,vu_sever,vu_user,vu_pass,usernm,Finyear,Prod1,Validuser,SelectType
+
+Company=""
+dbname=""
+sta_dt={  /  /    }
+end_dt={  /  /    }
+vu_sever=""
+vu_user=""
+vu_pass=""
+usernm=""
+Finyear=""
+Prod1 =""
+SelectType=0
+Validuser=.F.
+
+Do Form frmLogin
+Read Events
+
+If Validuser=.T.
+	Do Form frmreplaccitem With Company,dbname,sta_dt,end_dt,vu_sever,vu_user,vu_pass,usernm,Finyear,Prod1
+	Read Events
+Endif
+
+
+Clear
+Clear All
+Close All
+Quit

@@ -1,0 +1,8 @@
+Program e:\...\triggers\udappvoulicenoselection\uetrig_licenno_selectpop.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+    Unknown UEGETPOP - Undefined
+
+Program e:\...\triggers\udappvoulicenoselection\uetrig_selectpop_lcno.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+    Unknown UEGETPOP - Undefined
+

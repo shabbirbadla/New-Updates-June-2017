@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MergeModuleReadRegister", "MergeModuleReadRegister\MergeModuleReadRegister.vdproj", "{125058A2-8C5E-496F-B0FF-E2095A203F7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125058A2-8C5E-496F-B0FF-E2095A203F7A}.Debug|Default.ActiveCfg = Debug
+		{125058A2-8C5E-496F-B0FF-E2095A203F7A}.Debug|Default.Build.0 = Debug
+		{125058A2-8C5E-496F-B0FF-E2095A203F7A}.Release|Default.ActiveCfg = Release
+		{125058A2-8C5E-496F-B0FF-E2095A203F7A}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

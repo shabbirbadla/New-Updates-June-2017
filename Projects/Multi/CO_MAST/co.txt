@@ -1,0 +1,38 @@
+	aFile=Left(tName,Len(tName)-4)
+	tPath=Sys(5)+Alltrim(dPath)+tName
+	mdbase=dName
+	**FOr Data and Log File**
+	newtPath="'&tpath'"
+	Thisform.container1.olecontrol1.Value=80
+	statdesktop.Message= "Extracting Tables...."
+	Thisform.container1.label1.Caption ="Generating Tables...."
+	fLIst= "restore filelistonly from disk=&newtpath"
+	chqFilelist=Dataconn("EXE","vUdyog",fLIst,"filelist",.F.)
+	If chqFilelist < 0
+		Messagebox("Can Not Generate File List",16,vuMess)
+		Return .F.
+	Else
+		Select filelist
+		dName=Alltrim(filelist.logicalname)
+		If !Eof()
+			Skip
+		Endif
+		lName=Alltrim(filelist.logicalname)
+		lName=Alltrim(filelist.logicalname)
+		mData="'&dName'"
+		mLog="'&lname'"
+
+	Endif
+
+**FOr MDF and LDF File** where data will be stored
+	mDfName=Sys(5)+Alltrim(dPath)+Alltrim(dName)+Alltrim('.mdf')
+	lDfName=Sys(5)+Alltrim(dPath)+Alltrim(dName)+Alltrim('.ldf')
+
+	NewMdfNm="'&mdfname'"
+	NewLdfNm="'&lDfName'"
+	newtPath = "'&tpath'"
+	Strg="RESTORE DATABASE &mdbase;
+	  FROM DISK = &newtPath;
+	  WITH MOVE &mdata TO &NewMdfNm,;
+	  MOVE &mLog TO &NewLdfNm,replace"
+	Chqdb=Dataconn("EXE","vUdyog",Strg,"",.F.)

@@ -1,0 +1,43 @@
+Program d:\vss for verson\0 completed\currency master\prgcurrmast.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\vss for verson\0 completed\currency master\frmcurrmast.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library d:\vudyogsdk\class\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Visual Class Library d:\vudyogsdk\class\vouclass.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UENRENTRY - Undefined
+    Form UEFRM_OPWKITEMALLOCATION - Undefined
+    Form UEFRM_BOMDETAILS - Undefined
+    Form UEFRM_OPSTITEMALLOCATION - Undefined
+    Form UEFRM_DCSTITEMALLOCATION - Undefined
+    Form UEFRM_BOMDETAILSIP - Undefined
+    Form UEFRM_BOMDETAILSOP - Undefined
+    Unknown UDAPPVOUITFIRE - Undefined
+    Unknown UDTRIGVOUITFIRE - Undefined
+    Unknown UETRIGVOUITFIRE - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    Proc./Func. UDAPPVOUXTRACLOSE - Undefined
+    Proc./Func. UDTRIGVOUXTRACLOSE - Undefined
+    Proc./Func. UETRIGVOUXTRACLOSE - Undefined
+    Application UETDSPAYMENT - Undefined
+    Form UEETITDETINAR - Undefined
+    Form UEETDETAILINAR - Undefined
+    Form UEETITDETINDC - Undefined
+    Form UEETDETAILINDC - Undefined
+    Form UEETDETAILINIR - Undefined
+    Form UEETDETAILINGT - Undefined
+    Form UEFRM_PT_EXDATA1 - Undefined
+    Form UEFRM_JV_EXDATA1 - Undefined
+    Form UEFRM_ST_EXDATA1 - Undefined
+    Form UEFRM_SERVICETAX - Undefined
+    Form UEFRM_ST_BOND - Undefined
+    Form UEFRM_SR_EXDATA1 - Undefined
+    Form UEFRM_SERTAX_DET - Undefined
+    Application UEDUTYDEBIT - Undefined
+    Application UESERVICETAXCREDIT - Undefined
+

@@ -1,0 +1,40 @@
+PARA ucaption1,ucond1
+*!*	&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
+****Versioning****  Added By Amrendra On 01/06/2011
+	LOCAL _VerValidErr,_VerRetVal,_CurrVerVal
+	_VerValidErr = ""
+	_VerRetVal  = 'NO'
+_CurrVerVal='10.0.0.0' &&[VERSIONNUMBER]
+	TRY
+		_VerRetVal = AppVerChk('REPORTINTERFACE',_CurrVerVal,JUSTFNAME(SYS(16)))
+	CATCH TO _VerValidErr
+		_VerRetVal  = 'NO'
+	Endtry	
+	IF TYPE("_VerRetVal")="L"
+		cMsgStr="Version Error occured!"
+		cMsgStr=cMsgStr+CHR(13)+"Kindly update latest version of "+GlobalObj.getPropertyval("ProductTitle")
+		Messagebox(cMsgStr,64,VuMess)
+		Return .F.
+	ENDIF
+	IF _VerRetVal  = 'NO'
+		Return .F.
+	Endif
+****Versioning****
+
+*!*	&&vasant16/11/2010	Changes done for VU 10 (Standard/Professional/Enterprise)
+
+IF ! "datepicker"  $ LOWER(SET("Classlib"))
+	SET CLASSLIB TO APath+"\Class\datepicker.vcx" ADDITIVE
+ENDIF
+If !("GRIDFIND.VCX" $ Upper(Set("Classlib"))) &&Rup 19/02/2010 TKT-110
+	Set Classlib To gridfind.vcx Additive
+Endif
+
+&& Added by Shrikant S. on 23/06/2013 for Bug-16293		&& Start
+If ! Pemstatus(Company,"copyname",5)
+	AddProperty(Company,"copyname","")
+ENDIF
+&& Added by Shrikant S. on 23/06/2013 for Bug-16293		&& End
+
+DO FORM vureport WITH ucaption1,ucond1
+RETURN

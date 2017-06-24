@@ -1,0 +1,36 @@
+Lparameters _oObject
+
+nretval=_oObject.sqlconobj.dataconn('EXE','Vudyog',"select Company,User_roles from [user] where [user] = '"+Alltrim(musername)+"'","_User","thisform.nhandle",_oObject.DataSessionId)
+If nretval<0
+	=Messagebox("Users Table error"+Chr(13)+Proper(Message()),16,vumess)
+	Return .F.
+Endif
+
+nretval=_oObject.sqlconobj.sqlconnclose("thisform.nhandle") && Connection Close
+If nretval<=0
+	Return .F.
+Endif
+
+ins1=''
+Select _User
+If !Empty(_User.company)
+	out1 = Cast(_User.company As Blob)
+	nm11 = Padl(Alltr(_User.User_roles),Len(out1),Alltr(_User.User_roles))
+	chk1 = 0
+	For j = 1 To Len(out1)
+		N = Asc(Substr(out1,j,1)) - Asc(Substr(nm11,j,1))
+		If N<=0
+			chk1 = 1
+			Loop
+		Else
+			ins1 = ins1+Chr(Asc(Substr(out1,j,1)) - Asc(Substr(nm11,j,1)))
+		Endif
+	Endfor
+	ins1=Upper(Alltrim(ins1))
+Endif
+
+compName=Upper(Alltr(_coMast.co_name))+"("+Alltrim(Str(Year(_coMast.sta_dt)))+'-'+Alltrim(Str(Year(_coMast.end_dt)))+")"
+If !(compName $ ins1)
+	=Messagebox("User don't have the access for this company.",0+64,vumess)
+	Return .F.
+Endif

@@ -1,0 +1,82 @@
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeeklyHoliday.resources
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.Properties.Resources.resources
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.GenerateResource.Cache
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.exe
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.pdb
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\DataAccess-Net.dll
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\uBaseForm.dll
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udSelectPop.dll
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+D:\My practice\aspspider\Payroll\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeekoff.resources
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.exe
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.pdb
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\DataAccess-Net.dll
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\uBaseForm.dll
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udSelectPop.dll
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\ResolveAssemblyReference.cache
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeeklyHoliday.resources
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeekoff.resources
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.Properties.Resources.resources
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.GenerateResource.Cache
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+D:\Ramya\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+D:\Weekly HolidayMaster From Vss\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+D:\Weekly HolidayMaster From Vss\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\DataAccess-Net.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\uBaseForm.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udSelectPop.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeeklyHoliday.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeekoff.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.GenerateResource.Cache
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\Interop.ueconnect.dll
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.ResolveComReference.cache
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.exe
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.pdb
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\DataAccess-Net.dll
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\GetInfo.DLL
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\uBaseForm.dll
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\udSelectPop.dll
+E:\Weekly holiday Master\udEmpWeeklyHoliday\bin\Debug\Interop.ueconnect.dll
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\ResolveAssemblyReference.cache
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeeklyHoliday.resources
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeekoff.resources
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.Properties.Resources.resources
+E:\Weekly holiday Master\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.GenerateResource.Cache
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\Interop.ueconnect.dll
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.ResolveComReference.cache
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeeklyHoliday.resources
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.frmWeekoff.resources
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.Properties.Resources.resources
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.GenerateResource.Cache
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.exe
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udEmpWeeklyHoliday.pdb
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\DataAccess-Net.dll
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\GetInfo.DLL
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\uBaseForm.dll
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\udSelectPop.dll
+D:\Udyog\Working\udEmpWeeklyHoliday\udEmpWeeklyHoliday\bin\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+D:\SVN Development\Dotnet\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb
+F:\Installer 12.0 issue\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\Interop.ueconnect.dll
+F:\Installer 12.0 issue\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.csproj.ResolveComReference.cache
+F:\Installer 12.0 issue\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.exe
+F:\Installer 12.0 issue\udEmpWeeklyHoliday\udEmpWeeklyHoliday\obj\Debug\udEmpWeeklyHoliday.pdb

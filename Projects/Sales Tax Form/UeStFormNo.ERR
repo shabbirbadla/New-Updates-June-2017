@@ -1,0 +1,14 @@
+Form f:\kishor\original-bug-projects\26942_cr\sales tax form\frmformno.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. UEVOUPRINT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Program f:\kishor\original-bug-projects\26942_cr\sales tax form\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Visual Class Library f:\kishor\original-bug-projects\26942_cr\sales tax form\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library f:\installer12.0\class\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+

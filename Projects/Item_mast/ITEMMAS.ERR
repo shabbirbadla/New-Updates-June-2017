@@ -1,0 +1,19 @@
+Form d:\tushar projects\itemmas_dec20_newwith_sql_backend\itemmas.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. _ITEMNEW - Undefined
+    Program _ITSAVEBEFORE - Undefined
+    Proc./Func. FINDI - Undefined
+    Proc./Func. LOCATE - Undefined
+    Program VU_UDFS - Undefined
+    Proc./Func. _ITEMACTIVATE - Undefined
+    Proc./Func. XTRA - Undefined
+    Unknown GETPOP - Undefined
+    File LOC.BMP - Undefined
+
+Form d:\tushar projects\itemmas_dec20_newwith_sql_backend\frmcopybom.scx has the following errors:
+    Unknown DATACONN - Undefined
+
+Form d:\tushar projects\itemmas_dec20_newwith_sql_backend\defbom.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown DATACONN - Undefined
+

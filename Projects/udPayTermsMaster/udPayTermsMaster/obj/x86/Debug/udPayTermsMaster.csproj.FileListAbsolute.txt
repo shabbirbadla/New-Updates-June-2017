@@ -1,0 +1,12 @@
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.frmPayTermsMaster.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.frmValidIn.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.csproj.GenerateResource.Cache
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\Interop.ueconnect.dll
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.csproj.ResolveComReference.cache
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.frmPayTermsMaster.resources
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.frmValidIn.resources
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.Properties.Resources.resources
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\x86\Debug\udPayTermsMaster.csproj.GenerateResource.Cache

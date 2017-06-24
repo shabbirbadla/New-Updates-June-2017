@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Udyog i-TAX Upload DLL Setup", "Udyog i-TAX Upload DLL Setup\Udyog i-TAX Upload DLL Setup.vdproj", "{A6060000-02F5-407D-A9BC-109A2DD14F6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Default = Debug|Default
+		Release|Any CPU = Release|Any CPU
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Debug|Any CPU.ActiveCfg = Debug
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Debug|Any CPU.Build.0 = Debug
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Debug|Default.ActiveCfg = Debug
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Debug|Default.Build.0 = Debug
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Release|Any CPU.ActiveCfg = Release
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Release|Any CPU.Build.0 = Release
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Release|Default.ActiveCfg = Release
+		{A6060000-02F5-407D-A9BC-109A2DD14F6A}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\App.config
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Service.exe.config
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Service.exe
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Service.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Common.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Core.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Common.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\bin\Release\Udyog.Application.License.Core.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\obj\Release\ResolveAssemblyReference.cache
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\obj\Release\Udyog.Application.License.frmServiceManager.resources
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\obj\Release\Udyog.Application.License.LicenseServiceStrings.resources
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\obj\Release\Udyog.Application.License.Service.csproj.GenerateResource.Cache
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\obj\Release\Udyog.Application.License.Service.exe
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Service\obj\Release\Udyog.Application.License.Service.pdb

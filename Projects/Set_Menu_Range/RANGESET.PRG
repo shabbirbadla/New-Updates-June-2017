@@ -1,0 +1,36 @@
+cconnstring = "Driver={SQL Server};server=WIN2006;database=ERPBETA;uid=sa;pwd=sa;"
+gnhandle =sqlstringconnect(cconnstring)
+=sqlexec(gnhandle,"select * from com_menu WHERE NOT PADNAME IN ('_MSYSMENU')","_cm_menu")
+select _cm_menu
+if reccount() > 0
+	go top
+	scan
+		rg = range
+		pg = upper(alltrim(progname))
+		if len(pg) > 0 and upper(substr(pg,1,2)) = "DO"
+			pg2 = " WITH "
+			n = at(pg2,pg)
+			if n > 0
+				pg3 = "^"
+				n1 = at(pg3,pg)
+				if n1 > 0
+*					replace progname with substr(pg,1,n1-2) + ["^] + alltrim(str(rg)) + ["] in _cm_menu 
+					sad = substr(pg,1,n1-2) + ["^] + alltrim(str(rg)) + ["]
+					sqlstrg = "update com_menu set progname = ?sad where range = ?rg"
+					a1=sqlexec(gnhandle,sqlstrg)
+				else
+*					replace progname with substr(pg,1) + [, "^] + alltrim(str(rg)) + ["] in _cm_menu 
+					sad = substr(pg,1) + [, "^] + alltrim(str(rg)) + ["]
+					sqlstrg = "update com_menu set progname = ?sad where range = ?rg"
+					a2=sqlexec(gnhandle,sqlstrg)	
+				endif		
+			else
+*				replace progname with substr(pg,1) + [ with "^] + alltrim(str(rg)) + ["] in _cm_menu
+				sad = substr(pg,1) + [ with "^] + alltrim(str(rg)) + ["]	
+				sqlstrg = 'update com_menu set progname = ?sad where range = ?rg'
+				a3=sqlexec(gnhandle,sqlstrg)	
+			endif
+			select _cm_menu
+		endif	
+	endscan
+endif

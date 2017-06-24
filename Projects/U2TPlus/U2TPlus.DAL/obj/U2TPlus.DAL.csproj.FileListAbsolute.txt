@@ -1,0 +1,12 @@
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\bin\Debug\U2TPlus.DAL.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\bin\Debug\U2TPlus.DAL.pdb
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\obj\Debug\U2TPlus.DAL.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\obj\Debug\U2TPlus.DAL.pdb
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\bin\Debug\CryptoLib.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.DAL\bin\Debug\CryptoLib.pdb
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.DAL\bin\Debug\U2TPlus.DAL.dll
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.DAL\bin\Debug\U2TPlus.DAL.pdb
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.DAL\obj\Debug\U2TPlus.DAL.dll
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.DAL\obj\Debug\U2TPlus.DAL.pdb

@@ -1,0 +1,300 @@
+﻿
+        #region Preview Form
+
+        private void buttonPreviewForm_Click(object sender, EventArgs e)
+        {
+            //PreviewDynamicMasterForm();
+            string[] strParams = new string[] { textBoxCode.Text };
+            DynamicMaster.MasterForm oMaster = new DynamicMaster.MasterForm(strParams);
+            oMaster.Show();
+        }
+
+        private void PreviewDynamicMasterForm()
+        {
+            DataSet dsFormList = new DataSet();
+            DataSet dsTabList = new DataSet();
+            DataSet dsFieldList = new DataSet();
+
+            int formID = 0;
+
+            try
+            {
+                dsFormList = oForm.GetFormList(textBoxCode.Text, oDataAccess);
+                if (dsFormList == null)
+                {
+                    return;
+                }
+                if (dsFormList.Tables[0].Rows.Count > 0)
+                {
+                    formID = Convert.ToInt32(dsFormList.Tables[0].Rows[0]["ID"]);
+                    //dsTabList = oForm.GetTabControlList(formID);
+
+                    Form tempMasterForm = new Form();
+                    tempMasterForm.Name = dsFormList.Tables[0].Rows[0]["Code"].ToString();
+                    tempMasterForm.Text = dsFormList.Tables[0].Rows[0]["Caption"].ToString();
+                    //tempMasterForm.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+                    //tempMasterForm.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
+                    CreateTabs(oForm, tempMasterForm, formID);
+                }
+                else MessageBox.Show("No form found with the given name"); return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dsFormList = null;
+                dsTabList = null;
+                dsFieldList = null;
+
+            }
+        }
+
+        private void CreateTabs(clsDynamicForm oForm, Form tempMasterForm, int masterFormID)
+        {
+            int tabId = 0;
+            string tabCaption = "";
+            string tabCode = "";
+            int tabOrder = 0;
+            DataSet dsTabList = new DataSet();
+            try
+            {
+                dsTabList = oForm.GetTabControlList(masterFormID, oDataAccess);
+                if (dsTabList.Tables.Count > 0)
+                {
+                    if (dsTabList.Tables[0].Rows.Count > 0)
+                    {
+                        //Create TabControl
+                        TabControl mainTab = new TabControl();
+
+                        for (int i = 0; i < dsTabList.Tables[0].Rows.Count; i++)
+                        {
+                            tabId = Convert.ToInt32(dsTabList.Tables[0].Rows[i]["id"]);
+                            tabCaption = dsTabList.Tables[0].Rows[i]["caption"].ToString();
+                            tabCode = dsTabList.Tables[0].Rows[i]["code"].ToString();
+                            tabOrder = Convert.ToInt32(dsTabList.Tables[0].Rows[i]["tab_order"]);
+
+                            //Create TabPages
+                            TabPage tempTabPage = new TabPage();
+                            tempTabPage.Name = tabCode;
+                            tempTabPage.Text = tabCaption;
+                            tempTabPage.UseVisualStyleBackColor = true;
+
+                            //Create Fields under each Tab
+                            CreateTabFields(oForm, tabId, tempTabPage);
+
+                            //Add each TabPage to the TabControl
+                            mainTab.TabPages.Add(tempTabPage);
+                            mainTab.SelectedIndex = 0;
+                            mainTab.Dock = DockStyle.Fill;
+
+                            tempMasterForm.Controls.Add(mainTab);
+                            tempMasterForm.Height = 500;
+                            tempMasterForm.Width = 600;
+                            tempMasterForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                            tempMasterForm.ResumeLayout(false);
+                        }
+                    }
+                }
+                tempMasterForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CreateTabFields(clsDynamicForm oForm, int tabID, TabPage tempTabPage)
+        {
+            DataSet dsFieldList = new DataSet();
+            string fieldCaption = "";
+            string fieldTooltip = "";
+            string fieldName = "";
+            string defaultValue = "";
+            int fieldOrder = 0;
+            string dataType = "";
+            int fieldSize = 0;
+            bool isMandatory = false;
+            bool isVisible = true;
+
+            try
+            {
+                dsFieldList = oForm.GetFieldList(tabID, oDataAccess);
+                if (dsFieldList.Tables.Count > 0)
+                {
+                    if (dsFieldList.Tables[0].Rows.Count > 0)
+                    {
+                        for (int i = 0; i < dsFieldList.Tables[0].Rows.Count; i++)
+                        {
+                            fieldCaption = dsFieldList.Tables[0].Rows[i]["caption"].ToString();
+                            fieldTooltip = dsFieldList.Tables[0].Rows[i]["tooltip"].ToString();
+                            fieldName = dsFieldList.Tables[0].Rows[i]["fieldname"].ToString();
+                            defaultValue = dsFieldList.Tables[0].Rows[i]["defaultvalue"].ToString();
+                            fieldOrder = Convert.ToInt32(dsFieldList.Tables[0].Rows[i]["field_order"]);
+                            isMandatory = (dsFieldList.Tables[0].Rows[i]["mandatory"].ToString() == "True" ? true : false);
+                            dataType = dsFieldList.Tables[0].Rows[i]["datatype"].ToString();
+                            fieldSize = Convert.ToInt32(dsFieldList.Tables[0].Rows[i]["size"]);
+                            isVisible = (dsFieldList.Tables[0].Rows[i]["internaluse"].ToString() == "False" ? true : false);
+
+                            Label l = new Label();
+                            Label lblMandatory = new Label();
+                            l.Name = fieldName + i;
+                            if (isMandatory)
+                            {
+                                l.Text = fieldCaption;
+                                lblMandatory.ForeColor = Color.Red;
+                                lblMandatory.Text = "*";
+                                tempTabPage.Controls.Add(lblMandatory);
+                            }
+                            else
+                            {
+                                l.Text = fieldCaption;
+                            }
+                            l.Visible = isVisible;
+                            l.Location = new Point(25, 25 + i * 30);
+                            lblMandatory.Location = new Point(l.Location.X + l.Text.Length + 20, 25 + i * 30);
+                            tempTabPage.Controls.Add(l);
+
+                            switch (dataType.ToUpper())
+                            {
+                                case "VARCHAR":
+                                    //Add Textbox
+                                    TextBox t1 = new TextBox();
+                                    t1.Location = new Point(l.Location.X + 200, l.Location.Y);
+                                    t1.Text = defaultValue;
+                                    t1.Visible = isVisible;
+                                    tempTabPage.Controls.Add(t1);
+                                    break;
+                                case "DECIMAL":
+                                    //Add Textbox
+                                    TextBox t2 = new TextBox();
+                                    t2.Location = new Point(l.Location.X + 200, l.Location.Y);
+                                    t2.Visible = isVisible;
+                                    tempTabPage.Controls.Add(t2);
+                                    break;
+                                case "BIT":
+                                    //Add Checkbox/Radiobutton
+                                    CheckBox chk1 = new CheckBox();
+                                    chk1.Name = "chkBox" + fieldName;
+                                    chk1.Text = fieldCaption;
+                                    chk1.Location = new Point(l.Location.X + 200, l.Location.Y);
+                                    chk1.Visible = isVisible;
+                                    tempTabPage.Controls.Add(chk1);
+                                    break;
+                                case "DATETIME":
+                                    //Add Textbox with DateTime format
+                                    MaskedTextBox maskedTextBox1 = new MaskedTextBox();
+                                    maskedTextBox1.Mask = "00/00/0000";
+                                    maskedTextBox1.ValidatingType = typeof(System.DateTime);
+                                    maskedTextBox1.Location = new Point(l.Location.X + 200, l.Location.Y);
+                                    //maskedTextBox1.TypeValidationCompleted += new TypeValidationEventHandler(maskedTextBox_TypeValidationCompleted);
+                                    maskedTextBox1.KeyDown += new KeyEventHandler(maskedTextBox1_KeyDown);
+                                    maskedTextBox1.Validating += new CancelEventHandler(maskedTextBox_Validating);
+                                    maskedTextBox1.Visible = isVisible;
+                                    tempTabPage.Controls.Add(maskedTextBox1);
+                                    break;
+                                case "TEXT":
+                                    //Add Textbox
+                                    TextBox t4 = new TextBox();
+                                    t4.Location = new Point(l.Location.X + 200, l.Location.Y);
+                                    t4.Multiline = true;
+                                    t4.ScrollBars = ScrollBars.Both;
+                                    t4.Text = defaultValue;
+                                    //t4.Height = 50;
+                                    t4.Width = 200;
+                                    t4.Visible = isVisible;
+                                    tempTabPage.Controls.Add(t4);
+                                    break;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dsFieldList = null;
+            }
+        }
+
+        void maskedTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            //toolTip1.Hide(maskedTextBox1);
+        }
+
+        void maskedTextBox_Leave(object sender, EventArgs e)
+        {
+            MaskedTextBox temp = (MaskedTextBox)sender;
+            //Regex dateValid = new System.Text.RegularExpressions.Regex(@"^(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\d\d$");
+            //if (dateValid.IsMatch(temp.Text))
+            //{ MessageBox.Show("Valid"); }
+            //else MessageBox.Show("In Valid");
+            //DateTime dt = temp.Text;
+        }
+
+        private void maskedTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            DateTime rs;
+            MaskedTextBox tempTextbox = (MaskedTextBox)sender;
+            CultureInfo ci = new CultureInfo("en-US");
+            if (!DateTime.TryParseExact(tempTextbox.Text, "dd/MM/yyyy", ci, DateTimeStyles.None, out rs))
+            {
+                e.Cancel = true;
+                MessageBox.Show("Invalid date format");
+            }
+        }
+
+        void maskedTextBox_TypeValidationCompleted(object sender, TypeValidationEventArgs e)
+        {
+            if (!e.IsValidInput)
+            {
+                MessageBox.Show("Invalid Date");
+                //toolTip1.ToolTipTitle = "Invalid Date";
+                //toolTip1.Show("The data you supplied must be a valid date in the format mm/dd/yyyy.", maskedTextBox1, 0, -20, 5000);
+            }
+            else
+            {
+                //Now that the type has passed basic type validation, enforce more specific type rules.
+                MessageBox.Show("Valid");
+                //DateTime userDate = (DateTime)e.ReturnValue;
+                //if (userDate < DateTime.Now)
+                //{
+                //    MessageBox.Show("Invalid Date");
+                //    //toolTip1.ToolTipTitle = "Invalid Date";
+                //    //toolTip1.Show("The date in this field must be greater than today's date.", maskedTextBox1, 0, -20, 5000);
+                //    e.Cancel = true;
+                //}
+            }
+        }
+
+        void maskedTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            //if (maskedTextBox1.MaskFull)
+            //{
+            //    toolTip1.ToolTipTitle = "Input Rejected - Too Much Data";
+            //    toolTip1.Show("You cannot enter any more data into the date field. Delete some characters in order to insert more data.", maskedTextBox1, 0, -20, 5000);
+            //}
+            //else if (e.Position == maskedTextBox1.Mask.Length)
+            //{
+            //    toolTip1.ToolTipTitle = "Input Rejected - End of Field";
+            //    toolTip1.Show("You cannot add extra characters to the end of this date field.", maskedTextBox1, 0, -20, 5000);
+            //}
+            //else
+            //{
+            //    toolTip1.ToolTipTitle = "Input Rejected";
+            //    toolTip1.Show("You can only add numeric characters (0-9) into this date field.", maskedTextBox1, 0, -20, 5000);
+            //}
+        }
+
+        void maskedTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            //// The balloon tip is visible for five seconds; if the user types any data before it disappears, collapse it ourselves.
+            //toolTip1.Hide(maskedTextBox1);
+        }
+
+        #endregion

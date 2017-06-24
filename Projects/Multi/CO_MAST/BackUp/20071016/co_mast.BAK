@@ -1,0 +1,3 @@
+PARAMETERS WHAT,pRange
+rval = .F.
+DO FORM co_mast WITH WHAT,pRange NAME rval

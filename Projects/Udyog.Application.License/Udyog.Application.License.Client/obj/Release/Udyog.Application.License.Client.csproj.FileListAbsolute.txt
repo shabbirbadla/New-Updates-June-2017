@@ -1,0 +1,10 @@
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\LicenseClient.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\Udyog.Application.License.Common.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\Udyog.Application.License.Core.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\Udyog.Application.License.Common.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\Udyog.Application.License.Core.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\obj\Release\ResolveAssemblyReference.cache
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\obj\Release\LicenseClient.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\LicenseClient.dll.config
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\bin\Release\LicenseClient.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License.Client\obj\Release\LicenseClient.dll

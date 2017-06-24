@@ -1,0 +1,16 @@
+Form d:\sachind folder d\sql projects\co_mast\co_mast.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown MVAR - Undefined
+    Unknown DECODER - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\sachind folder d\sql projects\co_mast\sel_prod.scx has the following errors:
+    Unknown GETPRIVSTR - Undefined
+
+Visual Class Library d:\sachind folder d\sql projects\co_mast\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Form d:\sachind folder d\sql projects\co_mast\frmsrvdetail.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+

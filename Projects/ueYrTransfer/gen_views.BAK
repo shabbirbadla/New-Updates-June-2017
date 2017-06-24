@@ -1,0 +1,5 @@
+Lparameters SqlConObj,_ndatasessionid,oHandle,ccDbName,cdSta_Dt,cdEnd_Dt
+
+Select Multi_cur,Entry_ty,ext_vou From Lcode Where Bcode_nm='' and ext_vou=0
+Union all Select top 1 Multi_cur,Entry_ty,ext_vou From Lcode Where Bcode_nm='' and ext_vou=1
+

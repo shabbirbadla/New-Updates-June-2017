@@ -1,0 +1,19 @@
+Form d:\ruchit\bugs\27681\bankreco\bankreco.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+    Proc./Func. TOUEVOUCHER - Undefined
+    Unknown UEGETPOP - Undefined
+
+Program d:\ruchit\bugs\27681\bankreco\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Visual Class Library d:\ruchit\bugs\27681\bankreco\grdclass.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library d:\ruchit\bugs\27681\bankreco\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Form d:\ruchit\bugs\27681\bankreco\on_clause.scx has the following errors:
+    File H_NODROP.CUR - Undefined
+

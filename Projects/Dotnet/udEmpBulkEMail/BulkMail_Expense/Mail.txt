@@ -1,0 +1,2 @@
+Hi @@Name,
+This is to inform you that your @@Request request of Rs. @@Amount from the period @@FromDate to @@ToDate towards @@ClientName  is processed and credited to your @@BankName Account. Kindly verify the same and confirm if any discrepancies.

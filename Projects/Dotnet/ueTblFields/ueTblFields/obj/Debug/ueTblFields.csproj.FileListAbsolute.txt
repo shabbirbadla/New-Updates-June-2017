@@ -1,0 +1,20 @@
+D:\My practice\aspspider\ueTblFields\ueTblFields\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\ueTblFields\ueTblFields\obj\Debug\ueTblFields.frmFields.resources
+D:\My practice\aspspider\ueTblFields\ueTblFields\obj\Debug\ueTblFields.Properties.Resources.resources
+D:\My practice\aspspider\ueTblFields\ueTblFields\obj\Debug\ueTblFields.csproj.GenerateResource.Cache
+D:\My practice\aspspider\ueTblFields\ueTblFields\bin\Debug\ueTblFields.exe
+D:\My practice\aspspider\ueTblFields\ueTblFields\bin\Debug\ueTblFields.pdb
+D:\My practice\aspspider\ueTblFields\ueTblFields\obj\Debug\ueTblFields.exe
+D:\My practice\aspspider\ueTblFields\ueTblFields\obj\Debug\ueTblFields.pdb
+D:\SQLProject\ueTblFields\ueTblFields\obj\Debug\ueTblFields.exe
+D:\SQLProject\ueTblFields\ueTblFields\obj\Debug\ueTblFields.pdb
+D:\Ramya\ueTblFLds(SalesmanUpdation)\ueTblFields\ueTblFields\obj\Debug\ueTblFields.exe
+D:\Ramya\ueTblFLds(SalesmanUpdation)\ueTblFields\ueTblFields\obj\Debug\ueTblFields.pdb
+D:\ueTblFields from Vss\ueTblFields\obj\Debug\ueTblFields.exe
+D:\ueTblFields from Vss\ueTblFields\obj\Debug\ueTblFields.pdb
+D:\ueTblFields from Vss\ueTblFields\obj\Debug\ResolveAssemblyReference.cache
+D:\ueTblFields from Vss\ueTblFields\obj\Debug\ueTblFields.frmFields.resources
+D:\ueTblFields from Vss\ueTblFields\obj\Debug\ueTblFields.Properties.Resources.resources
+D:\ueTblFields from Vss\ueTblFields\obj\Debug\ueTblFields.csproj.GenerateResource.Cache
+D:\ueTblFields from Vss\ueTblFields\bin\Debug\ueTblFields.exe
+D:\ueTblFields from Vss\ueTblFields\bin\Debug\ueTblFields.pdb

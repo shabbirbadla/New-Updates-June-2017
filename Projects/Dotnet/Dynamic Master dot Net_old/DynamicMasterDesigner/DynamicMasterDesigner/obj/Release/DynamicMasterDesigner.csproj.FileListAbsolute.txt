@@ -1,0 +1,36 @@
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMasterInfo.exe.config
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMasterInfo.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMasterInfo.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\cST3SqlConn.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DataAccess-Net.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DynamicFormClass.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMaster.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udSelectPop.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DynamicFormClass.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMaster.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DataAccess-Net.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\ResolveAssemblyReference.cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.frmMasterFormDesigner.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.frmSearch.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.Properties.Resources.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.csproj.GenerateResource.Cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\udDynamicMasterInfo.exe.licenses
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\udDynamicMasterInfo.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\udDynamicMasterInfo.pdb
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMasterInfo.exe.config
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMasterInfo.exe
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMasterInfo.pdb
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DataAccess-Net.dll
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DynamicFormClass.dll
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMaster.exe
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DynamicFormClass.pdb
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\udDynamicMaster.pdb
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Release\DataAccess-Net.pdb
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.frmMasterFormDesigner.resources
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.frmSearch.resources
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.Properties.Resources.resources
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\DynamicMasterDesigner.csproj.GenerateResource.Cache
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\udDynamicMasterInfo.exe.licenses
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\udDynamicMasterInfo.exe
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Release\udDynamicMasterInfo.pdb

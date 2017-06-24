@@ -1,0 +1,8 @@
+DEFINE CLASS tushar as Custom
+PROCEDURE X
+	MESSAGEBOX("X")
+Endproc
+PROCEDURE y
+	MESSAGEBOX("t")
+Endproc
+ENDDEFINE

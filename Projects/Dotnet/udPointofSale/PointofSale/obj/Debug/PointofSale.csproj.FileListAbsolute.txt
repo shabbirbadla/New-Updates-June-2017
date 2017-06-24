@@ -1,0 +1,39 @@
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udPointofSale.exe
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udPointofSale.pdb
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\dataaccess-net.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udclsdgvnumericcolumn.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udreportlist.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udselectpop.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\uNumericTextBox.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udDataTableQuery.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\udCrViewer.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\bin\Debug\uBaseForm.dll
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\PointofSale.Properties.Resources.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\PointofSale.udFrmPaymentScreen.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\PointofSale.udFrmPointofSale.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\PointofSale.udFrmPOSLoginSettings.resources
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\PointofSale.csproj.GenerateResource.Cache
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\udPointofSale.exe.licenses
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\udPointofSale.exe
+D:\Development\Point of Sale\PointofSale\PointofSale\obj\Debug\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\udPointofSale.exe
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udPointofSale.exe
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udPointofSale.pdb
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\dataaccess-net.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udAdditionalInfo.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udclsdgvnumericcolumn.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udreportlist.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udselectpop.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\uNumericTextBox.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udDataTableQuery.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\udCrViewer.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\bin\Debug\uBaseForm.dll
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\PointofSale.Properties.Resources.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\PointofSale.udFrmPaymentScreen.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\PointofSale.udFrmPointofSale.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\PointofSale.udFrmPOSLoginSettings.resources
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\PointofSale.csproj.GenerateResource.Cache
+D:\Development\Point of Sale\udPointofSale with New Changes - After 29-07-2013\PointofSale\obj\Debug\udPointofSale.exe.licenses

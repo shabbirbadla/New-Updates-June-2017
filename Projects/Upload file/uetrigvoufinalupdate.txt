@@ -1,0 +1,37 @@
+_curvouobj = _Screen.ActiveForm
+
+IF _curvouobj.Addmode = .t. OR _curvouobj.EditMode = .t.
+	IF USED('_uploadcursor')
+		IF RECCOUNT('_uploadcursor') > 0
+			objUpload =CREATEOBJECT("Udyog.iTAX.FileUpload.Any.Format")
+			ServerName=mvu_server
+			UserName  =_curvouobj.SqlConObj.dec(_curvouobj.sqlconObj.ondecrypt(mvu_user))
+			SPassword =_curvouobj.SqlConObj.dec(_curvouobj.sqlconObj.ondecrypt(mvu_Pass))
+			ConnectionString = "Data Source="+ServerName+";Initial Catalog="+Company.dbname+";User ID="+UserName+";password="+SPassWord
+
+			SELECT _uploadcursor
+			GO top
+			SCAN WHILE !EOF() 
+				IF _uploadcursor.pWhat = "U" OR _uploadcursor.pWhat = "I"
+					IF EMPTY(_uploadcursor.objSave)
+						objUpload.SaveImage(_uploadcursor.tr_type,_uploadcursor.tr_id,_uploadcursor.tr_serial,_uploadcursor.filename,_uploadcursor.Extension,_uploadcursor.objPath,ConnectionString,_uploadcursor.pWhat,.f.,null)
+					ELSE
+						objUpload.SaveImage(_uploadcursor.tr_type,_uploadcursor.tr_id,_uploadcursor.tr_serial,_uploadcursor.filename,_uploadcursor.Extension,_uploadcursor.objSave,ConnectionString,_uploadcursor.pWhat,.t.,ALLTRIM(_uploadcursor.objSource))			
+					ENDIF 
+				ENDIF 
+			ENDSCAN 
+			objUpload.ConnectionClose()
+			objUpload.Dispose()
+		ENDIF 
+	ENDIF
+ELSE
+	IF _curvouobj.addmode = .f. AND _curvouobj.editmode = .f.
+		mSqlStr = "delete from uploadfiles where tr_type = '" + main_vw.entry_ty + "' and tr_id = " + STR(main_vw.tran_cd)
+		nRetval = _curvouobj.SqlConObj.DataConn([EXE],Company.DbName,mSqlstr,"",;
+							"_curvouobj.nHandle",_curvouobj.DataSessionId,.t.)
+		IF nretVal<=0
+			RETURN .f.
+		ENDIF 
+
+	ENDIF 
+ENDIF 

@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
+<VFPData>
+	<tbl_settings_vw>
+		<ctype>IT_MAST</ctype>
+		<table_name>IT_MAST</table_name>
+		<undertable/>
+		<cpk_key>IT_MAST.IT_NAME</cpk_key>
+		<cfk_key/>
+	</tbl_settings_vw>
+	<tbl_settings_vw>
+		<ctype>AC_MAST</ctype>
+		<table_name>AC_MAST</table_name>
+		<undertable/>
+		<cpk_key>AC_MAST.AC_NAME</cpk_key>
+		<cfk_key/>
+	</tbl_settings_vw>
+	<tbl_settings_vw>
+		<ctype>BM_MAST</ctype>
+		<table_name>BOMHEAD</table_name>
+		<undertable/>
+		<cpk_key>BOMHEAD.Tran_xls_id</cpk_key>
+		<cfk_key/>
+	</tbl_settings_vw>
+</VFPData>

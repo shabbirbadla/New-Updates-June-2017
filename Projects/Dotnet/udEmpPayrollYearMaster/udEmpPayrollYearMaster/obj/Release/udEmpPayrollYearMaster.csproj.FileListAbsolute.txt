@@ -1,0 +1,51 @@
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.exe
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.pdb
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\udSelectPop.dll
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.exe
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.pdb
+D:\vapi\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.exe
+D:\vapi\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.pdb
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Release\udEmpPayrollYearMaster.exe
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Release\udEmpPayrollYearMaster.pdb
+D:\Leave Year MasterFrom Vss\uecon.uxe\bin\Release\udEmpPayrollYearMaster.exe
+D:\Leave Year MasterFrom Vss\uecon.uxe\bin\Release\udEmpPayrollYearMaster.pdb
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Release\ResolveAssemblyReference.cache
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Release\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Release\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Release\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+C:\Users\rkchalla\Desktop\uecon.uxe\obj\Release\udEmpPayrollYearMaster.exe
+C:\Users\rkchalla\Desktop\uecon.uxe\obj\Release\udEmpPayrollYearMaster.pdb
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.exe
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.pdb
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.exe
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.pdb
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\obj\Release\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\Ramya Working\From Rupesh\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.exe
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.pdb
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.exe
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.pdb
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Release\ResolveAssemblyReference.cache
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Release\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.exe
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\udEmpPayrollYearMaster.pdb
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.exe
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Release\udEmpPayrollYearMaster.pdb

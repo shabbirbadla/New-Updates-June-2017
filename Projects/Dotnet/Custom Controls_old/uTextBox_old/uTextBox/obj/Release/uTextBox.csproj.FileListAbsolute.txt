@@ -1,0 +1,10 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uTextBox\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uTextBox\bin\Release\uTextBox.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uTextBox\bin\Release\uTextBox.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uTextBox\obj\Release\uTextBox.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uTextBox\obj\Release\uTextBox.pdb
+D:\SQLProject\UDF Controls\uTextBox\uTextBox\bin\Release\uTextBox.dll
+D:\SQLProject\UDF Controls\uTextBox\uTextBox\bin\Release\uTextBox.pdb
+D:\SQLProject\UDF Controls\uTextBox\uTextBox\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\UDF Controls\uTextBox\uTextBox\obj\Release\uTextBox.dll
+D:\SQLProject\UDF Controls\uTextBox\uTextBox\obj\Release\uTextBox.pdb

@@ -1,0 +1,45 @@
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.exe
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.pdb
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.frmShiftMaster.resources
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.exe
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.pdb
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\uCheckBox.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\udSelectPop.dll
+D:\SQLProject\payroll\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\uNumericTextBox.dll
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.exe
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.pdb
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.exe
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.pdb
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.frmShiftMaster.resources
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.Properties.Resources.resources
+D:\udEmpShiftMaster from Vss\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.csproj.GenerateResource.Cache
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.exe
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.pdb
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.frmShiftMaster.resources
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.Properties.Resources.resources
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.csproj.GenerateResource.Cache
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.exe
+E:\Working\ShiftMaster_020513\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.frmShiftMaster.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\udEmpShiftMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\bin\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.exe
+D:\SVN Development\Dotnet\udEmpShiftMaster\udEmpShiftMaster\obj\Debug\udEmpShiftMaster.pdb

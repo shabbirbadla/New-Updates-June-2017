@@ -1,0 +1,44 @@
+Form e:\...\for testing\05-05-2017\uewarehousereorder\frmitwarehousereorder.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library e:\...\shrikant sir\for testing\05-05-2017\uewarehousereorder\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Visual Class Library e:\...\gst\shrikant sir\for testing\05-05-2017\uewarehousereorder\vouclass.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UENRENTRY - Undefined
+    Form UEFRM_OPWKITEMALLOCATION - Undefined
+    Unknown UDAPPVOUITFIRE - Undefined
+    Unknown UDTRIGVOUITFIRE - Undefined
+    Unknown UETRIGVOUITFIRE - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    Proc./Func. UDAPPVOUXTRACLOSE - Undefined
+    Proc./Func. UDTRIGVOUXTRACLOSE - Undefined
+    Proc./Func. UETRIGVOUXTRACLOSE - Undefined
+    Application UETDSPAYMENT - Undefined
+    Application UEEMPPAYROLLPOSTING - Undefined
+    Form UEETITDETINAR - Undefined
+    Form UEETDETAILINAR - Undefined
+    Form UEETITDETINDC - Undefined
+    Form UEETDETAILINDC - Undefined
+    Form UEETDETAILINIR - Undefined
+    Form UEETDETAILINGT - Undefined
+    Form UEFRM_PT_EXDATA1 - Undefined
+    Form UEFRM_JV_EXDATA1 - Undefined
+    Form UEFRM_ST_EXDATA1 - Undefined
+    Form UEFRM_SERVICETAX - Undefined
+    Form UEFRM_ST_BOND - Undefined
+    Form UEFRM_SR_EXDATA1 - Undefined
+    Form UEFRM_SERTAX_DET - Undefined
+    Application UEDUTYDEBIT - Undefined
+    Application UESERVICETAXCREDIT - Undefined
+    Application UESERVICETAXCREDITACCRUAL - Undefined
+    Form UEFRM_BOMDETAILS - Undefined
+    Form UEFRM_ITEMPICKUP - Undefined
+    Form UEFRM_OPSTITEMALLOCATION - Undefined
+    Form UEFRM_DCSTITEMALLOCATION - Undefined
+    Form UEFRM_BOMDETAILSIP - Undefined
+    Form UEFRM_BOMDETAILSOP - Undefined
+    Proc./Func. SAVEOPPTTAXDET - Undefined
+    Application UDAPPETVALID - Undefined
+

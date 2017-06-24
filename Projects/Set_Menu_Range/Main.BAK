@@ -1,0 +1,117 @@
+Parameters dbName As String
+
+If Vartype(dbName)<>'C' Or Empty(dbName)
+	=Messagebox('Please pass valid database Name',0+16,'UDYOG ERP')
+	Return .F.
+Endif
+
+Set Safety Off
+Set Multilocks On
+Set Deleted On
+Set Century On
+Set Date To BRITISH
+Set Procedure To vu_udfs Additive
+Set Resource Off
+Set Talk Off
+Set Scoreboard Off
+Set Escape Off
+Set Exclusive Off
+Set Exact Off
+Set Clock Status
+Set Multilocks On
+Set Help On
+
+Declare Integer GetPrivateProfileString In Win32API As GetPrivStr ;
+	STRING cSection, String cKey, String cDefault, String @cBuffer, ;
+	INTEGER nBufferSize, String cINIFile
+Declare Integer WritePrivateProfileString In Win32API As WritePrivStr ;
+	STRING cSection, String cKey, String cValue, String cINIFile
+Declare Integer GetProfileString In Win32API As GetProStr ;
+	STRING cSection, String cKey, String cDefault, ;
+	STRING @cBuffer, Integer nBufferSize
+
+Public Vumess,mvu_backend,mvu_server,mvu_user,mvu_pass,dataUpdtdb,ProductType,apath,xapps,Prodpara
+
+dataUpdtdb = Alltrim(dbName)
+mvu_backend = []
+mvu_server  = []
+mvu_user    = []
+mvu_pass    = []
+
+apath = Allt(Sys(5) + Curd())
+Vumess = ' Udyog ERP - [ Beta Version ]'
+xapps  = 'UdyogErp.exe'
+
+Set Classlib To sqlconnection In &xapps Additive
+
+If !File(apath+"visudyog.ini")
+	Messagebox("Configuration File Not found",32,Vumess)
+	Retu .F.
+Endif
+
+mvu_one     = Space(2000)
+mvu_two     = 0
+mvu_two	    = GetPrivStr([Settings],"Backend", "", @mvu_one, Len(mvu_one), apath + "visudyog.ini")
+mvu_backend = Left(mvu_one,mvu_two)
+mvu_two     = GetPrivStr([DataServer],"Name", "", @mvu_one, Len(mvu_one), apath + "visudyog.ini")
+mvu_server  = Left(mvu_one,mvu_two)
+mvu_two     = GetPrivStr([DataServer],onencrypt(enc("User")), "", @mvu_one, Len(mvu_one), apath + "visudyog.ini")
+mvu_user    = Left(mvu_one,mvu_two)
+mvu_two     = GetPrivStr([DataServer],onencrypt(enc("Pass")), "", @mvu_one, Len(mvu_one), apath + "visudyog.ini")
+mvu_pass    = Left(mvu_one,mvu_two)
+mvu_backend = Iif(Empty(mvu_backend),"0",mvu_backend)
+
+If mvu_backend # "0"
+	If Empty(mvu_server)
+		Messagebox("Server Name Not Defined",32,Vumess)
+		Retu .F.
+	Endif
+	If Empty(mvu_user)
+		Messagebox("User Name Not Defined",32,Vumess)
+		Retu .F.
+	Endif
+Endif
+
+Set Step On
+Public sqlconobj,nHandle,Co_Mast
+nHandle = 0
+sqlconobj=Newobject('sqlconnudobj',"sqlconnection",xapps)
+msqlstr="select [Name] from master..sysdatabases where name = 'Vudyog'"
+nretval=sqlconobj.dataconn('EXE','master',msqlstr,"Cur_Mast","nHandle")
+If nretval<0
+	Return .F.
+Endif
+Select Cur_Mast
+If Reccount() <> 1
+	Return .F.
+Endif
+nretval=sqlconobj.sqlconnclose("nHandle") && Connection Close
+
+Costr = "Select Co_Name,Sta_Dt,End_Dt,Passroute from co_mast Where [Import] = 0 AND Dbname = '"+Alltrim(dataUpdtdb)+"'"
+nretval = sqlconobj.dataconn('EXE','Vudyog',Costr,"_co_mast","nHandle")
+If nretval=<0
+	=Messagebox("Co_mast file error"+Chr(13)+Proper(Message()),16,Vumess)
+	Return
+Endif
+nretval=sqlconobj.sqlconnclose("nHandle") && Connection Close
+
+Select _Co_Mast
+If Reccount() <> 1
+	=Messagebox('Please Pass Valid Company Database',0+16,'UDYOG ERP')
+	Return
+Endif
+Select _Co_Mast
+Go Top
+Scatter Name Co_Mast
+
+Do SetMenu.Prg
+
+
+Procedure Closeproc
+*******************
+Set Sysmenu To Default
+Clear Events
+
+&& Paramaters Types
+*!*	<<ProductParameters>> - Replaced by
+*!*	<<Companydatabase>> - Replace Company Database

@@ -1,0 +1,46 @@
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udEmpPayHeadMaster.exe
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udEmpPayHeadMaster.pdb
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.frmPayHeadMaster.resources
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.exe
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.pdb
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udclsDGVDateTimePicker.dll
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udSelectPop.dll
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.frmFormula.resources
+D:\SQLProject\payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\uNumericTextBox.dll
+D:\My practice\aspspider\Payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.exe
+D:\My practice\aspspider\Payroll\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.pdb
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.exe
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.pdb
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\bin\Debug\udEmpPayHeadMaster.exe
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\bin\Debug\udEmpPayHeadMaster.pdb
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.frmFormula.resources
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.frmPayHeadMaster.resources
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.Properties.Resources.resources
+D:\udEmpPayHeadMaster From Vss\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udEmpPayHeadMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\udEmpPayHeadMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\bin\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.frmFormula.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.frmPayHeadMaster.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.exe
+D:\SVN Development\Dotnet\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.pdb
+F:\Installer 12.0 issue\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\Interop.ueconnect.dll
+F:\Installer 12.0 issue\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.csproj.ResolveComReference.cache
+F:\Installer 12.0 issue\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.exe
+F:\Installer 12.0 issue\udEmpPayHeadMaster\udEmpPayHeadMaster\obj\Debug\udEmpPayHeadMaster.pdb

@@ -1,0 +1,11 @@
+Form d:\sqlvudyog9\erp pickup\formpickup.scx has the following errors:
+    Form FRMPAGEPOP - Undefined
+    Proc./Func. VUITBAL - Undefined
+    Program VUBAL - Undefined
+    Unknown UEGETPOP - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown VUFIND - Undefined
+
+Visual Class Library d:\sqlvudyog9\erp pickup\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

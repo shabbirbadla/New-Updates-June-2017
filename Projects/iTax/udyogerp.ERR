@@ -1,0 +1,35 @@
+Program d:\raghu\vfp9\udyog erp exe\main.prg has the following errors:
+    Application UEBACKUP - Undefined
+    Application DTS - Undefined
+
+Program d:\raghu\vfp9\udyog erp exe\vu_udfs.prg has the following errors:
+    Menu GWARE - Undefined
+
+Visual Class Library d:\raghu\vfp9\udyog erp exe\sqlconnection.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form d:\raghu\vfp9\udyog erp exe\spl.scx has the following errors:
+    File UGERPWELPAGE.JPG - Undefined
+
+Form d:\raghu\vfp9\udyog erp exe\frmudyogsdi.scx has the following errors:
+    Menu GWARE - Undefined
+    Proc./Func. UECO_MAST - Undefined
+
+Visual Class Library d:\raghu\vfp9\udyog erp exe\vutool.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UETRIGTOOLNEW - Undefined
+    Unknown UETRIGTOOLSAVE - Undefined
+    Proc./Func. UETRIGTOOLAFTSAVEIT - Undefined
+    Proc./Func. UETRIGTOOLEDIT - Undefined
+    Unknown UETRIGTOOLDELETE - Undefined
+    Proc./Func. UETRIGTOOLDELETEAFTER - Undefined
+    Proc./Func. UETRIGTOOLCOPY - Undefined
+    Proc./Func. UETRIGTOOLPRINT - Undefined
+    Proc./Func. UETRIGTOOLEXIT - Undefined
+
+Form d:\raghu\vfp9\udyog erp exe\denied.scx has the following errors:
+    File SILVER.BMP - Undefined
+
+Visual Class Library d:\raghu\vfp9\udyog erp exe\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

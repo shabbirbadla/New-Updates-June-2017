@@ -1,0 +1,86 @@
+para  M_TY, amtype,grdno
+IF grdno=1
+	_screen.ActiveForm.combo1.visible=.t.
+ELSE
+	_screen.ActiveForm.combo2.visible=.t.
+ENDIF
+
+
+
+*m.curr=sele()
+*mrecno=RECNO()
+_screen.ActiveForm.Combo1.clear
+_screen.ActiveForm.Combo2.CLEAR
+
+SELECT l_clause
+set filt to al = iif(amtype="DR", "L", "A")
+GO top
+DO WHILE !EOF()
+	IF grdno=1
+		_screen.ActiveForm.Combo1.AddItem (clause)
+	ELSE
+		_screen.ActiveForm.Combo2.AddItem (clause)
+	endif
+	skip
+ENDDO
+set filt to
+
+IF grdno=1
+	_screen.ActiveForm.Combo1.ListIndex=1
+	_screen.ActiveForm.Combo1.refresh
+	_screen.ActiveForm.Combo1.setfocus
+ELSE
+	_screen.ActiveForm.Combo2.ListIndex=1
+	_screen.ActiveForm.Combo2.refresh
+	_screen.ActiveForm.Combo2.setfocus
+ENDIF
+*select (m.curr)
+*GO mrecno
+*_screen.ActiveForm.Combo1.ListIndex=1
+
+RETURN
+
+
+*!*	sele l_clause
+*!*	set filt to
+*!*	on key label enter
+*!*	define wind clawind from 12,20 to 16,45 none
+*!*	acti wind clawind
+*!*	defi popu cla from 0,1 promp fiel clause titl 'Select Clause ' foot 'F4 For New Clause' scro colo sche 7
+*!*	on sele popu cla deac popu cla
+*!*	if !empt(amtype) 
+*!*		set filt to al = iif(amtype="DR", "L", "A")
+*!*		loca
+*!*	ENDIF
+*!*	set conf off
+*!*	acti popu cla rest
+*!*	set conf on
+*!*	on key label f4
+*!*	if m_ty = 'B'
+*!*		sele brtemp
+*!*		on key label enter  do sele_cla with 'B',amt_ty && ca
+*!*	else
+*!*	 	Sele btemp
+*!*		on key label ENTER do sele_cla with 'S',""
+*!*	endif
+
+*!*	if last() <> 27
+*!*		repl cl_date with {}
+*!*		repl clause with l_clause->clause
+*!*		repl type with m_ty
+*!*		repl al with l_clause->al
+*!*	else
+*!*		repl clause with ' '
+*!*		repl type with ' '
+*!*		repl al with ' '
+*!*	endi
+*!*	flush
+*!*	deac wind clawind
+*!*	rele wind clawind
+
+*!*	if m_ty = 'B'
+*!*		select brtemp
+*!*	endif
+
+
+retu

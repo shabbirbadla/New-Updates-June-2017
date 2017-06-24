@@ -1,0 +1,17 @@
+Form d:\svn\uediffbillgeneration\uediffsalebill.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\svn\uediffbillgeneration\uediffsalebill1.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Visual Class Library d:\svn\uediffbillgeneration\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Unknown UDAPPVOUITEMWISEASSESS - Undefined
+    Unknown UDTRIGVOUITEMWISEASSESS - Undefined
+    Unknown UETRIGVOUITEMWISEASSESS - Undefined
+
+Form d:\svn\uediffbillgeneration\uediffsalebill2.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+

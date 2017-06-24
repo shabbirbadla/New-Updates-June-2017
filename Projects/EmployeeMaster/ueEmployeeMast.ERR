@@ -1,0 +1,17 @@
+Form d:\ruchit\svn\bug_27458\frmemployee.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPMASTBEFEDIT - Undefined
+    Unknown UDTRIGMASTBEFEDIT - Undefined
+    Unknown UETRIGMASTBEFEDIT - Undefined
+    Unknown UDAPPMASTFINALUPDATE - Undefined
+    Unknown UDTRIGMASTFINALUPDATE - Undefined
+    Unknown UETRIGMASTFINALUPDATE - Undefined
+    Application UDAPPMASTROLLBACK - Undefined
+    Program UDTRIGMASTROLLBACK - Undefined
+    Proc./Func. UETRIGMASTROLLBACK - Undefined
+    Unknown VALIDATEPFNO - Undefined
+    Unknown NEWDECRY - Undefined
+    Unknown DEC - Undefined
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UEEXTRA - Undefined
+

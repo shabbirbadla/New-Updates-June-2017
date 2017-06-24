@@ -1,0 +1,10 @@
+D:\SQLProject\ueTips\cTipsSqlConn\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\ueTips\cTipsSqlConn\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\ueTips\cTipsSqlConn\bin\Release\cTipsSqlConn.dll
+D:\SQLProject\ueTips\cTipsSqlConn\bin\Release\cTipsSqlConn.pdb
+D:\SQLProject\ueTips\cTipsSqlConn\obj\Release\cTipsSqlConn.dll
+D:\SQLProject\ueTips\cTipsSqlConn\obj\Release\cTipsSqlConn.pdb
+D:\SQLProject\ueTips\cTipsSqlConn\bin\Debug\cTipsSqlConn.dll
+D:\SQLProject\ueTips\cTipsSqlConn\bin\Debug\cTipsSqlConn.pdb
+D:\SQLProject\ueTips\cTipsSqlConn\obj\Debug\cTipsSqlConn.dll
+D:\SQLProject\ueTips\cTipsSqlConn\obj\Debug\cTipsSqlConn.pdb

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SMS">
+</Property><Property Name="Solution File" Value="D:\Shrikant\Dotnet\s\SMS\SMS.sln">
+</Property><Property Name="User Options File" Value="D:\Shrikant\Dotnet\s\SMS\SMS.suo">
+</Property><Property Name="Date" Value="Saturday, December 06, 2008">
+</Property><Property Name="Time" Value="19:13 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SMS.sln" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS.sln">
+</Event><Event ErrorLevel="0" Project="" Source="SMS.suo" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS.suo">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\SMS.csproj" Description="Project file successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\SMS.csproj">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\SMS.csproj.user" Description="Project user file successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\SMS.csproj.user">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\AssemblyInfo.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\CommSetting.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\CommSetting.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\Delete.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\Delete.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\frmConnection.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\frmConnection.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\Receive.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\Receive.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\Send.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\Send.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\ServerMain.cs" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\ServerMain.cs">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\App.ico" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\App.ico">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\Delete.resx" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\Delete.resx">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\frmConnection.resx" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\frmConnection.resx">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\Receive.resx" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\Receive.resx">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\Send.resx" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\Send.resx">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\ServerMain.resx" Description="File successfully backed up as D:\Shrikant\Dotnet\s\SMS\Backup\SMS\ServerMain.resx">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\SMS.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SMS" Source="SMS\SMS.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SMS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SMS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SMS" Source="SMS\SMS.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

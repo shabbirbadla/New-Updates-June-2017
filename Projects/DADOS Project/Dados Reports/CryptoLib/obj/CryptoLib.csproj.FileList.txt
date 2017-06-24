@@ -1,0 +1,10 @@
+bin\Release\CryptoLib.dll
+bin\Release\CryptoLib.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\CryptoLib.dll
+obj\Release\CryptoLib.pdb
+bin\Debug\CryptoLib.dll
+bin\Debug\CryptoLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CryptoLib.dll
+obj\Debug\CryptoLib.pdb

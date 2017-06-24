@@ -1,0 +1,47 @@
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.exe
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.pdb
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\bin\Debug\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\bin\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\ResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\udPayTermsMaster.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\udPayTermsMaster.frmPayTermsMaster.resources
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\udPayTermsMaster.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.exe
+F:\Kishor\Original-Bug-Projects\PayTermsMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.pdb
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\bin\Debug\udPayTermsMaster.exe
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\bin\Debug\udPayTermsMaster.pdb
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\bin\Debug\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\bin\Debug\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.frmPayTermsMaster.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.frmValidIn.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.exe
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.pdb
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\bin\Debug\udPayTermsMaster.exe
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\bin\Debug\udPayTermsMaster.pdb
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\bin\Debug\Interop.ueconnect.dll
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\Interop.ueconnect.dll
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csproj.ResolveComReference.cache
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.frmPayTermsMaster.resources
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.frmValidIn.resources
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.Properties.Resources.resources
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csproj.GenerateResource.Cache
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.exe
+D:\SVNGST\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.pdb
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\bin\Debug\udPayTermsMaster.exe
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\bin\Debug\udPayTermsMaster.pdb
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\bin\Debug\Interop.ueconnect.dll
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\Interop.ueconnect.dll
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csproj.ResolveComReference.cache
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.frmPayTermsMaster.resources
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.frmValidIn.resources
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.Properties.Resources.resources
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.csproj.GenerateResource.Cache
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.exe
+E:\Suraj\GST\Shrikant Sir\Serialize Inventory\udPayTermsMaster\udPayTermsMaster\obj\Debug\udPayTermsMaster.pdb

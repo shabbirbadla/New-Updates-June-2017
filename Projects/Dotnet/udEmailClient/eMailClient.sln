@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eMailClient.UI", "eMailClient.UI", "{BD79DD47-C1DE-4F03-BF60-FFC81752A51C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eMailClient.BL", "eMailClient.BL", "{873DBAEE-40BC-4FFA-9F5C-FEBE6D6DD27C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eMailClient.DAL", "eMailClient.DAL", "{F35C7617-6FAF-42B7-B89A-3EEB7A03D05F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eMailClient.MailSender", "eMailClient.MailSender", "{A830ACAE-9CD9-4FCC-8CBE-A723C82EC719}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eMailClient.RPT", "eMailClient.RPT", "{00D40A39-6279-4D31-BA89-E3439BD85E97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{6AF797F4-3BC8-4FA4-8EB3-177109F40305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eMailClientWizard", "eMailClientWizard", "{A1DB98EA-D838-45BF-A155-BB36C40CDCC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMailClient", "eMailClient\eMailClient.csproj", "{195DDF7A-F953-4B1D-9498-433EFCBB9E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMailClient.BLL", "eMailClient.BL\eMailClient.BLL.csproj", "{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMailClient.DAL", "eMailClient.DAL\eMailClient.DAL.csproj", "{0BDFB3A3-5385-46F5-9112-354D7AAC14FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMailClient.MailSender", "eMailClient.MailSender\eMailClient.MailSender.csproj", "{0B01E8D3-8344-44B6-B8B4-9C90F517854F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMailClient.RPT", "eMailClient.RPT\eMailClient.RPT.csproj", "{6933E621-E32C-4774-8E17-005AD5F9D035}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "eMailClientSetup", "eMailClientSetup\eMailClientSetup.vdproj", "{2CEA2687-C89E-4732-9146-58FC4C251062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eMailClientSetting", "eMailClientSetting\eMailClientSetting.csproj", "{61AF671D-5D08-46F6-A007-FD1F0746C461}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{195DDF7A-F953-4B1D-9498-433EFCBB9E20}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{195DDF7A-F953-4B1D-9498-433EFCBB9E20}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{195DDF7A-F953-4B1D-9498-433EFCBB9E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195DDF7A-F953-4B1D-9498-433EFCBB9E20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDFB3A3-5385-46F5-9112-354D7AAC14FA}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDFB3A3-5385-46F5-9112-354D7AAC14FA}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0BDFB3A3-5385-46F5-9112-354D7AAC14FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDFB3A3-5385-46F5-9112-354D7AAC14FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B01E8D3-8344-44B6-B8B4-9C90F517854F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0B01E8D3-8344-44B6-B8B4-9C90F517854F}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0B01E8D3-8344-44B6-B8B4-9C90F517854F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B01E8D3-8344-44B6-B8B4-9C90F517854F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6933E621-E32C-4774-8E17-005AD5F9D035}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{6933E621-E32C-4774-8E17-005AD5F9D035}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{6933E621-E32C-4774-8E17-005AD5F9D035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6933E621-E32C-4774-8E17-005AD5F9D035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CEA2687-C89E-4732-9146-58FC4C251062}.Debug|Any CPU.ActiveCfg = Release
+		{2CEA2687-C89E-4732-9146-58FC4C251062}.Release|Any CPU.ActiveCfg = Release
+		{61AF671D-5D08-46F6-A007-FD1F0746C461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AF671D-5D08-46F6-A007-FD1F0746C461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AF671D-5D08-46F6-A007-FD1F0746C461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AF671D-5D08-46F6-A007-FD1F0746C461}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{195DDF7A-F953-4B1D-9498-433EFCBB9E20} = {BD79DD47-C1DE-4F03-BF60-FFC81752A51C}
+		{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4} = {873DBAEE-40BC-4FFA-9F5C-FEBE6D6DD27C}
+		{0BDFB3A3-5385-46F5-9112-354D7AAC14FA} = {F35C7617-6FAF-42B7-B89A-3EEB7A03D05F}
+		{0B01E8D3-8344-44B6-B8B4-9C90F517854F} = {A830ACAE-9CD9-4FCC-8CBE-A723C82EC719}
+		{6933E621-E32C-4774-8E17-005AD5F9D035} = {00D40A39-6279-4D31-BA89-E3439BD85E97}
+		{2CEA2687-C89E-4732-9146-58FC4C251062} = {6AF797F4-3BC8-4FA4-8EB3-177109F40305}
+		{61AF671D-5D08-46F6-A007-FD1F0746C461} = {A1DB98EA-D838-45BF-A155-BB36C40CDCC5}
+	EndGlobalSection
+EndGlobal

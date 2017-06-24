@@ -1,0 +1,15 @@
+Form \\udwin2k3\vu_project_work\sql projects\approval\frmapproval.scx has the following errors:
+    Proc./Func. UENRENTRY - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UETRIGVOUAPPROVAL - Undefined
+    Unknown UEGETPOP - Undefined
+    File COMMENT_APPROVAL.GIF - Undefined
+    File CANCEL.GIF - Undefined
+    Proc./Func. TOUEVOUCHER - Undefined
+
+Visual Class Library \\udwin2k3\vu_project_work\sql projects\approval\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Program \\udwin2k3\vu_project_work\sql projects\approval\locaterecords.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+

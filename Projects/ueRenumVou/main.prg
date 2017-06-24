@@ -1,0 +1,38 @@
+*!*	PARAMETERS tnRange
+*!*	DO FORM frmRenumVou WITH tnRange
+icopath=""
+apath=""
+NoGenof=""
+
+
+PUBLIC Company,dbname,sta_dt,end_dt,vu_sever,vu_user,vu_pass,usernm,Finyear,Prod1,Validuser,SelectType
+
+Company=""
+dbname=""
+sta_dt={  /  /    }
+end_dt={  /  /    }
+vu_sever=""
+vu_user=""
+vu_pass=""
+usernm=""
+Finyear=""
+Prod1 =""
+SelectType=0
+Validuser=.f.
+
+Do Form frmLogin 
+Read Events
+
+If Validuser=.T.
+	Do Form frmSelectType With Company,dbname,sta_dt,end_dt,vu_sever,vu_user,vu_pass,usernm,Finyear,Prod1
+	Read Events
+	Do Case
+	Case SelectType=1
+		Do Form frmrenumvou With Company,dbname,sta_dt,end_dt,vu_sever,vu_user,vu_pass,usernm
+		Read Events
+	Case SelectType=2
+		Do Form frmRenumPageno With Company,dbname,sta_dt,end_dt,vu_sever,vu_user,vu_pass,usernm,Finyear
+		Read Events
+	ENDCASE
+Endif
+

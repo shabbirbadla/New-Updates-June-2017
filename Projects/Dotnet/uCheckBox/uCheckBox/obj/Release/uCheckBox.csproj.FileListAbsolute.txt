@@ -1,0 +1,10 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uCheckBox\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uCheckBox\bin\Release\uCheckBox.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uCheckBox\bin\Release\uCheckBox.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uCheckBox\obj\Release\uCheckBox.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uCheckBox\obj\Release\uCheckBox.pdb
+D:\SQLProject\UDF Controls\uCheckBox\uCheckBox\bin\Release\uCheckBox.dll
+D:\SQLProject\UDF Controls\uCheckBox\uCheckBox\bin\Release\uCheckBox.pdb
+D:\SQLProject\UDF Controls\uCheckBox\uCheckBox\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\UDF Controls\uCheckBox\uCheckBox\obj\Release\uCheckBox.dll
+D:\SQLProject\UDF Controls\uCheckBox\uCheckBox\obj\Release\uCheckBox.pdb

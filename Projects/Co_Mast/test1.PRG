@@ -1,0 +1,4 @@
+PARAMETERS tname,cname
+SET STEP ON 
+SELECT * FROM &tName INTO CURSOR cName
+

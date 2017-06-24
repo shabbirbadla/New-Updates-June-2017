@@ -1,0 +1,38 @@
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.frmDesigMaster.resources
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.Properties.Resources.resources
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.csproj.GenerateResource.Cache
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.exe
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.pdb
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.exe
+D:\My practice\aspspider\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.exe
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.exe
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.pdb
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.frmDesigMaster.resources
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.Properties.Resources.resources
+D:\My practice\aspspider\Payroll\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.csproj.GenerateResource.Cache
+D:\Ramya\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.exe
+D:\Ramya\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.pdb
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.exe
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.pdb
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.frmDesigMaster.resources
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.Properties.Resources.resources
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.csproj.GenerateResource.Cache
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.exe
+D:\udEmpDesigMaster from Vss\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\udEmpDesigMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\bin\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.frmDesigMaster.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpDesigMaster\udEmpDesigMaster\obj\Debug\udEmpDesigMaster.csproj.GenerateResource.Cache

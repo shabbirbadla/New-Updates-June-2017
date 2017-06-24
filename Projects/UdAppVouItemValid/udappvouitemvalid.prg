@@ -1,0 +1,507 @@
+&&-->Ipop(Rup)
+
+*-->Checking Allocated entry
+_malias 	= Alias()
+_mrecno	= Recno()
+_curvouobj = _Screen.ActiveForm
+
+&&&Added by satish pal dt.25/07/2012 for bug-5450--start
+If Type("_SCREEN.ACTIVEFORM.mainAlias") <> "C"
+&&RETURN 0 &&COMMNENTED BY Shrikant S. for auto updater 10.4.16
+	Return	&&ADDED BY Shrikant S. for auto updater 10.4.16
+Endif
+&&&Added by satish pal dt.25/07/2012 for bug-5450--end
+
+
+&&vasant061009
+If Type('_curvouobj.mainalias') = 'C'
+	If Upper(_curvouobj.mainalias) <> 'MAIN_VW'
+		Return
+	Endif
+Endif
+&&vasant061009
+*Set DataSession To _curvouobj.DataSessionId	&&vasant071009
+If Type('_curvouobj.PcvType') = 'C'
+	If _Screen.ActiveForm.voupage.page1.grditem.column1.text1.Value<>_Screen.ActiveForm.voupage.page1.grditem.column1.text1.Tag
+*!*			If  (([vuexc] $ vchkprod) Or ([vuinv] $ vchkprod)) And Type('_curvouobj.PCVTYPE')='C' &&Check Existing Records
+		If  (([vuexc] $ vchkprod) Or ([vuinv] $ vchkprod)) And !([vutex] $ vchkprod) And Type('_curvouobj.PCVTYPE')='C' &&Check Existing Records		&& Changed By Sachin N. S. on 13/01/2011 for Visual Udyog 10.0
+			etsql_str  = "select top 1 entry_ty from projectitref Where aTran_cd = ?Main_vw.Tran_cd And aEntry_ty = ?Main_vw.Entry_ty and aitserial=?item_vw.itserial"
+			etsql_str1 = " union select top 1 aentry_ty from projectitref Where Tran_cd = ?Main_vw.Tran_cd And Entry_ty = ?Main_vw.Entry_ty and itserial=?item_vw.itserial"
+			etsql_con1 = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,etsql_str+etsql_str1,[_chkbom],"_curvouobj.nHandle",_curvouobj.DataSessionId,.T.)
+			If Used('_chkbom')
+				If Reccount()>0
+					Select _chkbom
+					=Messagebox("Entry Passed Against /"+_chkbom.entry_ty+". Item Could not be Changed",16,vumess)
+					_Screen.ActiveForm.voupage.page1.grditem.column1.text1.Value=_Screen.ActiveForm.voupage.page1.grditem.column1.text1.Tag
+					Use In _chkbom
+					Return .F.
+				Endif
+				Use In _chkbom
+			Endif
+		Endif
+********** Added By Sachin N. S. on 02/03/2012 for Bug-2239 ********** Start
+		If _curvouobj.pcvtype='OP'
+			Select item_vw
+			mentry_ty=item_vw.entry_ty
+			mtran_cd=item_vw.tran_cd
+			mitserial=item_vw.itserial
+			mbomid=item_vw.bomid
+			mbomlevel=item_vw.bomlevel
+			If !Empty(mbomid)		&& Added By Sachin N. S. on 30/04/2012 for Bug-3856
+				Select Top 1 item_no From item_vw Where entry_ty=mentry_ty And tran_cd=mtran_cd And itserial!=mitserial And bomid=mbomid And ;
+					bomlevel=mbomlevel And ritserial=mitserial Order By item_no Into Cursor _cur1	&& Changed By Sachin N. S. on 30/04/2012 for Bug-3856
+*!*						BomLevel=mBomLevel Order By Item_no Into Cursor _cur1
+				If _Tally>0
+					=Messagebox("Line no. "+Alltrim(Transform(_cur1.item_no))+" is referring this Item. Cannot change the Item.",0+16,vumess)
+					Use In _cur1
+					Return .F.
+				Endif
+			Endif
+		Endif
+********** Added By Sachin N. S. on 02/03/2012 for Bug-2239 ********** End
+	Endif
+Endif
+
+******** Added By Sachin N. S. on 13/02/2012 for TKT-9411 and Bug-660 Batchwise/Serialize Inventory ******** Start
+If Type('_curvouobj.PcvType') = 'C'		&& Added for auto updater 10.4.10 by Shrikant S. on 02/08/2012
+	If _Screen.ActiveForm.voupage.page1.grditem.column1.text1.Value<>_Screen.ActiveForm.voupage.page1.grditem.column1.text1.Tag
+		If _curvouobj.itempage And Vartype(_curvouobj._batchserialstk)='O'
+			etsql_con=_curvouobj._batchserialstk._uetrigvouitemvalid()
+&& Added by Shrikant S. on 24/04/2017 for GST		&& Start
+			If etsql_con<=0
+				Return .F.
+			Endif
+&& Added by Shrikant S. on 24/04/2017 for GST		&& End
+
+*!*				Return Iif(etsql_con>0,.T.,.F.)		&& Commented by Shrikant S. on 24/04/2017 for GST
+		Endif
+	Endif
+Endif
+******** Added By Sachin N. S. on 13/02/2012 for TKT-9411 and Bug-660 Batchwise/Serialize Inventory ******** End
+
+&& Added By Shrikant S. on 24/01/2012 for Bug-1180		&& Start
+If Type('_curvouobj.PcvType') = 'C' 	&& Added for auto updater 10.4.10 by Shrikant S. on 02/08/2012
+	If _curvouobj.voupage.page1.grditem.column1.text1.Value<>_curvouobj.voupage.page1.grditem.column1.text1.Tag
+		If lcode_vw.inv_stk='+'  And company.neg_itbal=.F. And Empty(item_vw.dc_no) And _curvouobj.editmode
+&&Changes has been done by vasant on 10/11/2012 as per Bug 6773 (Facing issue in edit mode of opening stock Transaction).
+			balqty =0
+			msqlstr='Select Top 1 Date From '+_curvouobj.Entry_tbl+'item Where entry_ty=?main_vw.entry_ty and tran_cd=?main_vw.tran_cd and itserial=?item_vw.itserial'
+			sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[chktbl_vw],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+			If Used('chktbl_vw')
+				Select chktbl_vw
+				balqty = Reccount()
+				Use In chktbl_vw
+			Endif
+			If balqty > 0
+&&Changes has been done by vasant on 10/11/2012 as per Bug 6773 (Facing issue in edit mode of opening stock Transaction).
+				Select item_vw
+				mitemname=""
+				balqty =0
+&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+*!*					msqlstr="Select sum(Case when B.Inv_stk='+' then A.Qty Else (Case when B.Inv_stk='-' then -Qty Else 0 End)end) as Qty From It_balw A "+;
+*!*						" Inner join Lcode B ON (A.Entry_ty = B.Entry_Ty ) Inner Join It_Mast It ON(It.It_code=A.It_code) "+;
+*!*						" where B.inv_stk != ' ' And It.It_Name=?_curvouobj.voupage.page1.GrdItem.Column1.text1.Tag And A.[rule]=?main_vw.rule"+;
+*!*						" and A.ware_nm=?item_vw.ware_nm  "
+				Select item_vw
+				lirecno = Iif(!Eof(),Recno(),0)
+				msqlstr="Select sum(Case when B.Inv_stk='+' then A.Qty Else (Case when B.Inv_stk='-' then -Qty Else 0 End)end) as Qty From It_balw A "
+				msqlstr	= msqlstr + " Inner join Lcode B ON (A.Entry_ty = B.Entry_Ty ) Inner Join It_Mast It ON(It.It_code=A.It_code) "
+				msqlstr	= msqlstr + " where B.inv_stk != ' ' And It.It_Name=?_curvouobj.voupage.page1.GrdItem.Column1.text1.Tag "
+				msqlstr	= msqlstr + " and A.ware_nm=?item_vw.ware_nm  "
+				_mRule = ''
+				If 'vutex' $ vchkprod
+					If Inlist(Upper(Main_vw.Rule),'EXCISE','NON-EXCISE')
+						msqlstr  = msqlstr + " And a.[Rule] = ?Main_vw.Rule "
+						_mRule = Main_vw.Rule
+					Else
+						msqlstr  = msqlstr + " And a.[Rule] NOT IN ('EXCISE','NON-EXCISE') "
+						_mRule = 'Others'
+					Endif
+				Else
+					If Inlist(Upper(Main_vw.Rule),'NON-MODVATABLE','ANNEXURE V')
+						msqlstr  = msqlstr + " And a.[Rule] = ?Main_vw.Rule "
+						_mRule = Main_vw.Rule
+					Else
+						msqlstr  = msqlstr + " And a.[Rule] NOT IN ('NON-MODVATABLE','ANNEXURE V') "
+						_mRule = 'EXCISE'
+					Endif
+				Endif
+&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+				sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[chktbl_vw],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+				If Used('chktbl_vw')
+					Select chktbl_vw
+					balqty = Iif(Isnull(qty) = .F.,qty,0)
+					Use In chktbl_vw
+				Endif
+&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+				_balitemname = Alltrim(_curvouobj.voupage.page1.grditem.column1.text1.Tag)
+				msqlstr="Select SUM(Qty) as qty From "+Alltrim(_curvouobj.Entry_tbl)+"item Where Entry_ty=?main_vw.entry_ty and Tran_cd=?main_vw.tran_cd and item=?_balitemname"
+				sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[chktbl_vw],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+				If Used('chktbl_vw')
+					Select chktbl_vw
+					balqty = balqty - Iif(Isnull(qty) = .F.,qty,0)
+					Use In chktbl_vw
+				Endif
+				Select item_vw
+				Scan For Alltrim(Item) == Alltrim(_balitemname)
+					balqty = balqty + item_vw.qty
+				Endscan
+				If lirecno> 0
+					Go lirecno
+				Endif
+				If balqty < 0
+*IF balqty < item_vw.qty
+*mitemname=mitemname+_curvouobj.voupage.page1.grditem.column1.text1.TAG +", "
+					If !('~#~'+Alltrim(_curvouobj.voupage.page1.grditem.column1.text1.Tag)+'~#~' $ mitemname)
+						mitemname=mitemname+Iif(!Empty(mitemname),', ','')+'~#~'+Alltrim(_curvouobj.voupage.page1.grditem.column1.text1.Tag)+'~#~'
+					Endif
+&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+				Endif
+*mitemname=SUBSTR(mitemname,1,LEN(mitemname)-2)	&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+				Select item_vw
+				If !Empty(mitemname)
+&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+*.showmessagebox("Less "+ALLTRIM(main_vw.RULE)+" Stock available for item(s) "+ALLTRIM(mitemname)+CHR(13)+CHR(13)+"Entry Cannot be Changed",0+32,vumess)
+					mitemname = Strtran(mitemname,'~#~','')
+					.showmessagebox("Less "+Iif(Inlist(Upper(_mRule),'EXCISE','MODVATABLE'),'Modvatable','Non-Modvatable')+" Stock available for item(s) "+Alltrim(mitemname)+Chr(13)+Chr(13)+"Entry Cannot be Changed",0+32,vumess)
+&&Changes done by vasant on 22/11/12 as per Bug-7185 (Issue while Deleting a Dependency Transaction Due to Rule Validation.).
+					Return .F.
+				Endif
+			Endif		&&Changes has been done by vasant on 10/11/2012 as per Bug 6773 (Facing issue in edit mode of opening stock Transaction).
+		Endif
+&& Added By Shrikant S. on 20/02/2012 for Bug-2057		&& Start
+		If lcode_vw.inv_stk='+'  And Empty(item_vw.or_sr) And _curvouobj.editmode
+			msqlstr="Select Top 1 entry_ty,Tran_cd from Othitref Where Rentry_ty=?item_vw.entry_ty and itref_Tran=?item_vw.tran_cd  and Ritserial=?item_vw.itserial"
+			sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[chkReftbl],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+			If Used('chkReftbl')
+				Select chkreftbl
+				lcmsg="Item Name Can't be Changed as it is linked with "+Allt(chkreftbl.entry_ty)
+				If Reccount('chkReftbl')>0
+					.showmessagebox(lcmsg,0+32,vumess)
+					Use In chkreftbl
+					Return .F.
+				Endif
+			Endif
+		Endif
+&& Added By Shrikant S. on 20/02/2012 for Bug-2057		&& End
+	Endif
+Endif
+&& Added By Shrikant S. on 24/01/2012 for Bug-1180		&& End
+
+&& Added by Ajay jaiswal on 23/02/2012 for EXIM ---> Start
+If  Inlist(Main_vw.entry_ty,"PT","P1","EI")
+	If Inlist(Upper(Main_vw.Rule),"INDIGENIOUS","CAPITAL","IMPORTED","CT-1","CT-3","EOU EXPORT")
+		zentry = Main_vw.entry_ty
+		Select dcmast_vw
+		Scan For entry_ty=zentry
+			If !Empty(dcmast_vw.pert_name)
+				zx = "ITEM_VW."+Allt(Upper(dcmast_vw.pert_name))
+				If Empty(&zx)
+					zx="REPLACE ITEM_VW."+Allt(Upper(dcmast_vw.pert_name))+" WITH dcmast_vw.def_pert IN item_vw "
+					&zx
+				Endif
+			Endif
+			Select dcmast_vw
+		Endscan
+	Endif
+Endif
+&& Added by Ajay jaiswal on 23/02/2012 for EXIM ---> End
+
+
+&& Added by Shrikant S. on 28/06/2014 for Bug-23280		&& Start
+If Vartype(oglblindfeat)='O'
+	If oglblindfeat.udchkind('pharmaind')
+		If Type('_curvouobj.PcvType') = 'C'
+*!*				If Inlist(_curvouobj.pcvtype,"AR")				&& Commented by Shrikant S. on 13/03/2015 for Bug-25537
+
+&& Commented by Shrikant S. on 04/10/2016 for GST		&& Start
+*!*	*!*				If Inlist(main_vw.entry_ty,"AR","PT","ST")			&& Added by Shrikant S. on 13/03/2015 for Bug-25537
+*!*	*!*					msqlstr="Select Top 1 RateUnit,ConvUnit,u_basduty,u_cessper,u_hcessper,tax_name1,tax_name2,tax_name3 from It_mast Where It_code=?item_vw.it_code "
+*!*	*!*					sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[_item],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*					If sql_con <=0
+*!*	*!*						Return .F.
+*!*	*!*					Endif
+*!*	*!*					If Used('_item')
+*!*	*!*						Select _item
+*!*	*!*						&& Added by Shrikant S. on 13/03/2015 for Bug-25537		&& Start
+*!*	*!*						DO CASE
+*!*	*!*						CASE Inlist(main_vw.entry_ty,"AR")
+*!*	*!*						&& Added by Shrikant S. on 13/03/2015 for Bug-25537		&& End
+*!*	*!*						Replace Itemunit With _item.Rateunit,convunit With Iif(!Empty(item_vw.convunit),item_vw.convunit,Iif(!Empty(_item.convunit),_item.convunit,_item.Rateunit));
+*!*	*!*							,u_basduty With Iif(_item.u_basduty>0,_item.u_basduty,item_vw.u_basduty);
+*!*	*!*							,u_cessper With Iif(_item.u_basduty>0,_item.u_cessper,item_vw.u_cessper);
+*!*	*!*							,u_hcessper With Iif(_item.u_basduty>0,_item.u_hcessper,item_vw.u_hcessper);
+*!*	*!*							In item_vw
+*!*	*!*						&& Added by Shrikant S. on 13/03/2015 for Bug-25537		&& Start
+*!*	*!*						CASE Inlist(main_vw.entry_ty,"PT","ST")
+*!*	*!*							Replace u_basduty With Iif(_item.u_basduty>0,_item.u_basduty,item_vw.u_basduty);
+*!*	*!*							,u_cessper With Iif(_item.u_basduty>0,_item.u_cessper,item_vw.u_cessper);
+*!*	*!*							,u_hcessper With Iif(_item.u_basduty>0,_item.u_hcessper,item_vw.u_hcessper);
+*!*	*!*							In item_vw
+*!*	*!*						ENDCASE
+*!*	*!*						&& Added by Shrikant S. on 13/03/2015 for Bug-25537		&& End
+*!*	*!*					Endif
+
+*!*	*!*					msqlstr="Select Top 1 st_type From ac_mast Where Ac_id=?Main_vw.Ac_Id"
+*!*	*!*					sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[_ac],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*					If sql_con <=0
+*!*	*!*						Return .F.
+*!*	*!*					Endi
+*!*	*!*					Do Case
+*!*	*!*					Case Alltrim(_ac.st_type)=="LOCAL"
+*!*	*!*						Replace tax_name With _item.tax_name1 In item_vw
+*!*	*!*					Case Alltrim(_ac.st_type)=="OUT OF STATE"
+*!*	*!*						Replace tax_name With _item.tax_name2 In item_vw
+*!*	*!*					Case Alltrim(_ac.st_type)=="OUT OF COUNTRY"
+*!*	*!*						Replace tax_name With _item.tax_name3 In item_vw
+*!*	*!*					Otherwise
+*!*	*!*						Replace tax_name With _item.tax_name1 In item_vw
+*!*	*!*					Endcase
+
+*!*	*!*					If Used('_item')
+*!*	*!*						Use In _item
+*!*	*!*					Endif
+*!*	*!*					If Used('_ac')
+*!*	*!*						Use In _ac
+*!*	*!*					Endif
+*!*	*!*				Endif
+&& Commented by Shrikant S. on 04/10/2016 for GST		&& End
+		Endif
+
+
+		If Type('_curvouobj.PcvType') = 'C'
+			If _Screen.ActiveForm.voupage.page1.grditem.column1.text1.Value<>_Screen.ActiveForm.voupage.page1.grditem.column1.text1.Tag
+				If Type('item_vw.batchno')<>'U'
+					Replace batchno With "" In item_vw
+					If Used('BatchTbl_Vw')
+						Select BatchTbl_Vw
+						Locate For itserial=item_vw.itserial
+						If Found()
+							Delete In BatchTbl_Vw
+						Endif
+					Endif
+				Endif
+				If Type('item_vw.mfgdt')<>'U'
+					Replace mfgdt With {} In item_vw
+				Endif
+				If Type('item_vw.expdt')<>'U'
+					Replace expdt With {} In item_vw
+				Endif
+
+			Endif
+		Endif
+*!*			If Inlist(_curvouobj.pcvtype,"WK")				&& Commented by Shrikant S. on 13/03/2015 for Bug-25537
+		If Inlist(Main_vw.entry_ty,"WK")				&& added by Shrikant S. on 13/03/2015 for Bug-25537
+			msqlstr="Select Top 1 batchsize from It_mast Where It_code=?item_vw.it_code "
+			sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[_item],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+			If sql_con <=0
+				Return .F.
+			Endif
+			Replace batchsize With _item.batchsize In item_vw
+		Endi
+	Endif
+Endif
+&& Added by Shrikant S. on 28/06/2014 for Bug-23280		&& End
+
+
+&& Added by Shrikant S. on 03/10/2016 for GST		&& Start
+If lcode_vw.v_item And !Inlist(_curvouobj.pcvtype,"IB","J6")
+	If _curvouobj.voupage.page1.grditem.column1.text1.Value<>_curvouobj.voupage.page1.grditem.column1.text1.Tag
+		If Type('ITEM_VW.CGST_PER')<>'U' And  Type('ITEM_VW.SGST_PER')<>'U' And Type('ITEM_VW.IGST_PER')<>'U'
+			If Type('Item_vw.sr_sr')='C'
+				Replace sr_sr With [] In item_vw
+			Endif
+			_curvouobj.get_gst_rate_statewise()
+			_curvouobj.ItemGrdBefCalc(1)
+		Endif
+
+*!*	*!*			mac_id =Main_vw.ac_id
+
+*!*	*!*			lcsqlstr="select top 1 state,gstin,st_type from ac_mast where Ac_id=?mac_id"
+
+*!*	*!*			If Type('main_vw.sac_id')<>'U'
+*!*	*!*				If Main_vw.sac_id >0
+*!*	*!*					lcsqlstr="select top 1 state,gstin,st_type from shipto where Ac_id=?mac_id and Shipto_id=?main_vw.sac_id"
+*!*	*!*				Else
+*!*	*!*					lcsqlstr="select top 1 state,gstin,st_type from ac_mast where Ac_id=?mac_id"
+*!*	*!*				Endif
+*!*	*!*			Endif
+
+*!*	*!*			If Type('main_vw.scons_id')<>'U'
+*!*	*!*				mac_id =Main_vw.cons_id
+*!*	*!*				If Main_vw.scons_id >0
+*!*	*!*					lcsqlstr="select top 1 state,gstin,st_type from shipto where Ac_id=?mac_id and Shipto_id=?main_vw.scons_id"
+*!*	*!*				Else
+*!*	*!*					lcsqlstr="select top 1 state,gstin,st_type from ac_mast where Ac_id=?mac_id"
+*!*	*!*				Endif
+*!*	*!*			Endif
+
+*!*	*!*			nRet = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,lcsqlstr,[tmpst],;
+*!*	*!*				"_curvouobj.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*			If nRet <= 0
+*!*	*!*				Return .F.
+*!*	*!*			Endif
+
+*!*	*!*			lcsqlstr="select gst_state_code as state_code from state where state=?tmpst.state"
+*!*	*!*			nRet = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,lcsqlstr,[tmp_state],;
+*!*	*!*				"_curvouobj.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*			If nRet <= 0
+*!*	*!*				Return .F.
+*!*	*!*			Endif
+
+*!*	*!*			lcsqlstr="Select top 1 hsncode,isservice,hsn_id,serty from it_mast where it_name=?item_vw.item"
+*!*	*!*	*	lcsqlstr="Select sgst_per,cgst_per,igst_per from hsncodemast Where it_code =?item_vw.it_code and state_code=?tmp_state.state_code and Activefrom < ?Main_vw.Date+1 order by Activefrom desc"
+*!*	*!*			nRet = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,lcsqlstr,[tmp],;
+*!*	*!*				"_curvouobj.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*			If nRet <= 0
+*!*	*!*				Return .F.
+*!*	*!*			Endif
+
+*!*	*!*			If !Empty(tmp.hsncode) And tmp.isservice<>.T.
+*!*	*!*				Select tmp_state
+*!*	*!*				lcsqlstr="Select sgstper,cgstper,igstper from hsncodemast Where hsnid=?tmp.hsn_id and state_code=?tmp_state.state_code and Activefrom < ?Main_vw.Date+1 order by Activefrom desc"
+*!*	*!*				nRet = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,lcsqlstr,[tmphsn],;
+*!*	*!*					"_curvouobj.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*				If nRet <= 0
+*!*	*!*					Return .F.
+*!*	*!*				Endif
+
+*!*	*!*				If Reccount('tmphsn')>0
+*!*	*!*					Replace sgst_per With tmphsn.sgstper, cgst_per With tmphsn.cgstper,igst_per With tmphsn.igstper In item_vw
+*!*	*!*
+*!*	*!*	*!*					Select tmphsn
+*!*	*!*	*!*					Locate
+*!*	*!*	*!*					Do Case
+*!*	*!*	*!*					Case Inlist(Alltrim(tmpst.st_type),"INTRASTATE") Or Empty(tmpst.gstin)
+*!*	*!*	*!*						Replace sgst_per With tmphsn.sgstper, cgst_per With tmphsn.cgstper In item_vw
+*!*	*!*	*!*					Case Inlist(Alltrim(tmpst.st_type),"INTERSTATE","OUT OF COUNTRY")
+*!*	*!*	*!*						Replace igst_per With tmphsn.igstper In item_vw
+*!*	*!*	*!*					Endcase
+*!*	*!*					If Type('item_vw.Exemptype')<>'U'
+*!*	*!*						If (tmphsn.sgstper+tmphsn.cgstper+tmphsn.igstper)<=0
+*!*	*!*							Replace Exemptype With "Exempted" In item_vw
+*!*	*!*						Endif
+*!*	*!*					Endif
+*!*	*!*				Endif
+*!*	*!*			Endif
+
+*!*	*!*			If !Empty(tmp.hsncode) And tmp.isservice=.T.
+*!*	*!*				msqlstr="select Name,Abt_per,CGST_PER,IGST_PER,SGST_PER From SerTax_Mast where [name]=?tmp.serty and (?main_vw.date between sdate and edate) and charindex(?main_vw.entry_ty,validity)>0 "
+*!*	*!*				nRet = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[tmphsn],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*				If nRet <= 0
+*!*	*!*					Return .F.
+*!*	*!*				Endif
+
+*!*	*!*				If Reccount('tmphsn')>0
+*!*	*!*					Replace sgst_per With tmphsn.SGST_PER, cgst_per With tmphsn.CGST_PER,igst_per With tmphsn.IGST_PER In item_vw
+
+*!*	*!*	*!*					Select tmphsn
+*!*	*!*	*!*					Locate
+*!*	*!*	*!*					Do Case
+*!*	*!*	*!*					Case Inlist(Alltrim(tmpst.st_type),"INTRASTATE") Or Empty(tmpst.gstin)
+*!*	*!*	*!*						Replace sgst_per With tmphsn.sgst_per, cgst_per With tmphsn.cgst_per In item_vw
+*!*	*!*	*!*					Case Inlist(Alltrim(tmpst.st_type),"INTERSTATE","OUT OF COUNTRY")
+*!*	*!*	*!*						Replace igst_per With tmphsn.igst_per In item_vw
+*!*	*!*	*!*					Endcase
+*!*	*!*					If Type('item_vw.Exemptype')<>'U'
+*!*	*!*						If (tmphsn.sgst_per+tmphsn.cgst_per +tmphsn.igst_per)<=0
+*!*	*!*							Replace Exemptype With "Exempted" In item_vw
+*!*	*!*						Endif
+*!*	*!*					ENDIF
+*!*	*!*					If Type('item_vw.serty')<>'U'
+*!*	*!*						Replace serty With tmphsn.name In item_vw
+*!*	*!*					endif
+*!*	*!*				Endif
+*!*	*!*			Endif
+
+
+*!*	*!*			Do Case
+*!*	*!*			Case Inlist(Alltrim(tmpst.st_type),"INTRASTATE") Or Empty(tmpst.gstin)
+*!*	*!*	*				Replace IGST_AMT With 0,igst_per With 0  In item_vw
+*!*	*!*				If Type('item_vw.IGST_AMT')<>'U'
+*!*	*!*					Replace IGST_AMT With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.IGST_PER')<>'U'
+*!*	*!*					Replace igst_per With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				lnCase=1
+*!*	*!*			Case Inlist(Alltrim(tmpst.st_type),"INTERSTATE","OUT OF COUNTRY")
+*!*	*!*	*					Replace CGST_AMT With 0,cgst_per With 0,SGST_AMT With 0,sgst_per With 0 In item_vw
+*!*	*!*				If Type('item_vw.CGST_AMT')<>'U'
+*!*	*!*					Replace CGST_AMT With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.CGST_PER')<>'U'
+*!*	*!*					Replace cgst_per With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.SGST_AMT')<>'U'
+*!*	*!*					Replace SGST_AMT With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.SGST_PER')<>'U'
+*!*	*!*					Replace sgst_per With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				lnCase=2
+*!*	*!*			Endcase
+
+*!*	*!*			If Upper(Alltrim(tmpst.gstin))="UNREGISTERED"
+*!*	*!*			Replace IGST_AMT With 0,igst_per With 0,CGST_AMT With 0,cgst_per With 0,SGST_AMT With 0,sgst_per With 0 In item_vw
+*!*	*!*				If Type('item_vw.IGST_AMT')<>'U'
+*!*	*!*					Replace IGST_AMT With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.IGST_PER')<>'U'
+*!*	*!*					Replace igst_per With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.CGST_AMT')<>'U'
+*!*	*!*					Replace CGST_AMT With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.CGST_PER')<>'U'
+*!*	*!*					Replace cgst_per With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.SGST_AMT')<>'U'
+*!*	*!*					Replace SGST_AMT With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*				If Type('item_vw.SGST_PER')<>'U'
+*!*	*!*					Replace sgst_per With 0 In item_vw
+*!*	*!*				Endif
+*!*	*!*			Endif
+	Endif
+Endif
+
+
+
+*!*	*!*	If  Inlist(Main_vw.entry_ty,"E1","S1","IB","J6")
+*!*	*!*	*	If Type('Item_vw.serty')<>'U'
+*!*	*!*		msqlstr="Select Top 1 serty,isservice from It_mast Where It_name=?item_vw.Item"
+*!*	*!*		sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[tmpserty],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*		If sql_con >0
+*!*	*!*			Select tmpserty
+*!*	*!*			lcservice=tmpserty.serty
+*!*	*!*		Endif
+*!*	*!*	*	Endif
+*!*	*!*		If Inlist(Main_vw.entry_ty,"E1","S1") And tmpserty.isservice =.T.
+*!*	*!*			msqlstr="select [name] as serty ,abt_per from sertax_mast where [name]=?lcservice and (?main_vw.date between sdate and edate) and charindex(?main_vw.entry_ty,validity)>0 "
+*!*	*!*			sql_con = _curvouobj.sqlconobj.dataconn([EXE],company.dbname,msqlstr,[tmpserty],"This.Parent.nHandle",_curvouobj.DataSessionId,.F.)
+*!*	*!*			If sql_con >0
+*!*	*!*	*			Select tmpserty
+*!*	*!*	*			Replace SABTPER With tmpserty.abt_per In item_vw
+
+*!*	*!*				If Used("acdetalloc_vw")
+*!*	*!*					Select acdetalloc_vw
+*!*	*!*					Locate For tran_cd=Main_vw.tran_cd And itserial=item_vw.itserial
+*!*	*!*					If Found()
+*!*	*!*						Replace serty With tmpserty.serty,SABTPER With tmpserty.abt_per In acdetalloc_vw
+*!*	*!*					Endif
+*!*	*!*				Endif
+*!*	*!*			Endif
+*!*	*!*		Endif
+*!*	*!*	Endif
+*!*	*!*	&& Added by Shrikant S. on 03/10/2016 for GST		&& End
+
+If !Empty(_malias)
+	Select &_malias
+Endif
+If Betw(_mrecno,1,Reccount())
+	Go _mrecno
+Endif
+*<--Checking Allocated entry
+&&<--Ipop(Rup)
+

@@ -1,0 +1,9 @@
+Form e:\bug\bug-update\bug-23895\stock list zoom\uefrm_stk_zoom.scx has the following errors:
+    Unknown UEZOOMINSTOCKLEDGER - Undefined
+    Application UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+    Unknown BARSTAT - Undefined
+
+Program e:\bug\bug-update\bug-23895\stock list zoom\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+

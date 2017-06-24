@@ -1,0 +1,5 @@
+PARAMETERS Vuentry,VuParty,VuSeries,VuDept,VuCate,VuTbl,Vuprev,VuCaption,;
+	Vuheight,Vuwidth,VuShowPrevYear,VuAddlCond,VuTable,VuCond	&&ww1a
+DO FORM FrmLocate With Vuentry,VuParty,VuSeries,VuDept,VuCate,VuTbl,Vuprev,VuCaption,;
+	Vuheight,Vuwidth,VuShowPrevYear,VuAddlCond,VuTable,VuCond to lRun	&&ww1a
+RETURN lRun

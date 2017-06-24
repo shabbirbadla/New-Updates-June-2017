@@ -1,0 +1,7 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Udyog.FileUpload.Any.Format.csproj.ResolveComReference.cache
+bin\Debug\Udyog.FileUpload.Any.Format.dll
+bin\Debug\Udyog.FileUpload.Any.Format.pdb
+D:\New Folder\Uploadfile\bin\Debug\Udyog.FileUpload.Any.Format.tlb
+obj\Debug\Udyog.FileUpload.Any.Format.dll
+obj\Debug\Udyog.FileUpload.Any.Format.pdb

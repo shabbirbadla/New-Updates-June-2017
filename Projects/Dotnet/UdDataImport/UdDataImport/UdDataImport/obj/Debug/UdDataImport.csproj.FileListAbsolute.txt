@@ -1,0 +1,59 @@
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.exe
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.pdb
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\uBaseForm.dll
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\udSelectPop.dll
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.frmImpMain.resources
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csproj.GenerateResource.Cache
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.exe
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.pdb
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\udZipUnzip.dll
+D:\SQLProject\DataImportExport\UdDataImport\UdDataImport\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\DataImportExport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.exe
+D:\DataImportExport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.pdb
+D:\DataImportExport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.exe
+D:\DataImportExport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.pdb
+D:\DataImportExport\UdDataImport\UdDataImport\bin\Debug\DataAccess-Net.dll
+D:\DataImportExport\UdDataImport\UdDataImport\bin\Debug\uBaseForm.dll
+D:\DataImportExport\UdDataImport\UdDataImport\bin\Debug\udSelectPop.dll
+D:\DataImportExport\UdDataImport\UdDataImport\bin\Debug\udZipUnzip.dll
+D:\DataImportExport\UdDataImport\UdDataImport\obj\Debug\ResolveAssemblyReference.cache
+D:\DataImportExport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.frmImpMain.resources
+D:\DataImportExport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\DataImportExport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csproj.GenerateResource.Cache
+D:\2 Current Working\UdDataImport\UdDataImport\obj\Debug\UdDataImport.exe
+D:\2 Current Working\UdDataImport\UdDataImport\obj\Debug\UdDataImport.pdb
+D:\2 Current Working\UdDataImport\UdDataImport\bin\Debug\UdDataImport.exe
+D:\2 Current Working\UdDataImport\UdDataImport\bin\Debug\UdDataImport.pdb
+D:\2 Current Working\UdDataImport\UdDataImport\obj\Debug\ResolveAssemblyReference.cache
+D:\2 Current Working\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.frmImpMain.resources
+D:\2 Current Working\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\2 Current Working\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csproj.GenerateResource.Cache
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\obj\Debug\UdDataImport.exe
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\obj\Debug\UdDataImport.pdb
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\bin\Debug\UdDataImport.exe
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\bin\Debug\UdDataImport.pdb
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\obj\Debug\ResolveAssemblyReference.cache
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.frmImpMain.resources
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\2 Current Working\ExportImport TRD\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.exe
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.pdb
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.exe
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.pdb
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\obj\Debug\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.frmImpMain.resources
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\SVN Development\Dotnet\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\UdDataImport\Working folder for Bug-25651\UdDataImport\obj\Debug\UdDataImport.exe
+D:\1 Development\Dotnet\UdDataImport\Working folder for Bug-25651\UdDataImport\obj\Debug\UdDataImport.pdb
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.exe
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.pdb
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.exe
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\bin\Debug\UdDataImport.pdb
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.frmImpMain.resources
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\26960\UdDataImport\UdDataImport\UdDataImport\obj\Debug\UdDataImport.csproj.GenerateResource.Cache

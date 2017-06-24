@@ -1,0 +1,15 @@
+Retu
+DEFINE PAD Account OF (cmenuname) PROMPT "\<Account" COLOR SCHEME 3 ;
+	AFTER _MEDIT KEY ALT+A, "ALT+A" ;
+	MESSAGE "Add and delete line items for vouher"
+ON PAD Account OF (cmenuname) ACTIVATE POPUP account
+
+DEFINE POPUP account MARGIN RELATIVE SHADOW COLOR SCHEME 4
+DEFINE BAR 1 OF account PROMPT "Add Account" ;
+	KEY CTRL+INS, "CTRL+INS" ;
+	SKIP FOR tbrdesktop.flag 
+DEFINE BAR 2 OF account PROMPT "Remove Account" ;
+	KEY CTRL+DEL, "CTRL+DEL" ;
+	SKIP FOR tbrdesktop.flag 
+ON SELECTION BAR 1 OF account _Screen.ActiveForm.GridAdditem('ACDET_VW')
+ON SELECTION BAR 2 OF account _Screen.ActiveForm.GridRemoveItem('ACDET_VW')

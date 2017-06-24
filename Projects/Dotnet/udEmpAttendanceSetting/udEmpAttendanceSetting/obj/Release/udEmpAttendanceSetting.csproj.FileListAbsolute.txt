@@ -1,0 +1,106 @@
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udHolidayMaster.frmHolidayMaster.resources
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.exe
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.pdb
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uCheckBox.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udclsDGVDateTimePicker.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udSelectPop.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\ResolveAssemblyReference.cache
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udAttendanceSettings.frmAttendanceSettings.resources
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.Properties.Resources.resources
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.exe
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.dll
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udSelectPop.dll
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uNumericTextBox.dll
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udSelectPop.pdb
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.exe
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.pdb
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\uBaseForm.dll
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\uBaseForm.pdb
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\obj\Release\ResolveAssemblyReference.cache
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\obj\Release\udAttendanceSettings.frmAttendanceSettings.resources
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.Properties.Resources.resources
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.pdb
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\devexpress.data.v11.2.dll
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\devexpress.printing.v11.2.core.dll
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\devexpress.utils.v11.2.dll
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\devexpress.xtraeditors.v11.2.dll
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\devexpress.xtragrid.v11.2.dll
+D:\udEmpAttendanceSetting from Vss\udEmpAttendanceSetting\bin\Release\devexpress.xtralayout.v11.2.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.data.v11.2.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.printing.v11.2.core.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.utils.v11.2.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtraeditors.v11.2.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtragrid.v11.2.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtralayout.v11.2.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udSelectPop.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udAttendanceSettings.frmAttendanceSettings.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe.licenses
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\Interop.ueconnect.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.ResolveComReference.cache
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.pdb
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.exe
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.pdb
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\devexpress.data.v11.2.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\devexpress.printing.v11.2.core.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\devexpress.utils.v11.2.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtraeditors.v11.2.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtragrid.v11.2.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtralayout.v11.2.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\GetInfo.DLL
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.pdb
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\udSelectPop.pdb
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\bin\Release\Interop.ueconnect.dll
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\ResolveAssemblyReference.cache
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\udAttendanceSettings.frmAttendanceSettings.resources
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.Properties.Resources.resources
+E:\Working\Project\udEmpAttendenceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.exe
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udEmpAttendanceSetting.pdb
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.data.v11.2.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.printing.v11.2.core.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.utils.v11.2.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtraeditors.v11.2.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtragrid.v11.2.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\devexpress.xtralayout.v11.2.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\uBaseForm.pdb
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\udSelectPop.pdb
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udAttendanceSettings.frmAttendanceSettings.resources
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.exe
+D:\SVN Development\Dotnet\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Release\udEmpAttendanceSetting.pdb

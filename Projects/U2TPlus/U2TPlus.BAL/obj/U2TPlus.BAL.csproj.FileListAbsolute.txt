@@ -1,0 +1,17 @@
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.BAL.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.BAL.pdb
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\obj\Debug\ResolveAssemblyReference.cache
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\obj\Debug\U2TPlus.BAL.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\obj\Debug\U2TPlus.BAL.pdb
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.DAL.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\bin\Debug\CryptoLib.dll
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\bin\Debug\CryptoLib.pdb
+D:\Jayakumar\Projects\Applications\Office\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.DAL.pdb
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.BAL.dll
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.BAL.pdb
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.DAL.dll
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\bin\Debug\CryptoLib.dll
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\bin\Debug\U2TPlus.DAL.pdb
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\obj\Debug\U2TPlus.BAL.dll
+E:\Raghu\Project\Working\U2TPlus\U2TPlus.BAL\obj\Debug\U2TPlus.BAL.pdb

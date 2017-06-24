@@ -1,0 +1,32 @@
+_Screen.Visible = .F.
+
+Declare Integer GetPrivateProfileString In Win32API As GetPrivStr ;
+	STRING cSection, String cKey, String cDefault, String @cBuffer, ;
+	INTEGER nBufferSize, String cINIFile
+
+Local iniFilePath,lcExeName,ueaPath,uexApps
+
+ueaPath = Allt(Sys(5) + Curd())
+iniFilePath = ueaPath+"visudyog.ini"
+
+If !File(iniFilePath)
+	Messagebox("Configuration File Not found",16,'Udyog Admin')
+	Retu .F.
+Endif
+
+mvu_one = Space(2000)
+mvu_two = 0
+mvu_two	= GetPrivStr([Settings],"XFile", "", @mvu_one, Len(mvu_one), ueaPath + "visudyog.ini")
+uexApps = Left(mvu_one,mvu_two)
+
+If Vartype(uexApps) <> 'C' Or Empty(uexApps)
+	=Messagebox('In Configuration file Xfile Path cannot be empty',16,[Udyog i-TAX])
+	Return .F.
+Else
+	If !File(uexApps)
+		=Messagebox('In Configuration file Specify application file is not found',16,[Udyog i-TAX])
+		Return .F.
+	Endif
+	lcExeName = Allt(uexApps)
+	Do &lcExeName With [A],"",.F.
+Endif

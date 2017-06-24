@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="FrmAddToSnippet.btnOk_Click">
+		<value>Name is not unique.</value>
+	</data>
+	<data name="FrmDBConnection.button1_Click">
+		<value>Unknown connection type.</value>
+	</data>
+	<data name="FrmDBConnections.btnOk_Click">
+		<value>No Datasource selected.</value>
+	</data>
+	<data name="FrmDBConnections.BtnEdit_Click">
+		<value>No data sourse selected (marked).\nPlease choose by highlighting one.</value>
+	</data>
+	<data name="General.QCTreeNode.ShowHistory">
+		<value>Object has not been checked in</value>
+	</data>
+	<data name="Database.Oracle._9i.DataManager.ExecuteCommand_DataSet1">
+		<value>SQLEditor is unable to determine whether this statement is a query or none query\nClick [Yes] for query, [No] for none query</value>
+	</data>
+	<data name="General.Exception">
+		<value>An error has occured</value>
+	</data>
+	<data name="FrmDBObjects.CreateConstructorString">
+		<value>Stored procedure or function {0} \nnot found in the [{1}] database.</value>
+	</data>
+	<data name="MainForm.PopulateDBConnections">
+		<value>Do you want to close SQLEditor?</value>
+	</data>
+	<data name="MainForm.AddWorkSpace">
+		<value>A WorkSpace with the same name already exists. Specify a different name</value>
+	</data>
+	<data name="MainForm.menuItem_Help_Click">
+		<value>Helpfile (tsqlref.chm) could not be found.</value>
+	</data>
+	<data name="MainForm.RunEnterpriseManager">
+		<value>Path to SQL Server Enterprise Manager.MSC could not be found.</value>
+	</data>
+	<data name="FrmQuery.FrmQuery_Closing">
+		<value>Do you want to save changes to {0}?</value>
+	</data>
+	<data name="FrmConnection.DatabaseIsNull">
+		<value>Default database can not be null or empty string.</value>
+	</data>
+	<data name="MainForm.RunQueryAnalyzer">
+		<value>Path to SQL Server Query Analyzer.exe could not be found.</value>
+	</data>
+	<data name="FrmTestStation.btnStop_Click">
+		<value>Unable to stop executing the senario.</value>
+	</data>
+</root>

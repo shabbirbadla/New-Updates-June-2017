@@ -1,0 +1,2 @@
+PARAMETERS vParameter
+Replace _rstatusclonesex.xTraParam With vParameter

@@ -1,0 +1,7 @@
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\udPayTermsMaster.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\udPayTermsMaster.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\udPayTermsMaster.frmPayTermsMaster.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\udPayTermsMaster.frmValidIn.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\udPayTermsMaster.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\udPayTermsMaster\udPayTermsMaster\obj\x86\Release\udPayTermsMaster.csproj.GenerateResource.Cache

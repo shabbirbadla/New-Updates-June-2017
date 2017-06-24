@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UdBarCode", "UdBarCode\UdBarCode.vbproj", "{20405288-D11B-47D0-8719-A4E214038902}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UdBarCodeInstaller", "BarValueInstaller\BarValueInstaller.vdproj", "{A74DB077-8B26-4F40-8A7F-8F6B8E8E2747}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20405288-D11B-47D0-8719-A4E214038902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20405288-D11B-47D0-8719-A4E214038902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20405288-D11B-47D0-8719-A4E214038902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20405288-D11B-47D0-8719-A4E214038902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74DB077-8B26-4F40-8A7F-8F6B8E8E2747}.Debug|Any CPU.ActiveCfg = Debug
+		{A74DB077-8B26-4F40-8A7F-8F6B8E8E2747}.Debug|Any CPU.Build.0 = Debug
+		{A74DB077-8B26-4F40-8A7F-8F6B8E8E2747}.Release|Any CPU.ActiveCfg = Release
+		{A74DB077-8B26-4F40-8A7F-8F6B8E8E2747}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

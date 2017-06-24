@@ -1,0 +1,418 @@
+Para _regform
+r_compn     =   ''
+r_comp		=	''
+r_user		=	''
+r_add1		=	''
+r_add2		=	''
+r_add3		=	''
+r_city		=	''
+r_state		=	''
+r_location	=	''
+r_phone     =   ''
+r_servcent	=	''
+r_instdate	=	''
+xvalue		=   ''
+r_coof		=	0
+r_noof		=	0
+r_idno		=	''
+r_pid		=   ''
+r_servcont	=	''
+r_servadd1	=	''
+r_servadd2	=	''
+r_servadd3	=	''
+r_servcity	=	''
+r_servzip	=	''
+r_servphone	=	''
+r_servemail	=	''
+reg_value	=	''
+reg_prods   =   ''
+If type('apath') = 'U'
+	public apath
+	apath = allt(sys(5) + curd())
+Endif	
+If type('vismainprod') = 'U'
+	release vumess,vumessr
+	public vumess,vumessr,vismainprod
+
+	DECLARE Integer GetPrivateProfileString In Win32API As GetPrivStr ;
+		String cSection, String cKey, String cDefault, String @cBuffer, ;
+		Integer nBufferSize, String cINIFile
+	DECLARE Integer WritePrivateProfileString In Win32API As WritePrivStr ;
+		String cSection, String cKey, String cValue, String cINIFile
+	DECLARE Integer GetProfileString In Win32API As GetProStr ;
+		String cSection, String cKey, String cDefault, ;
+		String @cBuffer, Integer nBufferSize
+Endif
+vumess		= [Visual Udyog]
+vumessr		= vumess
+vismainprod = ''
+vufile      = 'register.me'
+*vufile      = 'uregister.me'
+Do Unreg_data
+
+If reg_value	=	'UN-REGISTERED'
+	finalprod = ''
+	mprod = ''
+	*mprod = 'vueduver'
+	*mprod = 'vucombo'
+	*mprod='vuexc'
+	*mprod='vutex'
+	mprod='vubil'
+	for j=1 to len(mprod)
+		finalprod=finalprod+chr(asc(substr(mprod,j,1))*2)
+	endfor
+	vismainprod = finalprod
+Endif	
+if file(vufile)	
+	_flopen = fopen(vufile,10)
+	If Empty(vismainprod)				
+		r_compn		=	fread(_flopen,50)
+		r_comp   	=	dec(dec(dec(fread(_flopen,50))))
+		r_user   	=	dec(dec(fread(_flopen,50)))
+		r_add1		=	dec(fread(_flopen,50))
+		r_add2		=	dec(fread(_flopen,50))
+		r_add3		=	dec(fread(_flopen,50))
+		r_city		=	dec(dec(fread(_flopen,50)))
+		r_state		=	dec(dec(fread(_flopen,50)))
+		r_location	=   dec(dec(fread(_flopen,50)))
+		r_servcent	=	dec(dec(dec(fread(_flopen,50))))
+		r_instdate	=	dec(dec(dec(fread(_flopen,10))))
+		xvalue		=	dec(fread(_flopen,200))
+		r_noof		= 	val(dec(dec(dec(fread(_flopen,50)))))
+		r_idno		=	dec(dec(dec(fread(_flopen,50))))
+		r_pid		=	dec(dec(dec(fread(_flopen,16))))
+		r_servcont	=	dec(fread(_flopen,50))
+		r_servadd1	=	dec(fread(_flopen,50))
+		r_servadd2	=	dec(fread(_flopen,50))
+		r_servadd3	=	dec(fread(_flopen,50))
+		r_servcity	=	dec(fread(_flopen,50))
+		r_servzip	=	dec(fread(_flopen,50))
+		r_servphone	=	dec(fread(_flopen,50))
+		r_servemail	=	dec(fread(_flopen,50))
+	Else
+		r_compn		=	dec(fread(_flopen,50))
+		r_comp   	=	r_compn
+		r_add		=	dec(fread(_flopen,200))
+		r_add1		=   Subs(r_add,1,100)
+		r_add2		=	Subs(r_add,101,100)
+		r_state		=	''
+		r_location	=   dec(fread(_flopen,50))
+		r_city		=	dec(fread(_flopen,50))
+		r_add3		=	dec(fread(_flopen,50))
+		r_user		=	dec(fread(_flopen,50))
+		r_email     =   dec(fread(_flopen,100))
+		r_phone     =	dec(fread(_flopen,50))
+		r_servcent	=	'UDYOG SOFTWARE INDIA LTD.'
+		r_instdate	=	dec(fread(_flopen,10))
+		xvalue      =	dec(fread(_flopen,200))
+		r_idno      =	dec(fread(_flopen,50))
+		r_coof		=	val(dec(fread(_flopen,10)))
+		r_noof		= 	val(dec(fread(_flopen,10)))
+		r_pid       =	dec(fread(_flopen,10))
+	Endif	
+	reg_value   = 'REGISTERED'
+	_flopen = fclose(_flopen)
+endi
+if mprod = 'vueduver' and uppe(xvalue) = 'EDUCATIONAL VERSION'
+	xvalue = 'VU EXMFG,VU EXPORT,VU INVENT,VU ORDPROC,VU PROACCT,VU SPBILL,VU ENTACCT,VU EXTRD,VU ISD,VU SERVTAX,U-REPORTER'
+	r_coof = 9999
+	r_noof = 9999
+endif
+xvalue = uppe(xvalue)
+
+if !empty(xvalue)
+	for i = 1 to len(xvalue) 						&&step 6
+		if "EXCISE MANUFACTURING" $ xvalue or "VU EXMFG"  $ xvalue 			&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuexc"'
+			 xvalue = strtran(xvalue,"EXCISE MANUFACTURING","")
+			 xvalue = strtran(xvalue,"VU EXMFG","")
+		endi
+		if "EXPORT" $ xvalue or "VU EXPORT"  $ xvalue 						&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuexp"'
+			 xvalue = strtran(xvalue,"EXPORT","")
+			 xvalue = strtran(xvalue,"VU EXPORT","")
+		endi
+		if "INVENTORY" $ xvalue or "VU INVENT"  $ xvalue 					&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuinv"'
+			 xvalue = strtran(xvalue,"INVENTORY","")
+			 xvalue = strtran(xvalue,"VU INVENT","")
+		endi	
+		if "ORDER PROCESSING" $ xvalue or "VU ORDPROC"  $ xvalue 			&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuord"'
+			 xvalue = strtran(xvalue,"ORDER PROCESSING","")
+			 xvalue = strtran(xvalue,"VU ORDPROC","")
+		endi
+		if "PROFESSIONAL ACCOUNTING" $ xvalue or "VU PROACCT"  $ xvalue 	&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vupro"'
+			 xvalue = strtran(xvalue,"PROFESSIONAL ACCOUNTING","")
+			 xvalue = strtran(xvalue,"VU PROACCT","")
+		endi
+		if "SPECIAL BILLING" $ xvalue or "VU SPBILL"  $ xvalue 				&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vubil"'
+			 xvalue = strtran(xvalue,"SPECIAL BILLING","")
+			 xvalue = strtran(xvalue,"VU SPBILL","")
+		endi
+		if "ENTERPRISE ACCOUNTING" $ xvalue or "VU ENTACCT"  $ xvalue 		&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuent"'
+			 xvalue = strtran(xvalue,"ENTERPRISE ACCOUNTING","")
+			 xvalue = strtran(xvalue,"VU ENTACCT","")
+		endi			 
+		if "EXCISE TRADING" $ xvalue or "VU EXTRD"  $ xvalue 				&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vutex"'
+			 xvalue = strtran(xvalue,"EXCISE TRADING","")
+			 xvalue = strtran(xvalue,"VU EXTRD","")
+		endi				 
+		if "INPUT SERVICE DISTRIBUTOR" $ xvalue or "VU ISD"  $ xvalue 		&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuisd"'
+			 xvalue = strtran(xvalue,"INPUT SERVICE DISTRIBUTOR","")
+			 xvalue = strtran(xvalue,"VU ISD","")
+		endi				 
+		if "SERVICE TAX" $ xvalue or "VU SERVTAX"  $ xvalue 				&&and "VISUAL" $ xvalue
+			 reg_prods = reg_prods + ',"vuser"'
+			 xvalue = strtran(xvalue,"SERVICE TAX","")
+			 xvalue = strtran(xvalue,"VU SERVTAX","")
+		endi				 
+		if "U-REPORTER"  $ xvalue
+			 reg_prods = reg_prods + ',"u-reporter"'
+			 xvalue = strtran(xvalue,"U-REPORTER","")
+		endi
+	endfor
+endif
+If !Empty(vismainprod)	
+	mprod1 = strtran(reg_prods,["],[])
+	mprod1 = strtran(mprod1,[,],[])
+	mprod = ''
+	for i=1 to len(VisMainProd)
+		mprod=mprod+chr(asc(substr(VisMainProd,i,1))/2)
+	endfor
+	Do Case
+	Case mprod = 'vuexc'
+		vumessr = "Udyog Excise Manufacturing"   
+	Case mprod = 'vutex'
+		vumessr = "Udyog Excise Trading"   
+	Case mprod = 'vubil'
+		vumessr = "Udyog Special Billing"   
+	*Case mprod = 'vucombo'
+	Other
+		mprod1 = mprod
+	Endcase		
+	
+	if allt(mprod) # allt(mprod1) 
+		do unreg_data
+		If _regform = .t.
+			=Messagebox("Registration file not of "+vumessr,32,vumess)
+		Endif	
+	else
+		lVal1 	= ALLT(OnEncrypt("Used"))
+		lVal2 	= allt(OnEncrypt("Registered"+mprod))
+		lcbuff 	= "          " + chr(0)
+		=GetPrivStr(lVal1,lVal2, "", @lcbuff, LEN(lcbuff), apath + "vudyog.sys")
+		lcbuff 	=allt(OnDecrypt(lcbuff))
+		rlcbuff =	Left(lcbuff,1)
+		If rlcbuff # 'Y' and reg_value = 'REGISTERED' And _regform = .t.
+			_oldregscreen = _screen.visible
+			_screen.visible = .t.
+			do form regform			
+			_screen.visible = _oldregscreen
+		Endif	
+	endif
+&&TEsting
+Else
+	lVal1 	= ALLT(OnEncrypt("Used"))
+	lVal2 	= allt(OnEncrypt("Registered"+mprod))
+	lcbuff 	= "          " + chr(0)
+	=GetPrivStr(lVal1,lVal2, "", @lcbuff, LEN(lcbuff), apath + "vudyog.sys")
+	lcbuff 	=allt(OnDecrypt(lcbuff))
+	rlcbuff =	Left(lcbuff,1)
+	If rlcbuff # 'Y' and reg_value = 'REGISTERED' And _regform = .t.
+		wVal = allt(OnEncrypt('Y'))
+		=WritePrivStr(lVal1,lVal2,wVal,apath+"vudyog.sys")
+	Endif	
+&&TEsting	
+Endif
+if file(vufile) and reg_value   = 'REGISTERED'
+*!*		lVal1 = ALLT(OnEncrypt("Used"))
+*!*		lVal2 = allt(OnEncrypt("Registered"))
+*!*		lcbuff = "          " + chr(0)
+*!*		=GetPrivStr(lVal1,lVal2, "", @lcbuff, LEN(lcbuff), apath + "vudyog.sys")
+*!*		lcbuff =allt(OnDecrypt(lcbuff))
+*!*		rlcbuff =	Left(lcbuff,1)
+*!*		If rlcbuff # 'Y' And !Empty(vismainprod) And _regform = .t.
+*!*			do form regform
+*!*		Endif	
+	lVal1 = ALLT(OnEncrypt("Used"))
+	lVal2 = allt(OnEncrypt("Registered"+mprod))
+	lcbuff = "          " + chr(0)
+	=GetPrivStr(lVal1,lVal2, "", @lcbuff, LEN(lcbuff), apath + "vudyog.sys")
+	lcbuff =allt(OnDecrypt(lcbuff))
+	rlcbuff =	Left(lcbuff,1)
+	If rlcbuff # 'Y'
+		do unreg_data
+	Else
+		If !Empty(vismainprod)		&&testing
+			If File('Co_mast.Dbf') And File('User.Dbf')
+				mco_used = .f.
+				if !used('co_mast')
+					select 0
+					use co_mast alias co_mast again shared
+				else
+					mco_used = .t.	
+				endif
+				
+				mus_used = .f.
+				if !used('user')
+					select 0
+					use user alias user again shared
+				else
+					mus_used = .t.	
+				endif
+				
+				select co_mast
+				loca
+				if found()
+					loca for upper(allt(co_name)) = upper(allt(r_compn))
+					If !Found()
+						do co_regupdt
+					Endif
+					select co_mast
+					loca for upper(allt(co_name)) = upper(allt(r_compn))
+					If !Found() 
+						=Messagebox("UN-REGISTERED Version",32,vumess)
+					Endif
+				endif	
+				if mco_used = .f.
+					if used('co_mast')
+						use in co_mast
+					endif
+				Endif	
+				if mus_used = .f.
+					if used('user')
+						use in user
+					endif
+				Endif
+			Else
+				=Messagebox("You are not running this product in "+vumessr+" folder",32,vumess)
+				Quit
+			Endif	
+		Endif		&&testing
+	Endif	
+else
+	lVal1 = ALLT(OnEncrypt("Used"))
+	lVal2 = allt(OnEncrypt("Registered"+mprod))
+	wVal = allt(OnEncrypt('N'))
+	=WritePrivStr(lVal1,lVal2,wVal,apath+"vudyog.sys")
+endi	
+
+
+Proc co_regupdt
+	Select Co_mast
+	Go top
+	mcompname = Co_mast.Co_name
+	
+	Select User
+	Loca
+	Do while !eof()
+	
+		ins = ''
+		out = USER.company
+		nm1 = PADL(ALLTR(USER.USER),LEN(USER.company),ALLTR(USER.USER))
+		chk = 0
+		FOR j = 1 TO LEN(out)
+			N = ASC(SUBSTR(out,j,1)) - ASC(SUBSTR(nm1,j,1))
+			IF N<=0
+				chk = 1
+				LOOP
+			ELSE
+				ins = ins+CHR(ASC(SUBSTR(out,j,1)) - ASC(SUBSTR(nm1,j,1)))
+			ENDIF
+		ENDFOR
+		ins = strtran(ins,Padr(mcompname,Len(mcompname),' '),Padr(Allt(r_compn),Len(mcompname),' '))
+		nm=ALLTR(USER.USER)
+		out=' '
+		IF !EMPTY(ins)
+			nm1=PADL(nm,LEN(ins),nm)
+			FOR i = 1 TO LEN(ins)
+				out = out+ CHR(ASC(SUBSTR(ins,i,1)) + ASC(SUBSTR(nm1,i,1)))
+			ENDFOR
+		ENDIF
+		out=ALLTR(out)
+		Repl Company With out in User
+		
+		Select User
+		If !eof()
+			Skip
+		Endif
+	Enddo		
+	Select Co_mast
+	Repl Co_name With r_compn In Co_mast
+	
+Proc Unreg_data
+	r_compn     =   'UDYOG SOFTWARE INDIA LTD.'
+	r_comp		=	'UN - REGISTERED'					&& 'VIEWER'			
+	r_user		=	''
+	r_add1		=	'203, Jhalawar, E.S.Patanwala Estate,'
+	r_add2		=	'L.B.S. Marg, Opp. Shreyas Cinema,'
+	r_add3		=	'Ghatkopar (West),'
+	r_city		=	'Mumbai.'          
+	r_state		=	'MAHARASHTRA'
+	r_location	=	'MUMBAI'          
+	r_phone     =   ''
+	r_servcent	=	'UDYOG SOFTWARE INDIA LTD.'
+	r_instdate	=	''
+	xvalue		=   ''
+	r_coof		=	1
+	r_noof		=	1
+	r_idno		=	''
+	r_pid		=   ''
+	r_servcont	=	''
+	r_servadd1	=	'203, Jhalawar, E.S.Patanwala Estate,'
+	r_servadd2	=	'L.B.S. Marg, Opp. Shreyas Cinema,'
+	r_servadd3	=	'Ghatkopar (West),'
+	r_servcity	=	'Mumbai.'
+	r_servzip	=	'MAHARASHTRA'
+	r_servphone	=	'022 - 6799 3535'
+	r_servemail	=	'support@udyogsoftware.com'
+	reg_value	=	'UN-REGISTERED'				&& 'VIEWER'			
+	reg_prods   = ''
+
+
+proc enc
+	PARA mcheck
+	D=1
+	F=LEN(mcheck)
+	REPL=""
+	rep=0
+	DO whil F > 0
+		R=SUBS(mcheck,D,1)
+		CHANGE = ASC(R)+rep
+		IF CHANGE>255
+			WAIT WIND STR(CHANGE)
+		ENDI
+		two = CHR(CHANGE)
+		REPL=REPL+two
+		D=D+01
+		rep=rep+1
+		F=F-1
+ENDD
+RETU REPL
+
+proc dec
+	para mcheck
+	d=1
+	f=len(mcheck)
+	repl=""
+	rep=0
+	do whil f > 0
+		r=subs(mcheck,d,1)
+		change = asc(r)-rep
+		if change>0
+			two = chr(change)
+		endi
+		repl=repl+two
+		d=d+01
+		f=f-1
+		rep=rep+1
+endd
+retu repl
+
+

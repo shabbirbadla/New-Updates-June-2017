@@ -1,0 +1,9 @@
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\bin\Debug\Daman_and_Diu_30_30A_31_31A.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\bin\Debug\Daman_and_Diu_30_30A_31_31A.pdb
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\bin\Debug\GetInfo.DLL
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\obj\Debug\Daman_and_Diu_30_30A_31_31A.frmDamanDiu.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\obj\Debug\Daman_and_Diu_30_30A_31_31A.Properties.Resources.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\obj\Debug\Daman_and_Diu_30_30A_31_31A.csproj.GenerateResource.Cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\obj\Debug\Daman_and_Diu_30_30A_31_31A.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Daman_and_Diu_30_30A_31_31A\obj\Debug\Daman_and_Diu_30_30A_31_31A.pdb

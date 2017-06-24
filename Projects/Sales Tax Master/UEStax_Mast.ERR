@@ -1,0 +1,15 @@
+Form d:\svn\projects\trunk\development\udyog projects\sales tax master\stax_mas.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPSALESTAXMASTERFINALUPDATE - Undefined
+    Unknown UDTRIGSALESTAXMASTERFINALUPDATE - Undefined
+    Unknown UETRIGSALESTAXMASTERFINALUPDATE - Undefined
+    Unknown UDAPPMASTFINALUPDATE - Undefined
+    Unknown UDTRIGMASTFINALUPDATE - Undefined
+    Unknown UETRIGMASTFINALUPDATE - Undefined
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    Unknown UEJOUR_OP - Undefined
+
+Program d:\svn\projects\trunk\development\udyog projects\sales tax master\stax_mas.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+

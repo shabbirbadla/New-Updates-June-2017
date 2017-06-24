@@ -1,0 +1,19 @@
+Program d:\svngst\orderzoom\runme.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\svngst\orderzoom\frmhelp.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\svngst\orderzoom\frmorder.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. TOUEVOUCHER - Undefined
+    Application UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+
+Form d:\svngst\orderzoom\frmfilter.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form d:\svngst\orderzoom\frmrepoption.scx has the following errors:
+    Unknown BARSTAT - Undefined
+

@@ -1,0 +1,8 @@
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\bin\Release\udEmpBulkEMail.pdb
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\obj\Release\ResolveAssemblyReference.cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Form1.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.Properties.Resources.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.csproj.GenerateResource.Cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udEmpBulkEMail\udEmpBulkEMail\obj\Release\udEmpBulkEMail.pdb

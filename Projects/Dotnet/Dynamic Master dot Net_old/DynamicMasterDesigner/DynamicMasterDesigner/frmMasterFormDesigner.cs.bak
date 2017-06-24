@@ -1,0 +1,1657 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid.Columns;
+using System.Text.RegularExpressions;
+using System.Globalization;
+
+namespace XtraGridExampleProject
+{
+    public partial class frmMasterFormDesigner : Form, IDisposable
+    {
+        private DataTable dtTabs = new DataTable();
+        private DataTable dtFields = new DataTable();
+        private DataTable dtDatatypes = new DataTable();
+        private DataSet dsForms = new DataSet();
+        clsDynamicForm oForm = new clsDynamicForm();
+        private FormMode _mode;
+        private string _ErrorMessage;
+        private DataSet dsTempData = new DataSet();
+        private string _TabName;
+
+        private enum FormMode
+        {
+            Add, Edit, View, Cancel
+        };
+
+        public enum Mask
+        {
+            None, DateOnly, PhoneWithArea, IpAddress, SSN, Decimal, Digit
+        };
+
+        private Mask m_mask;
+
+        public Mask Maked
+        {
+            get { return m_mask; }
+            set
+            {
+                m_mask = value;
+                this.Text = "";
+            }
+        }
+
+        public frmMasterFormDesigner()
+        {
+            InitializeComponent();
+            this.dtTabs.Columns.Add("CAPTION", typeof(string));
+            this.dtTabs.Columns.Add("CODE", typeof(string));
+            this.dtTabs.Columns.Add("TAB_ORDER", typeof(int));
+            this.dtTabs.Columns.Add("FORM_ID", typeof(int));
+            this.dtTabs.Columns.Add("ID", typeof(string));
+
+            string rowNumber = Convert.ToString(1);
+            this.dtTabs.Rows.Add(new object[] { "General" + rowNumber, "Gen" + rowNumber, rowNumber });
+            this.gridTabControl.DataSource = this.dtTabs;
+            this.gridViewTabControls.Columns["FORM_ID"].Visible = false;
+            this.gridViewTabControls.Columns["ID"].Visible = false;
+            //ResetTabControlsGrid();
+
+            this.dtFields.Columns.Add("SELECTEDTAB", typeof(string));
+            this.dtFields.Columns.Add("FIELD_ORDER", typeof(int));
+            this.dtFields.Columns.Add("CAPTION", typeof(string));
+            this.dtFields.Columns.Add("TOOLTIP", typeof(string));
+            this.dtFields.Columns.Add("MANDATORY", typeof(bool));
+            this.dtFields.Columns.Add("FIELDNAME", typeof(string));
+            this.dtFields.Columns.Add("DATATYPE", typeof(string));
+            this.dtFields.Columns.Add("SIZE", typeof(int));
+            this.dtFields.Columns.Add("DECIMAL", typeof(int));
+            this.dtFields.Columns.Add("UNIQUE", typeof(bool));
+            this.dtFields.Columns.Add("INPUTMASK", typeof(string));
+            this.dtFields.Columns.Add("HELPQUERY", typeof(string));
+            this.dtFields.Columns.Add("REMARKS", typeof(string));
+            this.dtFields.Columns.Add("WHENCONDITION", typeof(string));
+            this.dtFields.Columns.Add("DEFAULTVALUE", typeof(string));
+            this.dtFields.Columns.Add("VALIDATION", typeof(string));
+            this.dtFields.Columns.Add("INTERNALUSE", typeof(bool));
+            this.dtFields.Columns.Add("TAB_ID", typeof(int));
+
+            string rowNumber1 = Convert.ToString(1);
+            this.dtFields.Rows.Add(new object[] { "Gen1", rowNumber1, "", "", 0, "", "Varchar", 
+            20, 0, 0, "", "", "", "", "", "", 0});
+            this.gridFields.DataSource = this.dtFields;
+            //ResetFieldControlsGrid();
+
+            //Bind Datatypes dropdown
+            this.dtDatatypes.Columns.Add("Datatype", typeof(string));
+            this.dtDatatypes.Rows.Add(new object[] { "Varchar" });
+            this.dtDatatypes.Rows.Add(new object[] { "Decimal" });
+            this.dtDatatypes.Rows.Add(new object[] { "Bit" });
+            this.dtDatatypes.Rows.Add(new object[] { "Datetime" });
+            this.dtDatatypes.Rows.Add(new object[] { "Text" });
+            repositoryItemDatatypeLookup.DataSource = dtDatatypes;
+
+            gridViewFields.Columns["SELECTEDTAB"].ColumnEdit = repositoryItemTabLookUp;
+            gridViewFields.Columns["DATATYPE"].ColumnEdit = repositoryItemDatatypeLookup;
+        }
+
+        private void AddEmptyGridRow(string gridName, string tabName)
+        {
+            switch (gridName.ToUpper())
+            {
+                case "GRIDVIEWTABCONTROLS":
+                    string rowNumber = Convert.ToString(1);
+                    this.dtTabs.Rows.Add(new object[] { "General" + rowNumber, "Gen" + rowNumber, rowNumber, 0, 0 });
+                    this.gridTabControl.DataSource = this.dtTabs;
+                    this.gridViewTabControls.Columns["FORM_ID"].Visible = false;
+                    this.gridViewTabControls.Columns["ID"].Visible = false;
+                    break;
+                case "GRIDVIEWFIELDS":
+                    string rowNumber1 = Convert.ToString(1);
+                    this.dtFields.Rows.Add(new object[] { 0, tabName, rowNumber1, "", "", 0, "", "Varchar", 
+                                           20, 0, 0, "", "", "", "", "", "", 0});
+                    this.gridFields.DataSource = this.dtFields;
+                    break;
+            }
+        }
+
+        private void frmMasterFormDesigner_Load(object sender, EventArgs e)
+        {
+            _mode = FormMode.View;
+            BindData1(string.Empty);
+            ToggleButtons();
+            SetControlVisibility("Last");
+        }
+
+        private void gridViewTabControls_ValidateRow(object sender, DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e)
+        {
+            GridView view = sender as GridView;
+            DataRowView row = e.Row as DataRowView;
+            int currentRowHandle = gridViewTabControls.GetVisibleRowHandle(e.RowHandle);
+
+            ValidateGridRow("gridViewTabControls", currentRowHandle, view, row, e);
+        }
+
+        private void gridViewFields_ValidateRow(object sender, DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e)
+        {
+            GridView view = sender as GridView;
+            DataRowView row = e.Row as DataRowView;
+            int currentRowHandle = gridViewFields.GetFocusedDataSourceRowIndex();
+
+            ValidateGridRow("gridViewFields", currentRowHandle, view, row, e);
+        }
+
+        private void ValidateGridRow(string gridName, int currentRowHandle, GridView view, DataRowView row,
+                                     DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e)
+        {
+            switch (gridName)
+            {
+                case "gridViewTabControls":
+                    //Validate Caption
+                    if (string.IsNullOrEmpty(row["CAPTION"].ToString()))
+                    {
+                        SetGridViewRowError(view, "CAPTION", e, "Caption cannot be empty.");
+                    }
+                    else
+                    {
+                        if (searchForDuplicates(gridViewTabControls, view.Columns["CAPTION"].ToString(),
+                                                row["CAPTION"].ToString(), currentRowHandle))
+                        {
+                            SetGridViewRowError(view, "CAPTION", e, "Caption already exists. Choose another caption.");
+                        }
+                    }
+                    //Validate Code
+                    if (string.IsNullOrEmpty(row["CODE"].ToString()))
+                    {
+                        SetGridViewRowError(view, "CODE", e, "Code cannot be empty.");
+                    }
+                    else
+                    {
+                        if (searchForDuplicates(gridViewTabControls, view.Columns["CODE"].ToString(),
+                                                row["code"].ToString(), currentRowHandle))
+                        {
+                            SetGridViewRowError(view, "CODE", e, "Code already exists. Choose another code.");
+                        }
+                        else if (e.Valid)
+                        {
+                            GetSelectedTabs(view.Columns["CODE"].ToString(), row["CODE"].ToString(), currentRowHandle);
+                        }
+                    }
+                    //Validate Order
+                    if (string.IsNullOrEmpty(row["TAB_ORDER"].ToString()))
+                    {
+                        SetGridViewRowError(view, "TAB_ORDER", e, "Order cannot be empty.");
+                    }
+                    else
+                    {
+                        if (searchForDuplicateOrder(gridViewTabControls, view.Columns["TAB_ORDER"].ToString(),
+                                                    Convert.ToInt32(row["TAB_ORDER"]), currentRowHandle))
+                        {
+                            SetGridViewRowError(view, "TAB_ORDER", e, "Order already exists. Choose another.");
+                        }
+                    }
+                    break;
+                case "gridViewFields":
+
+                    //Validate Selected Tab
+                    if (string.IsNullOrEmpty(row["SELECTEDTAB"].ToString()))
+                    {
+                        SetGridViewRowError(view, "SELECTEDTAB", e, "Please select a Tab Name.");
+                    }
+                    else { e.ErrorText = ""; }
+
+                    //Validate Order
+                    if (string.IsNullOrEmpty(row["FIELD_ORDER"].ToString()))
+                    {
+                        SetGridViewRowError(view, "FIELD_ORDER", e, "Please select a Order.");
+                    }
+                    else if (searchForDuplicateOrder(gridViewFields, view.Columns["FIELD_ORDER"].ToString(),
+                             Convert.ToInt32(row["FIELD_ORDER"]), currentRowHandle))
+                    {
+                        SetGridViewRowError(view, "FIELD_ORDER", e, "Order already exists. Choose another Order.");
+                    }
+                    else { e.ErrorText = ""; }
+
+                    //Validate Caption
+                    if (string.IsNullOrEmpty(row["CAPTION"].ToString()))
+                    {
+                        SetGridViewRowError(view, "CAPTION", e, "Please select a Caption.");
+                    }
+                    else if (searchForDuplicates(gridViewFields, view.Columns["CAPTION"].ToString(),
+                             row["CAPTION"].ToString(), currentRowHandle))
+                    {
+                        SetGridViewRowError(view, "CAPTION", e, "Caption already exists. Choose another caption.");
+                    }
+                    else { e.ErrorText = ""; }
+
+                    //Validate DataType
+                    if (string.IsNullOrEmpty(row["DATATYPE"].ToString()))
+                    {
+                        SetGridViewRowError(view, "DATATYPE", e, "Please select a DataType.");
+                    }
+                    if (e.Valid)
+                    {
+                        DataRowView dr = (DataRowView)e.Row;
+                        //dr.Row.AcceptChanges();
+                        //dr.Row.Table.Rows[0].AcceptChanges();
+                        this.dsTempData.Tables[_TabName].ImportRow(dr.Row);
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void SetGridViewRowError(GridView view, string columnName,
+                              DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e,
+                              string errorMessage)
+        {
+            e.Valid = false;
+            e.ErrorText = errorMessage;
+            view.SetColumnError(view.Columns[columnName], errorMessage,
+                                DevExpress.XtraEditors.DXErrorProvider.ErrorType.Critical);
+            view.FocusedColumn = view.Columns[columnName];
+        }
+
+        private bool searchForDuplicates(DevExpress.XtraGrid.Views.Grid.GridView oGrid,
+                                         string colName, string colValue, int currentRowIndex)
+        {
+            bool bExists = false;
+            for (int i = 0; i < oGrid.DataRowCount; i++)
+            {
+                if (i != currentRowIndex)
+                {
+                    if (colValue.ToString().ToUpper() == oGrid.GetRowCellValue(i, colName).ToString().ToUpper())
+                        bExists = true;
+                }
+            }
+            return bExists;
+        }
+
+        private bool searchForDuplicateOrder(DevExpress.XtraGrid.Views.Grid.GridView oGrid,
+                                             string colName, int colValue, int currentRowIndex)
+        {
+            bool bExists = false;
+            for (int i = 0; i < oGrid.DataRowCount; i++)
+            {
+                if (i != currentRowIndex)
+                {
+                    if (colValue == Convert.ToInt32(oGrid.GetRowCellValue(i, colName)))
+                        bExists = true;
+                }
+                //object b = gridView1.GetRowCellValue(i, colName);
+                //if (b != null && b.Equals(colValue))
+                //{
+                //    gridView1.FocusedRowHandle = i;
+                //    bExists = true;
+                //}
+            }
+            return bExists;
+        }
+
+        private void menuItemAddToolbar_Click(object sender, EventArgs e)
+        {
+            string rowNumber = Convert.ToString(this.dtTabs.Rows.Count + 1);
+            if (_mode == FormMode.Edit)
+                this.dtTabs.Rows.Add(new object[] { "General" + rowNumber, "Gen" + rowNumber, rowNumber, textBoxFormID.Text, 0 });
+            else if (_mode == FormMode.Add)
+                this.dtTabs.Rows.Add(new object[] { "General" + rowNumber, "Gen" + rowNumber, rowNumber, 0, 0 });
+            SetDataSourceForRepositoryLookupTab("General" + rowNumber, "Gen" + rowNumber, Convert.ToInt32(rowNumber));
+        }
+
+        private void SetDataSourceForRepositoryLookupTab(string colName, string colValue, int currentRowIndex)
+        {
+            BaseView tempView = gridTabControl.MainView;
+            DataView dv = new DataView();
+            DataTable dt = new DataTable();
+            if (tempView != null)
+            {
+                dv = (DataView)tempView.DataSource;
+                dt = dv.Table;
+                repositoryItemTabLookUp.DataSource = dt;
+                gridViewFields.Columns["SELECTEDTAB"].ColumnEdit = repositoryItemTabLookUp;
+            }
+        }
+
+        private void menuItemAddField_Click(object sender, EventArgs e)
+        {
+            string rowNumber = Convert.ToString(this.dtFields.Rows.Count + 1);
+            if (_mode == FormMode.Edit)
+                this.dtFields.Rows.Add(new object[] { 0, _TabName, rowNumber, "", "", 0, "", "Varchar", 
+                                                20, 0, 0, "", "", "", "", "", "", 0, 0, GetSelectedTabID()});
+            else if (_mode == FormMode.Add)
+                this.dtFields.Rows.Add(new object[] { 0, "Gen1", rowNumber, "", "", 0, "", "Varchar", 
+                                                20, 0, 0, "", "", "", "", "", "", 0 });            
+        }
+
+        private int GetSelectedTabID()
+        {
+            return Convert.ToInt32(gridViewTabControls.GetFocusedRowCellValue("ID"));
+        }
+
+        private void menuItemAddEmpty_Click(object sender, EventArgs e)
+        {
+            this.gridViewTabControls.AddNewRow();
+        }
+
+        private void menuItemRemoveToolbar_Click(object sender, EventArgs e)
+        {
+            //this.gridView1.AddNewRow();
+            DialogResult confirmDelete = MessageBox.Show("Are you sure you want to delete selected tab & it's Fields?",
+                                                         "Confirm Delete?", MessageBoxButtons.YesNo);
+            if (confirmDelete == DialogResult.Yes)
+            {
+                //Code for Deleting selected Toolbar & it's Fields.
+            }
+        }
+
+        private bool CheckDuplicates(string strValue, string colData, int rowIndex)
+        {
+            bool bExists = false;
+
+            int count = gridViewTabControls.DataRowCount;
+            for (int i = count - 1; i >= 0; i--)
+            {
+                GridView childView = gridViewTabControls.GetDetailView(i, 0) as GridView;
+                if (childView == null) continue;
+                object v1 = gridViewTabControls.GetRowCellValue(i, "Column1");
+                if (childView.DataRowCount < 1) continue;
+                object vc = childView.GetRowCellValue(0, "Column1");
+                //compare values and perform an action
+            }
+            return bExists;
+        }
+
+        private void gridView1_InitNewRow(object sender, DevExpress.XtraGrid.Views.Grid.InitNewRowEventArgs e)
+        {
+            string rowNumber = Convert.ToString(this.dtTabs.Rows.Count + 1);
+
+            for (int i = 0; i < this.gridViewTabControls.Columns.Count; i++)
+            {
+                this.gridViewTabControls.SetRowCellValue(e.RowHandle, this.gridViewTabControls.Columns[i].FieldName, string.Format("Item{0}-{1}", i + 1, rowNumber));
+            }
+        }
+
+        private void UpdatePrice(DevExpress.XtraGrid.Views.Base.ColumnView View)
+        {
+            // Obtain the Price column. 
+            DevExpress.XtraGrid.Columns.GridColumn col = View.Columns.ColumnByFieldName("Price");
+            if (col == null) return;
+            View.BeginSort();
+            try
+            {
+                // Obtain the number of data rows. 
+                int dataRowCount = View.DataRowCount;
+                // Traverse data rows and change the Price field values. 
+                for (int i = 0; i < dataRowCount; i++)
+                {
+                    object cellValue = View.GetRowCellValue(i, col);
+                    double newValue = Convert.ToDouble(cellValue) * 0.9;
+                    View.SetRowCellValue(i, col, newValue);
+                }
+            }
+            finally { View.EndSort(); }
+        }
+
+        private void gridViewTabControls_FocusedRowChanged(object sender, FocusedRowChangedEventArgs e)
+        {
+            if (gridViewTabControls.GetRowCellValue(e.FocusedRowHandle, "ID") != DBNull.Value)
+            {
+                if (Convert.ToInt32(gridViewTabControls.GetRowCellValue(e.FocusedRowHandle, "ID")) != 0)
+                {
+                    //Means, Tab is bound from Database. So, bind it's fields from database.
+                    BindFields(Convert.ToInt32(gridViewTabControls.GetRowCellValue(e.FocusedRowHandle, "ID")), oForm);
+                }
+                else
+                {
+                    //Tab is added on the fly.
+                    if (_mode == FormMode.Add)
+                    {
+                        if (gridViewTabControls.GetFocusedRowCellValue("CODE") != null)
+                        {
+                            _TabName = gridViewTabControls.GetFocusedRowCellValue("CODE").ToString();
+                            GetDataFromTempTable(gridViewTabControls.GetFocusedRowCellValue("CODE").ToString());
+                        }
+                        else
+                        {
+                            GetDataFromTempTable("Gen1");
+                            _TabName = "Gen1";
+                        }
+                    }
+                    else
+                    {
+                        this.dtFields.Rows.Clear();
+                        if (gridViewTabControls.GetFocusedRowCellValue("CODE") != null)
+                        {
+                            AddEmptyGridRow(gridViewFields.Name, gridViewTabControls.GetFocusedRowCellValue("CODE").ToString());
+                            _TabName = gridViewTabControls.GetFocusedRowCellValue("CODE").ToString();
+                        }
+                    }
+                }
+                //If New Mode, 
+                //1.add rows to TempTable
+                //2.when selection changes, bind from that TempTable
+                //3.when newRow added, add it to TempTable and bind it.
+            }
+        }
+
+        private void GetDataFromTempTable(string tableName)
+        {
+            bool tableExists = CheckIfTableExists(tableName);
+            if (dsTempData != null)
+            {
+                if (tableExists)
+                {
+                    //Bind this table //12132010393599
+                    //for (int i = 0; i < gridViewFields.RowCount; i++)
+                    //{
+                    //    DataRow r = gridViewFields.GetDataRow(i);
+                    //    this.dsTempData.Tables[tableName].Rows.Add(r);
+                    //}
+                    this.gridFields.DataSource = this.dsTempData.Tables[tableName];
+                }
+                else
+                {
+                    DataTable dt = new DataTable(tableName);
+                    dt = dtFields.Clone();
+                    dt.TableName = tableName;
+
+                    dsTempData.Tables.Add(dt);
+                    dsTempData.AcceptChanges();
+                    //Create a tempTable by cloning with dtFields datatable.
+                }
+            }
+        }
+
+        private bool CheckIfTableExists(string tableName)
+        {
+            foreach (DataTable dt in dsTempData.Tables)
+            {
+                if (dt.TableName == tableName)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void gridViewTabControls_ShowingEditor(object sender, CancelEventArgs e)
+        {
+            if (_mode == FormMode.Edit)
+            {
+                int tabID = 0;
+                GridView view = sender as GridView;
+                tabID = Convert.ToInt32(gridViewTabControls.GetRowCellValue(view.FocusedRowHandle, "ID"));
+                if (view.FocusedColumn.FieldName == "CODE" && tabID != 0)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Validates DataType column.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void gridViewFields_ShowingEditor(object sender, CancelEventArgs e)
+        {
+            ////Enable or Disable Decimal column based on the datatype selected.
+
+            GridView view = (GridView)sender;
+            object cellValue = gridViewFields.GetRowCellValue(view.FocusedRowHandle, "DATATYPE");
+            string columnName = view.FocusedColumn.FieldName;
+
+            if (columnName != "DECIMAL")
+            {
+                if (columnName == "SIZE")
+                {
+                    switch (cellValue.ToString())
+                    {
+                        case "Bit":
+                            e.Cancel = true;
+                            break;
+                        case "Datetime":
+                            e.Cancel = true;
+                            break;
+                        case "Text":
+                            e.Cancel = true;
+                            break;
+                        case "Varchar":
+                            break;
+                        case "Decimal":
+                            break;
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else
+            {
+                if (!cellValue.ToString().Equals("Decimal"))
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void repositoryItemDatatypeLookup_EditValueChanged(object sender, EventArgs e)
+        {
+            //If selected datatype is not Decimal, then set 0 in Decimal column.
+            string text = (sender as DevExpress.XtraEditors.LookUpEdit).Text.ToUpper();
+            switch (text)
+            {
+                case "VARCHAR":
+                    //gridViewFields.Columns["Size"].OptionsColumn.ReadOnly = false;
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "SIZE", 20);
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "DECIMAL", 0);
+                    break;
+                case "DECIMAL":
+                    //gridViewFields.Columns["Size"].OptionsColumn.ReadOnly = false;
+                    break;
+                case "BIT":
+                    //gridViewFields.Columns["Size"].OptionsColumn.ReadOnly = true;
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "SIZE", 1);
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "DECIMAL", 0);
+                    break;
+                case "DATETIME":
+                    //gridViewFields.Columns["Size"].OptionsColumn.ReadOnly = true;
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "SIZE", 7);
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "DECIMAL", 0);
+                    break;
+                case "TEXT":
+                    //gridViewFields.Columns["Size"].OptionsColumn.ReadOnly = true;
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "SIZE", 8000);
+                    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "DECIMAL", 0);
+                    break;
+                default:
+                    MessageBox.Show("Invalid selection.");
+                    break;
+            }
+            //if (!text.Equals("Decimal"))
+            //{
+            //    gridViewFields.SetRowCellValue(gridViewFields.GetFocusedDataSourceRowIndex(), "Decimal", 0);
+            //}
+            //else if (text.Equals("Bit") || text.Equals("DateTime") || text.Equals("Text"))
+            //{
+            //    gridViewFields.Columns["Size"].OptionsColumn.ReadOnly = true;
+            //}
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            _mode = FormMode.Add;
+            ToggleButtons();
+
+            this.dtTabs.Rows.Clear();
+            this.dtFields.Rows.Clear();
+            AddEmptyGridRow(gridViewTabControls.Name, "General1");
+            //AddEmptyGridRow(gridViewFields.Name, "Gen1");
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            _mode = FormMode.Edit;
+            ToggleButtons();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (textBoxCaption.Text.Length == 0) { MessageBox.Show("Please enter caption"); return; }
+
+            if (textBoxCode.Text.Length == 0) { MessageBox.Show("Please enter code"); return; }
+
+            if (textBoxTableName.Text.Length == 0) { MessageBox.Show("Please enter table name"); return; }
+
+            int intMasterFormId = 0;
+            int intTabControlId = 0;
+            string strCaption = "";
+            string strCode = "";
+            int tabOrder = 0;
+            int fieldId = 0;
+
+            DataAccess_Net.clsDataAccess oDataAccess = new DataAccess_Net.clsDataAccess();
+            try
+            {
+                oDataAccess.BeginTransaction();
+                if (_mode == FormMode.Add)
+                {
+                    intMasterFormId = oForm.SaveMasterFormDetails(textBoxCaption.Text, textBoxCode.Text,
+                                                                      textBoxTableName.Text, oDataAccess);
+                    if (intMasterFormId != 0)
+                    {
+                        for (int i = 0; i < gridViewTabControls.DataRowCount; i++)
+                        {
+                            strCaption = gridViewTabControls.GetRowCellValue(i, "CAPTION").ToString();
+                            strCode = gridViewTabControls.GetRowCellValue(i, "CODE").ToString();
+                            tabOrder = Convert.ToInt32(gridViewTabControls.GetRowCellValue(i, "TAB_ORDER").ToString());
+
+                            intTabControlId = oForm.SaveTabControlDetails(intMasterFormId, strCaption, strCode, tabOrder, oDataAccess);
+                            if (intTabControlId != 0)
+                            {
+                                fieldId = SaveFieldInfo(oForm, strCode, intMasterFormId, intTabControlId, oDataAccess);
+                                if (fieldId == 0)
+                                {
+                                    ShowErrorMessage(oDataAccess, _ErrorMessage);
+                                    //"Error Saving Field under tab: " + strCode
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                ShowErrorMessage(oDataAccess, _ErrorMessage);
+                                return;
+                            }
+                        }
+                    }
+                }
+                else if (_mode == FormMode.Edit)
+                {
+                    int formID = 0;
+                    int tabID = 0;
+                    if (textBoxFormID.Text != string.Empty)
+                        formID = Convert.ToInt32(textBoxFormID.Text);
+
+                    if (txtCaption.Text != textBoxCaption.Text)
+                    {
+                        //Update Form details(If the caption is changed)
+                        formID = oForm.UpdateMasterFormDetails(formID, textBoxCaption.Text,
+                                                               textBoxCode.Text, textBoxTableName.Text);
+                    }
+                    //Save or Update Tab details
+                    if (formID != 0)
+                    {
+                        DataView dv = new DataView();
+                        dv = (DataView)gridViewTabControls.DataSource;
+
+                        DataTable changedTabRows = new DataTable();
+                        changedTabRows = dv.Table.GetChanges();
+
+                        if (changedTabRows != null)
+                        {
+                            tabID = UpdateTabControlDetails(oForm, oDataAccess, changedTabRows);
+                            if (tabID == 0)
+                            {
+                                ShowErrorMessage(oDataAccess, _ErrorMessage);
+                                return;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ShowErrorMessage(oDataAccess, _ErrorMessage);
+                        return;
+                    }
+                }
+                oDataAccess.CommitTransaction();
+                _mode = FormMode.View;
+                ToggleButtons();
+                MessageBox.Show("Details Saved Successfully.");
+            }
+            catch (Exception ex)
+            {
+                ShowErrorMessage(oDataAccess, ex.Message + Environment.NewLine + ex.StackTrace);
+            }
+            finally
+            {
+                //oForm = null;
+                oDataAccess = null;
+            }
+        }
+
+        private int UpdateTabControlDetails(clsDynamicForm oForm, DataAccess_Net.clsDataAccess oDataAccess, DataTable changedRows)
+        {
+            int tabID = 0;
+            int intMasterFormId = 0;
+            string strCaption = "";
+            string strCode = "";
+            int tabOrder = 0;
+            //DataView dv = new DataView();
+            //dv = (DataView)gridViewTabControls.DataSource;
+
+            //DataTable changedRows = new DataTable();
+            //changedRows = dv.Table.GetChanges();
+
+            for (int i = 0; i < changedRows.Rows.Count; i++)
+            {
+                strCaption = changedRows.Rows[i]["CAPTION"].ToString();
+                strCode = changedRows.Rows[i]["CODE"].ToString();
+                tabOrder = Convert.ToInt32(changedRows.Rows[i]["TAB_ORDER"]);
+                intMasterFormId = Convert.ToInt32(changedRows.Rows[i]["FORM_ID"]);
+                tabID = Convert.ToInt32(changedRows.Rows[i]["ID"]);
+
+                DataTable dt = (DataTable)gridFields.DataSource;
+                DataTable dtTemp = new DataTable();
+                dtTemp = dt.Copy();
+                DataView dv1 = dtTemp.DefaultView;
+                dv1.RowFilter = "SELECTEDTAB='" + strCode + "'";
+                dtTemp = dv1.ToTable();
+                if (dtTemp.Rows.Count <= 0)
+                {
+                    _ErrorMessage = "Tab " + strCode + " should have atleast one field added under it";
+                    return 0;
+                }
+
+                switch (changedRows.Rows[i].RowState)
+                {
+                    case DataRowState.Added:
+                        tabID = oForm.SaveTabControlDetails(intMasterFormId, strCaption, strCode, tabOrder, oDataAccess);
+                        break;
+                    case DataRowState.Modified:
+                        tabID = oForm.UpdateTabControlDetails(tabID, intMasterFormId, strCaption, tabOrder, oDataAccess);
+                        break;
+                    case DataRowState.Deleted:
+                        break;
+                }
+            }
+            return tabID;
+        }
+
+        private int SaveFieldInfo(clsDynamicForm oDynamicForm, string strCode, int intMasterFormId, int intTabControlId,
+                                  DataAccess_Net.clsDataAccess oDataAccess)
+        {
+            string selectedTab = "";
+            int order = 0;
+            string caption = "";
+            string tooltip = "";
+            int mandatory = 0;
+            string name = "";
+            string datatype = "";
+            int size = 0;
+            int decimalVal = 0;
+            int uniqueVal = 0;
+            string inputMask = "";
+            string helpQuery = "";
+            string remarks = "";
+            string whenCondition = "";
+            string defaultValue = "";
+            string validation = "";
+            int internalUse = 0;
+            int fieldId = 0;
+
+            try
+            {
+                DataTable dt = (DataTable)gridFields.DataSource;
+                DataTable dtTemp = new DataTable();
+                dtTemp = dt.Copy();
+                DataView dv = dtTemp.DefaultView;
+                dv.RowFilter = "SELECTEDTAB='" + strCode + "'";
+                dtTemp = dv.ToTable();
+
+                if (dtTemp.Rows.Count > 0)
+                {
+                    for (int i = 0; i < dtTemp.Rows.Count; i++)
+                    {
+                        selectedTab = dtTemp.Rows[i]["SELECTEDTAB"].ToString();
+                        order = Convert.ToInt16(dtTemp.Rows[i]["FIELD_ORDER"]);
+                        caption = dtTemp.Rows[i]["CAPTION"].ToString();
+                        tooltip = dtTemp.Rows[i]["TOOLTIP"].ToString();
+                        mandatory = Convert.ToInt32(dtTemp.Rows[i]["MANDATORY"] == DBNull.Value ? 0 : dtTemp.Rows[i]["Mandatory"]);
+                        name = dtTemp.Rows[i]["FIELDNAME"].ToString();
+                        datatype = dtTemp.Rows[i]["DATATYPE"].ToString();
+                        size = Convert.ToInt32(dtTemp.Rows[i]["SIZE"] == DBNull.Value ? 0 : dtTemp.Rows[i]["Size"]);
+                        decimalVal = Convert.ToInt32(dtTemp.Rows[i]["DECIMAL"] == DBNull.Value ? 0 : dtTemp.Rows[i]["Decimal"]);
+                        uniqueVal = Convert.ToInt32(dtTemp.Rows[i]["UNIQUE"] == DBNull.Value ? 0 : dtTemp.Rows[i]["Unique"]);
+                        inputMask = dtTemp.Rows[i]["INPUTMASK"].ToString();
+                        helpQuery = dtTemp.Rows[i]["HELPQUERY"].ToString();
+                        remarks = dtTemp.Rows[i]["REMARKS"].ToString();
+                        whenCondition = dtTemp.Rows[i]["WHENCONDITION"].ToString();
+                        defaultValue = dtTemp.Rows[i]["DEFAULTVALUE"].ToString();
+                        validation = dtTemp.Rows[i]["VALIDATION"].ToString();
+                        internalUse = Convert.ToInt16(dtTemp.Rows[i]["INTERNALUSE"] == DBNull.Value ? 0 : dtTemp.Rows[i]["InternalUse"]);
+
+                        //switch (dtTemp.Rows[i].RowState)
+                        //{
+                        //    case DataRowState.Added:
+                        //        fieldId = oDynamicForm.SaveFieldDetails(intTabControlId, order, caption, tooltip, mandatory, name, datatype,
+                        //                size, decimalVal, uniqueVal, inputMask, helpQuery, remarks, whenCondition, defaultValue,
+                        //                validation, internalUse, intMasterFormId, oDataAccess);
+                        //        break;
+                        //    case DataRowState.Modified:
+                        //        fieldId = oDynamicForm.UpdateFieldDetails(intTabControlId, order, caption, tooltip, mandatory, name, datatype,
+                        //                size, decimalVal, uniqueVal, inputMask, helpQuery, remarks, whenCondition, defaultValue,
+                        //                validation, internalUse, intMasterFormId, oDataAccess);
+                        //        break;
+                        //    case DataRowState.Deleted:
+                        //        break;
+                        //}
+                        fieldId = oDynamicForm.SaveFieldDetails(intTabControlId, order, caption, tooltip, mandatory, name, datatype,
+                                        size, decimalVal, uniqueVal, inputMask, helpQuery, remarks, whenCondition, defaultValue,
+                                        validation, internalUse, intMasterFormId, oDataAccess);
+                    }
+                }
+                else
+                {
+                    _ErrorMessage = "Atleast one field should be added under tab: " + strCode;
+                    return 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return fieldId;
+        }
+
+        //To be implemented
+        private bool CheckFieldsUnderTab()
+        {
+            DataView dvFieldChanges = new DataView();
+            dvFieldChanges = (DataView)gridViewFields.DataSource;
+            DataTable dtFieldChanges = new DataTable();
+            dtFieldChanges = dvFieldChanges.Table.GetChanges();
+
+            if (dtFieldChanges != null)
+            {
+                if (dtFieldChanges.Rows.Count > 0)
+                {
+
+                }
+                else
+                {
+                    MessageBox.Show("Please add Fields.");
+                    return false;
+                }
+            }
+            return false;
+        }
+
+        private void ShowErrorMessage(DataAccess_Net.clsDataAccess oDataAccess, string ErrorMessage)
+        {
+            if (oDataAccess.InTransaction)
+            {
+                oDataAccess.RollbackTransaction();
+            }
+            MessageBox.Show(ErrorMessage);
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            _mode = FormMode.View;
+            ToggleButtons();
+            this.BindingContext[dsForms, "Forms"].CancelCurrentEdit();
+            if (_mode == FormMode.Edit)
+            {
+                BindLastRecord(Convert.ToInt32(textBoxFormID.Text));
+            }
+            else if (_mode == FormMode.Add)
+            {
+                int formID = Convert.ToInt32(this.dsForms.Tables[0].Rows[this.dsForms.Tables[0].Rows.Count - 1]["id"]);
+                BindLastRecord(GetRowIndex(formID));
+            }
+            this.BindingContext[dsForms, "Forms"].Position = this.BindingContext[dsForms, "Forms"].Count;
+
+            //_mode = FormMode.View;
+            //ToggleButtons();
+        }
+
+        private void ToggleButtons()
+        {
+            switch (_mode)
+            {
+                case FormMode.Add:
+                    textBoxCaption.Focus();
+                    textBoxCaption.ReadOnly = false;
+                    textBoxCode.ReadOnly = false;
+                    buttonLookup.Enabled = false;
+                    buttonPreviewForm.Enabled = false;
+
+                    btnNew.Visible = false;
+                    btnEdit.Visible = false;
+                    btnSave.Visible = true;
+                    btnCancel.Visible = true;
+
+                    textBoxFormID.Text = string.Empty;
+                    textBoxCaption.Text = string.Empty;
+                    textBoxCode.Text = string.Empty;
+                    textBoxTableName.Text = string.Empty;
+                    txtCaption.Text = string.Empty;
+
+                    DevExpress.Utils.SetOptions.SetOptionValueByString("Editable", gridViewTabControls.OptionsBehavior, true);
+                    DevExpress.Utils.SetOptions.SetOptionValueByString("Editable", gridViewFields.OptionsBehavior, true);
+                    contextMenuStrip1.Enabled = true;
+                    contextMenuStrip2.Enabled = true;
+
+                    ToggleNavigationControls(false, false, false, false, false, false);
+                    break;
+                case FormMode.Edit:
+                    btnNew.Visible = false;
+                    btnEdit.Visible = false;
+                    btnSave.Visible = true;
+                    btnCancel.Visible = true;
+
+                    textBoxCaption.ReadOnly = false;
+                    gridTabControl.Enabled = true;
+                    //gridTabControl.Enabled = true;
+                    //gridFields.Enabled = true;
+
+                    DevExpress.Utils.SetOptions.SetOptionValueByString("Editable", gridViewTabControls.OptionsBehavior, true);
+                    DevExpress.Utils.SetOptions.SetOptionValueByString("Editable", gridViewFields.OptionsBehavior, true);
+                    contextMenuStrip1.Enabled = true;
+                    contextMenuStrip2.Enabled = true;
+
+                    ToggleNavigationControls(false, false, false, false, false, false);
+                    break;
+                case FormMode.View:
+                    btnNew.Visible = true;
+                    btnEdit.Visible = true;
+                    btnSave.Visible = false;
+                    btnCancel.Visible = false;
+
+                    textBoxCaption.ReadOnly = true;
+                    textBoxCode.ReadOnly = true;
+                    textBoxTableName.ReadOnly = true;
+                    DevExpress.Utils.SetOptions.SetOptionValueByString("Editable", gridViewTabControls.OptionsBehavior, false);
+                    DevExpress.Utils.SetOptions.SetOptionValueByString("Editable", gridViewFields.OptionsBehavior, false);
+                    contextMenuStrip1.Enabled = false;
+                    contextMenuStrip2.Enabled = false;
+                    ToggleNavigationControls(true, true, true, true, true, true);
+                    break;
+                case FormMode.Cancel:
+                    btnNew.Visible = true;
+                    btnEdit.Visible = true;
+                    btnSave.Visible = false;
+                    btnCancel.Visible = false;
+
+                    textBoxCaption.ReadOnly = true;
+                    textBoxCode.ReadOnly = true;
+                    //Clear out the Datasource for RepositoryItemTabLookup control.
+                    this.repositoryItemTabLookUp.DataSource = null;
+                    ToggleNavigationControls(true, true, true, true, true, true);
+                    break;
+            }
+        }
+
+        private void ToggleNavigationControls(bool First, bool Previous, bool Next, bool Last,
+                                              bool Lookup, bool PreviewForm)
+        {
+            btnFirst.Enabled = First;
+            btnBack.Enabled = Previous;
+            btnForward.Enabled = Next;
+            btnLast.Enabled = Last;
+            buttonLookup.Enabled = Lookup;
+            buttonPreviewForm.Enabled = PreviewForm;
+            btnLocate.Enabled = PreviewForm;
+        }
+
+        private int GetRowIndex(int FormId)
+        {
+            int id = 0;
+            for (int i = 0; i < this.dsForms.Tables[0].Rows.Count; i++)
+            {
+                if (FormId == Convert.ToInt32(dsForms.Tables[0].Rows[i]["id"]))
+                {
+                    id = i;
+                }
+            }
+            return id;
+        }
+
+        private void textBoxCode_Leave(object sender, EventArgs e)
+        {
+            if (textBoxCode.Text.Length != 0)
+            {
+                textBoxTableName.Text = textBoxCode.Text.ToUpper() + "_MAST";
+            }
+            else
+            {
+                textBoxTableName.Text = "";
+                //gridTabControl.Enabled = false;
+                //gridFields.Enabled = false;
+            }
+            if (string.IsNullOrEmpty(textBoxTableName.Text) == false)
+            {
+                //gridTabControl.Enabled = true;
+                //gridFields.Enabled = true;
+            }
+        }
+
+        private void buttonLookup_Click(object sender, EventArgs e)
+        {
+            DataSet dsFormList = new DataSet();
+            DataSet dsTabList = new DataSet();
+            DataSet dsFieldList = new DataSet();
+
+            try
+            {
+                frmSearch frm = new frmSearch(textBoxCode.Text);
+                frm.ShowDialog();
+                //textBoxCode.Text = frm._formCode;
+                BindData(frm._formCode);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dsFormList = null;
+                dsTabList = null;
+                dsFieldList = null;
+            }
+        }
+
+        private void PreviewDynamicMasterForm()
+        {
+            DataSet dsFormList = new DataSet();
+            DataSet dsTabList = new DataSet();
+            DataSet dsFieldList = new DataSet();
+
+            int formID = 0;
+
+            try
+            {
+                dsFormList = oForm.GetFormList(textBoxCode.Text);
+                if (dsFormList == null)
+                {
+                    return;
+                }
+                if (dsFormList.Tables[0].Rows.Count > 0)
+                {
+                    formID = Convert.ToInt32(dsFormList.Tables[0].Rows[0]["ID"]);
+                    //dsTabList = oForm.GetTabControlList(formID);
+
+                    Form tempMasterForm = new Form();
+                    tempMasterForm.Name = dsFormList.Tables[0].Rows[0]["Code"].ToString();
+                    tempMasterForm.Text = dsFormList.Tables[0].Rows[0]["Caption"].ToString();
+                    //tempMasterForm.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+                    //tempMasterForm.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
+                    CreateTabs(oForm, tempMasterForm, formID);
+                }
+                else MessageBox.Show("No form found with the given name"); return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dsFormList = null;
+                dsTabList = null;
+                dsFieldList = null;
+
+            }
+        }
+
+        private void BindData(string formCode)
+        {
+            DataSet dsFormData = new DataSet();
+            DataSet dsTabData = new DataSet();
+            try
+            {
+                dsFormData = oForm.GetFormList(formCode);
+                dsForms = dsFormData;
+
+                if (dsFormData.Tables[0].Rows.Count == 0)
+                {
+                    btnEdit.Visible = false;
+                    return;
+                }
+                else btnEdit.Visible = true;
+
+                textBoxCaption.DataBindings.Clear();
+                textBoxCode.DataBindings.Clear();
+                textBoxTableName.DataBindings.Clear();
+                textBoxFormID.DataBindings.Clear();
+
+                textBoxFormID.DataBindings.Add("Text", dsFormData, "Forms.ID");
+                textBoxCaption.DataBindings.Add("Text", dsFormData, "Forms.Caption");
+                textBoxCode.DataBindings.Add("Text", dsFormData, "Forms.Code");
+                textBoxTableName.DataBindings.Add("Text", dsFormData, "Forms.Table_Name");
+
+                BindTabControls(Convert.ToInt32(dsFormData.Tables[0].Rows[0]["id"]), oForm);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BindData1(string formCode)
+        {
+            DataSet dsFormData = new DataSet();
+            DataSet dsTabData = new DataSet();
+            try
+            {
+                dsFormData = oForm.GetFormList(formCode);
+                dsForms = dsFormData;
+
+                if (dsFormData.Tables[0].Rows.Count == 0)
+                {
+                    btnEdit.Visible = false;
+                    return;
+                }
+                else btnEdit.Visible = true;
+
+                textBoxCaption.DataBindings.Clear();
+                textBoxCode.DataBindings.Clear();
+                textBoxTableName.DataBindings.Clear();
+                textBoxFormID.DataBindings.Clear();
+                this.BindingContext[dsForms, "Forms"].Position = this.BindingContext[dsForms, "Forms"].Count;
+
+                textBoxFormID.DataBindings.Add("Text", dsFormData, "Forms.ID");
+                textBoxCaption.DataBindings.Add("Text", dsFormData, "Forms.Caption");
+                txtCaption.DataBindings.Add("Text", dsFormData, "Forms.Caption");
+                textBoxCode.DataBindings.Add("Text", dsFormData, "Forms.Code");
+                textBoxTableName.DataBindings.Add("Text", dsFormData, "Forms.Table_Name");
+
+                BindTabControls(Convert.ToInt32(textBoxFormID.Text), oForm);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BindTabControls(int formID, clsDynamicForm oForm)
+        {
+            DataSet dsTabData = new DataSet();
+
+            dsTabData = oForm.GetTabControlList(formID);
+            gridTabControl.DataSource = dsTabData.Tables[0];
+            this.dtTabs = dsTabData.Tables[0];
+
+            if (dsTabData.Tables[0].Rows.Count > 0)
+            {
+                BindFields(Convert.ToInt32(dsTabData.Tables[0].Rows[0]["id"]), oForm);
+                this.repositoryItemTabLookUp.DataSource = dsTabData.Tables[0];
+            }
+        }
+
+        private void BindLastRecord(int formId)
+        {
+            DataSet dsTabData = new DataSet();
+            try
+            {
+                dsTabData = oForm.GetTabControlList(formId);
+                gridTabControl.DataSource = dsTabData.Tables[0];
+                this.dtTabs = dsTabData.Tables[0];
+
+                if (dsTabData.Tables[0].Rows.Count > 0)
+                {
+                    BindFields(Convert.ToInt32(dsTabData.Tables[0].Rows[0]["id"]), oForm);
+                    this.repositoryItemTabLookUp.DataSource = dsTabData.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BindFields(int tabID, clsDynamicForm oForm)
+        {
+            DataSet dsFieldData = new DataSet();
+
+            dsFieldData = oForm.GetFieldList(tabID);
+            gridFields.DataSource = dsFieldData.Tables[0];
+        }
+
+        private void CreateTabs(clsDynamicForm oForm, Form tempMasterForm, int masterFormID)
+        {
+            int tabId = 0;
+            string tabCaption = "";
+            string tabCode = "";
+            int tabOrder = 0;
+            DataSet dsTabList = new DataSet();
+            try
+            {
+                dsTabList = oForm.GetTabControlList(masterFormID);
+                if (dsTabList.Tables.Count > 0)
+                {
+                    if (dsTabList.Tables[0].Rows.Count > 0)
+                    {
+                        //Create TabControl
+                        TabControl mainTab = new TabControl();
+
+                        for (int i = 0; i < dsTabList.Tables[0].Rows.Count; i++)
+                        {
+                            tabId = Convert.ToInt32(dsTabList.Tables[0].Rows[i]["id"]);
+                            tabCaption = dsTabList.Tables[0].Rows[i]["caption"].ToString();
+                            tabCode = dsTabList.Tables[0].Rows[i]["code"].ToString();
+                            tabOrder = Convert.ToInt32(dsTabList.Tables[0].Rows[i]["tab_order"]);
+
+                            //Create TabPages
+                            TabPage tempTabPage = new TabPage();
+                            tempTabPage.Name = tabCode;
+                            tempTabPage.Text = tabCaption;
+                            tempTabPage.UseVisualStyleBackColor = true;
+
+                            //Create Fields under each Tab
+                            CreateTabFields(oForm, tabId, tempTabPage);
+
+                            //Add each TabPage to the TabControl
+                            mainTab.TabPages.Add(tempTabPage);
+                            mainTab.SelectedIndex = 0;
+                            mainTab.Dock = DockStyle.Fill;
+
+                            tempMasterForm.Controls.Add(mainTab);
+                            tempMasterForm.Height = 500;
+                            tempMasterForm.Width = 600;
+                            tempMasterForm.ResumeLayout(false);
+                        }
+                    }
+                }
+                tempMasterForm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void CreateTabFields(clsDynamicForm oForm, int tabID, TabPage tempTabPage)
+        {
+            DataSet dsFieldList = new DataSet();
+            string fieldCaption = "";
+            string fieldTooltip = "";
+            string fieldName = "";
+            string defaultValue = "";
+            int fieldOrder = 0;
+            string dataType = "";
+            int fieldSize = 0;
+            bool isMandatory = false;
+
+            try
+            {
+                dsFieldList = oForm.GetFieldList(tabID);
+                if (dsFieldList.Tables.Count > 0)
+                {
+                    if (dsFieldList.Tables[0].Rows.Count > 0)
+                    {
+                        for (int i = 0; i < dsFieldList.Tables[0].Rows.Count; i++)
+                        {
+                            fieldCaption = dsFieldList.Tables[0].Rows[i]["caption"].ToString();
+                            fieldTooltip = dsFieldList.Tables[0].Rows[i]["tooltip"].ToString();
+                            fieldName = dsFieldList.Tables[0].Rows[i]["fieldname"].ToString();
+                            defaultValue = dsFieldList.Tables[0].Rows[i]["defaultvalue"].ToString();
+                            fieldOrder = Convert.ToInt32(dsFieldList.Tables[0].Rows[i]["field_order"]);
+                            isMandatory = (dsFieldList.Tables[0].Rows[i]["mandatory"].ToString() == "True" ? true : false);
+                            dataType = dsFieldList.Tables[0].Rows[i]["datatype"].ToString();
+                            fieldSize = Convert.ToInt32(dsFieldList.Tables[0].Rows[i]["size"]);
+
+                            Label l = new Label();
+                            l.Name = fieldName + i;
+                            if (isMandatory)
+                            {
+                                l.Text = fieldCaption + " * ";
+                            }
+                            else
+                            {
+                                l.Text = fieldCaption;
+                            }
+                            l.Location = new Point(25, 25 + i * 30);
+                            tempTabPage.Controls.Add(l);
+
+                            switch (dataType.ToUpper())
+                            {
+                                case "VARCHAR":
+                                    //Add Textbox
+                                    TextBox t1 = new TextBox();
+                                    t1.Location = new Point(l.Location.X + 100, l.Location.Y);
+                                    t1.Text = defaultValue;
+                                    tempTabPage.Controls.Add(t1);
+                                    break;
+                                case "DECIMAL":
+                                    //Add Textbox
+                                    TextBox t2 = new TextBox();
+                                    t2.Location = new Point(l.Location.X + 100, l.Location.Y);
+                                    tempTabPage.Controls.Add(t2);
+                                    break;
+                                case "BIT":
+                                    //Add Checkbox/Radiobutton
+                                    CheckBox chk1 = new CheckBox();
+                                    chk1.Name = "chkBox" + fieldName;
+                                    chk1.Text = fieldCaption;
+                                    chk1.Location = new Point(l.Location.X + 100, l.Location.Y);
+                                    tempTabPage.Controls.Add(chk1);
+                                    break;
+                                case "DATETIME":
+                                    //Add Textbox with DateTime format
+                                    MaskedTextBox maskedTextBox1 = new MaskedTextBox();
+                                    maskedTextBox1.Mask = "00/00/0000";
+                                    maskedTextBox1.ValidatingType = typeof(System.DateTime);
+                                    maskedTextBox1.Location = new Point(l.Location.X + 100, l.Location.Y);
+                                    //maskedTextBox1.TypeValidationCompleted += new TypeValidationEventHandler(maskedTextBox_TypeValidationCompleted);
+                                    maskedTextBox1.KeyDown += new KeyEventHandler(maskedTextBox1_KeyDown);
+                                    maskedTextBox1.Validating += new CancelEventHandler(maskedTextBox_Validating);
+                                    tempTabPage.Controls.Add(maskedTextBox1);
+                                    break;
+                                case "TEXT":
+                                    //Add Textbox
+                                    TextBox t4 = new TextBox();
+                                    t4.Location = new Point(l.Location.X + 100, l.Location.Y);
+                                    t4.Multiline = true;
+                                    t4.ScrollBars = ScrollBars.Both;
+                                    t4.Text = defaultValue;
+                                    tempTabPage.Controls.Add(t4);
+                                    break;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dsFieldList = null;
+            }
+        }
+
+        void maskedTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            //toolTip1.Hide(maskedTextBox1);
+        }
+
+        void maskedTextBox_Leave(object sender, EventArgs e)
+        {
+            MaskedTextBox temp = (MaskedTextBox)sender;
+            //Regex dateValid = new System.Text.RegularExpressions.Regex(@"^(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\d\d$");
+            //if (dateValid.IsMatch(temp.Text))
+            //{ MessageBox.Show("Valid"); }
+            //else MessageBox.Show("In Valid");
+            //DateTime dt = temp.Text;
+        }
+
+        private void maskedTextBox_Validating(object sender, CancelEventArgs e)
+        {
+            DateTime rs;
+            MaskedTextBox tempTextbox = (MaskedTextBox)sender;
+            CultureInfo ci = new CultureInfo("en-US");
+            if (!DateTime.TryParseExact(tempTextbox.Text, "dd/MM/yyyy", ci, DateTimeStyles.None, out rs))
+            {
+                e.Cancel = true;
+                MessageBox.Show("Invalid date format");
+            }
+        }
+
+        void maskedTextBox_TypeValidationCompleted(object sender, TypeValidationEventArgs e)
+        {
+            if (!e.IsValidInput)
+            {
+                MessageBox.Show("Invalid Date");
+                //toolTip1.ToolTipTitle = "Invalid Date";
+                //toolTip1.Show("The data you supplied must be a valid date in the format mm/dd/yyyy.", maskedTextBox1, 0, -20, 5000);
+            }
+            else
+            {
+                //Now that the type has passed basic type validation, enforce more specific type rules.
+                MessageBox.Show("Valid");
+                //DateTime userDate = (DateTime)e.ReturnValue;
+                //if (userDate < DateTime.Now)
+                //{
+                //    MessageBox.Show("Invalid Date");
+                //    //toolTip1.ToolTipTitle = "Invalid Date";
+                //    //toolTip1.Show("The date in this field must be greater than today's date.", maskedTextBox1, 0, -20, 5000);
+                //    e.Cancel = true;
+                //}
+            }
+        }
+
+        void maskedTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            //if (maskedTextBox1.MaskFull)
+            //{
+            //    toolTip1.ToolTipTitle = "Input Rejected - Too Much Data";
+            //    toolTip1.Show("You cannot enter any more data into the date field. Delete some characters in order to insert more data.", maskedTextBox1, 0, -20, 5000);
+            //}
+            //else if (e.Position == maskedTextBox1.Mask.Length)
+            //{
+            //    toolTip1.ToolTipTitle = "Input Rejected - End of Field";
+            //    toolTip1.Show("You cannot add extra characters to the end of this date field.", maskedTextBox1, 0, -20, 5000);
+            //}
+            //else
+            //{
+            //    toolTip1.ToolTipTitle = "Input Rejected";
+            //    toolTip1.Show("You can only add numeric characters (0-9) into this date field.", maskedTextBox1, 0, -20, 5000);
+            //}
+        }
+
+        void maskedTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            //// The balloon tip is visible for five seconds; if the user types any data before it disappears, collapse it ourselves.
+            //toolTip1.Hide(maskedTextBox1);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                this.Close();
+        }
+
+        private void textBoxCaption_Leave(object sender, EventArgs e)
+        {
+            //if (textBoxCaption.Text.Length != 0)
+            //{
+            //    buttonLookup.Enabled = true;
+            //}
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+                this.Close();
+        }
+
+        private void DynamicControl_Click(object sender, EventArgs e)
+        {
+            //myConrols.myButton myButton = (myConrols.myButton)sender;
+
+            ////you now know which button was clicked
+
+            //String s = myButton.Name;
+        }
+
+        private DataView GetFilteredData(ColumnView view)
+        {
+            if (view == null) return null;
+            if (view.ActiveFilter == null || !view.ActiveFilterEnabled
+                || view.ActiveFilter.Expression == "")
+                return view.DataSource as DataView;
+
+            DataTable table = ((DataView)view.DataSource).Table;
+            DataView filteredDataView = new DataView(table);
+            filteredDataView.RowFilter = view.ActiveFilter.Expression;
+            return filteredDataView;
+        }
+
+        private void textBoxCaption_Validated(object sender, EventArgs e)
+        {
+            errorProvider1.SetError(textBoxCaption, "");
+        }
+
+        private void OnLeave(object sender, EventArgs e)
+        {
+            MaskedTextBox sd = (MaskedTextBox)sender;
+            Regex regStr;
+            m_mask = Mask.DateOnly;
+            switch (m_mask)
+            {
+                case Mask.DateOnly:
+                    regStr = new Regex(@"\d{2}/\d{2}/\d{4}");
+                    if (!regStr.IsMatch(sd.Text))
+                        errorProvider1.SetError(this, "*");
+                    break;
+                case Mask.PhoneWithArea:
+                    regStr = new Regex(@"\d{3}-\d{3}-\d{4}");
+                    if (!regStr.IsMatch(sd.Text))
+                        errorProvider1.SetError(this, "**");
+                    break;
+                case Mask.IpAddress:
+                    short cnt = 0;
+                    int len = sd.Text.Length;
+                    for (short i = 0; i < len; i++)
+                        if (sd.Text[i] == '.')
+                        {
+                            cnt++;
+                            if (i + 1 < len)
+                                if (sd.Text[i + 1] == '.')
+                                {
+                                    errorProvider1.SetError(this, "*");
+                                    break;
+                                }
+                        }
+                    if (cnt < 3 || sd.Text[len - 1] == '.')
+                        errorProvider1.SetError(this, "*");
+                    break;
+                case Mask.SSN:
+                    regStr = new Regex(@"\d{3}-\d{2}-\d{4}");
+                    if (!regStr.IsMatch(sd.Text))
+                        errorProvider1.SetError(this, "*");
+                    break;
+                case Mask.Decimal:
+                    break;
+                case Mask.Digit:
+                    break;
+            }
+        }
+
+        private void textBoxCode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //if ((e.KeyChar >= 65 && e.KeyChar <= 90) || (e.KeyChar >= 97 && e.KeyChar <= 122)
+            //    || e.KeyChar == 32 || e.KeyChar == 8)
+            //{
+            //    e.Handled = false;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Invalid Input");
+            //    e.Handled = true;
+            //} 
+        }
+
+        private void buttonPreviewForm_Click(object sender, EventArgs e)
+        {
+            PreviewDynamicMasterForm();
+        }
+
+        #region Navigation Buttons
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            SetControlVisibility("First");
+            BindLastRecord(Convert.ToInt32(textBoxFormID.Text));
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            SetControlVisibility("Previous");
+            BindLastRecord(Convert.ToInt32(textBoxFormID.Text));
+        }
+
+        private void btnForward_Click(object sender, EventArgs e)
+        {
+            SetControlVisibility("Next");
+            BindLastRecord(Convert.ToInt32(textBoxFormID.Text));
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            SetControlVisibility("Last");
+            BindLastRecord(Convert.ToInt32(textBoxFormID.Text));
+        }
+
+        private void SetControlVisibility(string Mode)
+        {
+            int totalRecords = this.BindingContext[dsForms, "Forms"].Count;
+            int currentPos = this.BindingContext[dsForms, "Forms"].Position;
+
+            switch (Mode)
+            {
+                case "First":
+                    this.BindingContext[dsForms, "Forms"].Position = 0;
+                    btnForward.Enabled = true;
+                    btnLast.Enabled = true;
+                    btnBack.Enabled = false;
+                    btnFirst.Enabled = false;
+                    break;
+                case "Previous":
+                    btnForward.Enabled = true;
+                    btnLast.Enabled = true;
+                    this.BindingContext[dsForms, "Forms"].Position = this.BindingContext[dsForms, "Forms"].Position - 1;
+                    if (this.BindingContext[dsForms, "Forms"].Position == 0)
+                    {
+                        btnBack.Enabled = false;
+                        btnFirst.Enabled = false;
+                    }
+                    break;
+                case "Next":
+                    btnBack.Enabled = true;
+                    btnFirst.Enabled = true;
+                    this.BindingContext[dsForms, "Forms"].Position = this.BindingContext[dsForms, "Forms"].Position + 1;
+                    if (this.BindingContext[dsForms, "Forms"].Position == this.BindingContext[dsForms, "Forms"].Count - 1)
+                    {
+                        btnLast.Enabled = false;
+                        btnForward.Enabled = false;
+                    }
+                    break;
+                case "Last":
+                    if (this.BindingContext[dsForms, "Forms"].Count == 1)
+                    {
+                        btnFirst.Enabled = false;
+                        btnBack.Enabled = false;
+                        btnForward.Enabled = false;
+                        btnLast.Enabled = false;
+                    }
+                    else if (this.BindingContext[dsForms, "Forms"].Count == 0)
+                    {
+                        btnFirst.Enabled = false;
+                        btnBack.Enabled = false;
+                        btnLast.Enabled = false;
+                        btnForward.Enabled = false;
+                    }
+                    else
+                    {
+                        btnFirst.Enabled = true;
+                        btnBack.Enabled = true;
+                        btnLast.Enabled = false;
+                        btnForward.Enabled = false;
+                    }
+                    this.BindingContext[dsForms, "Forms"].Position = this.BindingContext[dsForms, "Forms"].Count;
+                    break;
+            }
+        }
+
+        #endregion
+
+        private void frmMasterFormDesigner_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            oForm = null;
+            dsForms = null;
+            dtDatatypes = null;
+        }
+
+        //public void Dispose()
+        //{
+        //    Dispose(true);
+        //    GC.SuppressFinalize(this);
+        //}
+
+        //protected void Dispose(bool disposing)
+        //{
+        //    if (disposing)
+        //    {
+        //         Code to dispose the managed resources of the class
+        //    }
+        //     Code to dispose the un-managed resources of the class
+
+        //    isDisposed = true;
+        //}
+    }
+}

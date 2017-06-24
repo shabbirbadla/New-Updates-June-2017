@@ -1,0 +1,2 @@
+LPARAMETERS _commenuseletype
+=MESSAGEBOX(_commenuseletype)

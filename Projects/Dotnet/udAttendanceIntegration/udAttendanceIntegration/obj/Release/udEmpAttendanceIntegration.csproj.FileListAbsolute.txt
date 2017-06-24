@@ -1,0 +1,119 @@
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Release\DataAccess-Net.dll
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Release\uBaseForm.dll
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udSelectPop.dll
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe.licenses
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\udAttendanceIntegration.exe
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\udAttendanceIntegration.pdb
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\bin\Release\udAttendanceIntegration.exe
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\bin\Release\udAttendanceIntegration.pdb
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\bin\Release\udclsDGVNumericColumn.dll
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\bin\Release\udCrViewer.dll
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\bin\Release\udReportList.dll
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\ResolveAssemblyReference.cache
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\udAttendanceIntegration.exe.licenses
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegrationNew\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\bin\Release\udCrViewer.dll
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\bin\Release\udReportList.dll
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\2 Current Working\PayRoll Current Working\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe.licenses
+D:\My Tasks\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+D:\My Tasks\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+D:\My Tasks\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+D:\My Tasks\udAttendanceIntegration\bin\Release\udCrViewer.dll
+D:\My Tasks\udAttendanceIntegration\bin\Release\udReportList.dll
+D:\My Tasks\udAttendanceIntegration\bin\Release\office.dll
+D:\My Tasks\udAttendanceIntegration\bin\Release\Microsoft.Office.Interop.Outlook.dll
+D:\My Tasks\udAttendanceIntegration\bin\Release\Microsoft.Office.Interop.Outlook.xml
+D:\My Tasks\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+D:\My Tasks\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\My Tasks\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+D:\My Tasks\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\My Tasks\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+D:\My Tasks\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\bin\Release\udCrViewer.dll
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\bin\Release\udReportList.dll
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+\\10.0.0.25\Softwares\Product Team\Rupesh\From Ramya\Pratap\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\bin\Release\udCrViewer.dll
+D:\udAttendanceIntegration from Vss\udAttendanceIntegration\bin\Release\udReportList.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udCrViewer.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\udReportList.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\bin\Release\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udAttendanceIntegration\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\Interop.ueconnect.dll
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.ResolveComReference.cache
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\GetInfo.DLL
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\udCrViewer.dll
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\udReportList.dll
+F:\Kishor\SVN\25818\udAttendanceIntegration\bin\Release\Interop.ueconnect.dll
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+F:\Kishor\SVN\25818\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\udAttendanceIntegration.exe
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\udAttendanceIntegration.pdb
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\udAttendanceIntegration.exe
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\udAttendanceIntegration.pdb
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\udclsDGVNumericColumn.dll
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\udCrViewer.dll
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\udReportList.dll
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\Microsoft.Office.Interop.Outlook.dll
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\Microsoft.Office.Interop.Outlook.xml
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\bin\Release\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\ResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\udAttendanceIntegration.frmAttendanceIntegration.resources
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\udAttendanceIntegration.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\26387\udAttendanceIntegration\obj\Release\udEmpAttendanceIntegration.csproj.GenerateResource.Cache

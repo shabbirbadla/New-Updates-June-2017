@@ -1,0 +1,8 @@
+D:\My practice\aspspider\UdAlert\UdAlert\bin\Debug\UdAlert.exe
+D:\My practice\aspspider\UdAlert\UdAlert\bin\Debug\UdAlert.pdb
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\ResolveAssemblyReference.cache
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.Properties.Resources.resources
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.csproj.GenerateResource.Cache
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.exe
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.pdb
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Debug\UdAlert.frmAlert.resources

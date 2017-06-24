@@ -1,0 +1,9 @@
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\bin\Debug\Form 231.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\bin\Debug\Form 231.pdb
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Debug\Form_231.frmForm231.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Debug\Form_231.Properties.Resources.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Debug\Form 231.csproj.GenerateResource.Cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Debug\Form 231.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Debug\Form 231.pdb
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\bin\Debug\GetInfo.DLL

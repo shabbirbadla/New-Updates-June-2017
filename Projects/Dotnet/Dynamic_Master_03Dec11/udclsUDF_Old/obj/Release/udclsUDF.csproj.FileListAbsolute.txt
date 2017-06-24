@@ -1,0 +1,10 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udclsUDF\bin\Release\udclsUDF.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udclsUDF\bin\Release\udclsUDF.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udclsUDF\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udclsUDF\obj\Release\udclsUDF.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udclsUDF\obj\Release\udclsUDF.pdb
+D:\SQLProject\AlertMaster\udclsUDF\bin\Release\udclsUDF.dll
+D:\SQLProject\AlertMaster\udclsUDF\bin\Release\udclsUDF.pdb
+D:\SQLProject\AlertMaster\udclsUDF\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\udclsUDF\obj\Release\udclsUDF.dll
+D:\SQLProject\AlertMaster\udclsUDF\obj\Release\udclsUDF.pdb

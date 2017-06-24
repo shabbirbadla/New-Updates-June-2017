@@ -1,0 +1,11 @@
+Program e:\...\gst_final\control center\svn\billsonhold\billsonhold\uebillsonhold.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form e:\...\control center\svn\billsonhold\billsonhold\uefrmbillsonhold.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. UEVOUPRINT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library e:\...\gst_final\control center\svn\billsonhold\billsonhold\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+

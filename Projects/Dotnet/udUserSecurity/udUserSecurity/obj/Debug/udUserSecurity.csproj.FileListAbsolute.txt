@@ -1,0 +1,12 @@
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\ResolveAssemblyReference.cache
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.frmUserSecurity.resources
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.Properties.Resources.resources
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.csproj.GenerateResource.Cache
+D:\Ramya Working\udUserSecurity\udUserSecurity\bin\Debug\udUserSecurity.exe
+D:\Ramya Working\udUserSecurity\udUserSecurity\bin\Debug\udUserSecurity.pdb
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.exe
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.pdb
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.frmroleaccess.resources
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.frmrolepermission.resources
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.frmcopyusers.resources
+D:\Ramya Working\udUserSecurity\udUserSecurity\obj\Debug\udUserSecurity.frmuseraccess.resources

@@ -1,0 +1,3 @@
+.columns(ncol).ADDOBJECT(txtname, 'VouClass.GrdDate', 0, 0, .rowheight,Lother_vw.fld_wid,;
+					.columns(ncol).controlsource,Lother_vw.Whn_con,Lother_vw.Defa_val,;
+					Lother_vw.Val_con,Lother_vw.Val_err)

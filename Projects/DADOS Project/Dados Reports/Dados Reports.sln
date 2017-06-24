@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DadosReports", "Dados Reports\DadosReports.csproj", "{31EC219C-3DA7-4C1F-9398-5D00CFDFFFFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoLib", "CryptoLib\CryptoLib.csproj", "{4D3DAF12-75E0-4287-A8C4-DA3654402AF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicalLibrary", "LogicalLibrary\LogicalLibrary.csproj", "{E57317CA-6341-4C4E-BF05-A3B93C6E41EE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Dados Setup", "Dados Setup\Dados Setup.vdproj", "{FE1F106B-E9E4-44BC-BF43-D78333BA5A19}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DotnetToVoucher", "DotnetToVoucher\DotnetToVoucher.vdproj", "{E0FED9F3-1B6E-4619-B217-81F7A54F1B13}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "DotNetToVoucherMergeModule", "DotNetToVoucherMergeModule\DotNetToVoucherMergeModule.vdproj", "{7AEB94E9-64D2-4698-BBC5-3ABC8D18303E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31EC219C-3DA7-4C1F-9398-5D00CFDFFFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EC219C-3DA7-4C1F-9398-5D00CFDFFFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EC219C-3DA7-4C1F-9398-5D00CFDFFFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EC219C-3DA7-4C1F-9398-5D00CFDFFFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3DAF12-75E0-4287-A8C4-DA3654402AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3DAF12-75E0-4287-A8C4-DA3654402AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3DAF12-75E0-4287-A8C4-DA3654402AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3DAF12-75E0-4287-A8C4-DA3654402AF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57317CA-6341-4C4E-BF05-A3B93C6E41EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57317CA-6341-4C4E-BF05-A3B93C6E41EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57317CA-6341-4C4E-BF05-A3B93C6E41EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57317CA-6341-4C4E-BF05-A3B93C6E41EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1F106B-E9E4-44BC-BF43-D78333BA5A19}.Debug|Any CPU.ActiveCfg = Debug
+		{FE1F106B-E9E4-44BC-BF43-D78333BA5A19}.Release|Any CPU.ActiveCfg = Release
+		{E0FED9F3-1B6E-4619-B217-81F7A54F1B13}.Debug|Any CPU.ActiveCfg = Debug
+		{E0FED9F3-1B6E-4619-B217-81F7A54F1B13}.Release|Any CPU.ActiveCfg = Release
+		{7AEB94E9-64D2-4698-BBC5-3ABC8D18303E}.Debug|Any CPU.ActiveCfg = Debug
+		{7AEB94E9-64D2-4698-BBC5-3ABC8D18303E}.Debug|Any CPU.Build.0 = Debug
+		{7AEB94E9-64D2-4698-BBC5-3ABC8D18303E}.Release|Any CPU.ActiveCfg = Release
+		{7AEB94E9-64D2-4698-BBC5-3ABC8D18303E}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

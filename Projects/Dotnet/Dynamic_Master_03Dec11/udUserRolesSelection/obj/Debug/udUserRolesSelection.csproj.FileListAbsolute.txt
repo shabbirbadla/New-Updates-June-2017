@@ -1,0 +1,21 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\bin\Debug\udUserRolesSelection.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\bin\Debug\udUserRolesSelection.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Debug\udUserRolesSelection.frmUserRoleSelection.resources
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Debug\udUserRolesSelection.Properties.Resources.resources
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Debug\udUserRolesSelection.csproj.GenerateResource.Cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Debug\udUserRolesSelection.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Debug\udUserRolesSelection.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\udUserRolesSelection.exe
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\udUserRolesSelection.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Debug\udUserRolesSelection.exe
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Debug\udUserRolesSelection.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\udUserRolesSelection.Properties.Resources.resources
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\udUserRolesSelection.csproj.GenerateResource.Cache
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\udUserRolesSelection.exe.licenses
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Debug\uBaseForm.dll
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Debug\udclsUDF.dll
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Debug\udclsUDF.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Debug\udUserRolesSelection.frmMainUserRoles.resources

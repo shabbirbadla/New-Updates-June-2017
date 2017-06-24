@@ -1,0 +1,21 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\bin\Release\udUserRolesSelection.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\bin\Release\udUserRolesSelection.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Release\udUserRolesSelection.frmUserRoleSelection.resources
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Release\udUserRolesSelection.Properties.Resources.resources
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Release\udUserRolesSelection.csproj.GenerateResource.Cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Release\udUserRolesSelection.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\udUserRolesSelection\obj\Release\udUserRolesSelection.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\udUserRolesSelection.Properties.Resources.resources
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\udUserRolesSelection.csproj.GenerateResource.Cache
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\udUserRolesSelection.exe.licenses
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\udUserRolesSelection.exe
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Release\udUserRolesSelection.exe
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Release\udUserRolesSelection.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\udUserRolesSelection.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Release\DataAccess-Net.dll
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Release\uBaseForm.dll
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Release\udclsUDF.dll
+D:\SQLProject\AlertMaster\udUserRolesSelection\bin\Release\udclsUDF.pdb
+D:\SQLProject\AlertMaster\udUserRolesSelection\obj\Release\udUserRolesSelection.frmMainUserRoles.resources

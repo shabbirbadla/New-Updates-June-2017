@@ -1,0 +1,35 @@
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udCrViewer\bin\Release\udCrViewer.dll
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udCrViewer\bin\Release\udCrViewer.pdb
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udCrViewer\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udCrViewer\obj\Release\udCrViewer.dll
+C:\Users\rprajapa.UDYOG\AppData\Local\Temporary Projects\udCrViewer\obj\Release\udCrViewer.pdb
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Release\udCrViewer.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Release\udCrViewer.frmCrViewer.resources
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Release\udCrViewer.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Release\udCrViewer.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Release\udCrViewer.pdb
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Release\uBaseForm.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Release\udDataTableQuery.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Release\udCrViewer.pdb
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Release\udCrViewer.csproj.ResolveComReference.cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\bin\Release\udCrViewer.dll
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\bin\Release\udCrViewer.pdb
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\bin\Release\ubaseform.dll
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\bin\Release\udDataTableQuery.dll
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Release\udCrViewer.csproj.ResolveComReference.cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Release\udCrViewer.frmCrViewer.resources
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Release\udCrViewer.csproj.GenerateResource.Cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Release\udCrViewer.dll
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Release\udCrViewer.pdb
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\bin\Release\udCrViewer.dll
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\bin\Release\udCrViewer.pdb
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\bin\Release\ubaseform.dll
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\bin\Release\udDataTableQuery.dll
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\obj\Release\udCrViewer.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\obj\Release\udCrViewer.frmCrViewer.resources
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\obj\Release\udCrViewer.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\obj\Release\udCrViewer.dll
+D:\SVN Development\Dotnet\udCrViewer\udCrViewer\obj\Release\udCrViewer.pdb

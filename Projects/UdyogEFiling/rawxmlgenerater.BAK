@@ -1,0 +1,544 @@
+LPARAMETERS _RptName,_eFileName
+_screenactiveform = _screen.ActiveForm
+_screenactiveform.panel.Panels(1).Text = 'Generating XML..'
+_rawxmlfilenm = Alltrim(_RptName)+'.XML'
+
+If !Used('RawXMLMap_vw')
+	Select 0
+	Select * From RawXMLMap WHERE ALLTRIM(eFileName) == allt(_eFileName) AND ALLTRIM(Product) == ALLTRIM(mProduct) ;
+		Into Cursor RawXMLMap_vw Readwrite
+	Select RawXMLMap_vw
+	Index On UPPER(UniqueId) Tag UniqueId
+	Index On Upper(RptBandNm) Tag RptBandNm
+ENDIF
+
+DO case
+CASE mProduct = 'VU8'	
+	If !'\_REPORTLISTENER.' $ Upper(Set('class'))
+		SET CLASSLIB TO _REPORTLISTENER IN SYS(16,0) ADDITIVE
+	Endif	
+	oHTMListener = CREATEOBJECT('ClXMLGenerator')
+	IF TYPE('oHTMListener') <> 'O'
+		=MESSAGEBOX('Unable to find XML Generator',0,vumess)
+		RETURN .f.
+	ENDIF
+
+	_screenactiveform.panel.Panels(1).Text = 'Generating XML....'
+	_frxname   = ALLTRIM(_RptName)+'.frx'
+	IF !File(_frxname)
+		=MESSAGEBOX('File '+ALLTRIM(_frxname)+' not Found',0,vumess)
+		RETURN .f.
+	ENDIF
+	_frxvwname  = ALLTRIM(_RptName)+'_vw.frx'
+	_frtvwname  = ALLTRIM(_RptName)+'_vw.frt'
+
+	SELECT * FROM (_frxname) INTO table (_frxvwname) readwrite
+	IF USED(JUSTSTEM(_frxvwname))
+		USE IN (_frxvwname)
+	Endif	
+	IF !FILE(_frxvwname)
+		=MESSAGEBOX('Unable to File Report file',0,vumess)
+		RETURN .f.
+	ENDIF
+
+	&&vasant191010
+	_mforeFiling = .t.
+	_errmsgvalue = ''
+	Try		
+	&&vasant191010	
+		_repogenoldengine = SET("EngineBehavior")
+		SET ENGINEBEHAVIOR 70
+		REPORT FORM (_frxvwname) OBJECT oHTMListener &lcstr_tot
+		SET ENGINEBEHAVIOR _repogenoldengine
+	&&vasant191010	
+	CATCH TO _errmsg
+		_errmsgvalue = _errmsg.message
+	Endtry	
+	IF !Empty(_errmsgvalue)
+		=MESSAGEBOX(_errmsgvalue,0,vumess)
+		RETURN .f.
+	ENDIF
+	&&vasant191010
+
+	IF _mACESFiling  = .t.
+		oHTMListener = CREATEOBJECT('ClHTMLGenerator')
+		IF TYPE('oHTMListener') <> 'O'
+			=MESSAGEBOX('Unable to find HTML Generator',0,vumess)
+			RETURN .f.
+		ENDIF
+		_screenactiveform.panel.Panels(1).Text = 'Generating HTML....'
+		_mforeFiling = .f.
+		_errmsgvalue = ''
+		Try		
+			_repogenoldengine = SET("EngineBehavior")
+			SET ENGINEBEHAVIOR 70
+			REPORT FORM (_frxvwname) OBJECT oHTMListener &lcstr_tot
+			SET ENGINEBEHAVIOR _repogenoldengine
+		CATCH TO _errmsg
+			_errmsgvalue = _errmsg.message
+		Endtry	
+		IF !Empty(_errmsgvalue)
+			=MESSAGEBOX(_errmsgvalue,0,vumess)
+			RETURN .f.
+		ENDIF
+	Endif
+	
+	ERASE (_frxvwname)
+	ERASE (_frtvwname)
+
+CASE mProduct = 'VU9'	
+	_screenactiveform.panel.Panels(1).Text = 'Generating XML....'
+	&&vasant110710
+*!*		_frxname   = 'e'+ALLTRIM(_RptName)+'.rpt'
+*!*		COPY FILE (ALLTRIM(_RptName)+'.rpt') TO (_frxname)
+	_frxname   = 'e'+ALLTRIM(_RptName)+'.rpt'
+	_RptContents=FILETOSTR(ALLTRIM(_RptName)+'.rpt')
+	IF TYPE('_RptContents') <> 'C'
+		=MESSAGEBOX('Report File not Found',0,vumess)
+		RETURN .f.
+	ENDIF
+	=STRTOFILE(_RptContents,_frxname)
+	&&vasant110710
+	IF !File(_frxname)
+		*=MESSAGEBOX('File '+ALLTRIM(_frxname)+' not Found',0,vumess)
+		=MESSAGEBOX('Report File not Found',0,vumess)
+		RETURN .f.
+	ENDIF
+	
+	_TmpTblName = '##TmpeFile'+SYS(3)
+	If !USED('lst_exc')
+		=Messagebox('Unable to get Data',0,vumess)
+		Return .F.
+	ENDIF
+	nhandle = 0
+	SELECT lst_exc
+	lst_exccnt =AFIELDS(lst_excarr)
+	IF lst_exccnt > 0
+		lst_exctbl = 'Create Table '+_TmpTblName+' (TblId Int Identity(1,1),'
+		FOR i = 1 TO lst_exccnt
+			_fld_nm  = '['+lst_excarr(i,1)+']'
+			_fld_ty  = UPPER(lst_excarr(i,2))
+			_fld_wid = lst_excarr(i,3)
+			_fld_dec = lst_excarr(i,4)
+			DO case
+			CASE _fld_ty = 'C'
+				_fld_ty = 'VarChar'
+			CASE _fld_ty = 'N'
+				_fld_ty = 'Numeric'
+			CASE _fld_ty = 'I'
+				_fld_ty = 'Integer'
+				_fld_wid = 0
+			CASE _fld_ty = 'D' OR _fld_ty = 'T'
+				_fld_ty = 'DateTime'
+				_fld_wid = 0
+			CASE _fld_ty = 'L'
+				_fld_ty = 'Bit'
+				_fld_wid = 0
+			CASE _fld_ty = 'M'
+				_fld_ty = 'Text'
+				_fld_wid = 0
+			Endcase			
+			lst_exctbl = lst_exctbl + IIF(i > 1 ,',','') 
+			lst_exctbl = lst_exctbl + _fld_nm+' '+_fld_ty
+			IF _fld_wid > 0
+				lst_exctbl = lst_exctbl +'('+ALLTRIM(STR(_fld_wid))+IIF(_fld_dec > 0,','+ALLTRIM(STR(_fld_dec)),'')+')'
+			Endif	
+		ENDFOR
+		lst_exctbl = lst_exctbl + ')'
+		mSqlStr = []
+		mSqlStr = lst_exctbl
+		nretval = _screenactiveform.sqlconobj.dataconn('EXE',_screenactiveform.CompanyDb,mSqlStr,'','nhandle')
+		If nretval<=0
+			=Messagebox('Connection Error',0,vumess)
+			Return .F.
+		ENDIF
+		mSqlStr = []
+		mSqlStr  = _screenactiveform.SqlConObj.GenInsert(_TmpTblName,"","","lst_exc",mvu_backend)
+		SELECT lst_exc
+		Scan
+			nretval = _screenactiveform.sqlconobj.dataconn('EXE',_screenactiveform.CompanyDb,mSqlStr,'','nhandle')
+			If nretval<=0
+				=Messagebox('Connection Error',0,vumess)
+				Return .F.
+			ENDIF
+			SELECT lst_exc
+		Endscan	
+	Endif
+
+	mexecquery = 'Select * From '+_TmpTblName
+
+	=AddProperty(_tmpvar,"IsEFiling",.t.)
+	PrintFlag  = 5
+	DO uecrviewer WITH _frxname,mexecquery,PrintFlag
+
+	_tmpvar.IsEFiling = .f.
+	IF _mACESFiling  = .t.
+		PrintFlag  = 6
+		DO uecrviewer WITH _frxname,mexecquery,PrintFlag
+		IF FILE(JUSTSTEM(_frxname)+'.htm')
+			DO eFileCopy WITH JUSTSTEM(_frxname)+'.htm',_finalhtmlname IN eFileUtil	
+			ERASE (JUSTSTEM(_frxname)+'.htm')
+		ENDIF
+	ENDIF
+		
+	ERASE (_frxname)	&&vasant110710
+	nsq = _screenactiveform.sqlconobj.sqlconnclose('nhandle')
+	If nsq<=0
+		Return .F.
+	ENDIF
+	_rawxmlfilenm = 'e'+_rawxmlfilenm		&&vasant110710
+ENDCASE
+IF !FILE(_rawxmlfilenm)
+	=MESSAGEBOX('Unable to generate XML file',0,vumess)
+	RETURN .f.
+ENDIF
+
+_screenactiveform.panel.Panels(1).Text = 'Generating XML......'
+_xmlcursornm = Alltrim(_RptName)
+=CreateXMLCursor(_rawxmlfilenm,_xmlcursornm)
+IF !Used(_xmlcursornm)
+	=MESSAGEBOX('Unable to generate XML file',0,vumess)
+	RETURN .f.
+ENDIF
+
+
+
+
+
+*****Class Defining*****
+Define Class ClXMLGenerator As XMLListener
+	TargetFileName = _rawxmlfilenm
+	Quietmode      = .T.
+	xmlmode        = 0
+	eFileName      = _eFileName
+	includeBreaksInData = 1
+
+	Procedure XmlRawNode
+	Lparameters m.tcNode,m.tcValue, m.tvID, m.tvIDRef, m.tvFormatting
+	Local m.lcValue, m.lcNode
+	If Parameters() < 2
+		m.lcValue = ""
+	Else
+		m.lcValue = This.XMLRawConv(m.tcValue)
+	ENDIF
+	If Empty(m.lcValue)
+		m.lcNode = ''
+	Else
+		m.lcNode = ''
+		m.lcNode = This.XMLRawTag(m.tvID, .T.,m.tvID)
+		If !Empty(m.lcNode)
+			m.lcNode = m.lcNode+m.lcValue
+			m.lcNode = m.lcNode+This.XMLRawTag(m.tvID, .F.,m.tvID)
+		Endif
+	Endif
+	Return m.lcNode
+
+
+	Procedure XMLRawTag
+	Lparameters m.tcNode, m.tlOpen, m.tcID, m.tcIDRef, m.tvFormatting
+	Local m.lcNode
+	m_orgalias = Alias()
+	If Type('m.tcID') <> 'C'
+		m.tcID = '0'
+	Endif
+	m_uniqueid = ''
+	m_comment  = ''
+	m_generate = .t.
+	IF USED('FRX')
+		m_uniqueid = UPPER(frx.uniqueid)
+		m_comment  = UPPER(ALLTRIM(frx.comment))
+		IF frx.objcode = 1 AND _Pageno > 1
+			*m_generate = .f.
+		Endif	
+	Else	
+		_oldtrigdatasession = SET("Datasession")
+		_trigtotsession = ASESSIONS(_trigsessionarr)
+		FOR _trigstartsession = 1 TO _trigtotsession
+			SET DATASESSION TO _trigsessionarr(_trigstartsession)
+			IF USED('FRX')
+				m_uniqueid = UPPER(frx.uniqueid)
+				m_comment  = UPPER(ALLTRIM(frx.comment))
+				IF frx.objcode = 1 AND _Pageno > 1
+					*m_generate = .f.
+				Endif	
+			Endif	
+		ENDFOR
+		SET DATASESSION TO (_oldtrigdatasession)
+	Endif
+
+	If !Used('RawXMLMap_vw')
+		_meFileName = This.eFileName
+		Select 0
+		Select * From RawXMLMap WHERE ALLTRIM(eFileName) == allt(_meFileName) AND ALLTRIM(Product) == ALLTRIM(mProduct) ;
+			Into Cursor RawXMLMap_vw Readwrite
+		Select RawXMLMap_vw
+		Index On UPPER(UniqueId) Tag UniqueId
+		Index On Upper(RptBandNm) Tag RptBandNm
+	ENDIF
+	Select RawXMLMap_vw
+	GO Top
+	
+	_xmltagid = ''	
+	_recfound = .F.
+	If !EMPTY(m_uniqueid)
+		If Seek(m_uniqueid,'RawXMLMap_vw','UniqueId')
+			_recfound = .T.
+		Endif
+	Endif
+	If _recfound = .F. AND !EMPTY(m_comment)
+		If Seek(m_comment,'RawXMLMap_vw','RptBandNm')
+			_recfound = .T.
+		Endif
+	Endif
+	If _recfound = .F.
+		If Seek(Upper(m.tcNode),'RawXMLMap_vw','RptBandNm')
+			_recfound = .T.
+		Endif
+	ENDIF
+	If _recfound = .F. OR m_generate = .f.
+		_Debug = .f.
+		IF _Debug = .t.
+			m.tcNode = TRANSFORM(m_uniqueid)
+		Else	
+			m.tcNode = ''
+		ENDIF
+	ELSE
+		Try
+			m.tcNode = Alltrim(RawXMLMap_vw.RawTagName)
+			_xmltagid = Alltrim(RawXMLMap_vw.ObjDesc)
+			If !Empty(_xmltagid)
+				_xmltagid = Evaluate(_xmltagid)
+			Endif
+		CATCH TO _errmsg
+			m.tcNode = ''
+			=MESSAGEBOX(_errmsg.message,0,vumess)
+		Endtry	
+	Endif	
+	m.lcNode = ''
+	If !Empty(m.tcNode)
+		If Isnull(m.tlOpen) Or m.tlOpen
+			m.lcNode = m.lcNode + "<" + m.tcNode
+			IF !EMPTY(_xmltagid)
+				m.lcNode = m.lcNode +  " id = '"+_xmltagid+"'"
+			Endif
+			If Isnull(m.tlOpen)
+				m.lcNode = m.lcNode +  "/"
+			Endif
+			m.lcNode = m.lcNode + ">"
+		Else
+			m.lcNode = m.lcNode + "</"+ m.tcNode + ">"
+		Endif
+	Endif
+	If !Empty(m_orgalias)
+		Select (m_orgalias)
+	Endif
+	Return m.lcNode
+Enddefine
+
+
+
+*****************************************************
+PROCEDURE CreateXMLCursor
+LPARAMETERS _paraxmlfilenm,_paraxmlcursornm
+
+oXML = CREATEOBJECT("msxml2.DOMDocument")
+IF TYPE('oXML') <> 'O'
+	oXML = CREATEOBJECT("msxml.DOMDocument")
+Endif
+IF TYPE('oXML') != 'O'
+	=MESSAGEBOX('Unable to create XML Object',0,vumess)
+	RETURN .f.
+ENDIF
+_xmlloaded = .f.
+_xmlloaded = oxml.Load(_paraxmlfilenm)
+IF _xmlloaded = .f.
+	=MESSAGEBOX('Unable to open XML file',0,vumess)
+	RETURN .f.
+ENDIF
+CREATE CURSOR &_paraxmlcursornm (TagGroup Varchar(5),TagName Varchar(100),TagRec Numeric(5),TagValue Memo)
+IF !USED(_paraxmlcursornm)
+	=MESSAGEBOX('Unable to open XML file',0,vumess)
+	RETURN .f.
+ENDIF
+SELECT (_paraxmlcursornm)
+INDEX on TagRec TAG TagRec
+
+_mTagRec = 0		&&vasant110710
+_moldNodeParentNm = ''		&&vasant110710
+=ReadRawXML(oxml.childNodes,_paraxmlcursornm)
+SELECT (_paraxmlcursornm)
+IF RECCOUNT() = 0
+	=MESSAGEBOX('No Records Found',0,vumess)
+	RETURN .f.
+ENDIF
+
+IF mProduct = 'VU9'
+	SELECT (_paraxmlcursornm)
+	_UpdateStr = 'Select A.TagRec,A.TagValue,B.RawTagName as TagName,B.TagGroup from '+_paraxmlcursornm+' a,RawXMLMap_vw b where ALLTRIM(UPPER(a.TagName)) == ALLTRIM(UPPER(b.UniqueId));
+		into cursor '+_paraxmlcursornm
+	&_UpdateStr
+Endif	
+
+&&vasant110710
+DO case
+CASE mProduct = 'VU8'	
+	SELECT DISTINCT UPPER(RawTagName) as RawTagName FROM RawXMLMap_vw INTO CURSOR XMLStruRec_Vw
+	_XMLstrutbl = 'Create cursor XMLData_Vw (XMLRecNo Numeric(5),TagGroup Varchar(5),BlankTag L,TagOrder C(5)'
+	SELECT XMLStruRec_Vw
+	SCAN
+		_XMLstrutbl = ALLTRIM(_XMLstrutbl)+','+ALLTRIM(XMLStruRec_Vw.RawTagName)+' Memo'
+	ENDSCAN
+	_XMLstrutbl = _XMLstrutbl+')'
+	&_XMLstrutbl
+	IF !USED('XMLData_Vw')
+		=MESSAGEBOX('No Records Found',0,vumess)
+		RETURN .f.
+	ENDIF
+
+	_mXMLRecNo = 0
+	SELECT (_paraxmlcursornm)
+	SCAN
+		_mTagName  = TagName
+		_mTagValue = TagValue
+		_mTagrec   = TagRec
+		_mTagGrp   = TagGroup
+
+		SELECT XMLData_Vw
+		IF _mTagRec <> _mXMLRecNo
+			APPEND BLANK IN XMLData_Vw
+			REPLACE XMLRecNo WITH _mTagrec,;
+				TagGroup WITH _mTagGrp IN XMLData_Vw
+		Endif	
+		REPLACE (_mTagName) WITH _mTagValue in XMLData_Vw
+
+		_mXMLRecNo = _mTagRec
+		SELECT (_paraxmlcursornm)
+	ENDSCAN 
+	SELECT XMLData_Vw
+
+CASE mProduct = 'VU9'	
+	SELECT DISTINCT UPPER(RawTagName) as RawTagName FROM RawXMLMap_vw INTO CURSOR XMLStruRec_Vw
+	_XMLstrutbl = 'Create cursor XMLData_Vw (XMLRecNo Numeric(5),TagGroup Varchar(5),BlankTag L,TagOrder C(5)'
+	SELECT XMLStruRec_Vw
+	SCAN
+		_XMLstrutbl = ALLTRIM(_XMLstrutbl)+','+ALLTRIM(XMLStruRec_Vw.RawTagName)+' Memo'
+	ENDSCAN
+	_XMLstrutbl = _XMLstrutbl+')'
+	&_XMLstrutbl
+	IF !USED('XMLData_Vw')
+		=MESSAGEBOX('No Records Found',0,vumess)
+		RETURN .f.
+	ENDIF
+
+	SELECT (_paraxmlcursornm)
+	SCAN
+		_mTagName  = TagName
+		_mTagValue = TagValue
+		_mTagrec   = TagRec
+		_mTagGrp   = TagGroup
+
+		SELECT XMLData_Vw
+		Loca for XMLRecNo = _mTagrec And TagGroup = _mTagGrp
+		IF !FOUND()
+			APPEND BLANK IN XMLData_Vw
+			REPLACE XMLRecNo WITH _mTagrec,;
+				TagGroup WITH _mTagGrp IN XMLData_Vw
+		Endif	
+		REPLACE (_mTagName) WITH _mTagValue in XMLData_Vw
+
+		SELECT (_paraxmlcursornm)
+	ENDSCAN 
+	SELECT XMLData_Vw
+
+CASE mProduct = 'VU0'		&&vasant110710
+
+	SELECT * FROM (_paraxmlcursornm) WHERE INLIST(UPPER(TagName),'NEWRECORD','OBJECTNAME','TEXTVALUE','FORMATTEDVALUE') INTO CURSOR test1
+	*SELECT * FROM rawxmlmap INTO CURSOR RawXMLMap_vw readwrite
+
+	SELECT DISTINCT UPPER(RawTagName) as RawTagName FROM RawXMLMap_vw INTO CURSOR XMLStruRec_Vw
+	_XMLstrutbl = 'Create cursor XMLData_Vw (XMLRecNo Numeric(5),TagGroup Varchar(5),BlankTag L,TagOrder C(5)'
+	SELECT XMLStruRec_Vw
+	SCAN
+		_XMLstrutbl = ALLTRIM(_XMLstrutbl)+','+ALLTRIM(XMLStruRec_Vw.RawTagName)+' Memo'
+	ENDSCAN
+	_XMLstrutbl = _XMLstrutbl+')'
+	&_XMLstrutbl
+
+	_mserial = 0
+	SELECT test1
+	SCAN
+
+		SELECT XMLData_Vw
+		DO case
+		case UPPER(test1.tagname) = 'NEWRECORD'
+			_mserial = _mserial + 1
+			APPEND BLANK IN XMLData_Vw
+			REPLACE xmlrecno WITH _mserial IN XMLData_Vw
+		case UPPER(test1.tagname) = 'OBJECTNAME'
+			mfieldnm = ALLTRIM(test1.tagvalue)
+		OTHERWISE
+			SELECT rawxmlmap_vw
+			LOCATE FOR ALLTRIM(UPPER(UniqueId)) == ALLTRIM(UPPER(mfieldnm))
+			IF FOUND()
+				mfieldnm1 = ALLTRIM(rawxmlmap_vw.rawtagname)
+				mvalue1   = ALLTRIM(test1.tagvalue)
+				REPLACE taggroup WITH rawxmlmap_vw.taggroup IN XMLData_Vw
+				REPLACE &mfieldnm1 WITH mvalue1 IN XMLData_Vw
+			Endif	
+		Endcase
+		
+		SELECT test1
+	endscan
+Endcase
+
+SELECT XMLData_Vw
+DELETE FROM xmldata_vw WHERE EMPTY(taggroup)
+IF INLIST(UPPER(_paraxmlfilenm),'ER1_MAR08.XML','EFORM_ER1.XML','ER3_MAR08.XML','EFORM_ER3.XML','EER1OCT11.XML','EER1OCT12.XML')		&&vasant110710
+	*DELETE FROM xmldata_Vw WHERE ALLTRIM(taggroup) = '6' AND VAL(ALLTRIM(MLINE(acctcur6,1)))  = 0  AND VAL(ALLTRIM(MLINE(cracct6,1)))  = 0                
+	DELETE FROM xmldata_Vw WHERE ALLTRIM(taggroup) = '3' AND VAL(ALLTRIM(MLINE(OpStk3,1)))  = 0  AND VAL(ALLTRIM(MLINE(QtyManf3,1)))  = 0 AND VAL(ALLTRIM(MLINE(QtyClear3,1)))  = 0 AND VAL(ALLTRIM(MLINE(ClStk3,1)))  = 0 AND VAL(ALLTRIM(MLINE(DtyPyable3,1)))  = 0 
+Endif	&&vasant010710
+IF INLIST(UPPER(_paraxmlfilenm),'FORM2.XML','EFORM2.XML')		&&vasant110710
+	DELETE FROM XMLData_Vw WHERE TagGroup = '2' AND EMPTY(SaleBillNo2)
+	DELETE FROM XMLData_Vw WHERE TagGroup = '3' AND EMPTY(PurBillNo3)
+Endif	
+INDEX on TagOrder+TagGroup+STR(XMLRecNo) TAG TagRec
+
+
+*****************************************************
+PROCEDURE ReadRawXML		&&vasant110710
+LPARAMETERS Nodes,_xmlTableNm
+For Each xNode In Nodes
+	IF xNode.haschildNodes
+		IF mproduct!='VU0'	&&vasant110710
+			IF !(ALLTRIM(UPPER(_moldNodeParentNm)) == ALLTRIM(UPPER(xNode.parentnode.nodename)))
+				_mTagRec = _mTagRec + 1
+			ENDIF
+			_moldNodeParentNm = xNode.parentnode.nodename
+		ELSE
+			IF TYPE('xnode.attributes.item(0).nodeName') != 'U'
+				IF UPPER(xnode.attributes.item(0).nodeName) = 'SECTIONNUMBER'
+					SELECT (_xmlTableNm)
+					APPEND BLANK IN (_xmlTableNm)
+					REPLACE TagName WITH 'NEWRECORD',;
+						TagRec WITH _mTagRec IN (_xmlTableNm)
+					_mTagRec = _mTagRec + 1
+				ENDIF
+			Endif	
+		Endif	
+		=ReadRawXML(xNode.childNodes,_xmlTableNm)
+	ELSE
+		SELECT (_xmlTableNm)
+		APPEND BLANK IN (_xmlTableNm)
+		REPLACE TagName WITH UPPER(xNode.parentnode.nodename),;
+			TagGroup WITH IIF(TYPE('xNode.parentnode.parentnode.attributes.nextnode.text') <> 'U',xNode.parentnode.parentnode.attributes.nextnode.text,''),;
+			TagValue WITH IIF(mproduct!='VU0',xNode.text,xnode.parentNode.text),;
+			TagRec With _mTagRec IN (_xmlTableNm)		&&vasant110710
+	endif	
+Next xNode
+
+
+Define Class ClHTMLGenerator As HTMLListener
+	TargetFileName = _finalhtmlname
+	Quietmode      = .T.
+
+Enddefine

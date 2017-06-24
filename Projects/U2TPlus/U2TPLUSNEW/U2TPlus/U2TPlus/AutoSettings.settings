@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="U2TPlus" GeneratedClassName="AutoSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NXo/ao4xL5ix30tACkl6jg==</Value>
+    </Setting>
+    <Setting Name="ModifyDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2009-05-10</Value>
+    </Setting>
+    <Setting Name="FilureCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

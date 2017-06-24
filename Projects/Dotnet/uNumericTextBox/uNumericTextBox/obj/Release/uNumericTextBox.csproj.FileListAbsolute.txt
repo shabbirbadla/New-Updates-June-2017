@@ -1,0 +1,10 @@
+D:\SQLProject\payroll\uNumericTextBox\uNumericTextBox\bin\Release\uNumericTextBox.dll
+D:\SQLProject\payroll\uNumericTextBox\uNumericTextBox\bin\Release\uNumericTextBox.pdb
+D:\SQLProject\payroll\uNumericTextBox\uNumericTextBox\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\uNumericTextBox\uNumericTextBox\obj\Release\uNumericTextBox.dll
+D:\SQLProject\payroll\uNumericTextBox\uNumericTextBox\obj\Release\uNumericTextBox.pdb
+D:\Development\Dotnet\Update to VSS\uNumericTextBox\uNumericTextBox\bin\Release\uNumericTextBox.dll
+D:\Development\Dotnet\Update to VSS\uNumericTextBox\uNumericTextBox\bin\Release\uNumericTextBox.pdb
+D:\Development\Dotnet\Update to VSS\uNumericTextBox\uNumericTextBox\obj\Release\ResolveAssemblyReference.cache
+D:\Development\Dotnet\Update to VSS\uNumericTextBox\uNumericTextBox\obj\Release\uNumericTextBox.dll
+D:\Development\Dotnet\Update to VSS\uNumericTextBox\uNumericTextBox\obj\Release\uNumericTextBox.pdb

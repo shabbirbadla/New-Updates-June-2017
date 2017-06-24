@@ -1,0 +1,43 @@
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\udEmpPayrollYearMaster.exe
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\udEmpPayrollYearMaster.pdb
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\udSelectPop.dll
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.exe
+D:\SQLProject\payroll\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.pdb
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Debug\udEmpPayrollYearMaster.exe
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Debug\udEmpPayrollYearMaster.pdb
+D:\Leave Year MasterFrom Vss\uecon.uxe\bin\Debug\udEmpPayrollYearMaster.exe
+D:\Leave Year MasterFrom Vss\uecon.uxe\bin\Debug\udEmpPayrollYearMaster.pdb
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Debug\ResolveAssemblyReference.cache
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Debug\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Debug\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\Leave Year MasterFrom Vss\uecon.uxe\obj\Debug\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.exe
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.pdb
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\bin\Debug\udEmpPayrollYearMaster.exe
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\bin\Debug\udEmpPayrollYearMaster.pdb
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Debug\ResolveAssemblyReference.cache
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Debug\udEmpLeaveMaster.frmLeaveMaster.resources
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.Properties.Resources.resources
+D:\udEmpPayrollYearMaster from Vss\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\ResolveAssemblyReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpLeaveMaster.frmLeaveMaster.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.Properties.Resources.resources
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.csproj.GenerateResource.Cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\Interop.ueconnect.dll
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.csproj.ResolveComReference.cache
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\udEmpPayrollYearMaster.exe
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\udEmpPayrollYearMaster.pdb
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\GetInfo.DLL
+E:\Working\Project\Bug-7899_Updating_proj\Payroll Projects\udEmpPayrollYearMaster\udEmpPayrollYearMaster\bin\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.exe
+D:\SVN Development\Dotnet\udEmpPayrollYearMaster\udEmpPayrollYearMaster\obj\Debug\udEmpPayrollYearMaster.pdb

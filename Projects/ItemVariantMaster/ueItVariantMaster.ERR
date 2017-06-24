@@ -1,0 +1,7 @@
+Form e:\...\itemvariantmaster\uefrmitvariantmaster.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library e:\...\smoke issues in build(05-05-2017)\itemvariantmaster\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+

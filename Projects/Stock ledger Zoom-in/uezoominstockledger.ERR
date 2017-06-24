@@ -1,0 +1,9 @@
+Program d:\svngst\stock ledger zoom-in\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form d:\svngst\stock ledger zoom-in\uefrm_stk_ledger_zoom.scx has the following errors:
+    Proc./Func. TOUEVOUCHER - Undefined
+    Application UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+    Unknown BARSTAT - Undefined
+

@@ -1,0 +1,13 @@
+
+
+D:\USquare\backup.exe 'backuptype=datetime();compid=8,9'
+
+Two new parameters added for Backup
+
+BackupType - value any Date Functions
+
+CompId     - value any Company Id seperated by comma ','
+
+Both parameters are seperated by semi-colon ';'
+
+and both are optional i.e. you can take any one parameter also.

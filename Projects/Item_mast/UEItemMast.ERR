@@ -1,0 +1,32 @@
+Form d:\svngst\item_mast\itemmas.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Application UDAPPITEMNEW - Undefined
+    Program UDTRIGITEMNEW - Undefined
+    Proc./Func. UETRIGITEMNEW - Undefined
+    Unknown UDAPPITSAVEBEFORE - Undefined
+    Unknown UDTRIGITSAVEBEFORE - Undefined
+    Unknown UETRIGITSAVEBEFORE - Undefined
+    Unknown UDAPPMASTFINALUPDATE - Undefined
+    Unknown UDTRIGMASTFINALUPDATE - Undefined
+    Unknown UETRIGMASTFINALUPDATE - Undefined
+    Application UDAPPMASTROLLBACK - Undefined
+    Program UDTRIGMASTROLLBACK - Undefined
+    Proc./Func. UETRIGMASTROLLBACK - Undefined
+    Application UDAPPMASTTABLEUPDATE - Undefined
+    Program UDTRIGMASTTABLEUPDATE - Undefined
+    Proc./Func. UETRIGMASTTABLEUPDATE - Undefined
+    Proc./Func. UEFIND - Undefined
+    Proc./Func. LOCATE - Undefined
+    Program VU_UDFS - Undefined
+    Application UDAPPITEMACTIVATE - Undefined
+    Program UDTRIGITEMACTIVATE - Undefined
+    Proc./Func. UETRIGITEMACTIVATE - Undefined
+    Proc./Func. UEEXTRA - Undefined
+    File ADDITIONAL_INFO.GIF - Undefined
+    Unknown UEGETPOP - Undefined
+    File LOC.BMP - Undefined
+    Application UEITADVANCESETTING - Undefined
+
+Program d:\svngst\item_mast\ichoice.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+

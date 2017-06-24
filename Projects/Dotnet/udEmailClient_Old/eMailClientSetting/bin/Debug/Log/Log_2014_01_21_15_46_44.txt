@@ -1,0 +1,17 @@
+-------------------------------------<<< START >>>-----------------------------
+2014-01-21 15:46:44	Process Started....
+2014-01-21 15:46:44	Process Start ID : EM1
+2014-01-21 15:46:44	Inv_no : 000001
+2014-01-21 15:46:44	Error Found...Specified Crystal Report file not found..
+Source : eMailClient.RPT
+TargetSite : Boolean ExportCrystalReport()
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 1
+Total Exported PDF files : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2014-01-21 15:46:46	Successfully Email Log Status Mail Sent.... 
+2014-01-21 15:46:46	Process End ID : EM1
+-------------------------------------<<< END >>>-----------------------------
+

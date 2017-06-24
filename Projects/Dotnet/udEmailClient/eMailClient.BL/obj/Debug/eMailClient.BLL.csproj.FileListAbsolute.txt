@@ -1,0 +1,38 @@
+C:\Uday\Projects 2008\eMailClient\eMailClient.BL\bin\Debug\eMailClient.BL.dll
+C:\Uday\Projects 2008\eMailClient\eMailClient.BL\bin\Debug\eMailClient.BL.pdb
+C:\Uday\Projects 2008\eMailClient\eMailClient.BL\obj\Debug\ResolveAssemblyReference.cache
+C:\Uday\Projects 2008\eMailClient\eMailClient.BL\obj\Debug\eMailClient.BL.dll
+C:\Uday\Projects 2008\eMailClient\eMailClient.BL\obj\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient\eMailClient.BL\obj\Debug\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\obj\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.RPT.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Debug\eMailClient.RPT.pdb
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.BL.dll
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.BL.pdb
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.DAL.dll
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.MailSender.dll
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.RPT.dll
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.MailSender.pdb
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.RPT.pdb
+D:\eMailClient\eMailClient.BL\bin\Debug\eMailClient.DAL.pdb
+D:\eMailClient\eMailClient.BL\obj\Debug\ResolveAssemblyReference.cache
+D:\eMailClient\eMailClient.BL\obj\Debug\eMailClient.BL.dll
+D:\eMailClient\eMailClient.BL\obj\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.RPT.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.RPT.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\obj\Debug\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\obj\Debug\eMailClient.BL.pdb

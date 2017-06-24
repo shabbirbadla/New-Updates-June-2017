@@ -1,0 +1,15 @@
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\UeSMS.exe
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\UeSMS.pdb
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\dataaccess-net.dll
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\httprequesturl.dll
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\interop.udyogerp.dll
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\ubaseform.dll
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\udselectpop.dll
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\UeSMS.frmParamValue.resources
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\UeSMS.frmSMSSettingMaster.resources
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\UeSMS.frmSMSParamMaster.resources
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\UeSMS.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\UeSMS.exe
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\obj\Debug\UeSMS.pdb
+D:\1 Development\Dotnet\UeSMS_Bug-22077\UeSMS\bin\Debug\GSMCommShared.dll

@@ -1,0 +1,10 @@
+commandbutton
+Error in line 3: Unrecognized command verb.
+Width = 84
+Error in line 8: Statement is not in a procedure.
+Caption = "Command1"
+Error in line 9: Statement is not in a procedure.
+Name = "cmdtest"
+Error in line 10: Statement is not in a procedure.
+commandbutton
+Error in line 12: Unrecognized command verb.

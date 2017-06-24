@@ -1,0 +1,8 @@
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\bin\Debug\Delhi.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\bin\Debug\Delhi.pdb
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\obj\Debug\Delhi.frmDelhi.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\obj\Debug\Delhi.Properties.Resources.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\obj\Debug\Delhi.csproj.GenerateResource.Cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\obj\Debug\Delhi.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Delhi\obj\Debug\Delhi.pdb

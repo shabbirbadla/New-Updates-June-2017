@@ -1,0 +1,22 @@
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udDynamicMasterInfo.exe.config
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udDynamicMasterInfo.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udDynamicMasterInfo.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\cST3SqlConn.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\DataAccess-Net.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\DynamicFormClass.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udDynamicMaster.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udSelectPop.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\DynamicFormClass.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udDynamicMaster.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\DataAccess-Net.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\DynamicMasterDesigner.frmMasterFormDesigner.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\DynamicMasterDesigner.frmSearch.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\DynamicMasterDesigner.Properties.Resources.resources
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\DynamicMasterDesigner.csproj.GenerateResource.Cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\udDynamicMasterInfo.exe.licenses
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\udDynamicMasterInfo.exe
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\udDynamicMasterInfo.pdb
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\bin\Debug\udDynamicMasterInfo.exe.config
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\udDynamicMasterInfo.exe
+D:\SQLProject\Dynamic Masters Full Backup 28-02-2011\DynamicMasterDesigner\DynamicMasterDesigner\obj\Debug\udDynamicMasterInfo.pdb

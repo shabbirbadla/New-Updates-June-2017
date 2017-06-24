@@ -1,0 +1,3 @@
+update com_menu set menutype = 'General'
+update com_menu set menutype = 'Report' where range >= (select range from com_menu where barname = 'reports' and padname = '_msysmenu') and range < (select (range + 1000) as range from com_menu where barname = 'reports' and padname = '_msysmenu')
+update com_menu set menutype = 'Transaction' where range >= (select range from com_menu where barname = 'transactions' and padname = '_msysmenu') and range < (select (range + 1000) as range from com_menu where barname = 'transactions' and padname = '_msysmenu')

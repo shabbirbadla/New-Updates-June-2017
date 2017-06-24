@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <NewConfig>
+    <ConfigNumber>1</ConfigNumber>
+    <XMLPath>C:\Documents and Settings\jayakumar\Desktop\Adae</XMLPath>
+    <VisualUdyogPath>D:\USquare</VisualUdyogPath>
+    <VersionOftheTally>9.0</VersionOftheTally>
+    <FinancialYear>2009-2010</FinancialYear>
+    <CompanyName>Adaequare</CompanyName>
+    <CompanyID>1</CompanyID>
+    <ConnectionValues>pc7sNEwqDyf/a79KgiM3KFe+Z8VPlK9gQg/HLIrf8gQ=</ConnectionValues>
+    <CompanyValue>y0WpglnTkEodwfIdl0yWFw==</CompanyValue>
+  </NewConfig>
+  <NewConfig>
+    <ConfigNumber>2</ConfigNumber>
+    <XMLPath>C:\Documents and Settings\jayakumar\Desktop</XMLPath>
+    <VisualUdyogPath>D:\USquare</VisualUdyogPath>
+    <VersionOftheTally>9.0</VersionOftheTally>
+    <FinancialYear>2008-2009</FinancialYear>
+    <CompanyName>Square-G</CompanyName>
+    <CompanyID>3</CompanyID>
+    <ConnectionValues>pc7sNEwqDyf/a79KgiM3KFe+Z8VPlK9gQg/HLIrf8gQ=</ConnectionValues>
+    <CompanyValue>iFMedT0/BEaYZ24O/SRwyA==</CompanyValue>
+  </NewConfig>
+</DocumentElement>

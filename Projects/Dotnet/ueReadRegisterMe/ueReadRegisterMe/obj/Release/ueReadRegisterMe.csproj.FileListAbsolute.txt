@@ -1,0 +1,19 @@
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Release\ResolveAssemblyReference.cache
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Release\ueReadRegisterMe.dll
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Release\ueReadRegisterMe.pdb
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Release\ueReadRegisterMe.dll
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Release\ueReadRegisterMe.tlb
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.tlb
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll.config
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Release\ueReadRegisterMe.dll.config
+D:\E Drive BackUp\SachinS\Personal\Personal\DotNet\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll.config
+D:\E Drive BackUp\SachinS\Personal\Personal\DotNet\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll
+D:\E Drive BackUp\SachinS\Personal\Personal\DotNet\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.tlb
+D:\E Drive BackUp\SachinS\Personal\Personal\DotNet\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Release\ResolveAssemblyReference.cache
+D:\E Drive BackUp\SachinS\Personal\Personal\DotNet\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Release\ueReadRegisterMe.dll
+D:\Sachin N Sapaliga\Personal\Personal\Development\3 Dotnet\3 Development & RND\Windows Based\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll.config
+D:\Sachin N Sapaliga\Personal\Personal\Development\3 Dotnet\3 Development & RND\Windows Based\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll
+D:\Sachin N Sapaliga\Personal\Personal\Development\3 Dotnet\3 Development & RND\Windows Based\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.tlb
+D:\Sachin N Sapaliga\Personal\Personal\Development\3 Dotnet\3 Development & RND\Windows Based\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Release\ResolveAssemblyReference.cache
+D:\Sachin N Sapaliga\Personal\Personal\Development\3 Dotnet\3 Development & RND\Windows Based\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Release\ueReadRegisterMe.dll

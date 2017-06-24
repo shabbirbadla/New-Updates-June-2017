@@ -1,0 +1,15 @@
+Visual Class Library f:\kishor\original-bug-projects\26658_cr\proofofexport\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+    Visual Class Library CTL32_PROGRESSBAR - Undefined
+
+Visual Class Library f:\kishor\original-bug-projects\26658_cr\proofofexport\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Visual Class Library f:\kishor\original-bug-projects\26658_cr\proofofexport\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Form f:\kishor\original-bug-projects\26658_cr\proofofexport\udexportproof.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+    File LOC.BMP - Undefined
+

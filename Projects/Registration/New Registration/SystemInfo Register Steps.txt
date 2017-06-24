@@ -1,0 +1,47 @@
+
+
+
+Below are the steps to register the dll and execute the class functions.
+
+ 
+
+Copy the DLL to your file system (Folder: C:/WINDOWS/MICROSOFT.NET/v2.0.50727) 
+Open Command prompt window 
+Navigate to C:/WINDOWS/MICROSOFT.NET/v2.0.50727 
+Type ‘RegSvcs SystemInfo.dll ’. It will register and add assembly with a warning which can be ignored. 
+Open Visual FoxPro 9.0 and execute below lines 
+Need to Create Object 
+ 
+
+oSystemInfo = CreateObject("SystemInfo.SysInformation")
+
+ 
+
+Gets the Mac address 
+ 
+
+? oSystemInfo.GetSystemInformation (“M”)
+
+ 
+
+Gets the Processor ID 
+ 
+
+? oSystemInfo.GetSystemInformation (“P”)
+
+ 
+
+Note: Domain user account should have exclusive administrative rights on the system
+
+ 
+
+Let me know if you have any further questions.
+
+ 
+
+Thanks & Regards
+
+Rajnikanth Reddy Narasimhareddygari
+
+Software Engineer I
+

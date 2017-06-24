@@ -1,0 +1,101 @@
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\Project Backup\Working\Dados Report Parameter Master\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+H:\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+H:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+H:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+F:\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+F:\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+F:\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+F:\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+F:\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+F:\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+F:\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+F:\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\Project Backup\Working\Final\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\Project Backup\Working\Final\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 19062012\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 06042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe.config
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.frmparamaster.resources
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+E:\MY PROJECT\DADOSPARA,ETER\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.ParameterMast.resources
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+D:\Udyog\Working\DadosReportParameterMaster - 12042013\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+D:\Udyog\Working\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.ParameterMaster.resources
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.exe
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\DadosReportParameterMaster.pdb
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\dataaccess-net.dll
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.ParameterMaster.resources
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.Properties.Resources.resources
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.exe
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\obj\x86\Debug\DadosReportParameterMaster.pdb
+D:\1 Development\Dotnet\DadosReportParameterMaster\DadosReportParameterMaster\DadosReportParameterMaster\bin\Debug\udselectpop.dll

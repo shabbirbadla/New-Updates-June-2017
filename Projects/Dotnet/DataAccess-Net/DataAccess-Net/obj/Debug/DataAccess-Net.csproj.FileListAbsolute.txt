@@ -1,0 +1,20 @@
+C:\Documents and Settings\vmesa\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vmesa\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\bin\Debug\DataAccess-Net.dll
+C:\Documents and Settings\vmesa\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\bin\Debug\DataAccess-Net.pdb
+C:\Documents and Settings\vmesa\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\obj\Debug\DataAccess-Net.dll
+C:\Documents and Settings\vmesa\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\obj\Debug\DataAccess-Net.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\bin\Debug\DataAccess-Net.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\bin\Debug\DataAccess-Net.pdb
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\obj\Debug\DataAccess-Net.dll
+D:\Documents and Settings\vmesa.UDYOG\My Documents\Visual Studio 2008\Projects\DataAccess-Net\DataAccess-Net\obj\Debug\DataAccess-Net.pdb
+D:\Development\Dotnet\DataAccess_Net\DataAccess-Net\bin\Debug\DataAccess-Net.dll
+D:\Development\Dotnet\DataAccess_Net\DataAccess-Net\bin\Debug\DataAccess-Net.pdb
+D:\Development\Dotnet\DataAccess_Net\DataAccess-Net\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Dotnet\DataAccess_Net\DataAccess-Net\obj\Debug\DataAccess-Net.dll
+D:\Development\Dotnet\DataAccess_Net\DataAccess-Net\obj\Debug\DataAccess-Net.pdb
+D:\1 Development\Dotnet\DataAccess_Net\DataAccess-Net\bin\Debug\DataAccess-Net.dll
+D:\1 Development\Dotnet\DataAccess_Net\DataAccess-Net\bin\Debug\DataAccess-Net.pdb
+D:\1 Development\Dotnet\DataAccess_Net\DataAccess-Net\obj\Debug\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\DataAccess_Net\DataAccess-Net\obj\Debug\DataAccess-Net.dll
+D:\1 Development\Dotnet\DataAccess_Net\DataAccess-Net\obj\Debug\DataAccess-Net.pdb

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udLocate", "udLocate\udLocate.csproj", "{ACBE3327-F167-436E-85AA-CD8F8F4945A2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "udLocateSetup", "udLocateSetup\udLocateSetup.vdproj", "{06178080-A44F-4483-BA63-8C10A13EC637}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectName0 = \u0022$/Development/Udyog\u0020Projects/udLocate/udLocate\u0022,\u0020VEPBAAAA
+		SccLocalPath0 = ..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = udLocate\\
+		SccProjectUniqueName1 = udLocate\\udLocate.csproj
+		SccLocalPath1 = ..
+		SccProjectFilePathRelativizedFromConnection1 = udLocate\\udLocate\\
+		SccProjectUniqueName2 = udLocateSetup\\udLocateSetup.vdproj
+		SccLocalPath2 = ..
+		SccProjectFilePathRelativizedFromConnection2 = udLocate\\udLocateSetup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBE3327-F167-436E-85AA-CD8F8F4945A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBE3327-F167-436E-85AA-CD8F8F4945A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBE3327-F167-436E-85AA-CD8F8F4945A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBE3327-F167-436E-85AA-CD8F8F4945A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06178080-A44F-4483-BA63-8C10A13EC637}.Debug|Any CPU.ActiveCfg = Debug
+		{06178080-A44F-4483-BA63-8C10A13EC637}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

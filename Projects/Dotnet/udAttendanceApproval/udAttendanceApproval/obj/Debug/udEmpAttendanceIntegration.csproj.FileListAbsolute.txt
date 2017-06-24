@@ -1,0 +1,62 @@
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\ResolveAssemblyReference.cache
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.Properties.Resources.resources
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.exe
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.pdb
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe.licenses
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe
+D:\My Tasks\Emp_Attendance_Integration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.pdb
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.pdb
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\ResolveAssemblyReference.cache
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.Properties.Resources.resources
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.exe
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.pdb
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\DataAccess-Net.dll
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\uBaseForm.dll
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udSelectPop.dll
+D:\My Tasks\udEmpAttendanceIntegration\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udSelectPop.pdb
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.exe
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.pdb
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\DataAccess-Net.dll
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\uBaseForm.dll
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udSelectPop.dll
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\ResolveAssemblyReference.cache
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.frmAttendanceIntegration.resources
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.Properties.Resources.resources
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.pdb
+D:\Ramya\Pratap\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe.licenses
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.pdb
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.exe
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.pdb
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udSelectPop.pdb
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.frmAttendanceIntegration.resources
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.Properties.Resources.resources
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+C:\Users\aksingh\Desktop\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe.licenses
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.frmAttendanceIntegration.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.Properties.Resources.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe.licenses
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.frmAttendanceIntegration.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.Properties.Resources.resources
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udEmpAttendanceIntegration.csproj.GenerateResource.Cache
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.exe.licenses
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udAttendanceIntegration.pdb
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udCrViewer.dll
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\bin\Debug\udReportList.dll
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceIntegration\udAttendanceIntegration\obj\Debug\udAttendanceIntegration.pdb
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceIntegration.exe
+C:\Users\aksingh\Desktop\From Rupesh PayRoll Currently working\udAttendanceApproval\udAttendanceApproval\obj\Debug\udAttendanceIntegration.pdb

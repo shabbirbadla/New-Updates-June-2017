@@ -1,0 +1,16 @@
+SET STEP ON 
+o_pass= ' '
+Name = Alltrim(Upper("admin"))
+pas = Alltrim("u")
+If Len(Alltr(Name))<10
+	Name=Padr(Name,10,' ')
+Endif
+i_pass = Alltr("0xB6")
+mvu_User_Roles = "ADMINISTRATOR                           "
+mvu_User_Name = IIF(EMPTY("                              "),"Admin                                             ","                              ")		&&vasant041209
+For j=1 To Len(i_pass)
+	o_pass=o_pass+Chr(Asc(Substr(i_pass,j,1))-Asc(Substr(Name,j,1)))
+	MESSAGEBOX(Asc(Substr(i_pass,j,1)))
+	MESSAGEBOX(Asc(Substr(Name,j,1)))
+Endfor
+o_pass=Alltr(o_pass)

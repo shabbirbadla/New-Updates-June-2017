@@ -1,0 +1,26 @@
+Hi Ajay,
+
+I am forwarding you an Upload Files.Zip containing the following files.
+
+Filename				Description				To-do				
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Fileupload.app				File Upload Master Interface		Copy in UdyogErp folder	
+Fileuploadmaster.sql			File Upload Master Table SQL Script	Run script in respective database
+Uploadfiles.sql				Upload file Table SQL Script		Run script in respective database
+Usp_uploadfile_any_format.sql		Store Procedure for Uploading Files 	Run script in respective database
+Ueextra.app				Additional Information Interface		Copy in UdyogErp folder	
+Uploadfile.VCT				Class file for Upload			Copy in class folder
+Uploadfile.VCX				Class file for Upload			Copy in class folder
+Uetrigvoufinalupdate.txt			Patch for uetrigvoufinalupdate		Add Patch in uetrigvoufinalupdate.prg
+Udyog i-TAX Upload DLL Setup.msi	Setup for .net Dll			Run setup on client machine
+
+
+Please make the necessary changes according above steps. For Fileupload master you have to create new menu that is “FILE UPLOAD MASTER” and in action field type “Do fileupload.app” and give menu rights.
+
+
+If you have a query kindly give a call.
+
+
+Thanks & Regards
+
+Uday Gawade

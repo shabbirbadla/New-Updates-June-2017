@@ -1,0 +1,9 @@
+Form d:\shrikant\uebrokerage\uefrmbroker.scx has the following errors:
+    Proc./Func. UEVOUPRINT - Undefined
+    Unknown BARSTAT - Undefined
+    Proc./Func. UENRENTRY - Undefined
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library d:\usquare\class\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+

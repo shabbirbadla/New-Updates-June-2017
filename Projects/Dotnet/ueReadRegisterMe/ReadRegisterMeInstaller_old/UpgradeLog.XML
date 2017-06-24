@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ReadRegisterMeInstaller">
+</Property><Property Name="Solution File" Value="E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ReadRegisterMeInstaller\ReadRegisterMeInstaller.sln">
+</Property><Property Name="User Options File" Value="E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ReadRegisterMeInstaller\ReadRegisterMeInstaller.suo">
+</Property><Property Name="Date" Value="Monday, January 24, 2011">
+</Property><Property Name="Time" Value="17:53 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ReadRegisterMeInstaller.sln" Description="File successfully backed up as E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ReadRegisterMeInstaller\Backup\ReadRegisterMeInstaller.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ReadRegisterMeInstaller.suo" Description="File successfully backed up as E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ReadRegisterMeInstaller\Backup\ReadRegisterMeInstaller.suo">
+</Event><Event ErrorLevel="0" Project="ReadRegisterMeInstaller.vdproj" Source="ReadRegisterMeInstaller\ReadRegisterMeInstaller.vdproj" Description="Project file successfully backed up as E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ReadRegisterMeInstaller\Backup\ReadRegisterMeInstaller\ReadRegisterMeInstaller.vdproj">
+</Event><Event ErrorLevel="2" Project="ReadRegisterMeInstaller.vdproj" Source="ReadRegisterMeInstaller\ReadRegisterMeInstaller.vdproj" Description="Unable to open project 'E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ReadRegisterMeInstaller\ReadRegisterMeInstaller\ReadRegisterMeInstaller.vdproj'.">
+</Event><Event ErrorLevel="3" Project="ReadRegisterMeInstaller.vdproj" Source="ReadRegisterMeInstaller\ReadRegisterMeInstaller.vdproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ReadRegisterMeInstaller.sln" Description="The solution file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="" Source="ReadRegisterMeInstaller.sln" Description="No Conversion Required">
+</Event></UpgradeLog>

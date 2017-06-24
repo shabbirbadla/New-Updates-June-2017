@@ -1,0 +1,32 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\bin\Release\uBaseForm.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\bin\Release\uBaseForm.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\obj\Release\uBaseForm.Properties.Resources.resources
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\obj\Release\uBaseForm.csproj.GenerateResource.Cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\obj\Release\uBaseForm.exe
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\obj\Release\uBaseForm.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uBaseForm\obj\Release\uBaseForm.FrmBaseForm.resources
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.pdb
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\bin\Release\uBaseForm.pdb
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.FrmBaseForm.resources
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.Properties.Resources.resources
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.csproj.GenerateResource.Cache
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\bin\Release\uBaseForm.dll
+D:\SQLProject\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.dll
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.FrmBaseForm.resources
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.Properties.Resources.resources
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.csproj.GenerateResource.Cache
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.dll
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\bin\Release\uBaseForm.dll
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\bin\Release\uBaseForm.pdb
+D:\SQLProject\New folder\UDF Controls\uBaseForm\uBaseForm\obj\Release\uBaseForm.pdb
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\bin\Release\uBaseForm.dll
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\bin\Release\uBaseForm.pdb
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\obj\Release\uBaseForm.FrmBaseForm.resources
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\obj\Release\uBaseForm.Properties.Resources.resources
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\obj\Release\uBaseForm.csproj.GenerateResource.Cache
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\obj\Release\uBaseForm.dll
+D:\SQLProject\AlertMaster\uBaseForm\uBaseForm\obj\Release\uBaseForm.pdb

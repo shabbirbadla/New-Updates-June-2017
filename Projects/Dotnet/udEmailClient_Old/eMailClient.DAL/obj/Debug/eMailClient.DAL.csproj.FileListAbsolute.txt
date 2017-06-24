@@ -1,0 +1,15 @@
+E:\Project\Dotnet\eMailClient\eMailClient.DAL\bin\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.DAL\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient\eMailClient.DAL\obj\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.DAL\obj\Debug\eMailClient.DAL.pdb
+D:\eMailClient\eMailClient.DAL\bin\Debug\eMailClient.DAL.dll
+D:\eMailClient\eMailClient.DAL\bin\Debug\eMailClient.DAL.pdb
+D:\eMailClient\eMailClient.DAL\obj\Debug\ResolveAssemblyReference.cache
+D:\eMailClient\eMailClient.DAL\obj\Debug\eMailClient.DAL.dll
+D:\eMailClient\eMailClient.DAL\obj\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.DAL\bin\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.DAL\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient_1\eMailClient.DAL\obj\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.DAL\obj\Debug\eMailClient.DAL.pdb

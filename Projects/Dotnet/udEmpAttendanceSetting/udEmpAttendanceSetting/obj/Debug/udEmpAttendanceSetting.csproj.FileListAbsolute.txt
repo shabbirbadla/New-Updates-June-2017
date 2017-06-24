@@ -1,0 +1,33 @@
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udEmpAttendanceSetting.exe
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udEmpAttendanceSetting.pdb
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\uCheckBox.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udclsDGVDateTimePicker.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udSelectPop.dll
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udHolidayMaster.frmHolidayMaster.resources
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.Properties.Resources.resources
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.exe
+D:\SQLProject\payroll\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.pdb
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.exe
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.pdb
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udEmpAttendanceSetting.exe
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udEmpAttendanceSetting.pdb
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\ResolveAssemblyReference.cache
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udHolidayMaster.frmHolidayMaster.resources
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.Properties.Resources.resources
+D:\FromRupesh\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udEmpAttendanceSetting.exe
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udEmpAttendanceSetting.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\uBaseForm.dll
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\uBaseForm.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\ResolveAssemblyReference.cache
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udAttendanceSettings.frmAttendanceSettings.resources
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.Properties.Resources.resources
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.csproj.GenerateResource.Cache
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.exe
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\obj\Debug\udEmpAttendanceSetting.pdb
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udSelectPop.dll
+D:\My Tasks\udEmpAttendanceSetting\udEmpAttendanceSetting\bin\Debug\udSelectPop.pdb

@@ -1,0 +1,10 @@
+C:\Proj\ImportExport\EncryptDecrypt\obj\Debug\ResolveAssemblyReference.cache
+C:\Proj\ImportExport\EncryptDecrypt\obj\Release\ResolveAssemblyReference.cache
+C:\Proj\ImportExport\EncryptDecrypt\bin\Release\GetInfo.dll
+C:\Proj\ImportExport\EncryptDecrypt\bin\Release\GetInfo.pdb
+C:\Proj\ImportExport\EncryptDecrypt\obj\Release\GetInfo.dll
+C:\Proj\ImportExport\EncryptDecrypt\obj\Release\GetInfo.pdb
+C:\Proj\ImportExport\EncryptDecrypt\bin\Debug\GetInfo.dll
+C:\Proj\ImportExport\EncryptDecrypt\bin\Debug\GetInfo.pdb
+C:\Proj\ImportExport\EncryptDecrypt\obj\Debug\GetInfo.dll
+C:\Proj\ImportExport\EncryptDecrypt\obj\Debug\GetInfo.pdb

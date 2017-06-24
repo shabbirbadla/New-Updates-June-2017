@@ -1,0 +1,16 @@
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\UdEmpLeaveApproval.exe.config
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\UdEmpLeaveApproval.exe
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\UdEmpLeaveApproval.pdb
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\DataAccess-Net.dll
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\getinfo.dll
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\uBaseForm.dll
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\udselectpop.dll
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\bin\Release\Interop.ueconnect.dll
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\ResolveAssemblyReference.cache
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\Interop.ueconnect.dll
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\UdEmpLeaveApproval.csproj.ResolveComReference.cache
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\UdEmpLeaveApproval.frmEmpLeaveApproval.resources
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\UdEmpLeaveApproval.Properties.Resources.resources
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\UdEmpLeaveApproval.csproj.GenerateResource.Cache
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\UdEmpLeaveApproval.exe
+F:\Projects\UdEmpLeaveRequest_02\UdEmpLeaveApproval\obj\Release\UdEmpLeaveApproval.pdb

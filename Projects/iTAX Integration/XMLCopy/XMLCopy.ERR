@@ -1,0 +1,10 @@
+Program e:\raghu\projects\itax integration\xmlcopy\xmlcopy.prg has the following errors:
+    Application XMLUPLOAD - Undefined
+    Visual Class Library SQLCONNECTION - Undefined
+
+Visual Class Library e:\raghu\projects\itax integration\comman files\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Visual Class Library e:\raghu\projects\itax integration\comman files\ui2_libs.vcx has the following errors:
+    Proc./Func. UEMAILING - Undefined
+

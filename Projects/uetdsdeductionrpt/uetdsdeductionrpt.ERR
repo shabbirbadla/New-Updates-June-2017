@@ -1,0 +1,24 @@
+Form f:\bug\24982\uetdsdeductionrpt\vucustomreport.scx has the following errors:
+    Unknown CHKRIGHT - Undefined
+    Application UEORDERZOOM - Undefined
+    Proc./Func. UEQUERYEDITOR - Undefined
+    Proc./Func. UELEDZOOM - Undefined
+    Proc./Func. UEDAYBOOKZOOM - Undefined
+    Application UEZOOMINSTOCKLIST - Undefined
+    Application UETRIALBALANCE - Undefined
+    Proc./Func. UECRVIEWER - Undefined
+    Proc./Func. UEMAILING - Undefined
+    Application UEZOOMINSTOCKLEDGER - Undefined
+    Application UEBALANCELIST - Undefined
+    Unknown BARSTAT - Undefined
+    Form VUADV - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form f:\bug\24982\uetdsdeductionrpt\uefrm_tdsdeduct.scx has the following errors:
+    Proc./Func. UEMAILING - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UEGETPOP - Undefined
+    Application UDAPPETVALID - Undefined
+    Program UDTRIGETVALID - Undefined
+    Application UECRVIEWER - Undefined
+

@@ -1,0 +1,38 @@
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\obj\Release\ResolveAssemblyReference.cache
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.frmGradeMaster.resources
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.Properties.Resources.resources
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.csproj.GenerateResource.Cache
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udEmpGradeMaster.exe
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udEmpGradeMaster.pdb
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\bin\Release\DataAccess-Net.dll
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\bin\Release\uBaseForm.dll
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udSelectPop.dll
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.exe
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.pdb
+D:\Ramya\udEmpGradeMaster\udEmpGradeMaster\bin\Release\uTextBox.dll
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udEmpGradeMaster.exe
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udEmpGradeMaster.pdb
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\bin\Release\ubaseform.dll
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\bin\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\Interop.ueconnect.dll
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.csproj.ResolveComReference.cache
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.frmGradeMaster.resources
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.exe
+D:\SVN Development\Dotnet\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\Interop.ueconnect.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.csproj.ResolveComReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.csprojResolveAssemblyReference.cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.frmGradeMaster.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.Properties.Resources.resources
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\obj\Release\udEmpGradeMaster.csproj.GenerateResource.Cache
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udEmpGradeMaster.exe
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Release\udEmpGradeMaster.pdb
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Release\GetInfo.DLL
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Release\uNumericTextBox.dll
+F:\Kishor\Original-Bug-Projects\Point of Sale\udEmpGradeMaster\udEmpGradeMaster\bin\Release\Interop.ueconnect.dll

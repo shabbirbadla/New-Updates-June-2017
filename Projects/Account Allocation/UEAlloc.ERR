@@ -1,0 +1,9 @@
+Form d:\shrikant\working\projects\ueallocation\frmalloc.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UETRIGALLOCATE - Undefined
+    Unknown BARSTAT - Undefined
+
+Program d:\shrikant\working\projects\ueallocation\progalloc.prg has the following errors:
+    Proc./Func. UETRIGALLOCATE - Undefined
+    Unknown APPVERCHK - Undefined
+

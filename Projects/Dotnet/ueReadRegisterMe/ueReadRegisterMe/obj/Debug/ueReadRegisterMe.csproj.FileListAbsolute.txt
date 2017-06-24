@@ -1,0 +1,7 @@
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.pdb
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Debug\ResolveAssemblyReference.cache
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Debug\ueReadRegisterMe.dll
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\obj\Debug\ueReadRegisterMe.pdb
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.dll.config
+E:\SachinS\Personal\DotNet RND\VS2008 Projects\OnlineShopper\OnlineShopper\ueReadRegisterMe\bin\Debug\ueReadRegisterMe.tlb

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CrystalReports10_rdc_runtime", "CrystalReports10_rdc_runtime\CrystalReports10_rdc_runtime.vdproj", "{6B8F0067-468F-48EC-ACBC-4F9EF3BB2DE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B8F0067-468F-48EC-ACBC-4F9EF3BB2DE0}.Debug|Default.ActiveCfg = Debug
+		{6B8F0067-468F-48EC-ACBC-4F9EF3BB2DE0}.Debug|Default.Build.0 = Debug
+		{6B8F0067-468F-48EC-ACBC-4F9EF3BB2DE0}.Release|Default.ActiveCfg = Release
+		{6B8F0067-468F-48EC-ACBC-4F9EF3BB2DE0}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.RPT.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.RPT.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\bin\Release\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\obj\Release\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.BL\obj\Release\eMailClient.BL.pdb
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.BLL.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.BLL.pdb
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.DAL.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.MailSender.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.RPT.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.MailSender.pdb
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.RPT.pdb
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\bin\Release\eMailClient.DAL.pdb
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\obj\Release\ResolveAssemblyReference.cache
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\obj\Release\eMailClient.BLL.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.BL\obj\Release\eMailClient.BLL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.BLL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.BLL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.RPT.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.RPT.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\bin\Release\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.BL\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient\eMailClient.BL\obj\Release\eMailClient.BLL.dll
+E:\Project\Dotnet\eMailClient\eMailClient.BL\obj\Release\eMailClient.BLL.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.BLL.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.BLL.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.DAL.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.MailSender.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.RPT.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\getinfo.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.MailSender.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.RPT.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\eMailClient.DAL.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\obj\Release\ResolveAssemblyReference.cache
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\obj\Release\eMailClient.BLL.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\obj\Release\eMailClient.BLL.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.BL\bin\Release\DataAccess-Net.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.BLL.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.BLL.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\DataAccess-Net.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.DAL.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.MailSender.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.RPT.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\getinfo.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.MailSender.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.RPT.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\bin\Release\eMailClient.DAL.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\obj\Release\ResolveAssemblyReference.cache
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\obj\Release\eMailClient.BLL.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClient.BL\obj\Release\eMailClient.BLL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.BLL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.BLL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.DAL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.MailSender.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.RPT.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\getinfo.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.MailSender.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.RPT.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\bin\Release\eMailClient.DAL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\obj\Release\eMailClient.BLL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.BL\obj\Release\eMailClient.BLL.pdb

@@ -1,0 +1,9 @@
+PARAMETERS _allobj,_allcond,_allep,_alldp
+IF TYPE(_allobj) = 'O'
+	IF &_allcond
+		&_allobj..Picture = &_allep
+	ELSE
+		&_allobj..Picture = &_alldp
+	endif	
+Endif	
+RETURN .f.

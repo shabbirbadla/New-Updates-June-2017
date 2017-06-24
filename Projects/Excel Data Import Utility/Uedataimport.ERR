@@ -1,0 +1,21 @@
+Form d:\...\final projects\import_from_excel_11-05-2017\frmselect.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form d:\...\final projects\import_from_excel_11-05-2017\frmprocess.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form d:\...\final projects\import_from_excel_11-05-2017\frmfldmap.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\...\final projects\import_from_excel_11-05-2017\frmdefaultsetting.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Program d:\...\final projects\import_from_excel_11-05-2017\getactualvalue.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+
+Visual Class Library d:\vudyoggst\class\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Visual Class Library d:\vudyoggst\class\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

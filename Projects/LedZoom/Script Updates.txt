@@ -1,0 +1,4 @@
+If Not Exists(Select [Name] From SysColumns Where [Name] = 'Serial' And Object_Name(Id) = 'LCode')
+Begin
+	Alter Table LCode Add Serial Int
+End

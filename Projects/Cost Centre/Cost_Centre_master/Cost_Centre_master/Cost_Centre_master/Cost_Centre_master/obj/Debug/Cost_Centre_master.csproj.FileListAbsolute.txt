@@ -1,0 +1,61 @@
+D:\Biru\Cost_Centre_mast\Cost_centre_master\obj\Debug\Cost_cat_master.exe
+D:\Biru\Cost_Centre_mast\Cost_centre_master\obj\Debug\Cost_cat_master.pdb
+D:\Biru\Cost_Centre_mast\Cost_centre_master\bin\Debug\Cost_cat_master.exe
+D:\Biru\Cost_Centre_mast\Cost_centre_master\bin\Debug\Cost_cat_master.pdb
+D:\Biru\Cost_Centre_mast\Cost_centre_master\bin\Debug\uBaseForm.pdb
+D:\Biru\Cost_Centre_mast\Cost_centre_master\bin\Debug\DataAccess-Net.pdb
+D:\Biru\Cost_Centre_mast\Cost_centre_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Biru\Cost_Centre_mast\Cost_centre_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Biru\Cost_Centre_mast\Cost_centre_master\obj\Debug\Cost_Centre_master.csproj.GenerateResource.Cache
+D:\Biru\Cost_Centre_mast\Cost_centre_master\obj\Debug\Cost_Centre_master.Cost_Centre_Mast.resources
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.exe
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.pdb
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\bin\Debug\Cost_cat_master.exe
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\bin\Debug\Cost_cat_master.pdb
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.Cost_Centre_Mast.resources
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\costcentre6928\checkout\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.csproj.GenerateResource.Cache
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.exe
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.pdb
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\Cost_cat_master.exe
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\Cost_cat_master.pdb
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.Cost_Centre_Mast.resources
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\costcentre7520\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.csproj.GenerateResource.Cache
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.exe
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\Cost_cat_master.exe
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\Cost_cat_master.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.Cost_Centre_Mast.resources
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\Cost_cat_mast\checkout\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.csproj.GenerateResource.Cache
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\bin\Debug\uBaseForm.pdb
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\bin\Debug\DataAccess-Net.pdb
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.Cost_Centre_Mast.resources
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.csproj.GenerateResource.Cache
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\bin\Debug\UeCost_Cen_master.exe
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\bin\Debug\UeCost_Cen_master.pdb
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\obj\Debug\UeCost_Cen_master.exe
+D:\Projects\Working\cost Centre\Cost_Centre_master\Cost_centre_master\obj\Debug\UeCost_Cen_master.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\UeCost_Cen_master.exe
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\UeCost_Cen_master.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\UeCost_Cen_master.exe
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\UeCost_Cen_master.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\bin\Debug\DataAccess-Net.pdb
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.Cost_Centre_Mast.resources
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_cat_master.Properties.Resources.resources
+E:\MY PROJECT\COSTCENTER\COSTCENTER\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\Cost_Centre_master.csproj.GenerateResource.Cache
+F:\Bug\25197\Cost Center\Cost_Centre_master\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\UeCost_Cen_master.exe
+F:\Bug\25197\Cost Center\Cost_Centre_master\Cost_Centre_master\Cost_Centre_master\Cost_centre_master\obj\Debug\UeCost_Cen_master.pdb

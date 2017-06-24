@@ -1,0 +1,11 @@
+Program f:\installer 12.0 issue\payment on hold\partyonhold\uepartyonhold.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Form f:\installer 12.0 issue\payment on hold\partyonhold\uefrmpartyonhold.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Proc./Func. UEVOUPRINT - Undefined
+    Unknown UEGETPOP - Undefined
+
+Visual Class Library f:\installer 12.0 issue\payment on hold\partyonhold\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+

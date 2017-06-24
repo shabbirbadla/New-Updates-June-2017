@@ -1,0 +1,421 @@
+**exclude file & extension of restore & backup working or not
+**restore database command check
+**copy excluded file
+**manual update
+**updt version
+*store error in log file
+*last updt date check
+ON ERROR 
+*************
+
+IF UPPER(MVU_USER_ROLES) != 'ADMINISTRATOR'
+	=MESSAGEBOX("Only User's having Administrator Rights can Run this Update",64,vumess)
+	DO ExitUpdt
+	RETURN  .f.
+ENDIF
+
+#Include AutoUpdater.h
+PUBLIC mudprodcode,usquarepass,_mproddesc,_mupdtmonth,_mlastupdtmonth,_mzipname,_mzipfullname,_mFldrName,_mUnzipFldrName,_ErrMsg,_mmachine,_mlogip,_mErrLogName,_GenFreshProdDetail
+
+mudprodcode 	= ''
+usquarepass		= ''
+_mproddesc 		= ''
+_mupdtmonth 	= {}
+_mlastupdtmonth = {}
+_mzipname 		= ''
+_mFldrName 		= ''
+_mUnzipFldrName = ''
+_ErrMsg			= ''
+_mmachine 		= ''
+_mlogip   		= ''
+_mErrLogName	= ADDBS(Apath)+'AutoUpdateLog'+SYS(3)
+_GenFreshProdDetail = .f.
+
+*!*	oWS = CREATEOBJECT ("MSWinsock.Winsock")
+*!*	IF TYPE('oWS') = 'O'
+*!*		_mmachine  = oWS.LocalHostName
+*!*		_mlogip    = oWS.LocalIP
+*!*	Endif	
+*!*	RELEASE oWS	
+
+Try
+	Local loWMIService, loItems, loItem
+	_mmachine = ALLTRIM(Getwordnum(Sys(0),1))
+	loWMIService = Getobject("winmgmts:\\" + _mmachine + "\root\cimv2")
+	loItems = loWMIService.ExecQuery("Select * from Win32_NetworkAdapterConfiguration")
+	For Each loItem In loItems
+		If loItem.IPEnabled
+			_mlogip = loItem.IPAddress[0]
+		Endif
+		IF ISNULL(_mlogip)
+			_mlogip = ''
+		ENDIF
+		_mlogip = Transform(_mlogip)
+		IF !EMPTY(_mlogip)
+			EXIT
+		Endif	
+	ENDFOR
+	IF EMPTY(_mlogip)
+		_mlogip = '127.0.0.1'
+	Endif
+CATCH TO ErrMsg
+	=MESSAGEBOX(ErrMsg.Message,0,"Udyog Administrator")
+Endtry	 
+
+=ErrLog('','')	
+			
+mudprodcode = Upper(dec(NewDecry(GlobalObj.getPropertyval("UdProdCode"),'Ud*yog+1993')))
+usquarepass = Upper(DEC(NewDecry(GlobalObj.GetPropertyVal('EncryptId'),'Ud*_yog*\+1993')))
+_mproddesc  = GlobalObj.getPropertyval("ProductTitle") 
+*IF INLIST(UPPER(ALLTRIM(mudprodcode)),'VUDYOGSTD','VUDYOGPRO','VUDYOGENT','VUDYOGSDK')				
+*!*		_mzipname = 'VU10August11.zip'
+*!*		_mupdtmonth = CTOD('31/08/2011')
+*!*		_mlastupdtmonth = GOMONTH(_mupdtmonth,-1)
+*ENDIF
+*!*	IF !EMPTY(_mupdtmonth)
+*!*		_mupdtmonth = ALLTRIM(PROPER(CMONTH(_mupdtmonth)))+"'"+STR(year(_mupdtmonth),4)
+*!*	Endi	
+*!*	IF !EMPTY(_mlastupdtmonth)
+*!*		_mlastupdtmonth = ALLTRIM(PROPER(CMONTH(_mlastupdtmonth)))+"'"+STR(year(_mlastupdtmonth),4)
+*!*	Endif	
+
+_mzipname 			= _DefineZipName
+_mupdtmonth			= CTOD(_DefineUpdtMonth)
+_mlastupdtmonth 	= CTOD(_DefineLastUpdtMonth)
+_GenFreshProdDetail = _DefineGenFreshProdDetail
+
+IF EMPTY(_mzipname)
+	=MESSAGEBOX('This update is not for '+_mproddesc,64,vumess)
+	DO ExitUpdt
+	RETURN  .f.
+ENDIF
+
+nretval=0
+nhandle=0
+nhandle_master=0
+sqlconobj=NEWOBJECT('sqlconnudobj',"sqlconnection",xapps)
+
+msqlstr = "select name from sysobjects where xtype = 'U' and name = 'UPDTEXCL'"
+nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+IF nretval <= 0 OR !USED('_tmpCoList')
+	DO ExitUpdt
+	RETURN  .f.
+Endif
+
+IF RECCOUNT('_tmpCoList') <= 0
+	msqlstr = "Create Table UPDTEXCL (ProductNm Varchar(25),ExclFlNm Varchar(50),ManualUpdt Bit)"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"","nHandle")
+	IF nretval <= 0
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+
+	msqlstr = "select name from sysobjects where xtype = 'U' and name = 'UPDTEXCL'"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+	IF RECCOUNT('_tmpCoList') <= 0
+		=Messagebox("UPDTEXCL table not found in Vudyog Database.",0+16,vuMess)
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+Endif
+
+SELECT * FROM UpdtExcl WHERE EMPTY(ProductNm) OR INLIST(UPPER(ProductNm),mudprodcode) INTO cursor _tmpCoList
+SELECT _tmpCoList
+SCAN
+	IF _tmpCoList.Internal = .f.
+		msqlstr = "If Not Exists(Select Top 1 * from UpdtExcl Where ProductNm = ?_tmpCoList.ProductNm And ExclFlNm = ?_tmpCoList.ExclFlNm);
+			Insert into UpdtExcl (ProductNm,ExclFlNm,ManualUpdt) Values (?_tmpCoList.ProductNm,?_tmpCoList.ExclFlNm,?_tmpCoList.ManualUpdt)"
+		nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"","nHandle")
+		IF nretval <= 0
+			=Messagebox("Unable to update UPDTEXCL table in Vudyog Database.",0+16,vuMess)
+			DO ExitUpdt
+			RETURN  .f.
+		Endif
+	Endif
+	SELECT _tmpCoList
+Endscan
+
+msqlstr = "select name from sysobjects where xtype = 'U' and name = 'UPDTHIST'"
+nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+IF nretval <= 0 OR !USED('_tmpCoList')
+	DO ExitUpdt
+	RETURN  .f.
+Endif
+
+IF RECCOUNT('_tmpCoList') <= 0
+	msqlstr = "Create Table UPDTHIST (UpdtMonth Datetime,UpdtVersion Varchar(15),UpdtDate Datetime,[User] Varchar(15),Log_machine Varchar(25),Log_ip Varchar(15))"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"","nHandle")
+	IF nretval <= 0
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+
+	msqlstr = "select name from sysobjects where xtype = 'U' and name = 'UPDTHIST'"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+	IF RECCOUNT('_tmpCoList') <= 0
+		=Messagebox("UPDTHIST table not found in Vudyog Database.",0+16,vuMess)
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+Endif
+
+msqlstr = "select top 1 a.name from syscolumns a,sysobjects b ;
+	where a.id = b.id and a.name = 'passroute1'  and b.name = 'co_mast'"
+nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+IF nretval <= 0 OR !USED('_tmpCoList')
+	DO ExitUpdt
+	RETURN  .f.
+ELSE
+	IF RECCOUNT('_tmpCoList') <= 0
+		msqlstr = "Alter Table Co_mast Add passroute1 VarBinary(250) Default CAST('' as varbinary(1)) With Values"
+		nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"","nHandle")
+		IF nretval <= 0
+			DO ExitUpdt
+			RETURN  .f.
+		Endif	
+	Endif	
+Endif
+
+msqlstr = "select CAST(0 as Bit) as SelCo,CAST(0 as numeric(1)) as runupdt,a.compid,a.co_name,a.dir_nm,a.dbname,a.sta_dt,a.end_dt,;
+	a.passroute,a.passroute1,b.UpdtMonth,b.UpdtVersion,b.UpdtDate from co_mast a,updthist b;
+	where 1 = 2"
+nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_UpdtCoList","nHandle")
+IF nretval <= 0 OR !USED('_UpdtCoList')
+	DO ExitUpdt
+	RETURN  .f.
+Endif
+
+msqlstr = "select compid,co_name,dir_nm,dbname,sta_dt,end_dt,passroute,passroute1 from co_mast Order by co_name,dir_nm,dbname,sta_dt,end_dt"
+nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+IF nretval <= 0 OR !USED('_tmpCoList')
+	DO ExitUpdt
+	RETURN  .f.
+Endif
+
+SELECT _UpdtCoList
+APPEND BLANK IN _UpdtCoList
+REPLACE co_name WITH 'Main Folder',compid WITH 0,;
+	dir_nm WITH apath,dbname WITH 'VUDYOG',;
+	RunUpdt WITH 0,SelCo WITH .f. IN _UpdtCoList
+
+_mPrevUniqFlds = ''
+SELECT _tmpCoList
+SCAN
+	IF USED('_Co_mast')
+		SELECT _Co_mast
+		IF RECCOUNT() > 0
+			LOCATE FOR Co_name = _tmpCoList.co_name
+			IF !FOUND()
+				SELECT _tmpCoList
+				LOOP
+			Endif	
+		Endif
+		SELECT _tmpCoList
+	ENDIF
+	
+	_mCurUniqFlds = co_name+dir_nm+dbname
+	_mpassroute = ALLTRIM(_tmpCoList.passroute)
+	Buffer1 = ""
+	For i1 = 1 To Len(_mpassroute)
+		Buffer1 = Buffer1 + Chr(Asc(Substr(_mpassroute,i1,1))/2)
+	Next i1
+	_mpassroute = Buffer1
+	_mpassroute1 = ALLTRIM(_tmpCoList.passroute1)
+	Buffer1 = ""
+	For i1 = 1 To Len(_mpassroute1)
+		Buffer1 = Buffer1 + Chr(Asc(Substr(_mpassroute1,i1,1))/2)
+	Next i1
+	_mpassroute1 = Buffer1
+
+	IF !(_mPrevUniqFlds == _mCurUniqFlds)
+		SELECT _UpdtCoList
+		APPEND BLANK IN _UpdtCoList
+		REPLACE co_name WITH _tmpCoList.co_name,compid WITH _tmpCoList.compid,;
+			dir_nm WITH _tmpCoList.dir_nm,dbname WITH _tmpCoList.dbname,;
+			sta_dt WITH _tmpCoList.sta_dt,end_dt WITH _tmpCoList.end_dt,;
+			RunUpdt WITH 0,SelCo WITH .f.,;
+			passroute WITH _mpassroute,;
+			passroute1 WITH _mpassroute1 IN _UpdtCoList
+	ENDIF
+	_mPrevUniqFlds = _mCurUniqFlds
+
+	SELECT _UpdtCoList
+	REPLACE end_dt WITH _tmpCoList.end_dt IN _UpdtCoList
+
+	SELECT _tmpCoList
+ENDSCAN 		
+
+msqlstr = "select [user] from vudyog..[user] where [user] != ?musername"
+nretval=sqlconobj.dataconn('EXE','master',msqlstr,"_tmpCoList","nhandle_master")
+IF nretval <= 0 OR !USED('_tmpCoList')
+	DO ExitUpdt
+	RETURN  .f.
+ELSE
+	SELECT _tmpCoList
+	SCAN
+
+		msqlstr = "select name from tempdb..sysobjects where xtype = 'U' and name = '##"+allt(_tmpCoList.user)+"'"
+		nretval=sqlconobj.dataconn('EXE','master',msqlstr,"_tmptbl1","nhandle_master")
+		IF nretval <= 0 OR !USED('_tmptbl1')
+			DO ExitUpdt
+			RETURN  .f.
+		ELSE
+			IF RECCOUNT('_tmptbl1') > 0
+				=Messagebox("To continue update, other users must exit Software.",0+16,vuMess)
+				DO ExitUpdt
+				RETURN  .f.
+			Endif	
+		Endif			
+
+		SELECT _tmpCoList
+	ENDSCAN		
+
+	SELECT _tmpCoList
+	SCAN
+
+		msqlstr = "select [user] into ##"+allt(_tmpCoList.user)+" from vudyog..[user]"
+		nretval=sqlconobj.dataconn('EXE','master',msqlstr,"","nhandle_master")
+		IF nretval <= 0
+			DO ExitUpdt
+			RETURN  .f.
+		Endif
+		
+		SELECT _tmpCoList
+	ENDSCAN		
+
+Endif
+
+msqlstr = "SELECT hostname FROM master..SysProcesses WHERE DBId = DB_ID('vudyog') and hostname != ?_mmachine"
+nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+IF nretval <= 0 OR !USED('_tmpCoList')
+	DO ExitUpdt
+	RETURN  .f.
+ELSE
+	IF RECCOUNT('_tmpCoList') > 0
+		=Messagebox("To continue update, other users must exit Software.",0+16,vuMess)
+		DO ExitUpdt
+		RETURN  .f.
+	Endif	
+Endif
+
+SELECT _UpdtCoList
+SCAN
+	msqlstr = "SELECT hostname FROM master..SysProcesses WHERE DBId = DB_ID('"+_UpdtCoList.DbName+"') and hostname != ?_mmachine"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	ELSE
+		IF RECCOUNT('_tmpCoList') > 0
+			=Messagebox("To continue update, other users must exit Software.",0+16,vuMess)
+			DO ExitUpdt
+			RETURN  .f.
+		Endif	
+	Endif
+	SELECT _UpdtCoList
+ENDSCAN
+
+SELECT _UpdtCoList
+SCAN
+	_mDbName = ALLTRIM(_UpdtCoList.DbName)
+	
+	msqlstr = "select name from "+_mDbName+"..sysobjects where xtype = 'U' and name = 'UPDTHIST'"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	Endif
+
+	IF RECCOUNT('_tmpCoList') <= 0
+		msqlstr = "Create Table "+_mDbName+"..UPDTHIST (UpdtMonth Datetime,UpdtVersion Varchar(15),UpdtDate Datetime,[User] Varchar(15),Log_machine Varchar(25),Log_ip Varchar(15))"
+		nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"","nHandle")
+		IF nretval <= 0
+			DO ExitUpdt
+			RETURN  .f.
+		Endif
+
+		msqlstr = "select name from "+_mDbName+"..sysobjects where xtype = 'U' and name = 'UPDTHIST'"
+		nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+		IF nretval <= 0 OR !USED('_tmpCoList')
+			DO ExitUpdt
+			RETURN  .f.
+		Endif
+		IF RECCOUNT('_tmpCoList') <= 0
+			=Messagebox("UPDTHIST table not found in "+_mDbName+" Database.",0+16,vuMess)
+			DO ExitUpdt
+			RETURN  .f.
+		Endif
+	Endif
+
+	msqlstr = "select Top 1 UpdtMonth,UpdtVersion,UpdtDate from "+_mDbName+"..UpdtHist Order by UpdtDate Desc"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	ELSE
+		REPLACE UpdtMonth WITH _tmpCoList.UpdtMonth,;
+			UpdtVersion WITH _tmpCoList.UpdtVersion,;
+			UpdtDate WITH _tmpCoList.UpdtDate in _UpdtCoList	
+	Endif
+
+	msqlstr = "select Top 1 UpdtMonth from "+_mDbName+"..UpdtHist Where UpdtMonth = ?_mupdtmonth"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	ELSE
+		IF RECCOUNT() = 1
+			REPLACE RunUpdt WITH 1 IN _UpdtCoList
+		Endif	
+	Endif
+
+	msqlstr = "select Top 1 UpdtMonth from "+_mDbName+"..UpdtHist Order By UpdtMonth Desc"
+	nretval=sqlconobj.dataconn('EXE','Vudyog',msqlstr,"_tmpCoList","nHandle")
+	IF nretval <= 0 OR !USED('_tmpCoList')
+		DO ExitUpdt
+		RETURN  .f.
+	ELSE
+		IF RECCOUNT() = 1 AND TTOD(_tmpCoList.UpdtMonth) > _mupdtmonth
+			REPLACE RunUpdt WITH 2 IN _UpdtCoList
+		Endif	
+	Endif
+
+	SELECT _UpdtCoList
+ENDSCAN
+
+nretval=sqlconobj.sqlconnclose("nHandle")
+
+DO FORM FrmCoList
+READ EVENTS
+
+DO ExitUpdt
+
+
+
+PROCEDURE ExitUpdt
+	IF TYPE('sqlconobj') = 'O'
+		nretval=sqlconobj.sqlconnclose("nHandle")
+		nretval=sqlconobj.sqlconnclose("nhandle_master")
+	ENDIF 	
+	IF USED('_tmpCoList')
+		USE IN _tmpCoList
+	Endif	
+	IF USED('_UpdtCoList')
+		USE IN _UpdtCoList
+	Endif	
+	IF USED('_tmptbl1')
+		USE IN _tmptbl1
+	Endif	
+	RELEASE mudprodcode,usquarepass,_mproddesc,_mupdtmonth,_mlastupdtmonth,_mzipname,_mzipfullname,_mFldrName,_mUnzipFldrName,_ErrMsg,_mmachine,_mlogip,_mErrLogName
+	CLOSE all
+	WAIT CLEAR
+	exitclick = .T.
+

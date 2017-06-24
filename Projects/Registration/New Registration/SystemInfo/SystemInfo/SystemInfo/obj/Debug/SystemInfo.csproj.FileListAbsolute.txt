@@ -1,0 +1,5 @@
+E:\2009 Practice\Windows Samples\SystemInfo\SystemInfo\obj\Debug\ResolveAssemblyReference.cache
+E:\2009 Practice\Windows Samples\SystemInfo\SystemInfo\bin\Debug\SystemInfo.dll
+E:\2009 Practice\Windows Samples\SystemInfo\SystemInfo\bin\Debug\SystemInfo.pdb
+E:\2009 Practice\Windows Samples\SystemInfo\SystemInfo\obj\Debug\SystemInfo.dll
+E:\2009 Practice\Windows Samples\SystemInfo\SystemInfo\obj\Debug\SystemInfo.pdb

@@ -1,0 +1,10 @@
+mvalue = "DDDD'ff fdfdfdfd'd"
+kk=STRTRAN(mValue,"'","'+chr(39)+'")
+MESSAGEBOX("'"+kk+"'")
+*!*	for t = 1 to len(mValue)
+*!*		l = at("'",mValue,t)
+*!*		IF l<>0
+*!*		ELSE
+*!*			exit	
+*!*		Endif
+*!*	endfor	

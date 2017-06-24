@@ -1,0 +1,13 @@
+Form c:\tempwork\user_security\frmusers.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form c:\tempwork\user_security\frmuseraccess.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form c:\tempwork\user_security\frmrolepermisson.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Unknown BEEP - Undefined
+
+Visual Class Library c:\tempwork\user_security\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

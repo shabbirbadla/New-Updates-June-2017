@@ -1,0 +1,5 @@
+D:\Code for Trials and Testing\Crc32\Crc32\obj\Debug\ResolveAssemblyReference.cache
+D:\Code for Trials and Testing\Crc32\Crc32\bin\Debug\Crc32.dll
+D:\Code for Trials and Testing\Crc32\Crc32\bin\Debug\Crc32.pdb
+D:\Code for Trials and Testing\Crc32\Crc32\obj\Debug\Crc32.dll
+D:\Code for Trials and Testing\Crc32\Crc32\obj\Debug\Crc32.pdb

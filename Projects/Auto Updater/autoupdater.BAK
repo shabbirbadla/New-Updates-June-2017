@@ -1,0 +1,3 @@
+*#DEFINE  _DefineUpdtMonth '31/08/2011'			&&vasant300112
+#DEFINE  _DefineLastUpdtMonth ''
+#DEFINE  _DefineGenFreshProdDetail .f.

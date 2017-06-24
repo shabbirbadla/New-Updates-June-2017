@@ -1,0 +1,14 @@
+Form d:\svn development\uemultico_mast\co_mast.scx has the following errors:
+    Unknown BARSTAT - Undefined
+    Unknown MVAR - Undefined
+    Unknown DECODER - Undefined
+    Unknown UEGETPOP - Undefined
+    Proc./Func. READINFFILE - Undefined
+    Unknown NEWDECRY - Undefined
+
+Form d:\svn development\uemultico_mast\sel_prod.scx has the following errors:
+    Unknown GETPRIVSTR - Undefined
+
+Visual Class Library d:\svn development\uemultico_mast\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

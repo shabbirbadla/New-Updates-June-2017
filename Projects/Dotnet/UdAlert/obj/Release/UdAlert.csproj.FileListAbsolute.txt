@@ -1,0 +1,8 @@
+D:\My practice\aspspider\UdAlert\UdAlert\bin\Release\UdAlert.exe
+D:\My practice\aspspider\UdAlert\UdAlert\bin\Release\UdAlert.pdb
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Release\ResolveAssemblyReference.cache
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Release\UdAlert.Form1.resources
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Release\UdAlert.Properties.Resources.resources
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Release\UdAlert.csproj.GenerateResource.Cache
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Release\UdAlert.exe
+D:\My practice\aspspider\UdAlert\UdAlert\obj\Release\UdAlert.pdb

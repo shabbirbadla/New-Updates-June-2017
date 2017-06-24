@@ -1,0 +1,7 @@
+update r_status set spwhat = 'Q' where charindex('EXECUTE',sqlquery)<>1 and len(ltrim(rtrim(sqlquery))) > 0
+update r_status set spwhat = 'P' where charindex('SELECT ',sqlquery)<>1 and len(ltrim(rtrim(sqlquery))) > 0
+
+
+update r_status set rettable = '' where rettable is null
+update r_status set sqlquery = '' where sqlquery is null
+update r_status set qtable = '' where qtable is null

@@ -1,0 +1,10 @@
+Program e:\raghu\vfp9\ui2ui\ui_2way\main.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+
+Form e:\raghu\vfp9\ui2ui\ui_2way\frmgenfilter.scx has the following errors:
+    Unknown UI2_CSV_INTVALID - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form e:\raghu\vfp9\ui2ui\ui_2way\frm_set2way.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+

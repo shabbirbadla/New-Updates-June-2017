@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF003CB3-9835-46A1-93B2-FDBEA2AE8FE4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eMailClient.BLL</RootNamespace>
+    <AssemblyName>eMailClient.BLL</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAccess-Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\eMailClient\bin\Release\DataAccess-Net.dll</HintPath>
+    </Reference>
+    <Reference Include="getinfo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\VudyogSDK\getinfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDetails.cs" />
+    <Compile Include="cls_Gen_Ent_Email_Client.cs" />
+    <Compile Include="cls_Gen_Ent_Email_LogWriter.cs" />
+    <Compile Include="cls_Gen_Ent_Email_Settings.cs" />
+    <Compile Include="cls_Gen_Ent_PendingMail.cs" />
+    <Compile Include="cls_Gen_Ent_ProcExecute.cs" />
+    <Compile Include="cls_Gen_Mgr_Email_Client.cs" />
+    <Compile Include="cls_Gen_Mgr_Email_LogWriter.cs" />
+    <Compile Include="cls_Gen_Mgr_Email_Settings.cs" />
+    <Compile Include="cls_Gen_Mgr_PendingMail.cs" />
+    <Compile Include="cls_Gen_Mgr_ProcExecute.cs" />
+    <Compile Include="ICommonBLL.cs" />
+    <Compile Include="LogWriter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eMailClient.DAL\eMailClient.DAL.csproj">
+      <Project>{0BDFB3A3-5385-46F5-9112-354D7AAC14FA}</Project>
+      <Name>eMailClient.DAL %28eMailClient.DAL\eMailClient.DAL%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eMailClient.MailSender\eMailClient.MailSender.csproj">
+      <Project>{0B01E8D3-8344-44B6-B8B4-9C90F517854F}</Project>
+      <Name>eMailClient.MailSender %28eMailClient.MailSender\eMailClient.MailSender%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eMailClient.RPT\eMailClient.RPT.csproj">
+      <Project>{6933E621-E32C-4774-8E17-005AD5F9D035}</Project>
+      <Name>eMailClient.RPT %28eMailClient.RPT\eMailClient.RPT%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

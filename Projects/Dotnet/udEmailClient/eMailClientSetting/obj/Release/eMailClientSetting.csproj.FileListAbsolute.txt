@@ -1,0 +1,141 @@
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClientWizard.exe
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\getinfo.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\udSelectPop.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\udSelectPop.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\getinfo.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\udSelectPop.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\udSelectPop.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\SVN Development\Dotnet\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.exe
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\getinfo.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\ResolveAssemblyReference.cache
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\itextsharp.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\getinfo.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\itextsharp.dll
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+D:\Pankaj\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\ResolveAssemblyReference.cache
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+D:\Pankaj\udEmailClient\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe.config
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.exe
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClientWizard.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.exe
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClientWizard.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.dll
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.dll
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.dll
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.dll
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\itextsharp.dll
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.BLL.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.DAL.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.RPT.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\eMailClient.MailSender.pdb
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClientSetting.csprojResolveAssemblyReference.cache
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailClient.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmEmailList.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmExportCSV.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmLogViewer.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmPendingMail.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmProcessWatcher.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmQueryWindow.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmSearch.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.frmTranType.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClient.Properties.Resources.resources
+D:\Digital_Signature\udEmailClient\eMailClientSetting\obj\Release\eMailClientSetting.csproj.GenerateResource.Cache
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\Udyog.Library.Common.dll
+D:\Digital_Signature\udEmailClient\eMailClientSetting\bin\Release\Udyog.Library.Common.pdb

@@ -1,0 +1,92 @@
+C:\Uday\Projects 2008\eMailClient\eMailClient\bin\Debug\eMailClient.exe
+C:\Uday\Projects 2008\eMailClient\eMailClient\bin\Debug\eMailClient.pdb
+C:\Uday\Projects 2008\eMailClient\eMailClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Uday\Projects 2008\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailClient.resources
+C:\Uday\Projects 2008\eMailClient\eMailClient\obj\Debug\eMailClient.Properties.Resources.resources
+C:\Uday\Projects 2008\eMailClient\eMailClient\obj\Debug\eMailClient.csproj.GenerateResource.Cache
+C:\Uday\Projects 2008\eMailClient\eMailClient\obj\Debug\eMailClient.exe
+C:\Uday\Projects 2008\eMailClient\eMailClient\obj\Debug\eMailClient.pdb
+C:\Uday\Projects 2008\eMailClient\eMailClient\bin\Debug\eMailClient.BL.dll
+C:\Uday\Projects 2008\eMailClient\eMailClient\bin\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.exe
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.exe
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailClient.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.Properties.Resources.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.csproj.GenerateResource.Cache
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.exe.config
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailList.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.FrmSearch.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmTranType.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailSettings.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.MainForm.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmQueryWindow.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmExportCSV.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmSendEmail.resources
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmLogViewer.resources
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.RPT.dll
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\bin\Debug\eMailClient.RPT.pdb
+E:\Project\Dotnet\eMailClient\eMailClient\obj\Debug\eMailClient.frmProcessWatcher.resources
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.exe.config
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.exe
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.pdb
+D:\eMailClient\eMailClient\obj\Debug\ResolveAssemblyReference.cache
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailClient.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailList.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmEmailSettings.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmExportCSV.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmLogViewer.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmProcessWatcher.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmQueryWindow.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmSearch.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.frmTranType.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.MainForm.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.Properties.Resources.resources
+D:\eMailClient\eMailClient\obj\Debug\eMailClient.csproj.GenerateResource.Cache
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.exe
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.pdb
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.BL.dll
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.MailSender.dll
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.RPT.dll
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.DAL.dll
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.BL.pdb
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.MailSender.pdb
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.RPT.pdb
+D:\eMailClient\eMailClient\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.exe.config
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.exe
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.BL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.RPT.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.DAL.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.BL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.RPT.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient\bin\Debug\eMailClient.DAL.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmEmailClient.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmEmailList.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmEmailSettings.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmExportCSV.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmLogViewer.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmProcessWatcher.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmQueryWindow.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmSearch.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmTranType.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.frmMain.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.Properties.Resources.resources
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.csproj.GenerateResource.Cache
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.exe
+E:\Project\Dotnet\eMailClient_1\eMailClient\obj\Debug\eMailClient.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.exe.config
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.exe
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.pdb

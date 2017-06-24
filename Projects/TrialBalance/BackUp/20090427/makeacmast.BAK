@@ -1,0 +1,95 @@
+*:*****************************************************************************
+*:        Program: Makeacmast.PRG
+*:         System: Udyog Software
+*:         Author: RAGHU
+*:  Last modified: 19/09/2006
+*:			AIM  : Create Account Master
+*:*****************************************************************************
+
+PARAMETERS FRDATE,TODate,sqldatasession,mReportType
+IF TYPE('sqldatasession') ='N'
+	SET DATASESSION TO sqldatasession
+ENDIF
+SET DELETED ON
+nHandle =0
+sqlconobj=NEWOBJECT('sqlconnudobj',"sqlconnection",xapps)
+
+IF TYPE('Statdesktop') = 'O'
+	Statdesktop.ProgressBar.VALUE = 10
+ENDIF
+
+Ldate = SET("Date")
+SET DATE AMERICAN
+*!*	Collecting Debit and Credit Balance [Start]
+Strdrcr = "EXEC Usp_Final_Accounts '"+DTOC(FRDATE)+"','"+DTOC(TODate)+"','"+DTOC(company.Sta_Dt)+"','"+mReportType+"' "
+sql_con=sqlconobj.dataconn("EXE",company.DbName,Strdrcr,"_CTBAcMast","nHandle",sqldatasession)
+IF sql_con =< 0
+	SET DATE &Ldate
+	=MESSAGEBOX('Main cursor creation '+CHR(13)+MESSAGE(),0+16,VuMess)
+	RETURN .F.
+ENDIF
+
+*!*	Collecting Debit and Credit Balance [End]
+SET DATE &Ldate
+
+IF TYPE('Statdesktop') = 'O'
+	Statdesktop.ProgressBar.VALUE = 30
+ENDIF
+
+IF mReportType = 'P'
+*!*		UPDATE _CTBAcMast SET ClBal = Debit-ABS(Credit)
+	UPDATE _CTBAcMast SET ClBal = opBal+Debit-ABS(Credit)	&& Changed By Sachin N. S. on 18/03/2009
+ENDIF
+
+
+*!* Inserting Additional Fields [START]
+SELECT SPACE(1) AS LevelFlg,;
+	SPACE(100) AS OrderLevel,;
+	000000000000000 AS LEVEL,;
+	000000000000000 AS LevelInt,;
+	a.*;
+	FROM _CTBAcMast a;
+	INTO CURSOR _CTBAcMast READWRITE
+*!* Inserting Additional Fields [END]
+
+*!*	Close Temp Cursors [Start]
+=CloseTmpCursor()
+*!*	Close Temp Cursors [End]
+
+IF INLIST(mReportType,'B','P')
+	mShowStkfrm = 0
+
+	SELECT _CTBAcMast
+	LOCATE FOR ALLT(Ac_Name)=IIF(mReportType='P','CLOSING STOCK (P & L)','CLOSING STOCK') AND MainFlg = 'L' AND ClBal <> 0
+	IF FOUND()
+		mShowStkfrm = 1
+	ENDIF
+
+	SELECT _CTBAcMast
+	LOCATE FOR ALLT(Ac_Name)=IIF(mReportType='B','PROVISIONAL EXPENSES','PROVISIONAL EXPENSES (P & L)') AND MainFlg = 'L' AND ClBal <> 0
+	IF FOUND()
+		mShowStkfrm = mShowStkfrm+1
+	ENDIF
+
+	SELECT _CTBAcMast
+	LOCATE FOR ALLT(Ac_Name)=IIF(mReportType='P','OPENING STOCK','OPENING STOCK') AND MainFlg = 'L' AND OPBal <> 0
+	IF FOUND()
+		mShowStkfrm = mShowStkfrm+1
+	ENDIF
+
+	IF mShowStkfrm < 2
+		DO FORM frmstkval WITH sqldatasession,mReportType
+	ENDIF
+
+ENDIF
+RETURN .T.
+
+FUNCTION CloseTmpCursor
+***********************
+sql_con = sqlconobj.SqlConnClose('nHandle')
+IF sql_con < 0
+	=MESSAGEBOX(MESSAGE(),0+16,VuMess)
+	RETURN .T.
+ENDIF
+
+RELEASE sqlconobj,nHandle

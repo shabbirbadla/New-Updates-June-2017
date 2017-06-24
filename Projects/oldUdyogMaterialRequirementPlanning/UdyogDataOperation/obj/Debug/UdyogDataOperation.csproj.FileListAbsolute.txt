@@ -1,0 +1,10 @@
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\bin\Debug\UdyogDataOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\bin\Debug\UdyogDataOperation.pdb
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\obj\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\obj\Debug\UdyogDataOperation.dll
+D:\Udyog\Working\UdMatReqPlan\UdyogDataOperation\obj\Debug\UdyogDataOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\bin\Debug\UdyogDataOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\bin\Debug\UdyogDataOperation.pdb
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Debug\ResolveAssemblyReference.cache
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Debug\UdyogDataOperation.dll
+D:\Udyog\Working\UdyogMaterialRequirementPlanning\UdyogDataOperation\obj\Debug\UdyogDataOperation.pdb

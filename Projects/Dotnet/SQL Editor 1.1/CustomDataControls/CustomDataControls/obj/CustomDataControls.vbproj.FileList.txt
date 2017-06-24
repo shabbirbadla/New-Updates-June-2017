@@ -1,0 +1,14 @@
+bin\Debug\CustomDataControls.exe.config
+bin\Debug\CustomDataControls.exe
+bin\Debug\CustomDataControls.pdb
+bin\Debug\CustomDataControls.xml
+bin\Debug\MyCompanyControls.dll
+bin\Debug\MyCompanyControls.pdb
+bin\Debug\MyCompanyControls.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CustomDataControls.Form1.resources
+obj\Debug\CustomDataControls.Resources.resources
+obj\Debug\CustomDataControls.vbproj.GenerateResource.Cache
+obj\Debug\CustomDataControls.exe
+obj\Debug\CustomDataControls.xml
+obj\Debug\CustomDataControls.pdb

@@ -1,0 +1,92 @@
+2013-03-18 16:17:15	Process Start.....
+2013-03-18 16:17:15	
+2013-03-18 16:17:16	Party_nm : R00127
+2013-03-18 16:17:22	Error Found...Error found, while exporting report 
+Message : Missing parameter values.
+Source : CrystalDecisions.ReportAppServer.DataSetConversion
+TargetSite : Boolean ThrowDotNetException(System.Exception)
+------------------------------------------------------------------------------------------
+2013-03-18 16:17:22	Party_nm : S00026
+2013-03-18 16:17:23	Error Found...Error found, while exporting report 
+Message : Missing parameter values.
+Source : CrystalDecisions.ReportAppServer.DataSetConversion
+TargetSite : Boolean ThrowDotNetException(System.Exception)
+------------------------------------------------------------------------------------------
+2013-03-18 16:17:23	Party_nm : P00173
+2013-03-18 16:17:24	Error Found...Error found, while exporting report 
+Message : Missing parameter values.
+Source : CrystalDecisions.ReportAppServer.DataSetConversion
+TargetSite : Boolean ThrowDotNetException(System.Exception)
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported PDF : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2013-03-18 16:23:42	Process Start.....
+2013-03-18 16:23:42	
+2013-03-18 16:23:42	Party_nm : R00127
+2013-03-18 16:23:42	 - Successfully exported CSV....
+2013-03-18 16:24:43	Process Start.....
+2013-03-18 16:24:43	
+2013-03-18 16:24:43	Party_nm : R00127
+2013-03-18 16:24:43	 - Successfully exported CSV....
+2013-03-18 16:24:56	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-18 16:24:56	Party_nm : S00026
+2013-03-18 16:24:57	 - Successfully exported CSV....
+2013-03-18 16:25:58	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-18 16:25:58	Party_nm : P00173
+2013-03-18 16:25:58	 - Successfully exported CSV....
+2013-03-18 16:26:08	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported CSV files : 3
+Total Mails sent : 3
+---------------------------------------<<< End >>> ------------------------------
+2013-03-18 17:43:59	Process Start.....
+2013-03-18 17:43:59	
+2013-03-18 17:43:59	Party_nm : R00127
+2013-03-18 17:44:13	Error Found...Error found, while exporting report 
+Message : Access to the path 'C:\TempSales_R001272013_03_18.PDF' is denied.
+Source : mscorlib
+TargetSite : Void WinIOError(Int32, System.String)
+------------------------------------------------------------------------------------------
+2013-03-18 17:44:13	Party_nm : S00026
+2013-03-18 17:44:16	Error Found...Error found, while exporting report 
+Message : Access to the path 'C:\TempSales_S000262013_03_18.PDF' is denied.
+Source : mscorlib
+TargetSite : Void WinIOError(Int32, System.String)
+------------------------------------------------------------------------------------------
+2013-03-18 17:44:16	Party_nm : P00173
+2013-03-18 17:44:17	Error Found...Error found, while exporting report 
+Message : Access to the path 'C:\TempSales_P001732013_03_18.PDF' is denied.
+Source : mscorlib
+TargetSite : Void WinIOError(Int32, System.String)
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported PDF : 0
+Total Mails sent : 0
+---------------------------------------<<< End >>> ------------------------------
+2013-03-18 18:41:08	Process Start.....
+2013-03-18 18:41:08	
+2013-03-18 18:41:08	Party_nm : R00127
+2013-03-18 18:41:12	Successfully export PDF....
+2013-03-18 18:41:27	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-18 18:41:27	Party_nm : S00026
+2013-03-18 18:41:30	Successfully export PDF....
+2013-03-18 18:41:45	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+2013-03-18 18:41:45	Party_nm : P00173
+2013-03-18 18:41:47	Successfully export PDF....
+2013-03-18 18:42:00	 - Successfully Mail Sent.... 
+------------------------------------------------------------------------------------------
+-------------------------------------<<< Summary >>>-----------------------------
+Total Records found : 3
+Total Exported PDF : 3
+Total Mails sent : 3
+---------------------------------------<<< End >>> ------------------------------

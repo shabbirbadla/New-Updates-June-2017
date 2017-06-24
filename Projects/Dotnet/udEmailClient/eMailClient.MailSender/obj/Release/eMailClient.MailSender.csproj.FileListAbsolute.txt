@@ -1,0 +1,45 @@
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+E:\Local_SVN\udaygawde\Projects CR\CR_Avery_00026_Utility_To_Send_Mails_With_Attachments\eMailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient_1\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+E:\Project\Dotnet\eMailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient - 27-12-2013\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+D:\Pankaj\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+D:\Pankaj\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+D:\Pankaj\udEmailClient\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+D:\Pankaj\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+D:\Pankaj\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\obj\Release\ResolveAssemblyReference.cache
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+D:\Udyog\Digital Signature\Esignature_src\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb
+D:\Digital_Signature\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.dll
+D:\Digital_Signature\udEmailClient\eMailClient.MailSender\bin\Release\eMailClient.MailSender.pdb
+D:\Digital_Signature\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.csprojResolveAssemblyReference.cache
+D:\Digital_Signature\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.dll
+D:\Digital_Signature\udEmailClient\eMailClient.MailSender\obj\Release\eMailClient.MailSender.pdb

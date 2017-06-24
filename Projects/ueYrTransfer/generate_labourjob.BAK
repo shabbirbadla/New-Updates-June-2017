@@ -1,0 +1,239 @@
+Lparameters cEntry_ty,SqlConObj,_ndatasessionid,oHandle,ccDbName,ndbname,cdSta_Dt,cdEnd_Dt
+
+************************************************************************************************
+*!*	** 		Generating Labour Job Entries (ManuFacturing)
+*!*	**		Method By : Shrikant S.
+*!*	**		Use 	  : Used for Generating Labour Job IV Entries
+************************************************************************************************
+
+Local nHandle, lcSqlStr, nRetVal,ncompid,sumGross,sumNetAmt
+sumGross=0
+sumNetAmt=0
+ncompid=0
+If Used('_newyeardet')
+	Select _newyeardet
+	ncompid=_newyeardet.compid
+Endi
+
+oPBar.ProgStatus("Processing Labour job "+IIF(cEntry_ty=="RL","V","IV")+" Entries: "+ Alltrim(Transform(15))+ "%"  ,15)
+
+lcSqlStr =	" SELECT * FROM LCODE WHERE ENTRY_TY = '"+cEntry_ty+"' "
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Lcode],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+Select Tmp_Lcode
+Entry_Tbl=Alltrim(Iif(!Empty(Tmp_Lcode.Bcode_nm),ALLTRIM(Tmp_Lcode.Bcode_nm),IIF(Tmp_Lcode.ext_vou=.t.,"",Tmp_Lcode.Entry_ty)))
+mainflds=""
+itemflds=""
+lcSqlStr =	" SELECT e_code,Fld_nm,att_file FROM LOTHER WHERE E_CODE = '"+cEntry_ty+"' "
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Lother],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+Select Tmp_Lother
+Scan
+	If Tmp_Lother.att_file=.T.
+		mainflds=mainflds+","+Alltrim(Tmp_Lother.fld_nm)+" with _actStk."+Alltrim(Tmp_Lother.fld_nm)		&& Collecting Addi. Info Main flds
+	Else
+		itemflds=itemflds+","+Alltrim(Tmp_Lother.fld_nm)+" with _actStk."+Alltrim(Tmp_Lother.fld_nm) 		&& Collecting Addi. Info Item flds
+	Endif
+Endscan
+mainflds=Iif(Len(mainflds)>0,Substr(mainflds,2,Len(mainflds)),"")
+itemflds=Iif(Len(itemflds)>0,Substr(itemflds,2,Len(itemflds)),"")
+
+
+lcSqlStr =	" SET DATEFORMAT DMY SELECT GETDATE() as SysDate "
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[_TmpSysDate],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+cSysDate = Ttoc(_TmpSysDate.SysDate)
+
+lcSqlStr =	" SELECT * FROM "+Entry_Tbl+"MAIN WHERE 1=2 "			&& Temporary Main Table
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Main],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+
+lcSqlStr =	" SELECT * FROM "+Entry_Tbl+"ITEM WHERE 1=2 "			&& Temporary Item Table
+nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_Item],oHandle,_ndatasessionid,.T.)
+If nRetVal<0
+	Return .F.
+Endif
+
+*!*	lcSqlStr =	" SELECT * FROM "+Entry_Tbl+"ACDET WHERE 1=2 "			&& Temporary Acdet Table
+*!*	nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[Tmp_AcDet],oHandle,_ndatasessionid,.T.)
+*!*	If nRetVal<0
+*!*		Return .F.
+*!*	Endif
+*!*	If !Used('_actStk')
+*!*		Return
+*!*	Endif
+
+oPBar.ProgStatus("Processing Labour job "+IIF(cEntry_ty=="RL","V","IV")+" Entries: "+ Alltrim(Transform(20))+ "%"  ,20)
+
+Select _actStk
+reccnt=Reccount()
+If reccnt <> 0
+	oPBar.Show()
+	lnIncVal = 80 / reccnt
+	lninc=0
+Endif
+
+
+Upd_itbal=0
+
+Select _actStk
+Locate
+Do While !Eof()
+	Upd_itbal=1
+	lninc=lninc+1
+	oPBar.ProgStatus("Processing Labour job "+IIF(cEntry_ty=="RL","V","IV")+" Entries: "+ Alltrim(Transform(Round((lninc /reccnt) *100,0)))+ "%"  ,(lninc * lnIncVal)+20)
+
+	mEntry_ty=_actStk.Entry_ty
+	mTran_cd=_actStk.Tran_Cd
+	Select Tmp_Main
+	Append Blank
+*!*		cInvNo=GenerateInvNo(cEntry_ty, '', '', cdSta_Dt, '', '',Tmp_Lcode.invno_size,SqlConObj,_ndatasessionid,cEntry_ty,oHandle,ccDbName,cdSta_Dt,cdEnd_Dt)
+*!*		cdocno=GenerateDocNo(cEntry_ty,cdSta_Dt,cEntry_ty,SqlConObj,_ndatasessionid,oHandle,ccDbName,cdSta_Dt,cdEnd_Dt)
+	Replace Entry_ty With cEntry_ty, Tran_Cd With 0, Date With _actStk.Date, doc_no With _actStk.doc_no, inv_no With _actStk.inv_no, ;
+		Lock With .F., l_yn With _actStk.l_yn,due_dt With  _actStk.Date,;
+		party_nm With _actStk.party_nm, ac_Id With _actStk.ac_Id,SysDate With cSysDate, user_name With musername, apgentime With cSysDate, apledtime With cSysDate, ;
+		rule With _actStk.Rule,inv_sr With _actStk.inv_sr,  tot_add With 0, net_amt With 0, examt With 0;
+		narr With cEntry_ty+" "+Str(Tran_Cd)+" "+Alltrim(_actStk.inv_no ),cons_id With  _actStk.cons_id,compid With ncompid ;
+		,apgen With "YES",apled With "YES",apgenby With musername,apledby With musername;
+		IN Tmp_Main
+
+	If !Empty(mainflds)
+		exeStr=""
+		exeStr=" replace "+mainflds+" In Tmp_Main"
+		&exeStr
+	Endif
+	Sele Max(Val(itserial)) As citserial From Tmp_Item Into Cursor curItSerial		&& Generating itserial
+	If curItSerial.citserial>0
+		genitserial=curItSerial.citserial+1
+	Else
+		genitserial=1
+	Endif
+	If Used('curItSerial')
+		Use In curItSerial
+	Endif
+
+	Select _actStk
+	Do While mEntry_ty=_actStk.Entry_ty And mTran_cd=_actStk.Tran_Cd And !Eof()
+		Select Tmp_Item
+		Append Blank
+
+
+		Replace Entry_ty With cEntry_ty,Date With Tmp_Main.Date, doc_no With Tmp_Main.doc_no, inv_no With Tmp_Main.inv_no, ;
+			re_qty With 0, l_yn With Tmp_Main.l_yn,examt With 0,;
+			it_code With _actStk.it_code,Item With _actStk.It_name, qty With _actStk.balqty,oldqty With _actStk.qty, rate With _actStk.rate,;
+			ware_nm With _actStk.ware_nm,party_nm With Tmp_Main.party_nm,doc_no With Tmp_Main.doc_no;
+			,ac_Id With Tmp_Main.ac_Id,gro_amt With _actStk.balqty * _actStk.rate,pmkey With Tmp_Lcode.Inv_stk;
+			,itserial With _actStk.itserial,compid With ncompid,dc_no WITH 'YE' In Tmp_Item
+
+		If !Empty(mainflds)
+			exeStr=""
+			exeStr=" replace "+itemflds+" In Tmp_Item"
+			&exeStr
+		Endif
+
+		If Empty(itserial)
+*			Replace itserial With Padl(Allt(Str(genitserial)),5,"0") In Tmp_Item		&& Updating itserial
+			Replace Item_no With Str(Val(genitserial),5) In Tmp_Item							&& Updating item_no
+			genitserial = genitserial + 1
+		Endif
+
+		sumGross=sumGross+_actStk.balqty * _actStk.rate
+		sumNetAmt=sumNetAmt+_actStk.balqty * _actStk.rate
+		Select _actStk
+		If !Eof()
+			Skip
+		Endif
+	Enddo
+
+	Select Tmp_Main
+	Replace gro_amt With sumGross
+	Replace net_amt With sumNetAmt
+	lcSqlStr = SqlConObj.GenInsert(Entry_Tbl+"MAIN","'Tran_cd'","","Tmp_Main",1)
+	lcSqlStr = Strtran(lcSqlStr,Entry_Tbl+"MAIN",Alltrim(ndbname)+".."+Entry_Tbl+"MAIN")
+	nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[],oHandle,_ndatasessionid,.T.)
+	If nRetVal<0
+		Return .F.
+	Endif
+	mTran_cd=0
+	If nRetVal > 0 And mTran_cd <= 0
+		nRetVal = SqlConObj.DataConn([EXE],ccDbName," Select IDENT_CURRENT('"+Alltrim(ndbname)+".."+Entry_Tbl+"MAIN"+"') as Tran_cd ",[tmptbl_vw],oHandle,_ndatasessionid,.T.)
+		If nRetVal > 0 And Used('tmptbl_vw')
+			Select tmptbl_vw
+			If Reccount() > 0
+				mTran_cd = tmptbl_vw.Tran_Cd
+			Endif
+			Select Tmp_Main
+			Replace Tran_Cd With mTran_cd In Tmp_Main
+			Select Tmp_Item
+			Replace All Tran_Cd With mTran_cd In Tmp_Item
+			Scan
+				lcSqlStr = SqlConObj.GenInsert(Entry_Tbl+"ITEM","","","Tmp_Item",1)
+				lcSqlStr = Strtran(lcSqlStr,Entry_Tbl+"ITEM",Alltrim(ndbname)+".."+Entry_Tbl+"ITEM")
+				nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,[],oHandle,_ndatasessionid,.T.)
+				If nRetVal<0
+					Return .F.
+				Endif
+				Select Tmp_Item
+			Endscan
+		Endif
+		Select Tmp_Item
+		Zap
+		Select Tmp_Main
+		Zap
+		sumGross=0
+		sumNetAmt=0
+
+	Endif
+	If mTran_cd<=0
+		Return .F.
+	Endif
+	Select _actStk
+Enddo
+
+*!*	If Upd_itbal=1
+*!*		lcSqlStr =	" Execute USP_ENT_UPDATE_ITBALW "			&& Updating It_BalW Table
+*!*		nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,"",oHandle,_ndatasessionid,.T.)
+*!*		If nRetVal<0
+
+*!*			Return .F.
+*!*		Endif
+*!*		If nRetVal>0
+*!*			lcSqlStr =	" Execute USP_ENT_UPDATE_ITBAL "			&& Updating It_Bal Table
+*!*			nRetVal= SqlConObj.DataConn([EXE],ccDbName,lcSqlStr,"",oHandle,_ndatasessionid,.T.)
+*!*			If nRetVal<0
+*!*				Return .F.
+*!*			Endif
+
+*!*		Endif
+*!*	Endif
+
+
+*!*	If Used('Tmp_AcDet')
+*!*		Select Tmp_AcDet
+*!*		Use In Tmp_AcDet
+*!*	Endif
+
+oPBar.Release()
+oPBar = .Null.
+Release oPBar
+
+If Used('Tmp_Item')
+	Select Tmp_Item
+	Use In Tmp_Item
+Endif
+If Used('Tmp_Main')
+	Select Tmp_Main
+	Use In Tmp_Main
+Endif
+If Used('_actStk')
+	Select _actStk
+	Use In _actStk
+Endif

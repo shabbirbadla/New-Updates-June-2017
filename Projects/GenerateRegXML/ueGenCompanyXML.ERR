@@ -1,0 +1,16 @@
+Program e:\working\genregxml\gencompanyxml.prg has the following errors:
+    Library UECON.EXE - Undefined
+    Unknown HASH - Undefined
+    Unknown ENCRYPT - Undefined
+    Unknown DECRYPT - Undefined
+
+Visual Class Library e:\working\genregxml\sqlconnection.vcx has the following errors:
+    Program WSENDMAIL - Undefined
+    Program WSOCKET - Undefined
+    Program FOXUTILS - Undefined
+    Form SENDFORM - Undefined
+    Unknown UEGETPOP - Undefined
+
+Form e:\working\genregxml\frmgetcompinfo.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+

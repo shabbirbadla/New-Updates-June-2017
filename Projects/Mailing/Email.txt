@@ -1,0 +1,6 @@
+alter table manufact add pdf_path varchar(50)
+alter table r_status add retfilenm varchar(50)
+go
+update manufact set pdf_path = ''
+update r_status set retfilenm = '"'+rtrim(ltrim(rep_nm))+'"'+'+main_vw.inv_no' where rep_nm = 'ST_BILL'
+go

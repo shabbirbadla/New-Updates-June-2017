@@ -1,0 +1,11 @@
+Program e:\sachin - projects\sql projects\trialbalance_multico\makeacmast.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+
+Form e:\sachin - projects\sql projects\trialbalance_multico\finalacc.scx has the following errors:
+    Application UECRVIEWER - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UELEDZOOM - Undefined
+
+Visual Class Library e:\sachin - projects\sql projects\trialbalance_multico\gridfind.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+

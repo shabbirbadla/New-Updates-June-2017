@@ -1,0 +1,5 @@
+PARAMETERS lcDatasessionId
+
+DO FORM frmEntrySelect WITH lcDatasessionId TO entryList
+
+RETURN entryList

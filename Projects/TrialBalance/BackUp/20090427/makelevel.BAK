@@ -1,0 +1,235 @@
+*:*****************************************************************************
+*:        Program: UpdateDebitCredit.PRG
+*:         System: Udyog Software
+*:         Author: RAGHU
+*:  Last modified: 19/09/2006
+*:			AIM  : Update OrderLevel For Account Master
+*:*****************************************************************************
+LPARAMETERS mReportType
+
+LOCAL lnI
+lnI = 1
+SET DELETED ON
+
+IF mReportType = 'B'
+	LnLiabilityId = findgroupFlg('LIABILITIES','ID')
+	SELECT _CTBAcMast
+	LOCATE FOR ALLT(Ac_name)='NET PROFIT & LOSS' AND MainFlg = 'L'
+	IF FOUND()
+		REPLACE Ac_group_id WITH LnLiabilityId
+	ENDIF
+ENDIF
+
+ASCIIVAL = 64
+UPDATE _CTBAcMast SET LEVEL = 1 , OrderLevel = IncAFunction(Ac_name) WHERE MainFlg = 'G' AND Ac_Id = Ac_group_id
+
+*!*	IF MESSAGEBOX("Debug",4+32,VuMess) = 6
+*!*		SET STEP ON
+*!*	ENDIF
+
+SELECT _CTBAcMast
+*!*	INDEX ON MainFlg+STR(Updown)+Ac_name TAG MF_Updown
+INDEX ON STR(Updown)+Ac_name TAG MF_Updown
+
+IF TYPE('Statdesktop') = 'O'
+	Statdesktop.ProgressBar.VALUE = 40
+ENDIF
+
+*!*	ORDER BY a.MainFlg,a.Updown;
+
+FOR I = 1 TO 50 STEP 1
+*!*	UPDATE NLevel Group Value [Start]
+	SELECT a.Ac_Id,a.Ac_group_id,OrderLevel;
+		FROM _CTBAcMast a;
+		ORDER BY a.MainFlg,a.Updown;
+		WHERE a.LEVEL = I AND MainFlg = 'G';
+		INTO CURSOR CurTopLevel
+	IF _TALLY <> 0
+		SELECT CurTopLevel
+		SCAN
+			=FindUnderGroup(CurTopLevel.Ac_Id,I+1,OrderLevel)
+			SELECT CurTopLevel
+		ENDSCAN
+	ELSE
+		lnI = IIF(I > 1,I-1,I)
+		EXIT
+	ENDIF
+ENDFOR
+*!*	UPDATE NLevel Group Value [End]
+
+IF USED("CurTopLevel")
+	USE IN CurTopLevel
+ENDIF
+
+SELECT _CTBAcMast
+DELETE FOR ISNULL(OrderLevel)
+
+UPDATE _CTBAcMast SET LevelFlg = LEFT(ALLTRIM(OrderLevel),1),;
+	LevelINT = VAL(RIGHT(STRTRAN(ALLTRIM(OrderLevel),"/",''),LEN(ALLTRIM(STRTRAN(ALLTRIM(OrderLevel),"/",'')))-1))
+
+*!*	IF MESSAGEBOX("Copy To _CTBAcMast",4+32,Vumess) = 6
+*!*		SELECT _CTBAcMast
+*!*		COPY TO C:\_CTBAcMast
+*!*	ENDIF
+
+IF TYPE('Statdesktop') = 'O'
+	Statdesktop.ProgressBar.VALUE = 50
+ENDIF
+
+IF mReportType = 'B'
+	=FindProfitOrLoss()
+ENDIF
+
+=UpdateDebitCredit()
+
+SELECT _CTBAcMast
+DELETE FOR (EMPTY(Opbal) AND EMPTY(debit) AND EMPTY(credit))
+
+SELECT IIF(a.LEVEL<>1,SPACE(a.LEVEL*2)+a.Ac_name,a.Ac_name) AS Ac_Name2,;
+	a.*;
+	FROM _CTBAcMast a;
+	ORDER BY a.LevelFlg,a.OrderLevel,a.Ac_group_id;
+	INTO CURSOR _TBAcMast
+
+SELECT _TBAcMast
+GO TOP
+
+RETURN lnI
+
+
+FUNCTION FindUnderGroup
+***********************
+PARAMETERS gAc_Id,m_Level,mOrderLevel
+IVAL = 0
+SELECT _CTBAcMast
+SET FILTER TO Ac_group_id = gAc_Id AND LEVEL = 0
+SET ORDER TO MF_Updown
+SCAN
+	REPLACE LEVEL WITH m_Level
+	REPLACE OrderLevel WITH IncNFunction(mOrderLevel)
+	SELECT _CTBAcMast
+ENDSCAN
+SELECT _CTBAcMast
+SET FILTER TO
+
+
+FUNCTION IncAFunction
+********************
+LPARAMETERS lcAc_Name
+*!*	*!*	ASCIIVAL = ASCIIVAL + 1
+DO CASE
+CASE UPPER(lcAc_Name) = 'LIABILITIES'
+	ASCIIVAL = 65
+CASE UPPER(lcAc_Name) = 'ASSETS'
+	ASCIIVAL = 66
+CASE UPPER(lcAc_Name) = 'INCOME'
+	ASCIIVAL = 67
+CASE UPPER(lcAc_Name) = 'EXPENSE'
+	ASCIIVAL = 68
+CASE UPPER(lcAc_Name) = 'TRADING INCOME'
+	ASCIIVAL = 69
+CASE UPPER(lcAc_Name) = 'TRADING EXPENSE'
+	ASCIIVAL = 70
+ENDCASE
+RETURN CHR(ASCIIVAL)
+
+FUNCTION IncNFunction
+*********************
+PARAMETERS mOrderLevel
+IVAL = IVAL + 1
+IncFun = ALLTRIM(mOrderLevel)+'/'+REPLICATE('0',7-LEN(+ALLTRIM(STR(IVAL))))+ALLTRIM(STR(IVAL))
+RETURN IncFun
+
+
+FUNCTION FindProfitOrLoss
+*************************
+Mtincomeflg = findgroupFlg('TRADING INCOME','FLAG')
+Mtexpenseflg = findgroupFlg('TRADING EXPENSE','FLAG')
+Mexpenseflg = findgroupFlg('EXPENSE','FLAG')
+Mincomeflg = findgroupFlg('INCOME','FLAG')
+
+STORE 0 TO PandLGp,mTrdIncome,mTrdExpense,mExpense,mIncome
+
+&& Find GP
+SELECT SUM(a.ClBal) AS TrdExpense;
+	FROM _CTBAcMast a;
+	WHERE a.LevelFlg = Mtexpenseflg;
+	INTO CURSOR CurTrdIncome
+GO TOP
+mTrdExpense = IIF(ISNULL(TrdExpense),0,TrdExpense)				&& Debited
+
+SELECT SUM(a.ClBal) AS TrdIncome;
+	FROM _CTBAcMast a;
+	WHERE a.LevelFlg = Mtincomeflg;
+	INTO CURSOR CurTrdIncome
+GO TOP
+mTrdIncome = IIF(TrdIncome<0,TrdIncome*-1,IIF(ISNULL(TrdIncome),0,TrdIncome))	&& Credited
+
+DO CASE
+CASE mTrdIncome > mTrdExpense			&& INCOME IS GREATER THAN EXPENSE
+	m.diff = mTrdIncome - mTrdExpense
+	mIncome = ABS(m.diff)
+CASE mTrdExpense > mTrdIncome			&& EXPENSE IS GREATER THAN INCOME
+	m.diff = mTrdExpense-mTrdIncome
+	mExpense = ABS(m.diff)
+OTHERWISE
+	mIncome = 0
+	mExpense = 0
+ENDCASE
+
+&& Find NP
+SELECT SUM(a.ClBal) AS Expense;
+	FROM _CTBAcMast a;
+	WHERE a.LevelFlg = Mexpenseflg;
+	INTO CURSOR CurIncome
+GO TOP
+mExpense = mExpense+IIF(ISNULL(Expense),0,Expense)				&& Debited
+
+SELECT SUM(a.ClBal) AS Income;
+	FROM _CTBAcMast a;
+	WHERE a.LevelFlg = Mincomeflg;
+	INTO CURSOR CurIncome
+GO TOP
+mIncome = mIncome+IIF(Income<0,Income*-1,IIF(ISNULL(Income),0,Income))	&& Credited
+
+DO CASE
+CASE mIncome > mExpense			&& INCOME IS GREATER THAN EXPENSE
+	m.diff = mIncome - mExpense
+	PandLGp = -m.diff
+CASE mExpense > mIncome			&& EXPENSE IS GREATER THAN INCOME
+	m.diff = mExpense-mIncome
+	PandLGp = m.diff
+OTHERWISE
+	PandLGp = 0
+ENDCASE
+
+IF USED('CurIncome')
+	USE IN CurIncome
+ENDIF
+
+IF USED('CurTrdIncome')
+	USE IN CurTrdIncome
+ENDIF
+
+SELECT _CTBAcMast
+LOCATE FOR ALLT(Ac_name)='NET PROFIT & LOSS' AND MainFlg = 'L'
+IF FOUND()
+	REPLACE _CTBAcMast.debit WITH IIF(PandLGp>0,PandLGp,0)
+	REPLACE _CTBAcMast.credit WITH IIF(PandLGp<0,ABS(PandLGp),0)
+	REPLACE _CTBAcMast.ClBal WITH _CTBAcMast.debit-_CTBAcMast.credit
+ENDIF
+
+FUNCTION findgroupFlg
+********************
+PARAMETERS mAc_Name,tcType
+SELECT a.LevelFlg,a.Ac_Id;
+	FROM _CTBAcMast a;
+	WHERE a.Ac_name = mAc_Name;
+	INTO CURSOR FindLevelFlg
+GO TOP
+lcLevelFlg = IIF(tcType='ID',Ac_Id,LevelFlg)
+IF USED('FindLevelFlg')
+	USE IN FindLevelFlg
+ENDIF
+RETURN lcLevelFlg
+

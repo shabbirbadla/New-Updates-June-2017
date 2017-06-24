@@ -1,0 +1,182 @@
+E:\Final\WindowsApplication1\bin\Release\WindowsApplication1.exe.config
+E:\Final\WindowsApplication1\bin\Release\WindowsApplication1.exe
+E:\Final\WindowsApplication1\bin\Release\WindowsApplication1.pdb
+E:\Final\WindowsApplication1\bin\Release\WindowsApplication1.xml
+E:\Final\WindowsApplication1\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Final\WindowsApplication1\bin\Release\Interop.RepositoryExplorerLib.dll
+E:\Final\WindowsApplication1\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Final\WindowsApplication1\bin\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Final\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+E:\Final\WindowsApplication1\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Final\WindowsApplication1\obj\Release\Interop.RepositoryExplorerLib.dll
+E:\Final\WindowsApplication1\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Final\WindowsApplication1\obj\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.CommenceReport.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.Form1.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.Form2.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.Locat.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.mastr.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.Resources.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.USAGE.resources
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.exe
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.xml
+E:\Final\WindowsApplication1\obj\Release\WindowsApplication1.pdb
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.exe.config
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.exe
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.pdb
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.xml
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\Interop.RepositoryExplorerLib.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\bin\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\Interop.RepositoryExplorerLib.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.CommenceReport.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.AdditionDeletion.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.Shedule_Report.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.Locat.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.mastr.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.Resources.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.USAGE.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.usage_locate.resources
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.exe
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.xml
+E:\Version-2\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.pdb
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.exe.config
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\Interop.RepositoryExplorerLib.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\AxInterop.RepositoryExplorerLib.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.exe
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.xml
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.pdb
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.exe
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.pdb
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\WindowsApplication1.xml
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\Interop.RepositoryExplorerLib.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\bin\Release\AxInterop.RepositoryExplorerLib.dll
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.CommenceReport.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.AdditionDeletion.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.Shedule_Report.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.Locat.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.mastr.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.Resources.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.USAGE.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.usage_locate.resources
+C:\FA Source Code Version 2.0\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\WindowsApplication1.exe.config
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\Interop.RepositoryExplorerLib.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.exe
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.xml
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.pdb
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\WindowsApplication1.exe
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\WindowsApplication1.pdb
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\WindowsApplication1.xml
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\Interop.RepositoryExplorerLib.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\bin\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\ResolveAssemblyReference.cache
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.Resources.resources
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.USAGE.resources
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.usage_locate.resources
+E:\Project\SOURCE CODE\Fixed Assets\Version-2\FA Source Code Version 2.0\based_on_usage\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Project\Version-2\disposal of assets\bin\Release\UeAssetDisposal.exe.config
+E:\Project\Version-2\disposal of assets\bin\Release\UeAssetDisposal.exe
+E:\Project\Version-2\disposal of assets\bin\Release\UeAssetDisposal.pdb
+E:\Project\Version-2\disposal of assets\bin\Release\UeAssetDisposal.xml
+E:\Project\Version-2\disposal of assets\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Project\Version-2\disposal of assets\bin\Release\Interop.RepositoryExplorerLib.dll
+E:\Project\Version-2\disposal of assets\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Project\Version-2\disposal of assets\bin\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Project\Version-2\disposal of assets\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Version-2\disposal of assets\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+E:\Project\Version-2\disposal of assets\obj\Release\Interop.RepositoryExplorerLib.dll
+E:\Project\Version-2\disposal of assets\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+E:\Project\Version-2\disposal of assets\obj\Release\AxInterop.RepositoryExplorerLib.dll
+E:\Project\Version-2\disposal of assets\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+E:\Project\Version-2\disposal of assets\obj\Release\UeAssetDisposal.Disposal.resources
+E:\Project\Version-2\disposal of assets\obj\Release\UeAssetDisposal.dispose_locate.resources
+E:\Project\Version-2\disposal of assets\obj\Release\UeAssetDisposal.Resources.resources
+E:\Project\Version-2\disposal of assets\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+E:\Project\Version-2\disposal of assets\obj\Release\UeAssetDisposal.exe
+E:\Project\Version-2\disposal of assets\obj\Release\UeAssetDisposal.xml
+E:\Project\Version-2\disposal of assets\obj\Release\UeAssetDisposal.pdb
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\UeAssetDisposal.exe.config
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\Interop.RepositoryExplorerLib.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\AxInterop.RepositoryExplorerLib.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\UeAssetDisposal.exe
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\UeAssetDisposal.xml
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\UeAssetDisposal.pdb
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\UeAssetDisposal.exe
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\UeAssetDisposal.pdb
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\UeAssetDisposal.xml
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\Interop.RepositoryExplorerLib.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\bin\Release\AxInterop.RepositoryExplorerLib.dll
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\ResolveAssemblyReference.cache
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\UeAssetDisposal.Disposal.resources
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\UeAssetDisposal.dispose_locate.resources
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\UeAssetDisposal.Resources.resources
+C:\Users\bprasad\Desktop\pankaj\disposaLofassets\disposal of assets\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\Interop.RepositoryExplorerLib.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\AxInterop.RepositoryExplorerLib.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\Interop.RepositoryExplorerLib.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\AxInterop.RepositoryExplorerLib.dll
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\UeAssetDisposal.Disposal.resources
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\UeAssetDisposal.dispose_locate.resources
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\UeAssetDisposal.Resources.resources
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\uedisposalofassets.exe.config
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\uedisposalofassets.exe
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\uedisposalofassets.pdb
+D:\Projects\Version-2\Biru_update\disposal of assets\bin\Release\uedisposalofassets.xml
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\uedisposalofassets.exe
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\uedisposalofassets.xml
+D:\Projects\Version-2\Biru_update\disposal of assets\obj\Release\uedisposalofassets.pdb
+F:\Installer 12.0 issue\disposal of assets\bin\Release\uedisposalofassets.exe.config
+F:\Installer 12.0 issue\disposal of assets\obj\Release\Interop.CrystalActiveXReportViewerLib10.dll
+F:\Installer 12.0 issue\disposal of assets\obj\Release\Interop.RepositoryExplorerLib.dll
+F:\Installer 12.0 issue\disposal of assets\obj\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+F:\Installer 12.0 issue\disposal of assets\obj\Release\AxInterop.RepositoryExplorerLib.dll
+F:\Installer 12.0 issue\disposal of assets\obj\Release\WindowsApplication1.vbproj.ResolveComReference.cache
+F:\Installer 12.0 issue\disposal of assets\obj\Release\uedisposalofassets.exe
+F:\Installer 12.0 issue\disposal of assets\obj\Release\uedisposalofassets.xml
+F:\Installer 12.0 issue\disposal of assets\obj\Release\uedisposalofassets.pdb
+F:\Installer 12.0 issue\disposal of assets\bin\Release\uedisposalofassets.exe
+F:\Installer 12.0 issue\disposal of assets\bin\Release\uedisposalofassets.pdb
+F:\Installer 12.0 issue\disposal of assets\bin\Release\uedisposalofassets.xml
+F:\Installer 12.0 issue\disposal of assets\bin\Release\Interop.CrystalActiveXReportViewerLib10.dll
+F:\Installer 12.0 issue\disposal of assets\bin\Release\Interop.RepositoryExplorerLib.dll
+F:\Installer 12.0 issue\disposal of assets\bin\Release\AxInterop.CrystalActiveXReportViewerLib10.dll
+F:\Installer 12.0 issue\disposal of assets\bin\Release\AxInterop.RepositoryExplorerLib.dll
+F:\Installer 12.0 issue\disposal of assets\obj\Release\ResolveAssemblyReference.cache
+F:\Installer 12.0 issue\disposal of assets\obj\Release\UeAssetDisposal.Disposal.resources
+F:\Installer 12.0 issue\disposal of assets\obj\Release\UeAssetDisposal.dispose_locate.resources
+F:\Installer 12.0 issue\disposal of assets\obj\Release\UeAssetDisposal.Resources.resources
+F:\Installer 12.0 issue\disposal of assets\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache

@@ -1,0 +1,43 @@
+Program d:\sqlvudyog9\testing sdi\vu_udfs.prg has the following errors:
+    Proc./Func. MULTCOMP - Undefined
+    Proc./Func. _VOUPRINTING - Undefined
+    Menu GWARE - Undefined
+
+Form d:\sqlvudyog9\testing sdi\denied.scx has the following errors:
+    File SILVER.BMP - Undefined
+
+Visual Class Library d:\sqlvudyog9\testing sdi\vutool.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UETRIGTOOLNEW - Undefined
+    Unknown UETRIGTOOLSAVE - Undefined
+    Proc./Func. UETRIGTOOLAFTSAVEIT - Undefined
+    Proc./Func. UETRIGTOOLEDIT - Undefined
+    Unknown UETRIGTOOLDELETE - Undefined
+    Proc./Func. UETRIGTOOLDELETEAFTER - Undefined
+    Proc./Func. UETRIGTOOLCOPY - Undefined
+    Proc./Func. UETRIGTOOLPRINT - Undefined
+    Proc./Func. UETRIGTOOLEXIT - Undefined
+
+Program d:\sqlvudyog9\testing sdi\gware.mpr has the following errors:
+    Form LABFORM - Undefined
+    Proc./Func. CREAVIEW - Undefined
+    Proc./Func. BANKRECO - Undefined
+    Proc./Func. VUREPORT - Undefined
+    Proc./Func. RUNFRX - Undefined
+    Form ADDINS - Undefined
+    Proc./Func. VUVIEW - Undefined
+
+Form d:\sqlvudyog9\testing sdi\frmudyogsdi.scx has the following errors:
+    Menu GWARE - Undefined
+    Proc./Func. UECO_MAST - Undefined
+
+Visual Class Library d:\sqlvudyog9\testing sdi\sqlconnection.vcx has the following errors:
+    Unknown UEGETPOP - Undefined
+
+Form d:\sqlvudyog9\testing sdi\sendform.scx has the following errors:
+    File GREEN.BMP - Undefined
+    File CURPR.BMP - Undefined
+
+Visual Class Library d:\sqlvudyog9\testing sdi\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+

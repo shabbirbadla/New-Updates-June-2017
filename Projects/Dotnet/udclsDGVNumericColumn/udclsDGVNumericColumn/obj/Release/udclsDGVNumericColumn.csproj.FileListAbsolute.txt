@@ -1,0 +1,20 @@
+D:\SQLProject\payroll\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udclsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udclsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.pdb
+D:\SQLProject\payroll\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.dll
+D:\SQLProject\payroll\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.pdb
+D:\Development_udClsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.dll
+D:\Development_udClsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.pdb
+D:\Development_udClsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\ResolveAssemblyReference.cache
+D:\Development_udClsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.dll
+D:\Development_udClsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.pdb
+D:\SVN Development\Dotnet\udclsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.dll
+D:\SVN Development\Dotnet\udclsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.pdb
+D:\SVN Development\Dotnet\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Dotnet\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.dll
+D:\SVN Development\Dotnet\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.pdb
+D:\SVN Development\Bug-14538\udclsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.dll
+D:\SVN Development\Bug-14538\udclsDGVNumericColumn\udclsDGVNumericColumn\bin\Release\udclsDGVNumericColumn.pdb
+D:\SVN Development\Bug-14538\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\ResolveAssemblyReference.cache
+D:\SVN Development\Bug-14538\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.dll
+D:\SVN Development\Bug-14538\udclsDGVNumericColumn\udclsDGVNumericColumn\obj\Release\udclsDGVNumericColumn.pdb

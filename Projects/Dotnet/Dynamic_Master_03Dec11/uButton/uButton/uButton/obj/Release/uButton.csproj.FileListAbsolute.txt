@@ -1,0 +1,10 @@
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uButton\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uButton\bin\Release\uButton.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uButton\bin\Release\uButton.pdb
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uButton\obj\Release\uButton.dll
+C:\Users\rprajapa\AppData\Local\Temporary Projects\uButton\obj\Release\uButton.pdb
+D:\SQLProject\New folder\UDF Controls\uButton\uButton\uButton\bin\Release\uButton.dll
+D:\SQLProject\New folder\UDF Controls\uButton\uButton\uButton\bin\Release\uButton.pdb
+D:\SQLProject\New folder\UDF Controls\uButton\uButton\uButton\obj\Release\ResolveAssemblyReference.cache
+D:\SQLProject\New folder\UDF Controls\uButton\uButton\uButton\obj\Release\uButton.dll
+D:\SQLProject\New folder\UDF Controls\uButton\uButton\uButton\obj\Release\uButton.pdb

@@ -1,0 +1,24 @@
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Debug\udCrViewer.csproj.ResolveComReference.cache
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Debug\udCrViewer.frmCrViewer.resources
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Debug\udCrViewer.csproj.GenerateResource.Cache
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Debug\udCrViewer.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Debug\udCrViewer.pdb
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Debug\uBaseForm.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\bin\Debug\udDataTableQuery.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Debug\udCrViewer.dll
+D:\SQLProject\payroll\udCrViewer\udCrViewer\obj\Debug\udCrViewer.pdb
+D:\udCrViewer from Vss\udCrViewer\bin\Debug\udCrViewer.dll
+D:\udCrViewer from Vss\udCrViewer\bin\Debug\udCrViewer.pdb
+D:\udCrViewer from Vss\udCrViewer\obj\Debug\ResolveAssemblyReference.cache
+D:\udCrViewer from Vss\udCrViewer\obj\Debug\udCrViewer.csproj.ResolveComReference.cache
+D:\udCrViewer from Vss\udCrViewer\obj\Debug\udCrViewer.frmCrViewer.resources
+D:\udCrViewer from Vss\udCrViewer\obj\Debug\udCrViewer.csproj.GenerateResource.Cache
+D:\udCrViewer from Vss\udCrViewer\obj\Debug\udCrViewer.dll
+D:\udCrViewer from Vss\udCrViewer\obj\Debug\udCrViewer.pdb
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Debug\udCrViewer.csproj.ResolveComReference.cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Debug\udCrViewer.frmCrViewer.resources
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Debug\udCrViewer.csproj.GenerateResource.Cache
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Debug\udCrViewer.dll
+D:\Development\Dotnet\Update to VSS\udCrViewer\udCrViewer\obj\Debug\udCrViewer.pdb

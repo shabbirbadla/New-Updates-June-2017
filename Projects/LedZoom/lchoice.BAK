@@ -1,0 +1,56 @@
+Parameters _datasessionid,category,accountname,zoomtype,zoomintype,type3,fromdate,todate,_winstat
+* parameters _datasessionid,category,zoomtype,zoomintype,type3,fromdate,todate,_winstat  && new updation
+Set DataSession To _datasessionid
+MretVal = .T.
+Try
+	If Messagebox("Debug",4+32,Vumess) = 6
+		Set Step On
+	Endif
+
+	nHandle = 0
+	SqlConObj = Newobject("SqlConNudObj","SqlConnection",xapps)
+	acc_name = Iif(Type("accountname")!='U',Alltrim(accountname),Iif(Used("_tmpvar"),_tmpvar.sname,''))
+	fillvalue=0
+	nRetval= SqlConObj.DataConn([EXE],company.dbname,;
+		[select top 1 * from ac_mast where ac_name=?acc_name],[Ac_Mast_Ledger],;
+		"nHandle",_datasessionid,.T.)
+	If nRetval<0
+		Error 1541,"to server"     &&return .f.
+	Endif
+	If Reccount('Ac_Mast_Ledger')<=0
+		Error "This account name not found in account Master"
+	Endif
+	mSqlStr = "select a.entry_ty,a.date,a.ac_name,a.ac_id,a.amount,a.amt_ty from lac_vw a,lcode b where a.entry_ty=b.cd and b.v_account=1 and a.ac_name=?accountname"
+	nRetval= SqlConObj.DataConn([EXE],company.dbname,mSqlStr,[_Lac_Det_Zoom],;
+		"nHandle",_datasessionid,.F.)
+	If nRetval<0
+		Error 1541,"to server"   &&return .f.
+	Endif
+	Select _Lac_Det_Zoom
+
+	fillvalue=0
+	Sele _Lac_Det_Zoom
+	Go Top
+	If Reccount()>0
+		fillvalue = 1
+	Endif
+	If fillvalue=0
+		Error "No Records Found For This Account...."
+	Endif
+	Select _Lac_Det_Zoom
+	Use In _Lac_Det_Zoom
+	nRetval=SqlConObj.sqlconnclose("nHandle")
+	SqlConObj= Null
+	Release SqlConObj,nHandle
+	If nRetval<0
+		Error 1541,"to server"   &&return .f.
+	Endif
+	Do Form ledzoom With _datasessionid,category,accountname,zoomtype,zoomintype,type3,fromdate,todate,_winstat
+Catch To oErrNo
+	=Messagebox(Proper(Message()),48,Vumess)
+	MretVal = .F.
+	If Type('SqlConObj')!='U' And Type('nHandle')!='U'
+		nRetval=SqlConObj.sqlconnclose("nHandle")
+	Endif
+Endtry
+Return MretVal

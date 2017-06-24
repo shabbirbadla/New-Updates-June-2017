@@ -1,0 +1,8 @@
+Program d:\svngst\udappetvalid\udappetvalid.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+    Unknown UDAPPVOUITEMWISEASSESS - Undefined
+    Unknown UDTRIGVOUITEMWISEASSESS - Undefined
+    Unknown UETRIGVOUITEMWISEASSESS - Undefined
+    Form UEFRM_AC_SERTAX - Undefined
+    Unknown UEGETPOP - Undefined
+

@@ -1,0 +1,54 @@
+If Exists(Select [Name] From SysObjects Where xType='P' and [Name]='USP_REP_SOPendRep')
+Begin
+	Drop Procedure USP_REP_SOPendRep
+End
+Go
+
+Create PROCEDURE [dbo].[USP_REP_SOPendRep]
+@TMPAC NVARCHAR(50),@TMPIT NVARCHAR(50),@SPLCOND VARCHAR(8000),@SDATE  SMALLDATETIME,@EDATE SMALLDATETIME
+,@SAC AS VARCHAR(60),@EAC AS VARCHAR(60)
+,@SIT AS VARCHAR(60),@EIT AS VARCHAR(60)
+,@SAMT FLOAT,@EAMT FLOAT
+,@SDEPT AS VARCHAR(60),@EDEPT AS VARCHAR(60)
+,@SCATE AS VARCHAR(60),@ECATE AS VARCHAR(60)
+,@SWARE AS VARCHAR(60),@EWARE AS VARCHAR(60)
+,@SINV_SR AS VARCHAR(60),@EINV_SR AS VARCHAR(60)
+,@LYN VARCHAR(20)
+,@EXPARA  AS VARCHAR(60)= null
+As
+
+--Variable declarations
+DECLARE @SQLCOMMAND as NVARCHAR(4000)
+
+
+SELECT a.DATE,a.ENTRY_TY,a.TRAN_CD,a.DOC_NO,a.PARTY_NM,a.INV_NO,b.EFFECTDT,b.ITEM,b.itserial,b.RATE,b.QTY,b.GRO_AMT,b.ITEM_NO,i.RATEUNIT,Rqty=b.qty
+				INTO  #TMPAC_BAL1 FROM SOMAIN a 
+				JOIN SOITEM b ON (a.Entry_Ty = b.Entry_Ty and a.TRAN_CD=b.TRAN_CD)
+				JOIN IT_MAST i ON (i.IT_CODE=b.IT_CODE)
+WHERE 1=2
+
+SET @SQLCOMMAND ='INSERT INTO #TMPAC_BAL1 SELECT a.DATE,a.ENTRY_TY,a.TRAN_CD,a.DOC_NO,a.PARTY_NM,a.INV_NO,b.EFFECTDT,b.ITEM,b.itserial,b.RATE,b.QTY,b.GRO_AMT,b.ITEM_NO,i.RATEUNIT,rQty=isnull(Itref.rQty,0)
+				FROM SOMAIN a 
+				Inner Join SOITEM b ON (a.Entry_Ty = b.Entry_Ty and a.TRAN_CD=b.TRAN_CD)
+				Inner JOIN IT_MAST i ON (i.IT_CODE=b.IT_CODE)
+				Left Join StItRef itref on (Itref.Rentry_ty=b.Entry_ty and Itref.itref_tran=b.tran_cd and Itref.ritserial=b.itserial)'
+				SET @SQLCOMMAND = @SQLCOMMAND+' and(a.DATE BETWEEN '''+CONVERT(VARCHAR(50),@sdate)+''' AND '''+CONVERT(VARCHAR(50),@edate)+''')'
+                EXEC Sp_executeSQL @SQLCOMMAND
+
+select a.DATE,a.ENTRY_TY,a.TRAN_CD,a.DOC_NO,a.PARTY_NM,a.INV_NO,a.EFFECTDT,a.ITEM,a.itserial,a.RATE,a.QTY,a.GRO_AMT,a.ITEM_NO,a.RATEUNIT,Rqty=sum(a.rQty)
+into #TMPAC_BAL2 from #TMPAC_BAL1 a 
+group by a.DATE,a.ENTRY_TY,a.TRAN_CD,a.DOC_NO,a.PARTY_NM,a.INV_NO,a.EFFECTDT,a.ITEM,a.itserial,a.RATE,a.QTY,a.GRO_AMT,a.ITEM_NO,a.RATEUNIT
+
+select * from #TMPAC_BAL2 where ENTRY_TY<>'OO'
+
+DROP TABLE #TMPAC_BAL1
+DROP TABLE #TMPAC_BAL2
+
+
+
+
+
+				
+
+
+

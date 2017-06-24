@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{278F65FD-9CDF-449A-A556-658F72D6E130}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>udUserSecurity</RootNamespace>
+    <AssemblyName>udUserSecurity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataAccess-Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="uBaseForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="udSelectPop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmcopyusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcopyusers.Designer.cs">
+      <DependentUpon>frmcopyusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmroleaccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmroleaccess.Designer.cs">
+      <DependentUpon>frmroleaccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmrolepermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmrolepermission.Designer.cs">
+      <DependentUpon>frmrolepermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuseraccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuseraccess.Designer.cs">
+      <DependentUpon>frmuseraccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserSecurity.Designer.cs">
+      <DependentUpon>frmUserSecurity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cUserSecurity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmcopyusers.resx">
+      <DependentUpon>frmcopyusers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmroleaccess.resx">
+      <DependentUpon>frmroleaccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmrolepermission.resx">
+      <DependentUpon>frmrolepermission.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuseraccess.resx">
+      <DependentUpon>frmuseraccess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserSecurity.resx">
+      <DependentUpon>frmUserSecurity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copyuser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deluser.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VW-DTLS.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VW-LIST.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VW-LRGIC.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VW-SMLIC.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roleproperties.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wi0064-48.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wi0111-48.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21_15.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_34.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_73.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user5.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,45 @@
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\DadosReports.exe.config
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\DadosReports.exe
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\DadosReports.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\CryptoLib.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\dataaccess-net.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\LogicalLibrary.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\ubaseform.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\udselectpop.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\LogicalLibrary.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\CryptoLib.pdb
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\bin\Release\Interop.vunettofx.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\ResolveAssemblyReference.cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\Interop.vunettofx.dll
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.csproj.ResolveComReference.cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.ConditionsEditor.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.frmLayOut.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.Loading.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.Properties.Resources.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.ReportsMain.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.SendMail.resources
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.exe.licenses
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.exe
+D:\1 Development\Dotnet\Dados Report VS2008\Bug-22080\DADOS Project_200314\Dados Reports\Dados Reports\obj\Release\DadosReports.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\DadosReports.exe.config
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\Interop.vunettofx.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.csproj.ResolveComReference.cache
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.exe
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\DadosReports.exe
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\DadosReports.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\CryptoLib.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\LogicalLibrary.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\LogicalLibrary.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\CryptoLib.pdb
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\bin\Release\Interop.vunettofx.dll
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\ResolveAssemblyReference.cache
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.ConditionsEditor.resources
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.frmLayOut.resources
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.Loading.resources
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.Properties.Resources.resources
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.ReportsMain.resources
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.SendMail.resources
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.csproj.GenerateResource.Cache
+F:\Bug\25657\DADOS Project3\Dados Reports\Dados Reports\obj\Release\DadosReports.exe.licenses

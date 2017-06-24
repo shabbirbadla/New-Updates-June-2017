@@ -1,0 +1,15 @@
+Program d:\shrikant\yrtransfer\main.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+
+Form d:\shrikant\yrtransfer\uefrm_stkval.scx has the following errors:
+    File SELECT.CUR - Undefined
+
+Form d:\shrikant\yrtransfer\uefrm_tdsack.scx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Visual Class Library d:\usquare\class\standardui.vcx has the following errors:
+    Unknown BARSTAT - Undefined
+
+Form d:\shrikant\yrtransfer\uefrm_billwise.scx has the following errors:
+    File SELECT.CUR - Undefined
+

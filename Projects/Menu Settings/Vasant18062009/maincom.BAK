@@ -1,0 +1,2 @@
+lparameters rng
+DO FORM com_menu with rng

@@ -1,0 +1,18 @@
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\bin\Release\Form 231.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\bin\Release\Form 231.pdb
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\bin\Release\GetInfo.DLL
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Release\ResolveAssemblyReference.cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Release\Form_231.frmForm231.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Release\Form_231.Properties.Resources.resources
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Release\Form 231.csproj.GenerateResource.Cache
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Release\Form 231.exe
+E:\Project\Dotnet\Taxilla.VAT.Templates\Form 231\obj\Release\Form 231.pdb
+F:\Projects\Taxilla.VAT.Templates\Form 231\bin\Release\Form 231.exe
+F:\Projects\Taxilla.VAT.Templates\Form 231\bin\Release\Form 231.pdb
+F:\Projects\Taxilla.VAT.Templates\Form 231\bin\Release\GetInfo.DLL
+F:\Projects\Taxilla.VAT.Templates\Form 231\obj\Release\ResolveAssemblyReference.cache
+F:\Projects\Taxilla.VAT.Templates\Form 231\obj\Release\Form_231.frmForm231.resources
+F:\Projects\Taxilla.VAT.Templates\Form 231\obj\Release\Form_231.Properties.Resources.resources
+F:\Projects\Taxilla.VAT.Templates\Form 231\obj\Release\Form 231.csproj.GenerateResource.Cache
+F:\Projects\Taxilla.VAT.Templates\Form 231\obj\Release\Form 231.exe
+F:\Projects\Taxilla.VAT.Templates\Form 231\obj\Release\Form 231.pdb

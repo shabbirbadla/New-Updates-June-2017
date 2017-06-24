@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<QueryStrings>
+<GetDatabaseObjects>
+select 
+	user dbname, 
+	object_name objname, 
+	case 
+		when object_type = 'TABLE' then 'U ' 
+		when object_type = 'VIEW' then 'V ' 
+		when object_type = 'FUNCTION' then 'FN' 
+		when object_type = 'PROCEDURE' then 'P ' 
+		else 'unknown'
+	end xtype
+from user_objects
+where object_type in ('TABLE','VIEW','FUNCTION','PROCEDURE')
+order by object_type, object_name
+</GetDatabaseObjects>
+
+<GetDatabaseObject>
+select 
+	object_name objname, 
+	case 
+		when object_type = 'TABLE' then 'U ' 
+		when object_type = 'VIEW' then 'V ' 
+		when object_type = 'FUNCTION' then 'FN' 
+		when object_type = 'PROCEDURE' then 'P ' 
+		else 'unknown'
+	end xtype 
+from user_objects 
+WHERE object_name like UPPER('{0}%')
+and object_type in ('TABLE','VIEW','FUNCTION','PROCEDURE')
+</GetDatabaseObject>
+
+<GetDatabaseObjectProperties>
+select column_name 
+from all_tab_columns
+where table_name = upper('{0}')
+</GetDatabaseObjectProperties>
+
+<GetCreateScript>
+select s.TEXT
+from all_source s
+where UPPER(s.NAME) = UPPER('{0}')
+order by s.LINE
+</GetCreateScript>
+<GetReferenceObjects>
+select distinct s.NAME
+from all_source s
+where s.NAME != '{0}'
+and	s.TEXT like'%{0}%'
+</GetReferenceObjects>
+<GetReferenceObjectsClear>
+select distinct s.NAME
+from all_source s
+where s.NAME != '{0}'
+and	s.TEXT like'% {0} %'
+</GetReferenceObjectsClear>
+<GetUser>select user from dual</GetUser>
+</QueryStrings>

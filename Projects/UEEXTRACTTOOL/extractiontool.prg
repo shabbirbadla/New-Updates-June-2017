@@ -1,0 +1,63 @@
+*:*****************************************************************************
+*:        Program: Main
+*:         System: Udyog Software
+*:         Author: Shrikant
+*:  Last modified: 18/01/2011
+*:			AIM  : Call ExportScript
+*:*****************************************************************************
+PARAMETERS _menuType,_tnRights
+*!*	tcCompid	 : Company Id 	{?Company.CompId}
+*!*	tcCompdb	 : Database 	{?Company.dbname}
+*!*	tnRights	 : User Rights
+
+IF VARTYPE(Company) <> "O"
+	RETURN .F.
+ENDIF
+
+IF PARAMETERS() < 2
+	=MESSAGEBOX('Passed Valid Parameters',0,"")
+	RETURN .T.
+ENDIF
+
+****Versioning**** Added By Amrendra On 01/06/2011
+	LOCAL _VerValidErr,_VerRetVal,_CurrVerVal
+	_VerValidErr = ""
+	_VerRetVal  = 'NO'
+_CurrVerVal='10.0.0.0' &&[VERSIONNUMBER]
+	TRY
+		_VerRetVal = AppVerChk('EXTRACTTOOL',_CurrVerVal,JUSTFNAME(SYS(16)))
+	CATCH TO _VerValidErr
+		_VerRetVal  = 'NO'
+	Endtry	
+	IF TYPE("_VerRetVal")="L"
+		cMsgStr="Version Error occured!"
+		cMsgStr=cMsgStr+CHR(13)+"Kindly update latest version of "+GlobalObj.getPropertyval("ProductTitle")
+		Messagebox(cMsgStr,64,VuMess)
+		Return .F.
+	ENDIF
+	IF _VerRetVal  = 'NO'
+		Return .F.
+	Endif
+****Versioning****
+oWSHELL = CREATEOBJECT("WScript.Shell")
+IF VARTYPE(oWSHELL) <> "O"
+	MESSAGEBOX("WScript.Shell Object Creation Error...",16,VuMess)
+	RETURN .F.
+ENDIF
+
+tcCompId = Company.CompId
+tcCompdb = Company.Dbname
+
+
+SqlConObj = NEWOBJECT('SqlConnUdObj','SqlConnection',xapps)
+mvu_user1 = SqlConObj.dec(SqlConObj.ondecrypt(mvu_user))
+mvu_pass1 = SqlConObj.dec(SqlConObj.ondecrypt(mvu_pass))
+
+
+*_ShellExec = "ExportScript.exe "+TRANSFORM(tcCompId)+" "+ALLTRIM(tcCompdb)+" "+ALLTRIM(lcFileStr)+" "+ALLTRIM(mvu_server)+" "+ALLTRIM(mvu_user1)+" "+ALLTRIM(mvu_pass1)
+_ShellExec = "ExportScript.exe "+_menuType
+oWSHELL.EXEC(_ShellExec)
+SqlConObj = NULL
+mvu_user1 = NULL
+mvu_pass1 = NULL
+RELEASE SqlConObj,mvu_user1,mvu_pass1

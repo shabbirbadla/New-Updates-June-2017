@@ -1,0 +1,16 @@
+
+
+
+1. Paste App Files in Udyog ERP Folder And Report File In Company Folder
+
+2. Run Following Script
+   -------------------------------------------------------------------	
+   update ac_mast set ac_group_id=a.ac_group_id
+	from ac_group_mast a,ac_mast b where a.ac_group_name=b.[group]
+   -------------------------------------------------------------------	
+
+3. Run Script File [Location: Company Database]
+   
+   USP_Final_Accounts.sql	
+
+

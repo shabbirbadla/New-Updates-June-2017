@@ -1,0 +1,9 @@
+
+C:\VUDYOG\CLASS\UCLASS.VCX: Begin Conversion 06/17/06 09:12:23 AM
+
+Fatal Error in Converter: 
+Error: Variable 'ENVIRON' is not found.
+Error Number: 12
+Method: converter
+Offending Code: ...
+File being processed: c:\vudyog\class\uclass.vcx

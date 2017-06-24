@@ -1,0 +1,18 @@
+5/11/2010 11:19:57 AM: Received request for validating license from IP:10.0.0.91 Process:6720
+5/11/2010 11:19:58 AM: Maximum Concurrent Connections Permitted : 1
+5/11/2010 11:19:58 AM: IP:10.0.0.91 Process:6720 validation of license Succeeded.
+5/11/2010 11:19:59 AM: Received request for new Session from IP:10.0.0.91 Process:6720
+5/11/2010 11:19:59 AM: Creating new client session for IP:10.0.0.91 Process:6720.
+5/11/2010 11:19:59 AM: New client session for IP:10.0.0.91 Process:6720 has been created. with 90000ms timeout.
+5/11/2010 11:19:59 AM: New Session request from IP:10.0.0.91 Process:6720 Succeeded. New Session started.
+5/11/2010 11:21:01 AM: Received request to extend client session from IP:10.0.0.91 Process:6720
+5/11/2010 11:21:01 AM: Client session for from IP:10.0.0.91 Process:6720 extended.
+5/11/2010 11:22:02 AM: Received request to extend client session from IP:10.0.0.91 Process:6720
+5/11/2010 11:22:02 AM: Client session for from IP:10.0.0.91 Process:6720 extended.
+5/11/2010 11:23:13 AM: Received request to extend client session from IP:10.0.0.91 Process:6720
+5/11/2010 11:23:13 AM: Client session for from IP:10.0.0.91 Process:6720 extended.
+5/11/2010 11:23:33 AM: Received request to extend client session from IP:10.0.0.91 Process:6720
+5/11/2010 11:23:33 AM: Client session for from IP:10.0.0.91 Process:6720 extended.
+5/11/2010 11:24:21 AM: Received request to close session from IP:10.0.0.91 Process:6720
+5/11/2010 11:24:21 AM: Client session expired for IP:10.0.0.91 Process:6720.
+5/11/2010 11:24:21 AM: Close session from IP:10.0.0.91 Process:6720 succeeded. Session Terminated.

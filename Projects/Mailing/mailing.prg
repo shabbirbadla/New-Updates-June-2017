@@ -1,0 +1,90 @@
+*PARA _mailto,_mailcc,_mailsub,_mailbody,_mailatt,_mailshow
+LPARA _mailto,_mailcc,_mailsub,_mailbody,_mailatt,_mailshow,_Mailbcc &&Birendra : Bug-4800 on 26/09/2012
+
+*Birendra : Bug-4800 on 26/09/2012:Start:
+IF TYPE('_Mailbcc')<>'C'
+ _Mailbcc=''
+ENDIF 
+*Birendra : Bug-4800 on 26/09/2012:End:
+
+&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+IF PARA() <= 5
+	_mailshow = .T.
+ENDIF
+&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+
+****Versioning**** && Added By Amrendra for TKT 8121 on 13-06-2011
+	LOCAL _VerValidErr,_VerRetVal,_CurrVerVal
+	_VerValidErr = ""
+	_VerRetVal  = 'NO'
+_CurrVerVal='10.0.0.0' &&[VERSIONNUMBER]
+	TRY
+		_VerRetVal = AppVerChk('MAILING',_CurrVerVal,JUSTFNAME(SYS(16)))
+	CATCH TO _VerValidErr
+		_VerRetVal  = 'NO'
+	Endtry	
+	IF TYPE("_VerRetVal")="L"
+		cMsgStr="Version Error occured!"
+		cMsgStr=cMsgStr+CHR(13)+"Kindly update latest version of "+GlobalObj.getPropertyval("ProductTitle")
+		Messagebox(cMsgStr,64,VuMess)
+		Return .F.
+	ENDIF
+	IF _VerRetVal  = 'NO'
+		Return .F.
+	Endif
+****Versioning****
+&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+*!*	IF PARA() <= 5
+*!*		_mailshow = .T.
+*!*	ENDIF
+&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+
+*!*	_mailto   = Iif(!Empty(_mailto),Eval(_mailto),"")
+*!*	_mailcc   = Iif(!Empty(_mailcc),Eval(_mailcc),"")
+
+LOCAL llShowItem AS Boolean,lnVar AS INTEGER
+#DEFINE olMailItem  0
+loOutlook   = CREATEOBJECT('Outlook.Application')
+loNameSpace = loOutlook.GetNamespace("MAPI")
+loNameSpace.Logon()
+
+loMailItem  = loOutlook.CreateItem( olMailItem )   && This creates the MailItem Object
+loMailItem.BodyFormat=2
+llShowItem  = _mailshow		&&.T.
+WITH loMailItem
+	.TO      = _mailto
+	.Cc      = _mailcc
+	.Subject = _mailsub
+*	.Body    = _mailbody           &&Comment By Amrendra
+
+
+&& Raghu110809
+	Tmp_mailatt = "<<"+STRTRAN(ALLTRIM(_mailatt),";",">><<")+">>"
+	FOR lnVar = 1 TO OCCURS("<<",Tmp_mailatt)
+		_mailatt = STREXTRACT(Tmp_mailatt,"<<",">>",lnVar)
+		IF !EMPTY(_mailatt)
+			IF FILE(_mailatt)
+				.attachments.ADD((_mailatt))
+			ENDIF
+		ENDIF
+	ENDFOR
+&& Raghu110809
+
+&& Commented by raghu code is not proper for multiple attachment [Start]
+*!*	*!*		IF !EMPTY(_mailatt)
+*!*	*!*			.attachments.ADD((_mailatt))
+*!*	*!*		ENDIF
+&& Commented by raghu code is not proper for multiple attachment [End]
+	&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+	IF !EMPTY(_mailbody)
+		.HTMLBody=  _mailbody + .HTMLBody  
+	Endif	
+	&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+	IF llShowItem
+		.DISPLAY()      && Shows the New Message Dialog with all details from
+	ELSE
+		.SEND()         && Calling this will cause a Security Dialog
+	ENDIF
+		*.HTMLBody=  _mailbody + .HTMLBody  &&Added By Amrendra	&&Changes done by vasant on 15/06/2012 as per Bug-4648 (Avery - Auto Email Testing)
+ENDWITH
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MenuImageLib">
+</Property><Property Name="Solution File" Value="D:\Practice\MenuImage_src\MenuImageLib\MenuImageLib.sln">
+</Property><Property Name="Date" Value="Friday, October 17, 2008">
+</Property><Property Name="Time" Value="12:18:35 PM">
+</Property></Properties><Event ErrorLevel="0" Project="MenuImageLib" Source="MenuImageLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MenuImageLib" Source="MenuImageLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MenuImageLib" Source="MenuImageLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

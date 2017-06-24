@@ -1,0 +1,8 @@
+D:\SQLProject\ueTblFieldsSave\ueTblFieldsSave\obj\Debug\ResolveAssemblyReference.cache
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\obj\Debug\ResolveAssemblyReference.cache
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\bin\Debug\ueTblFieldsSave.dll
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\bin\Debug\ueTblFieldsSave.pdb
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\bin\Debug\DataAccess-Net.dll
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\bin\Debug\uBaseForm.dll
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\obj\Debug\ueTblFieldsSave.dll
+D:\Ramya Working\ueTblFieldsSave\ueTblFieldsSave\obj\Debug\ueTblFieldsSave.pdb

@@ -1,0 +1,6 @@
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License\bin\Release\Udyog.Application.License.Core.dll.config
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License\bin\Release\Udyog.Application.License.Core.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License\bin\Release\Udyog.Application.License.Core.pdb
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License\obj\Release\ResolveAssemblyReference.cache
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License\obj\Release\Udyog.Application.License.Core.dll
+C:\Mydata\Udyog\Registration\Udyog.Application.License\Udyog.Application.License\obj\Release\Udyog.Application.License.Core.pdb

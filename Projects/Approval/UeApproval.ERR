@@ -1,0 +1,26 @@
+Form f:\kishor\original-bug-projects\26939\approval\frmapproval.scx has the following errors:
+    Proc./Func. UENRENTRY - Undefined
+    Unknown BARSTAT - Undefined
+    Unknown UDAPPVOUAPPROVAL - Undefined
+    Unknown UDTRIGVOUAPPROVAL - Undefined
+    Unknown UETRIGVOUAPPROVAL - Undefined
+    Unknown UEGETPOP - Undefined
+    File COMMENT_APPROVAL.GIF - Undefined
+    File CANCEL.GIF - Undefined
+    Proc./Func. TOUEVOUCHER - Undefined
+    Application UDAPPAPPROVALREFRESH - Undefined
+    Program UDTRIGAPPROVALREFRESH - Undefined
+    Proc./Func. UETRIGAPPROVALREFRESH - Undefined
+    Application UDAPPAPPROVALINIT - Undefined
+    Program UDTRIGAPPROVALINIT - Undefined
+    Proc./Func. UETRIGAPPROVALINIT - Undefined
+
+Program f:\kishor\original-bug-projects\26939\approval\main.prg has the following errors:
+    Unknown APPVERCHK - Undefined
+
+Visual Class Library f:\kishor\original-bug-projects\26939\approval\_base.vcx has the following errors:
+    Program SETOBJRF - Undefined
+
+Program f:\kishor\original-bug-projects\26939\approval\locaterecords.prg has the following errors:
+    Visual Class Library SQLCONNECTION - Undefined
+

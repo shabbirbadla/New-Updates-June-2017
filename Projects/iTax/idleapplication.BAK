@@ -1,0 +1,128 @@
+*============================================================
+* Developed by Uday on dated 05/03/2014 - Bug ID 21693
+* This class detects the activitiy, due to inactivity if application will idle 
+* then message will be popup and prompt user to continue session or close session
+*============================================================
+
+Define Class IdleApplication as InactivityTimer
+  Procedure Init(tnTimeOutInMinutes,tnTimeInterval)
+    DODEFAULT(tnTimeOutInMinutes,tnTimeInterval)
+
+  Procedure eventTimeout
+   ans = MessageBox([Due of inactivity, your session is about to expire, if you are still using this application,] + CHR(13) +;
+    			   [Please click "OK" otherwise your session will expire within 2 min. and you will need to restart application again],1+64+256,"Session timeout",120000)
+
+   IF ans = 2 OR ans = -1
+   	 statdesktop.MESSAGE = "Application will be Shutdown within 2 min........"
+	 shutOffTimer.enabled = .t.
+   ENDIF 
+Enddefine
+
+*============================================================
+* If user has click on cancel, this timer will be activated and shutoff application will be 2 minutes.
+*============================================================
+
+Define Class ShutoffTimer as Timer
+ Interval = 120000
+ Enabled = .f.
+
+
+ Procedure Timer
+	This.eventShutTimeout()
+ ENDPROC
+ 
+ Procedure eventShutTimeout
+ 	 exitclick = .t.
+	 applicationshutoff.appshutoff
+ Endproc
+Enddefine
+
+*============================================================
+* Detects user activity and fires an event after the
+* specified period of inactivity.
+*============================================================
+Define Class InactivityTimer as Timer
+
+  *----------------------------------------------------------
+  * API constants
+  *----------------------------------------------------------
+  #define WM_KEYUP                        0x0101
+  #define WM_SYSKEYUP                     0x0105
+  #define WM_MOUSEMOVE                    0x0200
+  #define GWL_WNDPROC         (-4)
+
+  *----------------------------------------------------------
+  * internal properties
+  *----------------------------------------------------------
+  nTimeOutInMinutes = 0
+  tLastActivity = {/:}
+  nOldProc = 0
+
+  *----------------------------------------------------------
+  * Timer configuration
+  *----------------------------------------------------------
+ * Interval = 30
+  Enabled = .T.
+
+*------------------------------------------------------------
+* Listen to API events when the form starts. You can pass
+* the timeout as a parameter.
+*------------------------------------------------------------
+Procedure Init(tnTimeOutInMinutes,tnTimeInterval)
+    DECLARE integer GetWindowLong IN WIN32API ;
+      integer hWnd, ;
+      integer nIndex
+    DECLARE integer CallWindowProc IN WIN32API ;
+      integer lpPrevWndFunc, ;
+      integer hWnd,integer Msg,;
+      integer wParam,;
+      integer lParam
+    THIS.Interval = tnTimeInterval
+    THIS.nOldProc=GetWindowLong(_VFP.HWnd,GWL_WNDPROC)
+  If Vartype(m.tnTimeOutInMinutes) == "N"
+    This.nTimeOutInMinutes = m.tnTimeOutInMinutes
+  EndIf
+  This.tLastActivity = Datetime()
+  BindEvent(0,WM_KEYUP,This,"WndProc")
+  BindEvent(0,WM_MOUSEMOVE,This,"WndProc")
+EndProc
+
+*------------------------------------------------------------
+* Stop listening
+*------------------------------------------------------------
+Procedure Unload
+  UnBindEvents(0,WM_KEYUP)
+  UnBindEvents(0,WM_MOUSEMOVE)
+EndProc
+
+*------------------------------------------------------------
+* Every event counts as activity
+*------------------------------------------------------------
+Procedure WndProc( ;
+  hWnd as Long,Msg as Long,wParam as Long,lParam as Long )
+  This.tLastActivity = Datetime()
+_screen.Caption = Str(Val(_Screen.Caption)+1)
+*statdesktop.MESSAGE = statdesktop.MESSAGE + " Last Activity :" + DTOC(DATE()) + " " + TIME()
+Return CallWindowProc(this.noldproc,hWnd,msg,wParam,lParam)
+
+*------------------------------------------------------------
+* Check last activity against time out
+*------------------------------------------------------------
+
+
+Procedure Timer
+  Local ltFireEvent
+  ltFireEvent = This.tLastActivity + 60*This.nTimeOutInMinutes
+  If Datetime() > m.ltFireEvent
+    This.eventTimeout()
+  EndIf
+EndProc
+
+*------------------------------------------------------------
+* Override this event or bind to it to respond to user
+* inactivity. You can change the nTimeOutInMinutes to offer
+* multiple stages of timeouts.
+*------------------------------------------------------------
+Procedure eventTimeout
+	
+EndDefine

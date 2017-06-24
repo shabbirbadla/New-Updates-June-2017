@@ -1,0 +1,4 @@
+lparam vDataSessionId
+Set DataSession To vDataSessionId
+DO UETRIG_SELECTPOP WITH vDataSessionId,"stmain.areno","select distinct ARENO from STMAIN where areno<>' ' and aredesc='A.R.E.3'","Select ARE3 No.","ARENO","ARENO","",.F.,"","",.t.,[],[],"ARENO:ARE3 No."
+

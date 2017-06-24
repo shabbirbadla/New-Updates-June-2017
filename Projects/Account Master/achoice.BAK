@@ -1,0 +1,11 @@
+Para cAcGroup,mGroup,pRange
+mGroup=ALLTRIM(cAcGroup)
+If EMPTY(mGroup)
+	Do Form acmast With cAcGroup,mGroup,pRange
+Endif
+If Upper(mGroup)="GROUP"
+	Do Form acmast With cAcGroup,mGroup,pRange
+Endif
+If UPPER(mGroup)="GL"
+	Do Form frmgl With mGroup,pRange
+Endif

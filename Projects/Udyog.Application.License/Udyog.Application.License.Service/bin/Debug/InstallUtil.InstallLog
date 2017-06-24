@@ -1,0 +1,213 @@
+﻿
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+An exception occurred during the Install phase.
+System.Security.SecurityException: The source was not found, but some or all event logs could not be searched.  Inaccessible logs: Security.
+
+The Rollback phase of the installation is beginning.
+See the contents of the log file for the C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at C:\temp\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The Rollback phase completed successfully.
+
+The transacted install has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.
+
+
+The uninstall is beginning.
+See the contents of the log file for the D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.exe assembly's progress.
+The file is located at D:\Licence\Udyog.Application.License\Udyog.Application.License.Service\bin\Debug\Udyog.Application.License.Service.InstallLog.
+
+The uninstall has completed.

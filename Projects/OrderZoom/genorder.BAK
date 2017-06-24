@@ -1,0 +1,258 @@
+*:*****************************************************************************
+*:        Program: GenOrder.PRG
+*:         System: Udyog Software
+*:         Author: RAGHU
+*:  Last modified: 22/11/2006
+*:			AIM  : Create Sales/Purchase Order Zoom-In Cursor
+*:*****************************************************************************
+DEFINE CLASS Gen_Order AS CUSTOM
+	SessionId = .F.
+	ReportType = ''
+	Pickup = ''
+	levelcode = 0
+	lError = .F.
+	Sdate = {}
+	edate = {}
+	dateFilter = ''
+	nHandle = 0
+	lnear = ''
+	lexac = ''
+	ldele = ''
+	MPara = ''
+	xTraFlds = ''	&& Added By Sachin N. S. on 30/12/2008
+	xTraFldsCap = ''	&& Added By Sachin N. S. on 30/12/2008
+	xTraFldsOrd = ''
+	ReportName = ''		&& Added By Sachin N. S. on 02/07/2010 for TKT-2644
+
+	PROCE Exec_Order_Report
+	IF TYPE('This.SessionId') ='N'
+		SET DATASESSION TO (THIS.SessionId)
+	ELSE
+		SET DATASESSION TO _SCREEN.ACTIVEFORM.DATASESSIONID
+	ENDIF
+
+	THIS.NEWOBJECT('sqlconobj','sqlconnudobj','sqlconnection',xApps)
+	LcItSel = ''
+	LcAcSel = ''
+	IF USED("_lstITselected")
+		LcItSel = "##"+PROPER(ALLTRIM(musername))+[ITSEL]+SYS(2015)
+		lcMGins = ""
+		SELECT ITName as It_Name;
+			FROM _lstITselected WITH (BUFFERING = .T.);
+			INTO CURSOR _lstselected
+		IF _TALLY = 0
+			LcItSel = ""
+		ELSE
+			SELECT _lstselected
+			SCAN
+				lcMGins = THIS.sqlconobj.Genmultiinsert(LcItSel,'','','_lstselected','1','IT_Name')
+				THIS.sqlconobj.setstring(lcMGins)
+				SELECT _lstselected
+			ENDSCAN
+			lcMGins = THIS.sqlconobj.Getstring()
+			IF ! EMPTY(lcMGins)
+				lcMGCreate = "Create Table "+LcItSel+" (IT_Name Varchar(60))"
+				sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,lcMGCreate,"","This.Parent.nHandle",THIS.SessionId)
+				sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,lcMGins,"","This.Parent.nHandle",THIS.SessionId)
+			ENDIF
+		ENDIF
+		USE IN _lstselected
+	ENDIF
+
+	IF USED("_lstACselected")
+		LcAcSel = "##"+PROPER(ALLTRIM(musername))+[ACSEL]+SYS(2015)
+		lcMGins = ""
+		SELECT ACName AS Ac_Name;
+			FROM _lstACselected WITH (BUFFERING = .T.);
+			INTO CURSOR _lstselected
+		IF _TALLY = 0
+			LcAcSel = ""
+		ELSE
+			SELECT _lstselected
+			SCAN
+				lcMGins = THIS.sqlconobj.Genmultiinsert(LcAcSel,'','','_lstselected','1','Ac_Name')
+				THIS.sqlconobj.setstring(lcMGins)
+				SELECT _lstselected
+			ENDSCAN
+			lcMGins = THIS.sqlconobj.Getstring()
+			IF ! EMPTY(lcMGins)
+				lcMGCreate = "Create Table "+LcAcSel+" (Ac_Name Varchar(60)) "
+				sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,lcMGCreate,"","This.Parent.nHandle",THIS.SessionId)
+				sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,lcMGins,"","This.Parent.nHandle",THIS.SessionId)
+			ENDIF
+		ENDIF
+		USE IN _lstselected
+	ENDIF
+	xStr = stdcondition()
+	xStr = "EXECUTE USP_ORDER_ZOOM_IN '"+LcAcSel+"','"+LcItSel+"','',"+xStr
+	SET DATE AMERICAN
+	xStr = xStr+"'"+THIS.ReportType+"',"+"'"+IIF(_Orstatus.zoomtype='I','I','P')+"'"+",'"+TRANSFORM(company.sta_dt)+"'"
+	xStr = xStr+IIF(!EMPTY(THIS.xTraFlds),",'"+ALLTRIM(THIS.xTraFlds)+"'",",''")		&& Added By Sachin N. S. on 01/01/2008
+	SET DATE BRITISH
+	sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,xStr,"_Ordzoom","This.Parent.nHandle",THIS.SessionId)
+	IF sql_con =< 0
+		=MESSAGEBOX(MESSAGE(),0+16,Vumess)
+		THIS.lError = .T.
+		RETURN .F.
+	ELSE
+		SELECT _Ordzoom
+		COUNT FOR ! DELETED() TO m_Tot
+		IF m_Tot = 0
+			=MESSAGEBOX("No Records Found For Display...",0+32,Vumess)
+			THIS.lError = .T.
+			RETURN .F.
+		ENDIF
+	ENDIF
+	xStr = "Select [Entry_Ty],[Code_nm],PickupFrom From LCode"
+	sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,xStr,"_LCode","This.Parent.nHandle",THIS.SessionId)
+	IF sql_con =< 0
+		=MESSAGEBOX(MESSAGE(),0+16,Vumess)
+		THIS.lError = .T.
+		RETURN .F.
+	ENDIF
+
+	SELECT * FROM _LCode;
+		WHERE Entry_Ty IN (SELECT Entry_Ty FROM _Ordzoom);
+		INTO CURSOR _LCode
+	xStr = "Select [Entry_Ty] From LCode Where Entry_Ty = 'TR' OR BCode_nm = 'TR'"
+	sql_con=THIS.sqlconobj.dataconn("EXE",company.DbName,xStr,"_TRLCode","This.Parent.nHandle",THIS.SessionId)
+	IF sql_con =< 0
+		=MESSAGEBOX(MESSAGE(),0+16,Vumess)
+		THIS.lError = .T.
+		RETURN .F.
+	ENDIF
+
+&&&&&&satish-Start
+SELECT _Ordzoom
+	SCAN
+	IF Entry_ty = 'PD'
+		lcSqlStr = 	" SELECT A.RENTRY_TY AS PO_ENTRY, A.ITREF_TRAN, A.RITSERIAL, A.ENTRY_TY, A.TRAN_CD, "+;
+			" A.ITSERIAL, A.RQTY AS PD_RQTY, SUM(ISNULL(C.RQTY,0)) AS PO_RQTY "+;
+			" FROM POITREF A "+;
+			" INNER JOIN POITEM B ON (A.ENTRY_TY = B.ENTRY_TY AND A.TRAN_CD = B.TRAN_CD AND A.ITSERIAL = B.ITSERIAL)"+;
+			" LEFT JOIN TRITREF C ON (C.RENTRY_TY = B.ENTRY_TY AND C.ITREF_TRAN = B.TRAN_CD AND C.RITSERIAL = B.ITSERIAL) "+;
+			" WHERE A.RENTRY_TY = ?Entry_ty AND A.ITREF_TRAN = ?Tran_cd AND A.RITSERIAL = ?ItSerial "+;
+			" GROUP BY A.RENTRY_TY, A.ITREF_TRAN, A.RITSERIAL, A.ENTRY_TY, A.TRAN_CD, A.ITSERIAL, A.RQTY "
+		lcSqlStr = 	lcSqlStr + " UNION ALL "
+		lcSqlStr = 	lcSqlStr + " SELECT A.RENTRY_TY AS PO_ENTRY, A.ITREF_TRAN, A.RITSERIAL, A.ENTRY_TY, A.TRAN_CD, "+;
+			" A.ITSERIAL, 0 AS PD_RQTY, -SUM(ISNULL(A.RQTY,0)) AS PO_RQTY "+;
+			" FROM TRITREF A "+;
+			" WHERE A.RENTRY_TY = ?Entry_ty AND A.ITREF_TRAN = ?Tran_cd AND A.RITSERIAL = ?ItSerial "+;
+			" GROUP BY A.RENTRY_TY, A.ITREF_TRAN, A.RITSERIAL, A.ENTRY_TY, A.TRAN_CD, A.ITSERIAL, A.RQTY "
+		sql_con = THIS.sqlconobj.dataconn("EXE",company.dbname,lcSqlStr,"tmpPO_Ref","This.Parent.nHandle",THIS.SessionId)
+		SELECT SUM(PD_RQTY - PO_RQTY) AS RQTY FROM tmpPO_Ref INTO CURSOR CURPO_REF
+		IF CURPO_REF.RQTY>0
+			REPLACE balqty WITH IIF(ISNULL(CURPO_REF.RQTY),0,CURPO_REF.RQTY) IN _Ordzoom
+		ENDIF
+		IF CURPO_REF.RQTY>0
+			REPLACE balqty WITH QTY-IIF(ISNULL(CURPO_REF.RQTY),0,CURPO_REF.RQTY) IN _Ordzoom
+			REPLACE rqty WITH QTY-IIF(ISNULL(balqty),0,balqty) IN _Ordzoom
+		ENDIF
+	ENDIF
+	SELECT _Ordzoom
+ENDSCAN
+&&&&&&satish-End
+
+	SELECT _TRLCode
+	sql_con=THIS.sqlconobj.Sqlconnclose("This.Parent.nHandle")
+
+	THIS.AssignPickup()
+	THIS.FindMaxLevel()
+	THIS.UnderLevel()
+	THIS.Cur_ColorCode()
+	SELECT _Ordzoom
+	SELECT * FROM _Ordzoom a;
+		ORDER BY a.RDate,a.UnderLevel;
+		INTO CURSOR _Ordzoom
+	SELECT _Ordzoom
+	GO TOP
+	ENDPROC
+	
+	FUNCTION FindMaxLevel
+	SELECT MAX(a.levelcode) AS MAXL FROM _Ordzoom a;
+		INTO CURSOR MaxLevel
+	IF _TALLY <> 0
+		THIS.levelcode = MaxLevel.MAXL+1
+	ELSE
+		THIS.levelcode = 1
+	ENDIF
+
+	FUNCTION UnderLevel
+	UPDATE _Ordzoom SET UnderLevel = ALLTRIM(ETI),RepType = IIF(Balqty<=0,'E','P');
+		WHERE RFETI = ETI
+	lcPickup = THIS.Pickup
+	
+*	WAIT WINDOW THIS.Pickup
+	******** Commented By Sachin N. S. on 30/06/2010 for TKT-2324 ******** Start
+*!*		IF ! EMPTY(lcPickup)
+*!*			UPDATE _Ordzoom SET Balqty = 0;
+*!*				WHERE INLIST(Entry_Ty,&lcPickup) = .F.
+*!*		ENDIF
+	******** Commented By Sachin N. S. on 30/06/2010 for TKT-2324 ******** End
+
+	FOR I = 1 TO 50 STEP 1	&&	UPDATE NLevel Group Value [Start]
+		SELECT a.RFETI,a.ETI,a.UnderLevel,RepType,RDate;
+			FROM _Ordzoom a WITH (BUFFERING = .T.);
+			WHERE a.levelcode = I;
+			INTO CURSOR CurTopLevel
+		IF _TALLY <> 0
+			SELECT CurTopLevel
+			SCAN
+				THIS.FindUnderGroup(CurTopLevel.ETI,CurTopLevel.UnderLevel,CurTopLevel.RepType,CurTopLevel.RDate)
+				SELECT CurTopLevel
+			ENDSCAN
+		ELSE
+			EXIT
+		ENDIF
+		USE IN CurTopLevel
+	ENDFOR	&& UPDATE NLevel Group Value [End]
+	SELECT _Ordzoom
+	= TABLEUPDATE(.T.)
+	ENDFUNC
+
+	FUNCTION FindUnderGroup
+	PARAMETERS lcETI,lcUndfld,lcRepType,ldRDate
+	UPDATE _Ordzoom SET UnderLevel = ALLTRIM(lcUndfld)+IIF(!EMPTY(lcUndfld),":","")+ALLTRIM(ETI),RepType=lcRepType,RDate=ldRDate;
+		WHERE RFETI == lcETI AND RFETI <> ETI
+
+	FUNCTION Cur_ColorCode
+	UPDATE _Ordzoom SET ColorCode = IIF(levelcode = 1,'Rgb(244,244,234)',;
+		IIF(levelcode = 2,'Rgb(235,237,254)',;
+		IIF(levelcode = 3,'Rgb(240,255,240)',;
+		IIF(levelcode = 4,'Rgb(255,223,223)',;
+		IIF(levelcode = 5,'Rgb(255,225,255)',;
+		IIF(levelcode = 6,'Rgb(210,255,210)',;
+		IIF(levelcode = 7,'Rgb(213,255,255)',;
+		IIF(levelcode = 8,'Rgb(255,225,240)',;
+		IIF(levelcode = 9,'Rgb(201,209,209)',;
+		IIF(levelcode = 10,'Rgb(230,197,185)',''))))))))))
+	ENDFUNC
+
+	FUNCTION AssignPickup
+	SELECT _LCode
+	SCAN
+		IF ! EMPTY(PickupFrom)
+			lcPickupFrom = THIS.SetPickFrom(ALLTRIM(PickupFrom))
+			THIS.Pickup = THIS.Pickup+lcPickupFrom
+		ENDIF
+	ENDSCAN
+	IF ! EMPTY(THIS.Pickup)
+		THIS.Pickup = LEFT(THIS.Pickup,LEN(THIS.Pickup)-1)
+	ENDIF
+	ENDFUNC
+
+	FUNCTION SetPickFrom
+	LPARAMETERS tcPickupFrom AS STRING
+	STORE "" TO lcPFrom,lcEntry
+	tcPickupFrom = STRTRAN(STRTRAN(tcPickupFrom,"/",""),",","")
+	lnTotcd = LEN(tcPickupFrom)
+	FOR lnInt = 1 TO lnTotcd STEP 1
+		lcEntry = SUBSTR(tcPickupFrom,lnInt-1,2)
+		IF !EMPTY(lcEntry)
+			lcPFrom = [']+lcEntry+[',]
+		ENDIF
+	ENDFOR
+	RETURN lcPFrom
+	ENDFUNC
+
+ENDDEFINE

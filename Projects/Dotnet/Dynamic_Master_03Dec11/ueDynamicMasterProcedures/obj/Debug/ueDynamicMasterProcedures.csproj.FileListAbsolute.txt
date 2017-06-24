@@ -1,0 +1,27 @@
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\ueDynamicMasterProcedures.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\ueDynamicMasterProcedures.pdb
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uButton.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uButton.pdb
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\obj\Debug\ueDynamicMasterProcedures.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\obj\Debug\ueDynamicMasterProcedures.pdb
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uBaseForm.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uParameterSelection.exe
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\udSelectPop.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uHelpButton.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uTextBox.dll
+D:\SQLProject\New folder\UDF Controls\ueDynamicMasterProcedures\bin\Debug\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\ueDynamicMasterProcedures.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\ueDynamicMasterProcedures.pdb
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\uBaseForm.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\uButton.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\udSelectPop.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\DataAccess-Net.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\uHelpButton.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\uTextBox.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\uParameterSelection.pdb
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\bin\Debug\uButton.pdb
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\obj\Debug\ResolveAssemblyReference.cache
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\obj\Debug\ueDynamicMasterProcedures.dll
+D:\SQLProject\AlertMaster\ueDynamicMasterProcedures\obj\Debug\ueDynamicMasterProcedures.pdb

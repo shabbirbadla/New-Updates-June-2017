@@ -1,0 +1,8 @@
+Form d:\...\allocation030209_payment\allocation030209_payment\frmalloc.scx has the following errors:
+    Unknown UEGETPOP - Undefined
+    Proc./Func. UETRIGALLOCATE - Undefined
+    Unknown BARSTAT - Undefined
+
+Program d:\...\allocation030209_payment\allocation030209_payment\progalloc.prg has the following errors:
+    Proc./Func. UETRIGALLOCATE - Undefined
+

@@ -1,0 +1,59 @@
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.BLL.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\getinfo.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.RPT.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.MailSender.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.DAL.dll
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.RPT.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.BLL.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.MailSender.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClient.DAL.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\ResolveAssemblyReference.cache
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmEmailClient.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmEmailList.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmExportCSV.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmLogViewer.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmPendingMail.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmProcessWatcher.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmQueryWindow.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmSearch.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmTranType.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClient.Properties.Resources.resources
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClientSetting.csproj.GenerateResource.Cache
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.exe.config
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.exe
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.pdb
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.exe
+E:\MY PROJECT\E-Mail Utility\New email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.pdb
+C:\Users\prashant\Desktop\Product_imformation\email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.exe.config
+C:\Users\prashant\Desktop\Product_imformation\email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.exe
+C:\Users\prashant\Desktop\Product_imformation\email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.exe.config
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.exe
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.exe
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.BLL.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\getinfo.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.RPT.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.MailSender.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.DAL.dll
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.RPT.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.BLL.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.MailSender.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClient.DAL.pdb
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\ResolveAssemblyReference.cache
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmEmailClient.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmEmailList.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmExportCSV.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmLogViewer.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmPendingMail.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmProcessWatcher.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmQueryWindow.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmSearch.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.frmTranType.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClient.Properties.Resources.resources
+D:\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClientSetting.csproj.GenerateResource.Cache
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\bin\Debug\eMailClientWizard.exe.config
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.exe
+D:\1 Development\Dotnet\Auto Email\EMAIL_PROJECT\EMAILCLIENT\email\emailclient\eMailClientSetting\obj\Debug\eMailClientWizard.pdb
+F:\Digital Signature\Esignature_src\udEmailClient\eMailClientSetting\bin\Debug\eMailClientWizard.exe.config

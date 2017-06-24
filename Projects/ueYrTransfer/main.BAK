@@ -1,0 +1,489 @@
+Parameters tcCaption,TransferType,pRange
+
+If Vartype(VuMess) <> [C]
+	_Screen.Visible = .F.
+	Messagebox("Internal Application does not Execute Out-Side ...",16)
+	Return .F.
+Endif
+
+If Vartype(tcCaption) <> 'C'
+	tcCaption = ""
+Endif
+
+cDbName = Company.dbName
+dSta_Dt	= Company.Sta_Dt
+dEnd_Dt	= Company.End_Dt
+
+If "vutex" $ vchkprod				&& 02/03/2011
+	Messagebox("This option will not work in Trading company.")
+	Return
+Endif
+If !("CLSYRLIBS" $ Upper(Set("Classlib")))
+	Set Classlib To clsyrtlibs Additive
+Endif
+oSession  = Createobject("session")
+SqlConObj= Newobject("SqlConNudObj","SqlConnection",xapps)
+_etDataSessionId=oSession.DataSessionId
+nHandle=0
+nHandle1=0
+
+If Empty(Company.Enddir)
+	Messagebox("Create a new year first or Make sure you have exit from software after New Year creation. "+Chr(13)+"Then run this option.",0,VuMess)
+	Return
+Endif
+
+lcSqlstr =	"Select Top 1 * From Vudyog..Co_mast Where DBName='"+Alltrim(Company.Enddir)+"' "
+nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_newyeardet","nHandle",_etDataSessionId,.T.)
+If nRetval<0
+	Return .F.
+Endif
+If Used('_newyeardet')
+	Select _newyeardet
+	nSta_Dt	= _newyeardet.Sta_Dt
+	nEnd_Dt	= _newyeardet.End_Dt
+	nDbName= _newyeardet.dbName
+	lmulti_cur=_newyeardet.mcur_
+	nlyn=Allt(Str(Year(_newyeardet.Sta_Dt)-1))+[-]+Allt(Str(Year(_newyeardet.End_Dt)))
+Endif
+If !Empty(Alltrim(Company.Enddir))
+	If Alltrim(nDbName)=Alltrim(cDbName )
+		Messagebox('This option will not work since database is same for current year and Next year.',0+64+256,VuMess)
+		Return
+	Endif
+Endif
+Do Case
+Case Upper(TransferType)="CLOSING STOCK"			&& Transferrring Closing Stock
+	lMsg="Stock Transferred successfully..."
+
+
+	lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..OsMain Where Party_nm='OPENING STOCK'"
+	nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+	If nRetval<0
+		Return .F.
+	Endif
+	If Used('_osCnt')
+		Select _osCnt
+		If Reccount()>0
+			Messagebox('Please Delete the Opening Stock Entry in Next Year and Run this Option',0+64+256,VuMess)
+			Return
+		Endif
+		Use In _osCnt
+	Endif
+
+	Ans = Messagebox("Want to Transfer"+ Iif([vutex] $ vchkprod," Non-Modvatable "," ")+"Closing Stock Value ? ",36,VuMess)
+	If Ans = 6
+		Do Form uefrm_stkval.scx With _etDataSessionId To valueType
+		If Empty(valueType)
+			Return
+		Endif
+		If !Empty(valueType)
+			oPBar=Createobject("frmProgress")
+			oPBar.Show()
+			oPBar.ProgStatus("Processing Stock Valuation: "+ Alltrim(Transform(5))+ "%"  ,5)
+			lcSqlstr =	"Select Top 1 It_Name From It_mast Order by It_Name Desc"
+			nRetval=SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_itname","nHandle",_etDataSessionId,.T.)
+			If nRetval<0
+				Return .F.
+			Endif
+			toItem=""
+			If Used('_itname')
+				Select _itname
+				toItem=_itname.it_Name
+
+				Use In _itname
+			Endif
+			If nRetval>0
+				lcSqlstr =	"EXECUTE USP_REP_STKVAL'','','M.[RULE]<>`ANNEXURE V`','"+Dtos(dSta_Dt)+"','"+Dtos(dEnd_Dt)+"','','','','"+Alltrim(toItem)+"',0,0,'','','','','','','','','','"+Alltrim(valueType)+"'"
+				nRetval=  SqlConObj.DataConn([EXE],cDbName,lcSqlstr,"_stkval","nHandle",_etDataSessionId,.T.)
+				If nRetval<0
+					Return .F.
+				Endif
+			Endif
+		Endif
+		If Company.uom_no >0
+			lcSqlstr =	"Execute Usp_Ent_Gen_MultiUnit_Stock '"+Dtos(dEnd_Dt)+"','"+"'"
+			noofunit=Company.uom_no
+		Else
+			lcSqlstr =	"Execute Usp_Ent_GenStock '"+Dtos(dEnd_Dt)+"','"+"'"
+			noofunit=1
+		Endif
+		oPBar.ProgStatus("Processing Stock Entries: "+ Alltrim(Transform(10))+ "%"  ,10)
+		nRetval=  SqlConObj.DataConn([EXE],cDbName,lcSqlstr,"_actstk","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		If Used('_stkval')
+			Select _stkval
+
+			Update _actstk Set rate=Iif(a.rQty>0,a.Ramt/a.rQty,0) From _stkval a inner Join _actstk On(a.it_code=_actstk.it_code)
+			Use In _stkval
+		Endif
+
+		nRet=gen_stockentries(SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt,noofunit)
+	Else
+		Return
+	Endif
+
+
+Case Upper(TransferType)="LABOUR JOB IV"			&& Transferring Labour Job IV
+	lMsg="Labour Job IV entries transferred successfully..."
+
+	lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..IIMAIN Where Entry_ty ='LI'"
+	nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+	If nRetval<0
+		Return .F.
+	Endif
+	If Used('_osCnt')
+		Select _osCnt
+		If Reccount()>0
+			Messagebox('Please Delete the LABOUR JOB IV Entries in Next Year and Run this Option',0+64+256,VuMess)
+			Return
+		Endif
+		Use In _osCnt
+	Endif
+
+	Ans = Messagebox("Want to Transfer LABOUR JOB IV Entries ? ",36,VuMess)
+	If Ans = 6
+		oPBar=Createobject("frmProgress")
+		oPBar.Show()
+		oPBar.ProgStatus("Processing Labour job IV Entries: "+ Alltrim(Transform(5))+ "%"  ,5)
+
+*!*			Do Form uefrm_stkval.scx With _etDataSessionId To valueType
+*!*			If Empty(valueType)
+*!*				Return
+*!*			Endif
+
+*!*			If !Empty(valueType)
+*!*				oPBar=Createobject("frmProgress")
+*!*				oPBar.Show()
+*!*				oPBar.ProgStatus("Processing Stock Valuation: "+ Alltrim(Transform(5))+ "%"  ,5)
+
+*!*				lcSqlstr =	"Select Top 1 It_Name From It_mast Order by It_Name Desc"
+*!*				nRetval=SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_itname","nHandle",_etDataSessionId,.T.)
+*!*				If nRetval<0
+*!*					Return .F.
+*!*				Endif
+*!*				toItem=""
+*!*				If Used('_itname')
+*!*					Select _itname
+*!*					toItem=_itname.it_Name
+
+*!*					Use In _itname
+*!*				Endif
+*!*				If nRetval>0
+*!*					lcSqlstr =	"EXECUTE USP_REP_STKVAL'','','M.[RULE]<>`ANNEXURE V`','"+Dtos(dSta_Dt)+"','"+Dtos(dEnd_Dt)+"','','','','"+Alltrim(toItem)+"',0,0,'','','','','','','','','','"+Alltrim(valueType)+"'"
+*!*					nRetval=  SqlConObj.DataConn([EXE],cDbName,lcSqlstr,"_stkval","nHandle",_etDataSessionId,.T.)
+*!*					If nRetval<0
+*!*						Return .F.
+*!*					Endif
+*!*				Endif
+*!*			Endif
+		lcSqlstr =	"Execute USP_Ent_Labour_Job_IV_Pending '"+Dtos(dEnd_Dt)+"'"
+		nRetval=  SqlConObj.DataConn([EXE],cDbName,lcSqlstr,"_actstk","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		oPBar.ProgStatus("Processing Labour job IV Entries: "+ Alltrim(Transform(10))+ "%"  ,10)
+
+*!*			Select _actstk
+*!*			If Used('_stkval')
+*!*				Select _stkval
+
+*!*				Update _actstk Set rate=Iif(a.rQty>0,a.Ramt/a.rQty,0) From _stkval a inner Join _actstk On(a.it_code=_actstk.it_code)
+*!*				Use In _stkval
+*!*			Endif
+
+		nRet=generate_labourjob("LI",SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt)
+	Else
+		Return
+	Endif
+
+
+Case Upper(TransferType)="LABOUR JOB V"						&& Transferring Labour Job V
+	lMsg="Labour Job V entries transferred successfully..."
+	lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..IRMAIN Where Entry_ty ='RL'"
+	nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+	If nRetval<0
+		Return .F.
+	Endif
+	If Used('_osCnt')
+		Select _osCnt
+		If Reccount()>0
+			Messagebox('Please Delete the LABOUR JOB V Entries in Next Year and Run this Option',0+64+256,VuMess)
+			Return
+		Endif
+		Use In _osCnt
+	Endif
+
+	Ans = Messagebox("Want to Transfer LABOUR JOB V Entries ? ",36,VuMess)
+	If Ans = 6
+		oPBar=Createobject("frmProgress")
+		oPBar.Show()
+		oPBar.ProgStatus("Processing Labour job IV Entries: "+ Alltrim(Transform(5))+ "%"  ,5)
+
+*!*			Do Form uefrm_stkval.scx With _etDataSessionId To valueType
+*!*			If Empty(valueType)
+*!*				Return
+*!*			Endif
+
+*!*			If !Empty(valueType)
+*!*				lcSqlstr =	"Select Top 1 It_Name From It_mast Order by It_Name Desc"
+*!*				nRetval=SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_itname","nHandle",_etDataSessionId,.T.)
+*!*				If nRetval<0
+*!*					Return .F.
+*!*				Endif
+*!*				toItem=""
+*!*				If Used('_itname')
+*!*					Select _itname
+*!*					toItem=_itname.it_Name
+
+*!*					Use In _itname
+*!*				Endif
+*!*				If nRetval>0
+*!*					lcSqlstr =	"EXECUTE USP_REP_STKVAL'','','M.[RULE]=`ANNEXURE V`','"+Dtos(dSta_Dt)+"','"+Dtos(dEnd_Dt)+"','','','','"+Alltrim(toItem)+"',0,0,'','','','','','','','','','"+Alltrim(valueType)+"'"
+*!*					nRetval=  SqlConObj.DataConn([EXE],cDbName,lcSqlstr,"_stkval","nHandle",_etDataSessionId,.T.)
+*!*					If nRetval<0
+*!*						Return .F.
+*!*					Endif
+*!*				Endif
+*!*			Endif
+		lcSqlstr =	"Execute USP_Ent_Labour_Job_V_Pending '"+Dtos(dEnd_Dt)+"'"
+		nRetval=  SqlConObj.DataConn([EXE],cDbName,lcSqlstr,"_actstk","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+
+*!*			Select _actstk
+*!*			If Used('_stkval')
+*!*				Select _stkval
+
+*!*				Update _actstk Set rate=Iif(a.rQty>0,a.Ramt/a.rQty,0) From _stkval a inner Join _actstk On(a.it_code=_actstk.it_code)
+*!*				Use In _stkval
+*!*			Endif
+
+		oPBar.ProgStatus("Processing Labour job IV Entries: "+ Alltrim(Transform(10))+ "%"  ,10)
+
+		nRet=generate_labourjob("RL",SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt)
+	Else
+		Return
+	Endif
+
+
+Case Upper(TransferType)="CAPITAL GOODS ENTRY"				&& Transferring Capital Goods Duty Credit Entry
+	lMsg="Capital Goods Duty Credit entries transferred successfully..."
+*!*		If Empty(Company.Enddir)
+*!*			Messagebox("Create a new year first then run this option",0,VuMess)
+*!*			Return
+*!*		Endif
+	lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..IRMAIN Where Entry_ty IN ('HR','GR')"
+	nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+	If nRetval<0
+		Return .F.
+	Endif
+	If Used('_osCnt')
+		Select _osCnt
+		If Reccount()>0
+			Messagebox('Please Delete the RG PART-II Receipt Entries in Next Year and Run this Option',0+64+256,VuMess)
+			Return
+		Endif
+		Use In _osCnt
+	Endif
+	oPBar=Createobject("frmProgress")
+	oPBar.Show()
+	oPBar.ProgStatus("Processing Capital goods Entries: "+ Alltrim(Transform(5))+ "%"  ,5)
+	lcSqlstr =	" SELECT DISTINCT ENTRY_TY,TRAN_CD FROM PTACDET WHERE AC_NAME like "+;
+		" '%CAPITAL GOODS PAYABLE A/C%' AND ENTRY_TY IN ('PT','P1') "+;
+		" AND L_YN <> '"+Alltr(Str(Year(nSta_Dt)))+"-"+Alltr(Str(Year(nEnd_Dt)))+"' "
+
+	nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_tmpAc","nHandle",_etDataSessionId,.T.)
+	If nRetval<0
+		Return .F.
+	Endif
+	oPBar.ProgStatus("Processing Capital goods Entries: "+ Alltrim(Transform(10))+ "%"  ,10)
+	nRet=.T.
+
+	Select _tmpAc
+	reccnt=Reccount()
+	If reccnt <> 0
+		oPBar.Show()
+		lnIncVal = 90 / reccnt
+		lninc=0
+	Endif
+	Scan
+		lninc=lninc+1
+		oPBar.ProgStatus("Processing Capital goods Entries: "+ Alltrim(Transform(Round((lninc /reccnt) *100,0)))+ "%"  ,(lninc * lnIncVal)+10)
+
+		nRet=gen_capitalacc(_tmpAc.Entry_ty,_tmpAc.Tran_Cd,SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt,cDbName )
+		If !nRet
+			Exit
+		Endif
+		Select _tmpAc
+	Endscan
+Case Upper(TransferType)="CLOSING BALANCE"					&& Transferring Closing Balance
+	lMsg="Closing Balance Transferred successfully..."
+	Ans = Messagebox("Do you want to Transfer closing balance? ",4+32,VuMess)
+	If Ans = 6
+		prodType=0
+
+		lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..OBMAIN Where Entry_ty ='OB'"
+		nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		If Used('_osCnt')
+			Select _osCnt
+			If Reccount()>0
+				Messagebox('Please Delete the Opening Balance Entries in Next Year and Run this Option',0+64+256,VuMess)
+				Return
+			Endif
+			Use In _osCnt
+		Endif
+
+*!*				DO FORM uefrm_billwise With _etDataSessionId TO ans
+		Do Case
+		Case vchkprod=[vuexc]					&& If Product is Only Manufacturing
+			prodType=1
+			billAns=0
+		Otherwise								&& If Product is not Only Manufacturing
+			prodType=2
+			billAns=1
+		Endcase
+		Wait Window "Generating Closing Balance" Nowait
+*lcSqlstr =	"Execute USP_ENT_GETCLOSING '"+Dtos(dEnd_Dt)+"',' AND AC_MAST.TYP<>''BANK'' ',"+Str(billAns)+","+Str(prodType)
+		lcSqlstr =	"Execute USP_ENT_GETCLOSING '"+Dtos(dEnd_Dt)+"',' ',"+Str(billAns)+","+Str(prodType)
+		nRetval=SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_balacdet","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		nRet=generate_closingBal("OB",SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt)
+
+	Else
+		Return
+	Endif
+Case Upper(TransferType)="RECO STATEMENT"					&& Transferring Reco Statement
+	lMsg="Reco Statement Transferred successfully..."
+	Ans = Messagebox("Do you want to Transfer Reco Statement? ",4+32,VuMess)
+	If Ans = 6
+		lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..Recostat "
+		nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		If Used('_osCnt')
+			Select _osCnt
+			If Reccount()>0
+				Messagebox('Please Delete the Entries from Recostat Table in Next Year and Run this Option',0+64+256,VuMess)
+				Return
+			Endif
+			Use In _osCnt
+		Endif
+
+		oPBar=Createobject("frmProgress")
+		oPBar.Show()
+		oPBar.ProgStatus("Processing Reco Statements: "+ Alltrim(Transform(5))+ "%"  ,5)
+*!*			lcSqlstr =	"Execute USP_ENT_GETCLOSING '"+Dtos(dEnd_Dt)+"',' AND AC_MAST.TYP=''BANK'' ',"+Str(0)+","+Str(2)
+*!*			nRetval=SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_balacdet","nHandle",_etDataSessionId,.T.)
+*!*			If nRetval<0
+*!*				Return .F.
+*!*			Endif
+*!*			nRet=generate_closingBal("OB",SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt)
+*!*			If nRet
+*!*			lcSqlstr =	" Select bankreco.* from bankreco Inner Join Ac_Mast On (Ac_Mast.Ac_Name=bankreco.Ac_Name) "+;
+*!*				" Where Ac_Mast.[Group]='CASH & BANK BALANCES' And (BankReco.Cl_Date=0 or BankReco.Cl_Date between '"+Dtos(nSta_Dt)+"' and '"+Dtos(nEnd_Dt)+"' )"
+		lcSqlstr ="Execute USP_ENT_Gen_BankReco '"+Dtos(nSta_Dt)+"','"+Dtos(nEnd_Dt)+"'"
+		nRetval=SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_breco","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		oPBar.ProgStatus("Processing Reco Statements: "+ Alltrim(Transform(10))+ "%"  ,10)
+		nRet=generate_recostatement(SqlConObj,_etDataSessionId,"nHandle1",nDbName,nSta_Dt,nEnd_Dt)
+*!*			Endif
+
+	Else
+		Return
+	Endif
+Case Upper(TransferType)="PENDING BILLS TRANSFER"					&& Transferring Pending Bills
+	lMsg="Pending Bills Transferred successfully..."
+	Ans = Messagebox("Do you want to Transfer Pending Bills? ",4+32,VuMess)
+	If Ans = 6
+		lcSqlstr =	"Select Top 1  * From "+Alltrim(Company.Enddir)+"..OBMAIN Where Entry_ty ='OB'"
+		nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"_osCnt","nHandle",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		If Used('_osCnt')
+			Select _osCnt
+			If Reccount()<=0
+				Messagebox('Please transfer Closing Balance first.',0+64+256,VuMess)
+				Return
+			Endif
+			Use In _osCnt
+		Endif
+		*Do Form uefrm_selectentry With _etDataSessionId To Entrylist
+		
+		If lmulti_cur=.T.
+			lcSqlstr =	"Execute USP_GEN_MULTICUR_PENDING_BILLS '"+nDbName+"','"+Dtos(dEnd_Dt)+"','"+Alltr(Str(Year(nSta_Dt)))+"-"+Alltr(Str(Year(nEnd_Dt)))+"'"
+		Else
+			lcSqlstr =	"Execute USP_ENT_TRANSFER_PENDING_BILLS '"+nDbName+"','"+Dtos(dEnd_Dt)+"','"+Alltr(Str(Year(nSta_Dt)))+"-"+Alltr(Str(Year(nEnd_Dt)))+"'"
+		Endif
+		nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"","nHandle1",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		nRet =.T.
+
+	Else
+		Return
+	Endif
+Case Upper(TransferType)="PENDING ORDER TRANSFER"					&& Transferring Pending Orders
+	lMsg="Pending Orders Transferred successfully..."
+	Ans = Messagebox("Do you want to Transfer Pending Orders? ",4+32,VuMess)
+	If Ans = 6
+		Wait Window "Please wait..."
+		lcSqlstr =	"Execute "+Alltrim(Company.Enddir)+"..USP_ENT_GetOrderEntry "
+		If nRetval<0
+			Return .F.
+		Endif
+		If Used('_osCnt')
+			lEntry_ty=""
+			Select _osCnt
+			If Reccount()>0
+				Scan
+					lEntry_ty=lEntry_ty+" "+_osCnt.Entry_ty
+				Endscan
+				Messagebox("Please Delete the order entries "+Iif(!Empty(lEntry_ty),"("+lEntry_ty+")","")+" from new year then run this option",0+64+256,VuMess)
+				Return
+			Endif
+			Use In _osCnt
+		Endif
+*Do Form uefrm_selectentry With _etDataSessionId To Entrylist
+		Wait Window "Generating Pending Order entries..., Please wait... "
+		lcSqlstr =	"Execute USP_ENT_Get_Order_Records '"+nDbName+"','"+Dtos(dEnd_Dt)+"'"
+		nRetval=  SqlConObj.DataConn([EXE],cDbName ,lcSqlstr,"","nHandle1",_etDataSessionId,.T.)
+		If nRetval<0
+			Return .F.
+		Endif
+		nRet =.T.
+	Else
+		Return
+	Endif
+
+Endcase
+
+If nRet
+	sql_con = SqlConObj._SqlCommit("nHandle1")
+	If sql_con > 0
+		sql_con = SqlConObj._SqlRollback("nHandle1")
+	Endif
+	=Messagebox(lMsg,0+64,VuMess)
+Else
+	If nHandle > 0
+		sql_con = SqlConObj._SqlRollback("nHandle1")
+	Endif
+Endif
+nRet=SqlConObj.sqlconnclose("nHandle1")
+
+Return
+
+
+

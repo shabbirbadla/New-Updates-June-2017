@@ -1,0 +1,23 @@
+Lparameters _nDataSession
+
+If 'serialinv' $ vchkprod
+	If !('BatchSerialStk' $ Set("Classlib"))
+		Set Classlib To BatchSerialStk Additive
+	Endif
+	If !('Vouclass' $ Set("Classlib"))
+		Set Classlib To Vouclass Additive
+	Endif
+
+*!*		Do Form ueFrmBatchSerialNo With _cEntTyp,_cItem,_nDataSession,_cDispType
+	Do Form ueFrmBatchSerialNo With _cEntTyp,_cItem,_nDataSession,_cDispType, _lStkReserve		&& Changed by Sachin N. S. on 26/02/2014 for Bug-21381
+Endif
+
+If Vartype(oGlblPrdFeat)='O'
+	If oGlblPrdFeat.UdChkProd('pos')
+		If Type('_screen.ActiveForm.pcvType')='C'
+			If _Screen.ActiveForm.pcvType = 'PS'
+				=barstat(.T.,.T.,.T.,.T.,.T.,.T.,.F.,.F.,.F.,.F.,.F.,.F.,.T.,.T.)
+			Endif
+		Endif
+	Endif
+Endif

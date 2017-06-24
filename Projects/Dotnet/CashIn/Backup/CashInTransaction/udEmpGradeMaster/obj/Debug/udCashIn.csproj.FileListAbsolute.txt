@@ -1,0 +1,12 @@
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\udCashIn.exe
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\udCashIn.pdb
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\GetInfo.DLL
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\bin\Debug\Interop.ueconnect.dll
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\Interop.ueconnect.dll
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashIn.csproj.ResolveComReference.cache
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udEmpGradeMaster.frmGradeMaster.resources
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashIn.Properties.Resources.resources
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashIn.csproj.GenerateResource.Cache
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashIn.exe
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashIn.pdb
+D:\Ruchit\SVN\Currency Master\udEmpGradeMaster\udEmpGradeMaster\obj\Debug\udCashIn.csprojResolveAssemblyReference.cache
